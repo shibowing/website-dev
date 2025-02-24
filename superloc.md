@@ -875,7 +875,29 @@ The authors would like to express sincere thanks to [Guofei Chen](https://gfchen
 
 ## Citation
 
-coming soon
+Zhao & Zhu, et al. "SuperLoc: The Key to Robust LiDAR-Inertial Localization Lies in Predicting Alignment Risks." 2025 IEEE International Conference on Robotics and Automation (ICRA). IEEE, 2025. [Paper](https://arxiv.org/abs/2412.02901)
+```
+@inproceedings{zhao2025superloc,
+  title = {SuperLoc: The Key to Robust LiDAR-Inertial Localization Lies in Predicting Alignment Risks},
+  author = {Zhao, Shibo and Zhu, Honghao and Gao, Yuanjun and Kim, Beomsoo and Qiu, Yuheng and Johnson, Aaron M. and Scherer, Sebastian},
+  year = {2025},
+  booktitle = {2025 IEEE International Conference on Robotics and Automation (ICRA)},
+  url = {https://arxiv.org/abs/2412.02901}
+}
+```
+Zhao, et al. "SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments." 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR). IEEE, 2024. [Paper](https://arxiv.org/abs/2307.07607)
+
+```
+@inproceedings{zhao2024subt-mrs,
+  title = {SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments},
+  author = {Zhao, Shibo and Gao, Yuanjun and Wu, Tianhao and Singh, Damanpreet and Jiang, Rushan and Sun, Haoxiang and Sarawata, Mansi and Whittaker, Warren C and Higgins, Ian and Su, Shaoshu and Du, Yi and Xu, Can and Keller, John and Karhade, Jay and Nogueira, Lucas and Saha, Sourojit and Qiu, Yuheng and Zhang, Ji and Wang, Wenshan and Wang, Chen and Scherer, Sebastian},
+  year = {2024},
+  booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  doi = {10.1109/CVPR52733.2024.02137},
+  url = {https://superodometry.com/datasets},
+  video = {https://youtu.be/mkN72Lv8S7A}
+}
+```
 
 ## Contacts
 
