@@ -5,7 +5,7 @@ layout: page
 show_sidebar: false
 hide_footer: false
 hero_height: is-large
-hero_image: img/TartanIMU/FirstPage.png
+hero_image: /img/TartanIMU/FirstPage.png
 ---
 
 <script>
@@ -407,7 +407,7 @@ Our approach consists of three-stage: First, a pre-trained foundation model leve
 <h1 class="centered">System architecture</h1>
 <div class="system-architecture">
     <div class="image-container">
-        <img src="img/TartanIMU/SystemPipeline.PNG" alt="System architecture" style="width: 70%;">
+        <img src="/img/TartanIMU/SystemPipeline.PNG" alt="System architecture" style="width: 70%;">
         <p class="image-caption">
             Figure 1: <b>Three learning stages of TartanIMU.</b> <b>(a)</b> Pretrained IMU Model features a shared backbone to capture generalizable IMU knowledge. <b>(b)</b> Efficient Fine-Tuning utilizes an adapter to enable positive transfer for new tasks. <b>(c)</b> Online Adaptation employs an adaptive memory buffer to support on-the-fly model updates during deployment.
         </p>
@@ -457,7 +457,7 @@ Our approach consists of three-stage: First, a pre-trained foundation model leve
             TBD.
         </p>
         <div class="image-container">
-            <img src="img/TartanIMU/tsne_viz.PNG" alt="t-SNE visualization of learned features" style="width: 50%; height: auto;">
+            <img src="/img/TartanIMU/tsne_viz.PNG" alt="t-SNE visualization of learned features" style="width: 50%; height: auto;">
             <p class="image-caption">Figure: t-SNE visualization of the learned ResNet feature space. Cluster separation across platforms shows the model's ability to learn motion-specific dynamics.</p>
         </div>
     </div>
@@ -485,14 +485,14 @@ Our approach consists of three-stage: First, a pre-trained foundation model leve
             Here, \(W_0\) is the pretrained weight, and \(A, B\) are the small matrices trained for the new task. This structure ensures that learning is efficient, allowing use even with very limited data.
         </p>
         <div class="image-container">
-            <img src="img/TartanIMU/Offline_Finetuning.png" alt="Offline finetuning results" style="width: 80%; height: auto;">
+            <img src="/img/TartanIMU/Offline_Finetuning.png" alt="Offline finetuning results" style="width: 80%; height: auto;">
             <p class="image-caption">Figure: Our LoRA-based finetuning improves accuracy on new motion tasks while keeping computational and data costs low.</p>
         </div>
         <p>
             One of the key benefits of LoRA adaptation is <strong>non forgetting</strong>: the core representation remains stable across tasks. This enables lifelong learning capabilities and is particularly useful in robotics where new environments and tasks are continuously encountered.
         </p>
         <div class="image-container">
-            <img src="img/TartanIMU/no_forgetting.png" alt="No forgetting comparison" style="width: 40%; height: auto;">
+            <img src="/img/TartanIMU/no_forgetting.png" alt="No forgetting comparison" style="width: 40%; height: auto;">
             <p class="image-caption">Figure: Comparison of LoRA vs. full fine-tuning. LoRA retains prior knowledge, while full finetuning can degrade earlier performance.</p>
         </div>
     </div>
@@ -516,7 +516,7 @@ Our approach consists of three-stage: First, a pre-trained foundation model leve
             The buffer actively reselects samples to avoid redundancy, enabling quick and stable updates with minimal compute.
         </p>
         <div class="image-container">
-            <img src="img/TartanIMU/online_adaptation.png" alt="Online adaptation illustration" style="width: 80%; height: auto;">
+            <img src="/img/TartanIMU/online_adaptation.png" alt="Online adaptation illustration" style="width: 80%; height: auto;">
             <p class="image-caption">
                 Figure: Online adaptation results in an 8-shaped trajectory using only IMU data. By maintaining a balanced buffer across diverse motion segments, TartanIMU adapts quickly during deployment, improving trajectory accuracy over time.
             </p>
@@ -525,7 +525,7 @@ Our approach consists of three-stage: First, a pre-trained foundation model leve
             Beyond standalone IMU-based estimation, TartanIMU can also be integrated within a broader SLAM framework. When external pose sources (e.g., LiDAR-based SLAM) are reliable, we use their feedback to train the network. Then, in degraded environments (e.g., dense smoke, snow, dust), where traditional SLAM performance drops, we fallback to TartanIMU predictions to maintain continuity in pose estimation.
         </p>
         <div class="image-container">
-            <img src="img/TartanIMU/lio_imu_switch_scheme.png" alt="SLAM and IMU fallback mechanism" style="width: 60%; height: auto;">
+            <img src="/img/TartanIMU/lio_imu_switch_scheme.png" alt="SLAM and IMU fallback mechanism" style="width: 60%; height: auto;">
             <p class="image-caption">
                 Figure: Integration with SLAM pipelines. In clear conditions, LiDAR odometry supervises TartanIMU. When visual degradation (e.g., dense smoke) occurs, the system switches to TartanIMU predictions until reliability is restored.
             </p>
@@ -595,19 +595,19 @@ Same here. -->
             <div class="drag-bar modern-preview-bar">
                 <div class="preview-container">
                     <div class="preview-wrapper">
-                        <img src="img/superloc/preview3.png" alt="Preview 1" class="preview-image active" data-index="0">
+                        <img src="/img/superloc/preview3.png" alt="Preview 1" class="preview-image active" data-index="0">
                     </div>
                     <div class="preview-wrapper">
-                        <img src="img/superloc/preview1.png" alt="Preview 2" class="preview-image" data-index="1">
+                        <img src="/img/superloc/preview1.png" alt="Preview 2" class="preview-image" data-index="1">
                     </div>
                     <div class="preview-wrapper">
-                        <img src="img/superloc/preview2.png" alt="Preview 3" class="preview-image" data-index="2">
+                        <img src="/img/superloc/preview2.png" alt="Preview 3" class="preview-image" data-index="2">
                     </div>
                     <div class="preview-wrapper">
-                        <img src="img/superloc/preview3.png" alt="Preview 4" class="preview-image" data-index="3">
+                        <img src="/img/superloc/preview3.png" alt="Preview 4" class="preview-image" data-index="3">
                     </div>
                     <div class="preview-wrapper">
-                        <img src="img/superloc/preview1.png" alt="Preview 5" class="preview-image" data-index="4">
+                        <img src="/img/superloc/preview1.png" alt="Preview 5" class="preview-image" data-index="4">
                     </div>
 
                 </div>
