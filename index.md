@@ -548,15 +548,15 @@ hero_link_text: See Our Code
             <a href="https://www.ri.cmu.edu/ri-faculty/wenshan-wang/">Wenshan Wang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/">Sebastian Scherer</a><sup>1</sup>
           </span>
-        </div>
+    </div>
 
         <div class="is-size-5 publication-authors">
           <span class="author-block"><sup>1</sup>Carnegie Mellon University;&nbsp;&nbsp;</span>
           <span class="author-block"><sup>2</sup>University at Buffalo</span>
-        </div>
+    </div>
 
         <div class="column has-text-centered">
-          <div class="publication-links">
+    <div class="publication-links">
             <span class="link-block">
               <a href="https://arxiv.org/abs/2104.14938" class="external-link button is-normal is-rounded is-dark" target="_blank">
                 <span class="icon">
@@ -601,8 +601,8 @@ hero_link_text: See Our Code
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/4rnRwhJS714" allowfullscreen></iframe>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/4rnRwhJS714" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -616,11 +616,32 @@ hero_link_text: See Our Code
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
+          <h3 class="title is-4">The Motivation: Human-Inspired "Inner Sense"</h3>
           <p>
-            In 2021, <strong>Super Odometry</strong> set the standard for IMU-centric sensor fusion in subterranean environments. This journal work introduces <strong>Super Odometry 2 (SO2)</strong>, a transformative evolution that moves beyond simple fusion to <strong>Hierarchical Adaptation</strong>. 
+            Just as humans use vestibular and proprioceptive feedback to navigate in total darkness (path integration), <strong>Super Odometry</strong> introduces a learned inertial module. This serves as a robotic <strong>"inner sense,"</strong> providing a reliable motion prior when external sensors like LiDAR and cameras are blinded by smoke, fog, or darkness.
           </p>
-          <p style="margin-top: 1rem;">
-            By integrating a four-layer adaptation scheme, SO2 dynamically reconfigures its estimation engine to survive 13+ types of sensor degradation—including total darkness, thick smoke, and geometrically degenerate corridors. Validated over <strong>800 operational hours</strong> and <strong>200km</strong> of travel across aerial, wheeled, and legged platforms, SO2 provides a "sign of life" even when exteroceptive sensors fail completely.
+
+          <h3 class="title is-4">Reciprocal Fusion Strategy</h3>
+          <p>
+            Rather than treating sensors as static inputs, Super Odometry employs a reciprocal learning approach:
+          </p>
+          <ul>
+            <li><strong>Nominal Conditions:</strong> Traditional model-based estimators refine the inertial network with high-accuracy pose data, allowing the system to adapt online.</li>
+            <li><strong>Degraded Conditions:</strong> The learned IMU network takes over, leveraging captured motion dynamics to maintain estimation when external perception fails.</li>
+          </ul>
+
+          <h3 class="title is-4">Hierarchical Adaptation Framework</h3>
+          <p>
+            To balance efficiency and robustness, the system uses a multi-level scheme to manage environmental stress:
+          </p>
+          <ul>
+            <li><strong>Lower Levels:</strong> Provide rapid, resource-efficient adjustments for mild disturbances.</li>
+            <li><strong>Higher Levels:</strong> Trigger complex, computationally intensive interventions for state estimation recovery during severe failure.</li>
+          </ul>
+
+          <h3 class="title is-4">Key Value</h3>
+          <p>
+            This tiered design ensures the robot remains computationally efficient under normal conditions while staying robust under extreme scenarios, allowing it to generalize across diverse aerial, wheeled, and legged platforms.
           </p>
         </div>
       </div>
@@ -635,20 +656,20 @@ hero_link_text: See Our Code
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          <div class="method-card">
-            <span class="method-level">L1</span> <strong>Adaptive Feature Selection:</strong> Real-time rejection of degraded Lidar/Visual landmarks using spatial-temporal consistency.
-          </div>
-          <div class="method-card">
-            <span class="method-level">L2</span> <strong>State Direction Adaptation:</strong> Constraining optimization to reliable geometric axes in degenerate environments like long corridors.
-          </div>
-          <div class="method-card">
-            <span class="method-level">L3</span> <strong>Estimation Engine Selection:</strong> Intelligent health-based switching between VIO, LIO, and Wheel-Inertial engines to maintain lock.
-          </div>
-          <div class="method-card">
-            <span class="method-level">L4</span> <strong>Learned IMU Prior:</strong> A data-driven fallback providing robust motion estimates during complete sensor blackout (smoke, darkness).
-          </div>
-        </div>
+      <div class="method-card">
+        <span class="method-level">L1</span> <strong>Adaptive Feature Selection:</strong> Real-time rejection of degraded Lidar/Visual landmarks using spatial-temporal consistency.
       </div>
+      <div class="method-card">
+        <span class="method-level">L2</span> <strong>State Direction Adaptation:</strong> Constraining optimization to reliable geometric axes in degenerate environments like long corridors.
+      </div>
+      <div class="method-card">
+        <span class="method-level">L3</span> <strong>Estimation Engine Selection:</strong> Intelligent health-based switching between VIO, LIO, and Wheel-Inertial engines to maintain lock.
+      </div>
+      <div class="method-card">
+        <span class="method-level">L4</span> <strong>Learned IMU Prior:</strong> A data-driven fallback providing robust motion estimates during complete sensor blackout (smoke, darkness).
+      </div>
+    </div>
+  </div>
     </div>
   </div>
 </section>
@@ -657,32 +678,32 @@ hero_link_text: See Our Code
 <section class="section content-section" id="results">
   <div class="container">
     <h2 class="title is-2" style="text-align: left;">Survival in All-Degraded Environments</h2>
-    <div class="columns is-multiline">
-      <div class="column is-6">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/km-ZMGyVzFA"></iframe>
-        </div>
-        <p class="is-size-6 has-text-centered"><strong>Obscurants:</strong> Navigating through thick smoke where traditional exteroceptive sensors fail.</p>
+  <div class="columns is-multiline">
+    <div class="column is-6">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/km-ZMGyVzFA"></iframe>
       </div>
-      <div class="column is-6">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/Wfw755BuXjQ"></iframe>
-        </div>
-        <p class="is-size-6 has-text-centered"><strong>Geometry:</strong> State-direction adaptation in infinite, featureless corridors.</p>
-      </div>
-      <div class="column is-6">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/ENqY8wNZ5yw"></iframe>
-        </div>
-        <p class="is-size-6 has-text-centered"><strong>Multi-Robot:</strong> Collaborative SO2 deployment in diverse DARPA SubT environments.</p>
-      </div>
-      <div class="column is-6">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/8GMSLLNDnvs"></iframe>
-        </div>
-        <p class="is-size-6 has-text-centered"><strong>Stress Test:</strong> Evaluating 13 consecutive types of hardware and environmental failure in a single run.</p>
-      </div>
+      <p class="is-size-6 has-text-centered"><strong>Obscurants:</strong> Navigating through thick smoke where traditional exteroceptive sensors fail.</p>
     </div>
+    <div class="column is-6">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Wfw755BuXjQ"></iframe>
+      </div>
+      <p class="is-size-6 has-text-centered"><strong>Geometry:</strong> State-direction adaptation in infinite, featureless corridors.</p>
+    </div>
+    <div class="column is-6">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ENqY8wNZ5yw"></iframe>
+      </div>
+      <p class="is-size-6 has-text-centered"><strong>Multi-Robot:</strong> Collaborative SO2 deployment in diverse DARPA SubT environments.</p>
+    </div>
+    <div class="column is-6">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/8GMSLLNDnvs"></iframe>
+      </div>
+      <p class="is-size-6 has-text-centered"><strong>Stress Test:</strong> Evaluating 13 consecutive types of hardware and environmental failure in a single run.</p>
+    </div>
+  </div>
   </div>
 </section>
 
@@ -692,40 +713,40 @@ hero_link_text: See Our Code
     <h2 class="title is-2" style="text-align: left;">Platform Generalization Matrix</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <p class="has-text-centered" style="margin-bottom: 2rem;">Comparing SO2 against domain-specific experts across heterogeneous robotics platforms.</p>
-        <div class="table-container" style="margin-bottom: 4rem;">
-          <table class="table is-bordered is-striped is-fullwidth is-hoverable">
-            <thead>
-              <tr class="is-selected" style="background: #1a1a1a;">
-                <th>Robotic Platform</th>
-                <th>Domain Expert Model</th>
-                <th><strong>Super Odometry 2 (Ours)</strong></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><i class="fas fa-car"></i>&nbsp; Wheeled UGV</td>
-                <td>AI-IMU (Relatively Robust)</td>
-                <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (High Fidelity)</strong></td>
-              </tr>
-              <tr>
-                <td><i class="fas fa-dog"></i>&nbsp; Legged Robot</td>
-                <td>RNIN (Robust in Legged)</td>
-                <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (Cross-Domain)</strong></td>
-              </tr>
-              <tr>
-                <td><i class="fas fa-plane"></i>&nbsp; Aerial UAV</td>
-                <td>IMO (Robust in Flight)</td>
-                <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (High Dynamics)</strong></td>
-              </tr>
-              <tr>
-                <td><i class="fas fa-user"></i>&nbsp; Handheld/Human</td>
-                <td>TLIO (Inertial-only)</td>
-                <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (General Motion)</strong></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+  <p class="has-text-centered" style="margin-bottom: 2rem;">Comparing SO2 against domain-specific experts across heterogeneous robotics platforms.</p>
+  <div class="table-container" style="margin-bottom: 4rem;">
+    <table class="table is-bordered is-striped is-fullwidth is-hoverable">
+      <thead>
+        <tr class="is-selected" style="background: #1a1a1a;">
+          <th>Robotic Platform</th>
+          <th>Domain Expert Model</th>
+          <th><strong>Super Odometry 2 (Ours)</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><i class="fas fa-car"></i>&nbsp; Wheeled UGV</td>
+          <td>AI-IMU (Relatively Robust)</td>
+          <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (High Fidelity)</strong></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-dog"></i>&nbsp; Legged Robot</td>
+          <td>RNIN (Robust in Legged)</td>
+          <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (Cross-Domain)</strong></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-plane"></i>&nbsp; Aerial UAV</td>
+          <td>IMO (Robust in Flight)</td>
+          <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (High Dynamics)</strong></td>
+        </tr>
+        <tr>
+          <td><i class="fas fa-user"></i>&nbsp; Handheld/Human</td>
+          <td>TLIO (Inertial-only)</td>
+          <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (General Motion)</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
       </div>
     </div>
   </div>
@@ -737,7 +758,7 @@ hero_link_text: See Our Code
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-2" style="text-align: left;">BibTeX</h2>
-        <pre style="background: #2d2d2d; color: #f8f8f2; padding: 1.5rem; border-radius: 10px; font-size: 0.9rem; line-height: 1.5; border: 1px solid #111;"><code>@article{zhao2024Hero,
+  <pre style="background: #2d2d2d; color: #f8f8f2; padding: 1.5rem; border-radius: 10px; font-size: 0.9rem; line-height: 1.5; border: 1px solid #111;"><code>@article{zhao2024Hero,
   author    = {Shibo Zhao, Sifan Zhou, Yuchen Zhang, Ji Zhang, Chen Wang, Wenshan Wang and Sebastian Scherer},
   title     = {Hierarchical Adaptation Enables Robust Odometry Towards All-degraded Environments},
   journal   = {IEEE Transactions on Robotics (Under Review)},
@@ -754,10 +775,10 @@ hero_link_text: See Our Code
     <h2 class="title is-2" style="text-align: left;">Stay Updated</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <div class="has-text-centered">
-          <p>If you want to get the latest updates from Super Odometry, feel free to sign up our mail list!</p>
-          <iframe src="https://forms.gle/g9pqfxsUfDuTAQp36" width="100%" height="684" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
+  <div class="has-text-centered">
+    <p>If you want to get the latest updates from Super Odometry, feel free to sign up our mail list!</p>
+    <iframe src="https://forms.gle/g9pqfxsUfDuTAQp36" width="100%" height="684" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
       </div>
     </div>
   </div>
