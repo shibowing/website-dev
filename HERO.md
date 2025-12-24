@@ -23,7 +23,6 @@ mathjax: true
 </style>
 <!-- Include Bulma CSS and other dependencies -->
 <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-slider@2.0.4/dist/css/bulma-slider.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -44,6 +43,127 @@ mathjax: true
   gtag('config', 'G-PYVRSFMDRL');
 </script>
 
+<!-- Left-side Content Navigation (desktop) -->
+<style>
+  .hero-toc {
+    position: fixed;
+    top: 84px; /* below navbar */
+    left: 16px;
+    width: 240px;
+    max-height: calc(100vh - 110px);
+    overflow: auto;
+    padding: 14px 14px 10px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(10, 10, 10, 0.12);
+    border-radius: 10px;
+    box-shadow: 0 10px 28px rgba(10, 10, 10, 0.08);
+    z-index: 40;
+  }
+  .hero-toc h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+  }
+  .hero-toc hr {
+    margin: 0 0 10px;
+    background-color: rgba(10, 10, 10, 0.12);
+  }
+  .hero-toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .hero-toc li {
+    margin: 6px 0;
+  }
+  .hero-toc a {
+    color: #363636;
+    text-decoration: none;
+    font-size: 0.95rem;
+    line-height: 1.2rem;
+    display: block;
+    padding: 6px 8px;
+    border-radius: 8px;
+  }
+  .hero-toc a:hover {
+    background: rgba(204, 0, 43, 0.08);
+  }
+  .hero-toc a.active {
+    background: rgba(204, 0, 43, 0.12);
+    color: #cc002b;
+    font-weight: 700;
+  }
+  .hero-main {
+    padding-left: 270px;
+  }
+  @media (max-width: 1023px) {
+    .hero-toc { display: none; }
+    .hero-main { padding-left: 0; }
+  }
+</style>
+
+<nav class="hero-toc" aria-label="Content">
+  <h3>Content</h3>
+  <hr>
+  <ul>
+    <li><a href="#paper-summary">Paper Summary Video</a></li>
+    <li><a href="#abstract">Abstract</a></li>
+    <li><a href="#video1">Summary Video of Hierarchical Adaptation Enables Robust Odometry Towards All-degraded Environments</a></li>
+    <li><a href="#video2">Robust odometry across diverse conditions with various sensors and robots</a></li>
+    <li><a href="#video3">Evaluation of 13 types of degradation in a single run</a></li>
+    <li><a href="#video4">Adaptive State Direction in a Long Corridor Environments</a></li>
+    <li><a href="#video5">Performance of IMU Pretrained Model</a></li>
+    <li><a href="#video6">Robust Performance in Smoke Scenario</a></li>
+    <li><a href="#video7">Multi-Robot State Estimation in Challenging Environments</a></li>
+    <li><a href="#video8">Robust Odometry Performance for Exploration Tasks Using Onboard Device</a></li>
+    <li><a href="#imu-odo">Learning-based IMU Odometry</a></li>
+    <li><a href="#online-adapt">Online Adaptation</a></li>
+    <li><a href="#BibTeX">BibTeX</a></li>
+  </ul>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toc = document.querySelector('.hero-toc');
+    if (!toc) return;
+
+    // Smooth scrolling for TOC clicks
+    toc.querySelectorAll('a[href^="#"]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        history.replaceState(null, '', `#${id}`);
+      });
+    });
+
+    const links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+    const sections = links
+      .map((a) => {
+        const id = a.getAttribute('href').slice(1);
+        return { id, link: a, el: document.getElementById(id) };
+      })
+      .filter((x) => x.el);
+
+    function updateActive() {
+      const y = window.scrollY + 140; // offset for navbar
+      let current = sections[0];
+      for (const s of sections) {
+        const top = s.el.getBoundingClientRect().top + window.scrollY;
+        if (top <= y) current = s;
+      }
+      links.forEach((a) => a.classList.remove('active'));
+      if (current) current.link.classList.add('active');
+    }
+
+    window.addEventListener('scroll', updateActive, { passive: true });
+    updateActive();
+  });
+</script>
+
+<div class="hero-main">
 <section class="hero">
     <div class="hero-body">
     <div class="container is-max-desktop">
@@ -105,12 +225,32 @@ mathjax: true
 </div>
 </section>
 
+<!-- Paper summary video (top) -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" id="paper-summary">Paper Summary Video</h2>
+        <div class="publication-video">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/4rnRwhJS714"
+            title="Paper Summary Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3" id="abstract">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             Robust odometry is essential for autonomous systems operating in complex and dynamic environments. Existing odometry systems often struggle with severe sensory degradations and extreme conditions such as smoke, sandstorms, snow, or low light, compromising both safety and functionality. To address these challenges, we present Super Odometry, a sensor fusion framework that dynamically adapts to varying levels of environmental degradation.
@@ -129,7 +269,7 @@ mathjax: true
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video1: Summary Video of <b>Hierarchical Adaptation Enables Robust Odometry Towards All-degraded Environments</b></h2>
+        <h2 class="title is-3" id="video1">Video1: Summary Video of <b>Hierarchical Adaptation Enables Robust Odometry Towards All-degraded Environments</b></h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/Q5or_9Tvwy8?list=PLosI3Br8CWkZlTRC8uIjTPo8onkRgswFe"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -141,7 +281,7 @@ mathjax: true
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video2: Robust odometry across diverse conditions with various sensors and robots</h2>
+        <h2 class="title is-3" id="video2">Video2: Robust odometry across diverse conditions with various sensors and robots</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/qvNUIT0R_HM?list=PLosI3Br8CWkZlTRC8uIjTPo8onkRgswFe"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -153,7 +293,7 @@ mathjax: true
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video3: Evaluation of 13 types of degradation in a single run</h2>
+        <h2 class="title is-3" id="video3">Video3: Evaluation of 13 types of degradation in a single run</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/8GMSLLNDnvs?list=PLosI3Br8CWkZlTRC8uIjTPo8onkRgswFe"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -165,7 +305,7 @@ mathjax: true
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video4: Adaptive State Direction in a Long Corridor Environments</h2>
+        <h2 class="title is-3" id="video4">Video4: Adaptive State Direction in a Long Corridor Environments</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/Wfw755BuXjQ?list=PLosI3Br8CWkZlTRC8uIjTPo8onkRgswFe"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -177,7 +317,7 @@ mathjax: true
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video5: Performance of IMU Pretrained Model</h2>
+        <h2 class="title is-3" id="video5">Video5: Performance of IMU Pretrained Model</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/zh3XF7ja43o?list=PLosI3Br8CWkZlTRC8uIjTPo8onkRgswFe"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -189,7 +329,7 @@ mathjax: true
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video6: Robust Performance in Smoke Scenario</h2>
+        <h2 class="title is-3" id="video6">Video6: Robust Performance in Smoke Scenario</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/km-ZMGyVzFA?list=PLosI3Br8CWkZlTRC8uIjTPo8onkRgswFe"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -201,7 +341,7 @@ mathjax: true
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video7: Multi-Robot State Estimation in Challenging Environments</h2>
+        <h2 class="title is-3" id="video7">Video7: Multi-Robot State Estimation in Challenging Environments</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/ENqY8wNZ5yw?list=PLosI3Br8CWkZlTRC8uIjTPo8onkRgswFe"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -213,7 +353,7 @@ mathjax: true
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video8: Robust Odometry Performance for Exploration Tasks Using Onboard Device</h2>
+        <h2 class="title is-3" id="video8">Video8: Robust Odometry Performance for Exploration Tasks Using Onboard Device</h2>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/jNScYUnP-TQ?list=PLosI3Br8CWkZlTRC8uIjTPo8onkRgswFe"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -228,7 +368,7 @@ mathjax: true
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Learning-based IMU Odometry</h2>
+        <h2 class="title is-3" id="imu-odo">Learning-based IMU Odometry</h2>
         <p>
         Our IMU pre-trained model trained from large datasets and generalized across various robotics Platforms. 
         Qualitative pose comparison shows our method (last column) achieves the highest accuracy against Ground Truth.
@@ -398,7 +538,7 @@ mathjax: true
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Online Adaptation of IMU Odometry</h2>
+        <h2 class="title is-3" id="online-adapt">Online Adaptation of IMU Odometry</h2>
         <p>
           Our learning-based IMU odometry an perform an online adaptation scheme, 
           enabling it to adjust to novel environments continuously in a self-supervised manner with real-time refinement.
@@ -431,4 +571,4 @@ mathjax: true
             </div>
 </section>
 
-</div> -->
+</div>
