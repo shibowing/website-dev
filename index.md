@@ -524,10 +524,10 @@ hero_link_text: See Our Code
     <h3>Content</h3>
     <hr>
     <ul>
-      <li><a href="#abstract">Abstract</a></li>
-      <li><a href="#method">The Evolution: Hierarchical Adaptation</a></li>
-      <li><a href="#results">Survival in All-Degraded Environments</a></li>
-      <li><a href="#generalization">Platform Generalization Matrix</a></li>
+      <li><a href="#abstract">Motivation</a></li>
+      <li><a href="#method">Method</a></li>
+      <li><a href="#results">Performance</a></li>
+      <li><a href="#generalization">Result</a></li>
       <li><a href="#bibtex">BibTeX</a></li>
     </ul>
   </div>
@@ -597,12 +597,13 @@ hero_link_text: See Our Code
 </section>
 
 <!-- Main Teaser Video -->
-<section class="section content-section">
+
+<section class="section content-section" id="summary-video">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/4rnRwhJS714" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/7yWl22Pa9Ew" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -618,6 +619,14 @@ hero_link_text: See Our Code
         <div class="content">
           <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
             <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Why Robotics Need Internal Sense ?</div>
+             <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <video muted autoplay loop playsinline controls style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;">
+                <source src="/img/science_robotics/motivation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
             <p style="font-size: 1.0rem; font-style: italic; color: #222; line-height: 1.6;">
               When we walk through smoke or darkness, our body still knows where we are. This innate sense of motion, guided by vestibular and inertial perception known as path integration, reveals a profound truth: <span style="color: #000; font-weight: 700;">robust motion tracking begins not with vision, but with the body's internal sensing of movement.</span>
             </p>
@@ -641,6 +650,14 @@ hero_link_text: See Our Code
         <div class="content">
           <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
             <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Reciprocal Fusion Strategy</div>
+                   <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <video muted autoplay loop playsinline controls style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;">
+                <source src="/img/science_robotics/method2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6;">
               Rather than treating sensors as static inputs, Super Odometry employs a reciprocal learning approach:
             </p>
@@ -652,17 +669,16 @@ hero_link_text: See Our Code
             </p>
           </div>
 
-          <div class="columns is-centered">
-            <div class="column is-four-fifths">
-              <video muted autoplay loop playsinline controls style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;">
-                <source src="/img/science_robotics/method2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
+     
           
           <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
             <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Hierarchical Adaptation Framework</div>
+
+               <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <img src="/img/science_robotics/method1.jpg" alt="Hierarchical Adaptation Framework" style="width: 120%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+            </div>
+          </div>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6;">
               To balance efficiency and robustness, the system uses a multi-level scheme to manage environmental stress:
             </p>
@@ -674,11 +690,7 @@ hero_link_text: See Our Code
             </p>
           </div>
 
-          <div class="columns is-centered">
-            <div class="column is-four-fifths">
-              <img src="/img/science_robotics/method1.jpg" alt="Hierarchical Adaptation Framework" style="width: 120%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
-            </div>
-          </div>
+       
         </div>
       </div>
     </div>
