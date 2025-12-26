@@ -612,37 +612,20 @@ hero_link_text: See Our Code
 <!-- Abstract Section -->
 <section class="section content-section" id="abstract">
   <div class="container">
-    <h2 class="title is-2" id="abstract-title">Abstract</h2>
+    <h2 class="title is-2" id="abstract-title">Motivation</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-          <h3 class="title is-4">The Motivation: Human-Inspired "Inner Sense"</h3>
-          <p>
-            Just as humans use vestibular and proprioceptive feedback to navigate in total darkness (path integration), <strong>Super Odometry</strong> introduces a learned inertial module. This serves as a robotic <strong>"inner sense,"</strong> providing a reliable motion prior when external sensors like LiDAR and cameras are blinded by smoke, fog, or darkness.
-          </p>
+        <div class="content">
+          <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
+            <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Why Robotics Need Internal Sense ?</div>
+            <p style="font-size: 1.0rem; font-style: italic; color: #222; line-height: 1.6;">
+              When we walk through smoke or darkness, our body still knows where we are. This innate sense of motion, guided by vestibular and inertial perception known as path integration, reveals a profound truth: <span style="color: #000; font-weight: 700;">robust motion tracking begins not with vision, but with the body's internal sensing of movement.</span>
+            </p>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+              Followed by this insight, we believe robotics systems also need a complementary sensing mechanism as "internal sense". Specifically, we developed a learned inertial module that learns robotics internal dynaimics and provides motion prior as fallback solution when external sensors like LiDAR and camera become unreliable. A key design goal behind Super Odometry is to unify resilience, adaptation, and generalization within a single odometry system.
+            </p>
+          </div>
 
-          <h3 class="title is-4">Reciprocal Fusion Strategy</h3>
-          <p>
-            Rather than treating sensors as static inputs, Super Odometry employs a reciprocal learning approach:
-          </p>
-          <ul>
-            <li><strong>Nominal Conditions:</strong> Traditional model-based estimators refine the inertial network with high-accuracy pose data, allowing the system to adapt online.</li>
-            <li><strong>Degraded Conditions:</strong> The learned IMU network takes over, leveraging captured motion dynamics to maintain estimation when external perception fails.</li>
-          </ul>
-
-          <h3 class="title is-4">Hierarchical Adaptation Framework</h3>
-          <p>
-            To balance efficiency and robustness, the system uses a multi-level scheme to manage environmental stress:
-          </p>
-          <ul>
-            <li><strong>Lower Levels:</strong> Provide rapid, resource-efficient adjustments for mild disturbances.</li>
-            <li><strong>Higher Levels:</strong> Trigger complex, computationally intensive interventions for state estimation recovery during severe failure.</li>
-          </ul>
-
-          <h3 class="title is-4">Key Value</h3>
-          <p>
-            This tiered design ensures the robot remains computationally efficient under normal conditions while staying robust under extreme scenarios, allowing it to generalize across diverse aerial, wheeled, and legged platforms.
-          </p>
         </div>
       </div>
     </div>
@@ -652,21 +635,42 @@ hero_link_text: See Our Code
 <!-- Methodology Section -->
 <section class="section content-section" id="method">
   <div class="container">
-    <h2 class="title is-2" style="text-align: left;">The Evolution: Hierarchical Adaptation</h2>
+    <h2 class="title is-2" style="text-align: left;">Method</h2>
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
       <div class="method-card">
-        <span class="method-level">L1</span> <strong>Adaptive Feature Selection:</strong> Real-time rejection of degraded Lidar/Visual landmarks using spatial-temporal consistency.
+        <span class="method-level">Reciprocal Fusion Strategy</span> <p>
+            Rather than treating sensors as static inputs, Super Odometry employs a reciprocal learning approach:
+          </p>
+          <ul>
+            <li><strong>Nominal Conditions:</strong> Traditional model-based estimators refine the inertial network with high-accuracy pose data, allowing the system to adapt online.</li>
+            <li><strong>Degraded Conditions:</strong> The learned IMU network takes over, leveraging captured motion dynamics to maintain estimation when external perception fails.</li>
+          </ul>
       </div>
-      <div class="method-card">
-        <span class="method-level">L2</span> <strong>State Direction Adaptation:</strong> Constraining optimization to reliable geometric axes in degenerate environments like long corridors.
+
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <video muted autoplay loop playsinline controls style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;">
+            <source src="/img/science_robotics/method2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
+      
       <div class="method-card">
-        <span class="method-level">L3</span> <strong>Estimation Engine Selection:</strong> Intelligent health-based switching between VIO, LIO, and Wheel-Inertial engines to maintain lock.
+        <span class="method-level">Hierarchical Adaptation Framework</span> <p>
+            To balance efficiency and robustness, the system uses a multi-level scheme to manage environmental stress:
+          </p>
+          <ul>
+            <li><strong>Lower Levels:</strong> Provide rapid, resource-efficient adjustments for mild disturbances.</li>
+            <li><strong>Higher Levels:</strong> Trigger complex, computationally intensive interventions for state estimation recovery during severe failure.</li>
+          </ul>
       </div>
-      <div class="method-card">
-        <span class="method-level">L4</span> <strong>Learned IMU Prior:</strong> A data-driven fallback providing robust motion estimates during complete sensor blackout (smoke, darkness).
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <img src="/img/science_robotics/method1.jpg" alt="Hierarchical Adaptation Framework" style="width: 120%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+        </div>
       </div>
     </div>
   </div>
