@@ -529,6 +529,7 @@ hero_link_text: See Our Code
       <li><a href="#method">Method</a></li>
       <li><a href="#highlights">Highlights</a></li>
       <li><a href="#results">Experiment Result</a></li>
+      <li><a href="#limitations">Limitations & Future Work</a></li>
       <li><a href="#generalization">Acknowledgement</a></li>
       <li><a href="#bibtex">Citation</a></li>
     </ul>
@@ -840,6 +841,33 @@ hero_link_text: See Our Code
     </div>
   </div>
 </section>
+
+<!-- Limitations and Future Work Section -->
+<section class="section content-section" id="limitations">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: left;">Limitations & Future Work</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
+            <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Improving Generalizability of the IMU Model</div>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+              The learning-based IMU model requires faster adaptation to new robots and environments. Despite generalizing well across platforms, it struggles with unseen domains because of distribution gaps between training and testing data. Incorporating both real-world and simulated IMU data could reduce this gap and improve generalization.
+            </p>
+          </div>
+
+          <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
+            <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Online Learning & Adaptive Switching</div>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+              Better online learning techniques are still required to achieve a balance between overfitting and catastrophic forgetting problems. We also need better strategies to achieve the switch scheme between learning IMU odometry and factor graph optimization. The current solution is a little heuristic, and we hope to convert this hierarchical adaptation into a completely learning-based solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
 
 <!-- Generalization Section -->
 <section class="section content-section" id="generalization">
