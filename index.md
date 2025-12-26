@@ -527,6 +527,7 @@ hero_link_text: See Our Code
       <li><a href="#summary-video">Summary</a></li>
       <li><a href="#abstract">Motivation</a></li>
       <li><a href="#method">Method</a></li>
+      <li><a href="#highlights">Highlights</a></li>
       <li><a href="#results">Experiment Result</a></li>
       <li><a href="#generalization">Acknowledgement</a></li>
       <li><a href="#bibtex">Citation</a></li>
@@ -748,6 +749,45 @@ hero_link_text: See Our Code
     </div>
   </div>
 </section>
+
+<!-- Highlights Section -->
+<section class="section content-section" id="highlights" style="padding-top: 1rem !important;">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: left;">Highlights</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content">
+          <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
+            <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">13 Types of Degradation</div>
+            <div class="columns is-centered">
+              <div class="column is-four-fifths">
+                <img src="/img/science_robotics/13_degradation.png" alt="13 Types of Degradation" style="width: 100%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+              </div>
+            </div>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+              Super Odometry is evaluated under 13 consecutive types of hardware and environmental degradation in a single run including visual degradation, geometric degradation, mixed degradation and complete degradation. For more detail, please refer to <a href="https://www.youtube.com/watch?v=8GMSLLNDnvs" target="_blank" style="color: #76b900; text-decoration: underline;">this video</a>.
+            </p>
+          </div>
+
+          <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
+            <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Performance Under 13 Degradation</div>
+            <div class="columns is-centered">
+              <div class="column is-four-fifths">
+                <img src="/img/science_robotics/13_degradation_result.png" alt="13 Degradation Results" style="width: 100%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+              </div>
+            </div>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+              The color-coded trajectory depicts our estimated odometry of a legged robot navigating through more than 13 complex degradation scenarios. Despite these difficulties, the final end-point drift was only 20 cm over a total distance of 2966 m.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
   
 <!-- Results Section -->
