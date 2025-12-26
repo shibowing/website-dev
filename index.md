@@ -524,11 +524,12 @@ hero_link_text: See Our Code
     <h3>Content</h3>
     <hr>
     <ul>
+      <li><a href="#summary-video">Summary</a></li>
       <li><a href="#abstract">Motivation</a></li>
       <li><a href="#method">Method</a></li>
-      <li><a href="#results">Performance</a></li>
-      <li><a href="#generalization">Result</a></li>
-      <li><a href="#bibtex">BibTeX</a></li>
+      <li><a href="#results">Experiment Result</a></li>
+      <li><a href="#generalization">Acknowledgement</a></li>
+      <li><a href="#bibtex">Citation</a></li>
     </ul>
   </div>
 
@@ -558,7 +559,7 @@ hero_link_text: See Our Code
         <div class="column has-text-centered">
     <div class="publication-links">
             <span class="link-block">
-              <a href="https://arxiv.org/abs/2104.14938" class="external-link button is-normal is-rounded is-dark" target="_blank">
+              <a href="https://www.science.org/stoken/author-tokens/ST-3125/full" class="external-link button is-normal is-rounded is-dark" target="_blank">
                 <span class="icon">
                   <i class="fas fa-file-pdf"></i>
                 </span>
@@ -566,15 +567,15 @@ hero_link_text: See Our Code
               </a>
             </span>
             <span class="link-block">
-              <a href="https://arxiv.org/abs/2104.14938" class="external-link button is-normal is-rounded is-dark" target="_blank">
+              <a href="https://x.com/ShiboZhaoSLAM" class="external-link button is-normal is-rounded is-dark" target="_blank">
                 <span class="icon">
                   <i class="ai ai-arxiv"></i>
                 </span>
-                <span>ArXiv</span>
+                <span>Twitter</span>
               </a>
             </span>
             <span class="link-block">
-              <a href="https://www.youtube.com/watch?v=4rnRwhJS714" class="external-link button is-normal is-rounded is-dark" target="_blank">
+              <a href="https://youtu.be/xpRZGgGaFRA" class="external-link button is-normal is-rounded is-dark" target="_blank">
                 <span class="icon">
                   <i class="fab fa-youtube"></i>
                 </span>
@@ -586,7 +587,15 @@ hero_link_text: See Our Code
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
-                <span>Code</span>
+                <span>Code Stay Tuned</span>
+              </a>
+            </span>
+            <span class="link-block">
+              <a href="#bibtex" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-quote-left"></i>
+                </span>
+                <span>Citation</span>
               </a>
             </span>
           </div>
@@ -596,19 +605,42 @@ hero_link_text: See Our Code
   </div>
 </section>
 
-<!-- Main Teaser Video -->
-
-<section class="section content-section" id="summary-video">
+<!-- Summary Video Section -->
+<section class="section content-section" id="summary-video" style="padding-top: 1rem !important;">
   <div class="container">
+    <h2 class="title is-2" style="text-align: left; margin-bottom: 2rem;">Summary</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/7yWl22Pa9Ew" allowfullscreen></iframe>
+        <div class="columns is-multiline">
+          <div class="column is-12">
+            <h3 class="title is-4" style="text-align: center; margin-bottom: 1rem;">Performance Summary</h3>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/7yWl22Pa9Ew" allowfullscreen></iframe>
+            </div>
+          </div>
+           <div style="text-align: center; margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 15px; border-left: 5px solid #76b900;">
+          <p style="font-size: 1.2rem; color: #333; font-style: italic; font-weight: 500; line-height: 1.6;">
+            "The goal of super odometry is to achieve resilience, adaptation, and generalization across all-degraded environments"
+          </p>
+        </div>
+          <div class="column is-12">
+            <h3 class="title is-4" style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">Method Summary</h3>
+  <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/xpRZGgGaFRA" allowfullscreen></iframe>
+            </div>
+          </div>
+
+           <div style="text-align: center; margin-top: 1rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; border-left: 5px solid #76b900;">
+          <p style="font-size: 1.2rem; color: #333; font-style: italic; font-weight: 500; line-height: 1.6;">
+            "For decades, odometry and SLAM have relied heavily on external sensors such as cameras and LiDAR. Super Odometry rethinks this paradigm by elevating inertial sensing to the core of state estimation, enabling robots to maintain reliable motion awareness even under extreme motion and severe perception degradation".
+          </p>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Abstract Section -->
 <section class="section content-section" id="abstract">
@@ -659,14 +691,16 @@ hero_link_text: See Our Code
             </div>
           </div>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6;">
-              Rather than treating sensors as static inputs, Super Odometry employs a reciprocal learning approach:
+            We propose a reciprocal fusion that combines traditional model-based odometry with the learned inertial module. 
             </p>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
-              <strong>Nominal Conditions:</strong> Traditional model-based estimators refine the inertial network with high-accuracy pose data, allowing the system to adapt online.
+              <strong>Nominal Conditions:</strong> Traditional model-based estimators refine the inertial network with high-accuracy pose data, allowing the system to learn motion prior of robotics.
             </p>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
-              <strong>Degraded Conditions:</strong> The learned IMU network takes over, leveraging captured motion dynamics to maintain estimation when external perception fails.
+              <strong>Degraded Conditions:</strong> The learned IMU network take over, leveraging captured motion dynamics to maintain reliable state estimation when external perception fails.
             </p>
+              
+            In this way, robustness becomes adaptive, evolving with the robot’s operating conditions.
           </div>
 
      
@@ -680,18 +714,21 @@ hero_link_text: See Our Code
             </div>
           </div>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6;">
-              To balance efficiency and robustness, the system uses a multi-level scheme to manage environmental stress:
+              To balance efficiency and robustness, the system uses a multi-level scheme to manage environmental degradation:
             </p>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
               <strong>Lower Levels:</strong> Provide rapid, resource-efficient adjustments for mild disturbances.
             </p>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
-              <strong>Higher Levels:</strong> Trigger complex, computationally intensive interventions for state estimation recovery during severe failure.
+              <strong>Higher Levels:</strong>  Provide more complex and computationally intensive interventions to support state estimation recovery.
             </p>
-          </div>
+             <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+            This layered design enables the system to maintain efficiency under nominal conditions and robustness under extreme scenarios to meet the demands of diverse environments.
+             </p>
+      </div>
 
        
-        </div>
+      </div>
       </div>
     </div>
   </div>
@@ -700,76 +737,76 @@ hero_link_text: See Our Code
 <!-- Results Section -->
 <section class="section content-section" id="results">
   <div class="container">
-    <h2 class="title is-2" style="text-align: left;">Survival in All-Degraded Environments</h2>
+    <h2 class="title is-2" style="text-align: left;">Experiment Results</h2>
   <div class="columns is-multiline">
     <div class="column is-6">
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/km-ZMGyVzFA"></iframe>
+          <iframe src="https://www.youtube.com/embed/8GMSLLNDnvs" allowfullscreen></iframe>
+        </div>
+        <p class="is-size-6 has-text-centered"><strong>Stress Test:</strong> Evaluation of 13 types of degradation in a single run.</p>
       </div>
-      <p class="is-size-6 has-text-centered"><strong>Obscurants:</strong> Navigating through thick smoke where traditional exteroceptive sensors fail.</p>
+      <div class="column is-6">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/qvNUIT0R_HM" allowfullscreen></iframe>
+        </div>
+        <p class="is-size-6 has-text-centered"><strong>Generalization: </strong>Robust odometry across diverse conditions with various sensors and robots.</p>
     </div>
     <div class="column is-6">
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/Wfw755BuXjQ"></iframe>
+          <iframe src="https://www.youtube.com/embed/Wfw755BuXjQ" allowfullscreen></iframe>
+        </div>
+        <p class="is-size-6 has-text-centered"><strong>Geometry Degradation:</strong> State-direction adaptation in long corridors.</p>
       </div>
-      <p class="is-size-6 has-text-centered"><strong>Geometry:</strong> State-direction adaptation in infinite, featureless corridors.</p>
+      <div class="column is-6">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/zh3XF7ja43o" allowfullscreen></iframe>
+        </div>
+        <p class="is-size-6 has-text-centered"><strong>Learning Inertial Network:</strong> Performance of IMU Pretrained Model.</p>
     </div>
     <div class="column is-6">
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/ENqY8wNZ5yw"></iframe>
+          <iframe src="https://www.youtube.com/embed/km-ZMGyVzFA" allowfullscreen></iframe>
       </div>
-      <p class="is-size-6 has-text-centered"><strong>Multi-Robot:</strong> Collaborative SO2 deployment in diverse DARPA SubT environments.</p>
+        <p class="is-size-6 has-text-centered"><strong>Fallback Solution:</strong> Robust Performance in Smoke Scenario</p>
     </div>
     <div class="column is-6">
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/8GMSLLNDnvs"></iframe>
+          <iframe src="https://www.youtube.com/embed/jNScYUnP-TQ" allowfullscreen></iframe>
+        </div>
+        <p class="is-size-6 has-text-centered"><strong>Onboard Performance:</strong> Robust Odometry Performance for Exploration Tasks Using Onboard Device</p>
       </div>
-      <p class="is-size-6 has-text-centered"><strong>Stress Test:</strong> Evaluating 13 consecutive types of hardware and environmental failure in a single run.</p>
     </div>
-  </div>
   </div>
 </section>
 
 <!-- Generalization Section -->
 <section class="section content-section" id="generalization">
   <div class="container">
-    <h2 class="title is-2" style="text-align: left;">Platform Generalization Matrix</h2>
+    <h2 class="title is-2" style="text-align: left;">Acknowledgement</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-  <p class="has-text-centered" style="margin-bottom: 2rem;">Comparing SO2 against domain-specific experts across heterogeneous robotics platforms.</p>
-  <div class="table-container" style="margin-bottom: 4rem;">
-    <table class="table is-bordered is-striped is-fullwidth is-hoverable">
-      <thead>
-        <tr class="is-selected" style="background: #1a1a1a;">
-          <th>Robotic Platform</th>
-          <th>Domain Expert Model</th>
-          <th><strong>Super Odometry 2 (Ours)</strong></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><i class="fas fa-car"></i>&nbsp; Wheeled UGV</td>
-          <td>AI-IMU (Relatively Robust)</td>
-          <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (High Fidelity)</strong></td>
-        </tr>
-        <tr>
-          <td><i class="fas fa-dog"></i>&nbsp; Legged Robot</td>
-          <td>RNIN (Robust in Legged)</td>
-          <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (Cross-Domain)</strong></td>
-        </tr>
-        <tr>
-          <td><i class="fas fa-plane"></i>&nbsp; Aerial UAV</td>
-          <td>IMO (Robust in Flight)</td>
-          <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (High Dynamics)</strong></td>
-        </tr>
-        <tr>
-          <td><i class="fas fa-user"></i>&nbsp; Handheld/Human</td>
-          <td>TLIO (Inertial-only)</td>
-          <td><span class="has-text-success"><i class="fas fa-check-circle"></i></span> <strong>Robust (General Motion)</strong></td>
-        </tr>
-      </tbody>
-    </table>
+        <div class="content" style="font-size: 1.0rem; color: #222; line-height: 1.8;">
+          <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 5px solid #76b900; margin-bottom: 2rem;">
+            <h3 class="title is-4" style="color: #333; margin-bottom: 1rem;">Relation of Previous Work</h3>
+            <p style="margin-bottom: 0;">
+              The current journal version of Super Odometry builds upon the previously released <a href="/superodom_v1#acknowledgments" style="color: #76b900; text-decoration: underline; font-weight: 600;">Super Odometry v1</a> system. Readers are referred to <a href="/superodom_v1#acknowledgments" style="color: #76b900; text-decoration: underline; font-weight: 600;">Super Odometry v1</a> and <a href="/superloc#acknowledgments" style="color: #76b900; text-decoration: underline; font-weight: 600;">SuperLoc</a> for additional background and implementation details.
+            </p>
   </div>
+
+          <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 5px solid #76b900; margin-bottom: 2rem;">
+            <h3 class="title is-4" style="color: #333; margin-bottom: 1rem;">Manuscript Reviewers</h3>
+            <p style="margin-bottom: 0;">
+              We thank <strong>Yuheng Qiu</strong>, <strong>Michael Kaess</strong>, <strong>Sudharshan Suresh</strong>, and <strong>Shubham Tulsiani</strong> for their valuable suggestions for the manuscript.
+            </p>
+          </div>
+          
+          <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 5px solid #76b900;">
+            <h3 class="title is-4" style="color: #333; margin-bottom: 1rem;">Real-World Experiments</h3>
+            <p style="margin-bottom: 0;">
+              We sincerely appreciate the work of <strong>Honghao Zhu</strong>, <strong>Rushan Jiang</strong>, <strong>Haoxiang Sun</strong>, <strong>Tianhao Wu</strong>, <strong>Yuanjun Gao</strong>, <strong>Damanpreet Singh</strong>, <strong>Lucas Nogueira</strong>, <strong>Guofei Chen</strong>, <strong>Parv Maheshwari</strong>, <strong>Matthew Sivaprakasam</strong>, <strong>Sam Triest</strong>, <strong>Micah Nye</strong>, <strong>Yifei Liu</strong>, <strong>Steve Willits</strong>, <strong>John Keller</strong>, <strong>Jay Karhade</strong>, <strong>Yao He</strong>, <strong>Mukai Yu</strong>, <strong>Andrew Jong</strong>, and <strong>John Rogers</strong> for their help in real-world experiments.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -780,32 +817,37 @@ hero_link_text: See Our Code
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-2" style="text-align: left;">BibTeX</h2>
-  <pre style="background: #2d2d2d; color: #f8f8f2; padding: 1.5rem; border-radius: 10px; font-size: 0.9rem; line-height: 1.5; border: 1px solid #111;"><code>@article{zhao2024Hero,
-  author    = {Shibo Zhao, Sifan Zhou, Yuchen Zhang, Ji Zhang, Chen Wang, Wenshan Wang and Sebastian Scherer},
-  title     = {Hierarchical Adaptation Enables Robust Odometry Towards All-degraded Environments},
-  journal   = {IEEE Transactions on Robotics (Under Review)},
-  year      = {2024},
-}</code></pre>
+        <h2 class="title is-2" style="text-align:;">Citation</h2>
+        <pre style="background: #2d2d2d; color: #f8f8f2; padding: 1.5rem; border-radius: 10px; font-size: 0.9rem; line-height: 1.5; border: 1px solid #111; overflow-x: auto;"><code>
+  @article{zhao2025resilient,
+  doi = {10.1126/scirobotics.adv1818},
+  author = {Shibo Zhao and Sifan Zhou and Yuchen Zhang and Ji Zhang and Chen Wang and Wenshan Wang and Sebastian Scherer},
+  title = {Resilient odometry via hierarchical adaptation},
+  journal = {Science Robotics},
+  volume = {10},
+  number = {109},
+  pages = {eadv1818},
+  year = {2025},
+  url = {https://www.science.org/doi/abs/10.1126/scirobotics.adv1818},
+  eprint = {https://www.science.org/doi/pdf/10.1126/scirobotics.adv1818}
+}
+
+
+@inproceedings{zhao2021super,
+  title={Super odometry: IMU-centric LiDAR-visual-inertial estimator for challenging environments},
+  author={Zhao, Shibo and Zhang, Hengrui and Wang, Peng and Nogueira, Lucas and Scherer, Sebastian},
+  booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={8729--8736},
+  year={2021},
+  organization={IEEE}
+}
+
+</code></pre>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section class="section content-section" id="contact">
-  <div class="container">
-    <h2 class="title is-2" style="text-align: left;">Stay Updated</h2>
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-  <div class="has-text-centered">
-    <p>If you want to get the latest updates from Super Odometry, feel free to sign up our mail list!</p>
-    <iframe src="https://forms.gle/g9pqfxsUfDuTAQp36" width="100%" height="684" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- JavaScript for TOC Scroll Behavior -->
 <script>

@@ -9,6 +9,8 @@
       link: /iccv23_challenge_LiI
     - name: Sensor Fusion Track
       link: /iccv23_challenge_Mul
+- name: SuperOdomV1
+  link: /superodom_v1
 - name: TP-TIO
   link: /tptio
 - name: SuperLoc
