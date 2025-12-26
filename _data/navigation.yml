@@ -17,8 +17,8 @@
   link: /superloc
 - name: TartanIMU
   link: /tartanimu
-- name: HERO
-  link: /hero
+# - name: HERO
+#   link: /hero
 # - name: SuperLoc_supp
 #   link: /superloc_supplementary
 # - name: Super Loop
