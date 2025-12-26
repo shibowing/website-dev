@@ -623,8 +623,8 @@ hero_link_text: See Our Code
             </p>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
               Followed by this insight, we believe robotics systems also need a complementary sensing mechanism as "internal sense". Specifically, we developed a learned inertial module that learns robotics internal dynaimics and provides motion prior as fallback solution when external sensors like LiDAR and camera become unreliable. A key design goal behind Super Odometry is to unify resilience, adaptation, and generalization within a single odometry system.
-            </p>
-          </div>
+    </p>
+  </div>
 
         </div>
       </div>
@@ -636,48 +636,55 @@ hero_link_text: See Our Code
 <section class="section content-section" id="method">
   <div class="container">
     <h2 class="title is-2" style="text-align: left;">Method</h2>
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-      <div class="method-card">
-        <span class="method-level">Reciprocal Fusion Strategy</span> <p>
-            Rather than treating sensors as static inputs, Super Odometry employs a reciprocal learning approach:
-          </p>
-          <ul>
-            <li><strong>Nominal Conditions:</strong> Traditional model-based estimators refine the inertial network with high-accuracy pose data, allowing the system to adapt online.</li>
-            <li><strong>Degraded Conditions:</strong> The learned IMU network takes over, leveraging captured motion dynamics to maintain estimation when external perception fails.</li>
-          </ul>
-      </div>
+        <div class="content">
+          <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
+            <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Reciprocal Fusion Strategy</div>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6;">
+              Rather than treating sensors as static inputs, Super Odometry employs a reciprocal learning approach:
+            </p>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+              <strong>Nominal Conditions:</strong> Traditional model-based estimators refine the inertial network with high-accuracy pose data, allowing the system to adapt online.
+            </p>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+              <strong>Degraded Conditions:</strong> The learned IMU network takes over, leveraging captured motion dynamics to maintain estimation when external perception fails.
+            </p>
+          </div>
 
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
-          <video muted autoplay loop playsinline controls style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;">
-            <source src="/img/science_robotics/method2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <video muted autoplay loop playsinline controls style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;">
+                <source src="/img/science_robotics/method2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          
+          <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
+            <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Hierarchical Adaptation Framework</div>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6;">
+              To balance efficiency and robustness, the system uses a multi-level scheme to manage environmental stress:
+            </p>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+              <strong>Lower Levels:</strong> Provide rapid, resource-efficient adjustments for mild disturbances.
+            </p>
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+              <strong>Higher Levels:</strong> Trigger complex, computationally intensive interventions for state estimation recovery during severe failure.
+            </p>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column is-four-fifths">
+              <img src="/img/science_robotics/method1.jpg" alt="Hierarchical Adaptation Framework" style="width: 120%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
+            </div>
+          </div>
         </div>
       </div>
-      
-      <div class="method-card">
-        <span class="method-level">Hierarchical Adaptation Framework</span> <p>
-            To balance efficiency and robustness, the system uses a multi-level scheme to manage environmental stress:
-          </p>
-          <ul>
-            <li><strong>Lower Levels:</strong> Provide rapid, resource-efficient adjustments for mild disturbances.</li>
-            <li><strong>Higher Levels:</strong> Trigger complex, computationally intensive interventions for state estimation recovery during severe failure.</li>
-          </ul>
-      </div>
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
-          <img src="/img/science_robotics/method1.jpg" alt="Hierarchical Adaptation Framework" style="width: 120%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
-        </div>
-      </div>
-    </div>
-  </div>
     </div>
   </div>
 </section>
-
+  
 <!-- Results Section -->
 <section class="section content-section" id="results">
   <div class="container">
