@@ -680,7 +680,7 @@ hero_link_text: See Our Code
                 preload="metadata"
                 style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;"
                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                <source src="/img/science_robotics/motivation.mp4" type="video/mp4">
+                <source src="/img/science_robotics/motivation2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <p style="display:none; color: #cc0000; text-align: center; padding: 1rem;">Video failed to load. Please check your connection or try refreshing the page.</p>
