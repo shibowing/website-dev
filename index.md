@@ -607,6 +607,20 @@ hero_link_text: See Our Code
   </div>
 </section>
 
+<!-- News Section -->
+<section class="section content-section" id="news" style="padding-top: 1rem !important;">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-10">
+        <img src="/img/science_robotics/science_feature_image.png" alt="Science Robotics Feature" style="width: 100%; border-radius:10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);" />
+        <p style="font-size: 1.3rem; color: #222; line-height: 1.5; text-align: center; margin-top: 1.5rem;">
+          Super Odometry selected as a <strong style="color: #76b900;">top feature article</strong> on <strong>Science Robotics</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Summary Video Section -->
 <section class="section content-section" id="summary-video" style="padding-top: 1rem !important;">
   <div class="container">
@@ -655,10 +669,19 @@ hero_link_text: See Our Code
             <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Why Robotics Need Internal Sense ?</div>
              <div class="columns is-centered">
             <div class="column is-four-fifths">
-              <video muted autoplay loop playsinline controls style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;">
+              <video 
+                muted 
+                autoplay 
+                loop 
+                playsinline 
+                controls 
+                preload="metadata"
+                style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                 <source src="/img/science_robotics/motivation.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
+              <p style="display:none; color: #cc0000; text-align: center; padding: 1rem;">Video failed to load. Please check your connection or try refreshing the page.</p>
             </div>
           </div>
             <p style="font-size: 1.0rem; font-style: italic; color: #222; line-height: 1.6;">
@@ -686,10 +709,19 @@ hero_link_text: See Our Code
             <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Reciprocal Fusion Strategy</div>
                    <div class="columns is-centered">
             <div class="column is-four-fifths">
-              <video muted autoplay loop playsinline controls style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;">
+              <video 
+                muted 
+                autoplay 
+                loop 
+                playsinline 
+                controls 
+                preload="metadata"
+                style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                 <source src="/img/science_robotics/method2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
+              <p style="display:none; color: #cc0000; text-align: center; padding: 1rem;">Video failed to load. Please check your connection or try refreshing the page.</p>
             </div>
           </div>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6;">
@@ -734,10 +766,19 @@ hero_link_text: See Our Code
             <div style="position: absolute; top: -15px; left: 30px; background: #76b900; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Heterogeneous Learning-Based Inertial Odometry</div>
             <div class="columns is-centered">
               <div class="column is-four-fifths">
-                <video muted autoplay loop playsinline controls style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;">
+                <video 
+                  muted 
+                  autoplay 
+                  loop 
+                  playsinline 
+                  controls 
+                  preload="metadata"
+                  style="border-radius:10px; background-color: white; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%;"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                   <source src="/img/science_robotics/learning_imu_odometry_intro.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
+                <p style="display:none; color: #cc0000; text-align: center; padding: 1rem;">Video failed to load. Please check your connection or try refreshing the page.</p>
               </div>
             </div>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
