@@ -524,6 +524,7 @@ hero_link_text: See Our Code
     <h3>Content</h3>
     <hr>
     <ul>
+     <li><a href="#news">News</a></li>
       <li><a href="#summary-video">Summary</a></li>
       <li><a href="#abstract">Motivation</a></li>
       <li><a href="#method">Method</a></li>
@@ -609,6 +610,7 @@ hero_link_text: See Our Code
 
 <!-- News Section -->
 <section class="section content-section" id="news" style="padding-top: 1rem !important;">
+ <h2 class="title is-2" style="text-align: left; margin-bottom: 2rem;">News</h2>
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-10">
