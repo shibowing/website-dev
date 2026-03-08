@@ -407,6 +407,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       <li><a href="#content">Content of the Workshop</a></li>
       <li><a href="#program">Program</a></li>
       <li><a href="#organizers">Organizers</a></li>
+      <li><a href="#student-organizers">Student Organizers</a></li>
       <li><a href="#attendance">Estimated Attendance</a></li>
       <li><a href="#structure">Structure of the Event</a></li>
       <li><a href="#format">Format</a></li>
@@ -610,15 +611,15 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       <div class="column is-four-fifths">
         <div class="speaker-grid">
           <div class="speaker-card">
-            <img src="/img/IROS_2026_tab/Guanya_Commencement.jpg" alt="Guanya Shi"/>
-            <p class="speaker-name"><a href="https://www.gshi.me/">Guanya Shi</a></p>
-            <p class="speaker-role">Assistant Professor, Robotics Institute</p>
-            <p class="speaker-affiliation">Carnegie Mellon University</p>
-          </div>
-          <div class="speaker-card">
             <img src="/img/team/shibozNew.png" alt="Shibo Zhao"/>
             <p class="speaker-name"><a href="https://shibowing.github.io/">Shibo Zhao</a></p>
             <p class="speaker-role">Ph.D. Candidate, Robotics Institute</p>
+            <p class="speaker-affiliation">Carnegie Mellon University</p>
+          </div>
+          <div class="speaker-card">
+            <img src="/img/IROS_2026_tab/Guanya_Commencement.jpg" alt="Guanya Shi"/>
+            <p class="speaker-name"><a href="https://www.gshi.me/">Guanya Shi</a></p>
+            <p class="speaker-role">Assistant Professor, Robotics Institute</p>
             <p class="speaker-affiliation">Carnegie Mellon University</p>
           </div>
           <div class="speaker-card">
@@ -649,6 +650,37 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <img src="/img/invited_speakers/basti.jpg" alt="Sebastian Scherer"/>
             <p class="speaker-name"><a href="https://www.ri.cmu.edu/ri-faculty/sebastian-scherer/">Sebastian Scherer</a></p>
             <p class="speaker-role">Research Professor, Robotics Institute</p>
+            <p class="speaker-affiliation">Carnegie Mellon University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Student Organizers Section -->
+<section class="section content-section" id="student-organizers" style="padding-top: 1rem !important;">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: left; margin-bottom: 2rem;">Student Organizers</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="speaker-grid">
+          <div class="speaker-card">
+            <img src="/img/IROS_2026_tab/yuheng2024.jpg" alt="Yuheng Qiu"/>
+            <p class="speaker-name"><a href="http://yuhengqiu.com/">Yuheng Qiu</a></p>
+            <p class="speaker-role">Ph.D. Student</p>
+            <p class="speaker-affiliation">Carnegie Mellon University</p>
+          </div>
+          <div class="speaker-card">
+            <img src="/img/IROS_2026_tab/Sifan Zhou.jpg" alt="Sifan Zhou"/>
+            <p class="speaker-name"><a href="https://scholar.google.com/citations?hl=en&user=kSdqoi0AAAAJ">Sifan Zhou</a></p>
+            <p class="speaker-role">Ph.D. Student</p>
+            <p class="speaker-affiliation">Carnegie Mellon University</p>
+          </div>
+          <div class="speaker-card">
+            <img src="/img/IROS_2026_tab/junbin.jpg" alt="Junbin Yuan"/>
+            <p class="speaker-name"><a href="https://theairlab.org/team/junbiny/">Junbin Yuan</a></p>
+            <p class="speaker-role">Ph.D. Student</p>
             <p class="speaker-affiliation">Carnegie Mellon University</p>
           </div>
         </div>
