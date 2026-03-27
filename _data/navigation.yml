@@ -1,7 +1,17 @@
-- name: IROS'26 Workshop
+- name: Super Odometry
+  link: /
+  dropdown:
+    - name: Home
+      link: /
+    - name: SuperOdomV1
+      link: /superodom_v1
+- name: Workshop
   link: /interoception
-- name: ICCV Workshop
-  link: /iccv23
+  dropdown:
+    - name: IROS'26 Workshop
+      link: /interoception
+    - name: ICCV Workshop
+      link: /iccv23
 - name: ICCV SLAM Challenge
   link: /datasets
   dropdown:
@@ -11,8 +21,6 @@
       link: /iccv23_challenge_LiI
     - name: Sensor Fusion Track
       link: /iccv23_challenge_Mul
-- name: SuperOdomV1
-  link: /superodom_v1
 - name: TP-TIO
   link: /tptio
 - name: SuperLoc
