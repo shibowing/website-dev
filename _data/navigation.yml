@@ -27,8 +27,8 @@
   link: /superloc
 - name: TartanIMU
   link: /tartanimu
-- name: SuperMap
-  link: /supermap
+# - name: SuperMap
+#   link: /supermap
 # - name: HERO
 #   link: /hero
 # - name: SuperLoc_supp
