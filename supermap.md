@@ -146,24 +146,64 @@ hero_image: /img/place_holder_01.png
 
   /* TOC */
   .toc {
-    width: 260px; position: fixed; top: 100px; display: none; z-index: 1000;
-    max-height: calc(100vh - 200px); overflow-y: auto; padding-right: 10px;
-    scrollbar-width: none; opacity: 0; transition: opacity 0.3s;
+    width: 280px;
+    font-family: 'Google Sans', sans-serif;
+    position: fixed;
+    top: 100px;
+    display: none;
+    z-index: 1000;
+    max-height: calc(100vh - 280px);
+    overflow-y: auto;
+    padding-right: 10px;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
-  @media (min-width: 1500px) { .toc.show { left: max(20px, calc(25vw - 380px)); display: block !important; opacity: 1; } }
+  @media (min-width: 1400px) {
+    .toc.show {
+      left: max(20px, calc(25vw - 400px));
+      display: block !important;
+      opacity: 1;
+    }
+  }
   .toc::-webkit-scrollbar { display: none; }
-  .toc h3 { font-size: 1.1rem; margin: 0 0 8px 0; }
-  .toc hr { border: 0; height: 1px; background: #ccc; margin-bottom: 12px; }
+  .toc h3 {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .toc hr { border: 0; height: 1px; background-color: #ccc; margin-bottom: 15px; }
   .toc ul { list-style: none; padding: 0; margin: 0; }
   .toc li { margin-bottom: 6px; }
-  .toc a { text-decoration: none; color: #333; font-size: 0.95rem; transition: color 0.2s; }
-  .toc a:hover, .toc a.active { color: var(--accent); font-weight: 700; }
+  .toc a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.2s ease, font-weight 0.2s ease;
+  }
+  .toc a:hover { color: #000; text-decoration: underline; }
+  .toc a.active {
+    color: var(--accent);
+    font-weight: 700;
+    position: relative;
+    padding-left: 12px;
+  }
+  .toc a.active::before {
+    content: "|";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
 </style>
 
 <!-- Title Section -->
 <section class="section title-section">
   <div class="toc" id="toc">
-    <h3>Contents</h3><hr>
+    <h3>Content</h3><hr>
     <ul>
       <li><a href="#abstract">Abstract</a></li>
       <li><a href="#contributions">Contributions</a></li>
@@ -481,20 +521,57 @@ hero_image: /img/place_holder_01.png
     }, { threshold: 0.1 });
     observer.observe(canvas);
 
-    // TOC scroll spy
+    // TOC show/hide on scroll (matches SuperOdometry behaviour)
+    var toc = document.querySelector('.toc');
+    var mainTitle = document.getElementById('main-title');
+    if (toc && mainTitle) {
+      function checkTocVisibility() {
+        var titleRect = mainTitle.getBoundingClientRect();
+        if (titleRect.top <= 100) {
+          toc.classList.add('show');
+        } else {
+          toc.classList.remove('show');
+        }
+      }
+      window.addEventListener('scroll', checkTocVisibility);
+      checkTocVisibility();
+    }
+
+    // TOC active section highlighting
     var tocLinks = document.querySelectorAll('.toc a');
-    var toc = document.getElementById('toc');
-    if (toc) toc.classList.add('show');
-    window.addEventListener('scroll', function () {
-        var sections = ['abstract','contributions','method','demo','results','bibtex'];
-        var current = '';
-        sections.forEach(function(id) {
-            var el = document.getElementById(id);
-            if (el && window.scrollY >= el.offsetTop - 120) current = id;
-        });
-        tocLinks.forEach(function(a) {
-            a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-        });
+    var trackedSections = [];
+    tocLinks.forEach(function(link) {
+      var href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        var el = document.getElementById(href.substring(1));
+        if (el) trackedSections.push({ element: el, link: link });
+      }
     });
+    function updateActiveTocLink() {
+      var scrollPosition = window.scrollY + 150;
+      var windowHeight = window.innerHeight;
+      var documentHeight = document.documentElement.scrollHeight;
+      var currentSection = null;
+      if (window.scrollY + windowHeight >= documentHeight - 50) {
+        currentSection = trackedSections[trackedSections.length - 1];
+      } else {
+        for (var i = 0; i < trackedSections.length; i++) {
+          var s = trackedSections[i];
+          var rect = s.element.getBoundingClientRect();
+          var sTop = rect.top + window.scrollY;
+          if (scrollPosition >= sTop && scrollPosition < sTop + rect.height) { currentSection = s; break; }
+        }
+        if (!currentSection) {
+          for (var i = trackedSections.length - 1; i >= 0; i--) {
+            var sTop2 = trackedSections[i].element.getBoundingClientRect().top + window.scrollY;
+            if (sTop2 <= scrollPosition) { currentSection = trackedSections[i]; break; }
+          }
+        }
+      }
+      tocLinks.forEach(function(a) { a.classList.remove('active'); });
+      if (currentSection) currentSection.link.classList.add('active');
+    }
+    window.addEventListener('scroll', updateActiveTocLink);
+    updateActiveTocLink();
 })();
 </script>
