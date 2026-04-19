@@ -107,7 +107,7 @@ mathjax: true
   }
 
   /* Black glass panel: hugs title + subtitle only (see hero_glass_title in _includes/hero.html) */
-  .hero.hero--has-cover .hero__title-glass {
+  .hero__title-glass {
     display: inline-block;
     width: fit-content;
     max-width: 100%;
@@ -121,18 +121,18 @@ mathjax: true
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 32px rgba(0, 0, 0, 0.4);
   }
-  .hero.hero--has-cover .hero__title-glass .title.is-2,
-  .hero.hero--has-cover .hero__title-glass .subtitle.is-3 {
+  .hero__title-glass .title.is-2,
+  .hero__title-glass .subtitle.is-3 {
     color: #fff !important;
   }
   /* Same vertical rhythm as index.md hero (Bulma title + subtitle: %block + adjacent sibling rule) */
-  .hero.hero--has-cover .hero__title-glass .title.is-2:not(:last-child) {
+  .hero__title-glass .title.is-2:not(:last-child) {
     margin-bottom: 1.5rem !important;
   }
-  .hero.hero--has-cover .hero__title-glass .title.is-2:not(.is-spaced) + .subtitle.is-3 {
+  .hero__title-glass .title.is-2:not(.is-spaced) + .subtitle.is-3 {
     margin-top: -1.25rem !important;
   }
-  .hero.hero--has-cover .hero__title-glass .subtitle.is-3:last-child {
+  .hero__title-glass .subtitle.is-3:last-child {
     margin-bottom: 0 !important;
   }
 
@@ -729,6 +729,8 @@ mathjax: true
 
         .figure-description, .image-caption {
             margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
             text-align: center;
             font-style: italic;
             color: #666;
@@ -1322,7 +1324,7 @@ mathjax: true
 <section class="section content-section" id="method">
   <div class="container">
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
+      <div class="column" style="max-width: 90%; margin: 0 auto;">
         <div class="content">
           <div style="margin: 2rem 0; padding: 2.5rem; background: #fdfdfd; border-radius: 20px; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative;">
             <div style="position: absolute; top: -15px; left: 30px; background: #6366f1; color: white; padding: 5px 20px; border-radius: 20px; font-weight: 800; font-family: monospace;">Stage 1: Pretrained IMU Model</div>
@@ -1330,11 +1332,11 @@ mathjax: true
               Our foundation model leverages a shared backbone architecture to capture generalizable IMU motion patterns across different robotic platforms. This stage establishes the core motion understanding that serves as the foundation for subsequent adaptation stages.
             </p>
             <div class="columns is-centered">
-              <div class="column is-four-fifths">
+              <div class="column">
                 <img src="/img/tartanimu/tsne_viz.png" alt="t-SNE visualization of learned features" style="width: 100%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
               </div>
             </div>
-            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+            <p class="figure-description">
               t-SNE visualization of the learned ResNet feature space. Cluster separation across platforms shows the model's ability to learn motion-specific dynamics.
             </p>
           </div>
@@ -1354,22 +1356,22 @@ mathjax: true
               Here, \(W_0\) is the pretrained weight, and \(A, B\) are the small matrices trained for the new task. This structure ensures that learning is efficient, allowing use even with very limited data.
             </p>
             <div class="columns is-centered">
-              <div class="column is-four-fifths">
+              <div class="column">
                 <img src="/img/tartanimu/offline_finetuning.png" alt="Offline finetuning results" style="width: 100%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
               </div>
             </div>
-            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+            <p class="figure-description">
               Our LoRA-based finetuning improves accuracy on new motion tasks while keeping computational and data costs low.
             </p>
             <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
               One of the key benefits of LoRA adaptation is <strong>non-forgetting</strong>: the core representation remains stable across tasks. This enables lifelong learning capabilities and is particularly useful in robotics where new environments and tasks are continuously encountered.
             </p>
             <div class="columns is-centered">
-              <div class="column is-four-fifths">
+              <div class="column">
                 <img src="/img/tartanimu/no_forgetting.png" alt="No forgetting comparison" style="width: 100%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
               </div>
             </div>
-            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+            <p class="figure-description">
               Comparison of LoRA vs. full fine-tuning. LoRA retains prior knowledge, while full finetuning can degrade earlier performance.
             </p>
           </div>
@@ -1383,19 +1385,19 @@ mathjax: true
               To support this, we maintain a lightweight, adaptive training buffer that stores recent IMU samples during deployment. These samples are filtered and clustered via a Gaussian Mixture Model (GMM) based motion classifier to ensure diversity across motion types—e.g., stationary, forward motion, left turns, and right turns. The buffer actively reselects samples to avoid redundancy, enabling quick and stable updates with minimal compute.
             </p>
             <div class="columns is-centered">
-              <div class="column is-four-fifths">
+              <div class="column">
                 <img src="/img/tartanimu/online_adaptation.png" alt="Online adaptation illustration" style="width: 100%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
               </div>
             </div>
-            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+            <p class="figure-description">
               Online adaptation results in an 8-shaped trajectory using only IMU data. By maintaining a balanced buffer across diverse motion segments, TartanIMU adapts quickly during deployment, improving trajectory accuracy over time.
             </p>
             <div class="columns is-centered">
-              <div class="column is-four-fifths">
+              <div class="column">
                 <img src="/img/tartanimu/online_adaptation_circle.png" alt="Online adaptation on unseen circular trajectory" style="width: 100%; border-radius:10px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);" />
               </div>
             </div>
-            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+            <p class="figure-description">
               Performance of Online Adaptation on Unseen Trajectory. The Tartan IMU model progressively learns unseen circular patterns through incremental training data. It can be seen that our model can learn new motion patterns within 90 seconds.
             </p>
           </div>
