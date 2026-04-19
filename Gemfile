@@ -4,3 +4,9 @@ source "https://rubygems.org"
 gemspec
 
 gem "webrick", "~> 1.7"
+
+gem "csv", "~> 3.3"
+gem "base64", "~> 0.3.0"
+gem "logger", "~> 1.7"
+gem "bigdecimal", "~> 4.1"
+gem "mutex_m", "~> 0.3.0"
