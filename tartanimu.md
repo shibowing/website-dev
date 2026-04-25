@@ -36,76 +36,6 @@ mathjax: true
     font-family: 'Google Sans', 'Noto Sans', sans-serif;
   }
   
-  /* Top hero with cover image: use .hero--has-cover from _includes/hero.html (reliable vs [style*="url("]) */
-  .hero.hero--has-cover {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin-left: calc(50% - 50vw) !important;
-    margin-right: calc(50% - 50vw) !important;
-    padding: 0 !important;
-    border-radius: 0 !important;
-    overflow: hidden !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    min-height: 400px !important;
-    aspect-ratio: 21 / 9; /* Cinematic wide ratio */
-    position: relative !important;
-    left: 0 !important;
-    /* Override Bulma .hero { justify-content: space-between } so one child centers vertically */
-    justify-content: center !important;
-    align-items: stretch !important;
-  }
-  
-  /* Reset general hero class so it doesn't break layout for in-page heroes (carousel, etc.) */
-  .hero:not(.hero--has-cover) {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding: 1.5rem 0 !important;
-  }
-  
-  /* Hero height constraints for the top hero */
-  .hero.is-large.hero--has-cover {
-    height: auto !important;
-    min-height: 400px !important;
-    max-height: 70vh !important;
-  }
-  
-  /* If the screen is very narrow (mobile), use a taller ratio for top hero */
-  @media (max-width: 768px) {
-    .hero.hero--has-cover {
-      aspect-ratio: 16 / 9;
-    }
-  }
-  
-  /* Cover hero: center title block — parent centers .hero-body; shrink body so it isn’t full-height top-aligned */
-  .hero.hero--has-cover .hero-body {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: stretch !important;
-    flex-grow: 0 !important;
-    flex-shrink: 0 !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    padding: 0 !important;
-  }
-  @media screen and (min-width: 769px), print {
-    .hero.is-large.hero--has-cover .hero-body {
-      padding-top: 0 !important;
-      padding-bottom: 0 !important;
-    }
-  }
-  /* Hero text position (same as index.md .hero .container; cover hero only) */
-  .hero.hero--has-cover .container {
-    text-align: left !important;
-    padding-left: 15% !important;
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-
   /* Black glass panel: hugs title + subtitle only (see hero_glass_title in _includes/hero.html) */
   .hero__title-glass {
     display: inline-block;
@@ -1363,7 +1293,7 @@ mathjax: true
             <p class="figure-description">
               Our LoRA-based finetuning improves accuracy on new motion tasks while keeping computational and data costs low.
             </p>
-            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 1rem;">
+            <p style="font-size: 1.0rem; color: #222; line-height: 1.6; margin-top: 2rem; margin-bottom: 2rem;">
               One of the key benefits of LoRA adaptation is <strong>non-forgetting</strong>: the core representation remains stable across tasks. This enables lifelong learning capabilities and is particularly useful in robotics where new environments and tasks are continuously encountered.
             </p>
             <div class="columns is-centered">
@@ -1765,7 +1695,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="demo-controls">
         <div class="selected-trajectory">
             <h3 id="selected-title">Select a trajectory above to get started</h3>
-            <p id="selected-description">Choose any platform and trajectory to see detailed information and try it with our model.</p>
+            <p id="selected-description" style="text-align: center;">Choose any platform and trajectory to see detailed information and try it with our model.</p>
         </div>
         
         <div class="demo-buttons">
@@ -2640,6 +2570,7 @@ timestamps = data['timestamp']</code></pre>
     color: #666;
     font-size: 0.9rem;
     margin: 0;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
