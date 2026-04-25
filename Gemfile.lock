@@ -18,8 +18,11 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    base64 (0.3.0)
+    bigdecimal (4.1.1)
     colorator (1.1.0)
     concurrent-ruby (1.1.10)
+    csv (3.3.5)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -67,13 +70,15 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    liquid (4.0.3)
+    liquid (4.0.4)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     mercenary (0.4.0)
     mini_portile2 (2.8.4)
     minitest (5.16.0)
+    mutex_m (0.3.0)
     nokogiri (1.13.6)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -107,8 +112,13 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64 (~> 0.3.0)
+  bigdecimal (~> 4.1)
   bundler
+  csv (~> 3.3)
   jekyll-text-theme!
+  logger (~> 1.7)
+  mutex_m (~> 0.3.0)
   rake (~> 10.0)
   webrick (~> 1.7)
 

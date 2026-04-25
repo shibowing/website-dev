@@ -2,8 +2,15 @@
     <div class="hero-body">
         <div class="container">
             {% unless page.remove_hero_title %}
+                {% if page.hero_glass_title %}
+                <div class="hero__title-glass">
+                    <p class="title is-2">{{ page.title }}</p>
+                    <p class="subtitle is-3">{{ page.subtitle }}</p>
+                </div>
+                {% else %}
                 <p class="title is-2">{{ page.title }}</p>
                 <p class="subtitle is-3">{{ page.subtitle }}</p>
+                {% endif %}
                 <p class="subtitle is-3">
             {% endunless %}
             {% if page.hero_link %}
