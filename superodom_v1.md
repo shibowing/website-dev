@@ -78,9 +78,11 @@ The authors would like to express sincere thanks to Professor [Ji Zhang](https:/
 
 ## Contacts
 
-If you have any question or want to contribute this work, please feel free to send email to Shibo Zhao (shiboz@andrew.cmu.edu).  Thank you! :)
+If you have any questions or want to contribute to this work, please feel free to send an email to Shibo Zhao (shiboz@andrew.cmu.edu).  Thank you! :) 
 
-If you want to get the latest updates from Super Odometry, feel free to sign up our mail list! 
+You can also join us on [Discord](https://discord.gg/GUh9zfXz)!
+
+If you want to get the latest updates from Super Odometry, feel free to sign up for our mailing list! 
 <iframe src="https://forms.gle/g9pqfxsUfDuTAQp36" width="100%" height="684" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 <script>
