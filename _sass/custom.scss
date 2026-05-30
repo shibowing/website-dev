@@ -1,3 +1,138 @@
 /* start custom scss snippet */
 
+body.imuchallenge-site .navbar.is-imuchallenge {
+  background: linear-gradient(90deg, #0b1b2b 0%, #12324a 60%, #1a4f70 100%);
+  border-bottom: 1px solid rgba(122, 214, 255, 0.35);
+  box-shadow: 0 8px 22px rgba(4, 16, 27, 0.28);
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-item,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-link,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-burger {
+  color: #e9f7ff !important;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-item:hover,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-link:hover,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-item.is-active,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-link.is-active {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown {
+  background: #10283b;
+  border-top: 2px solid #59c4ff;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown .navbar-item {
+  color: #e9f7ff !important;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown .navbar-item:hover,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown .navbar-item.is-active {
+  background: rgba(89, 196, 255, 0.2) !important;
+}
+
+body.imuchallenge-site {
+  background:
+    radial-gradient(circle at 5% 0%, rgba(62, 142, 191, 0.12), transparent 35%),
+    radial-gradient(circle at 95% 10%, rgba(44, 107, 153, 0.1), transparent 40%),
+    #f6fbff;
+}
+
+body.imuchallenge-site .section {
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+}
+
+body.imuchallenge-site .content h1,
+body.imuchallenge-site .content h2,
+body.imuchallenge-site .content h3 {
+  color: #0f2f48;
+  letter-spacing: 0.01em;
+}
+
+.imu-hero {
+  background: linear-gradient(135deg, #0a1f30 0%, #154264 55%, #2a678c 100%);
+  color: #eaf7ff;
+  border-radius: 14px;
+  padding: 1.4rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(9, 28, 43, 0.25);
+  margin-bottom: 1rem;
+}
+
+.imu-pill {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.16);
+  color: #eaf7ff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.82rem;
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.imu-card {
+  background: #ffffff;
+  border: 1px solid #d8ebf9;
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 4px 14px rgba(14, 50, 78, 0.08);
+  margin-bottom: 0.9rem;
+}
+
+.imu-note {
+  border-left: 4px solid #2a84bd;
+  background: #edf7ff;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+}
+
+.imu-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin: 0.8rem 0 1.2rem;
+}
+
+.imu-metric {
+  background: #fff;
+  border: 1px solid #cfe6f7;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 4px 12px rgba(10, 35, 54, 0.08);
+}
+
+.imu-metric .value {
+  display: block;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  line-height: 1.05;
+  font-weight: 800;
+  color: #0f4f78;
+}
+
+.imu-metric .label {
+  display: block;
+  margin-top: 0.28rem;
+  font-size: 0.88rem;
+  color: #355268;
+}
+
+.imu-video-placeholder {
+  width: 100%;
+  min-height: 240px;
+  border-radius: 12px;
+  border: 1px dashed #78acd1;
+  background: linear-gradient(160deg, #ebf7ff 0%, #d9eefb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1b5d8a;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+}
+
 /* end custom scss snippet */

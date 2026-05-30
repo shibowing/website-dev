@@ -13,6 +13,8 @@
       link: /imuchallenge/platforms/quadruped/
     - name: Handheld
       link: /imuchallenge/platforms/handheld/
+    - name: Humanoid
+      link: /imuchallenge/platforms/humanoid/
 - name: Data
   link: /imuchallenge/data/
 - name: Announcements

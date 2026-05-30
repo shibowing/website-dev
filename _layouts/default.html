@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body>
+<body{% if page.url == '/imuchallenge/' or page.url contains '/imuchallenge/' %} class="imuchallenge-site"{% endif %}>
     {% include header.html %} {% unless page.hide_hero %} {% include hero.html %} {% endunless %} {% include callouts.html %}
     <section class="section">
         <div class="container">

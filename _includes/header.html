@@ -1,10 +1,12 @@
+{% assign nav_items = site.data.navigation %}
+{% assign is_imuchallenge_nav = false %}
+{% if page.url == '/imuchallenge/' or page.url contains '/imuchallenge/' %}
+    {% assign nav_items = site.data.navigation_imuchallenge %}
+    {% assign is_imuchallenge_nav = true %}
+{% endif %}
 
-<nav class="navbar is-primary" >
+<nav class="navbar is-primary {% if is_imuchallenge_nav %}is-imuchallenge{% endif %}" >
     <div class="container">
-        {% assign nav_items = site.data.navigation %}
-        {% if page.url == '/imuchallenge/' or page.url contains '/imuchallenge/' %}
-            {% assign nav_items = site.data.navigation_imuchallenge %}
-        {% endif %}
         <div class="navbar-brand">
             <a href="{{ site.baseurl }}/" class="navbar-item navbar-logo">
                 {{ site.title }}
