@@ -250,6 +250,19 @@ hero_image: /img/place_holder_01.png
   </div>
 </section>
 
+<!-- Demo Video (hero) -->
+<div id="video" style="width:100%; margin-left:auto; margin-right:auto; overflow:hidden; line-height:0;">
+  <video autoplay loop muted playsinline
+         style="width:100%; height:auto; display:block;">
+    <source src="/video/supermap/segment_1.mp4" type="video/mp4">
+  </video>
+  <p style="text-align:center; font-style:italic; color:#888; font-size:0.85rem; line-height:1.4; padding:0.5rem 1rem 0.75rem; margin:0; background:#fff;">
+    Top: YOLOE open-vocabulary detections &nbsp;|&nbsp;
+    Middle: projected 3D bounding boxes &nbsp;|&nbsp;
+    Bottom: accumulated top-down BEV map
+  </p>
+</div>
+
 <!-- Abstract -->
 <section class="section content-section" id="abstract">
   <div class="container">
