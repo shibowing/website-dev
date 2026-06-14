@@ -1,5 +1,5 @@
 ---
-title: IMU Challenge Platforms
+title: IMU Odometry Challenge Platforms
 layout: page
 show_sidebar: false
 platform_sidebar: true
@@ -29,14 +29,9 @@ This challenge is organized across multiple platforms to measure both in-domain 
     <img src="/img/tartanimu/human_overview.png" alt="Handheld IMU platform overview">
     <span>Handheld</span>
   </a>
-  <a href="/imuchallenge/platforms/humanoid/" class="imu-platform-feature">
-    <img src="/img/place_holder_01.png" alt="Humanoid IMU platform placeholder">
-    <span>Humanoid</span>
-  </a>
 </div>
 
 ## Evaluation Perspective
 
 - Per-platform accuracy and robustness
 - Cross-platform transfer performance
-- Generalization to held-out motion domains

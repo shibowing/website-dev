@@ -27,7 +27,7 @@
   link: /superloc
 - name: TartanIMU
   link: /tartanimu
-- name: IMU Challenge
+- name: IMU Odometry Challenge
   link: /imuchallenge
 # - name: SuperMap
 #   link: /supermap

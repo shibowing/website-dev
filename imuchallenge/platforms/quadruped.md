@@ -1,6 +1,6 @@
 ---
 title: Quadruped Platform
-subtitle: IMU Challenge
+subtitle: IMU Odometry Challenge
 layout: page
 show_sidebar: false
 platform_sidebar: true
@@ -11,18 +11,17 @@ hero_image: /img/tartanimu/dog_overview.png
 permalink: /imuchallenge/platforms/quadruped/
 ---
 
-## Data Summary (from current metadata snapshot)
+## Data Summary
 
-<div class="imu-card"><strong>Trajectories:</strong> 72</div>
-<div class="imu-card"><strong>Total Duration:</strong> 8.94 hours</div>
-<div class="imu-card"><strong>Total Size:</strong> 0.692 GiB</div>
-<div class="imu-card"><strong>Samples:</strong> 6,437,734</div>
-<div class="imu-card"><strong>Splits:</strong> train 41, val 17, test 14</div>
+<div class="imu-card"><strong>Trajectories:</strong> 49</div>
+<div class="imu-card"><strong>Total Duration:</strong> 5.89 hours</div>
+<div class="imu-card"><strong>Total Size:</strong> 0.225 GiB</div>
+<div class="imu-card"><strong>Samples:</strong> 4,243,753</div>
+<div class="imu-card"><strong>Splits:</strong> train 36, val 13</div>
 <div class="imu-card"><strong>Sample Rate:</strong> 200 Hz</div>
-<div class="imu-card"><strong>GT Availability:</strong> 100%</div>
-<div class="imu-card"><strong>Source(s):</strong> Unknown</div>
+<div class="imu-card"><strong>Source(s):</strong> TartanIMU</div>
 
-## IMU Sensor Notes (Draft)
+## IMU Sensor Notes
 
 <div class="imu-card">
 <strong>Sensor Type:</strong> body-mounted robot IMU (accelerometer + gyroscope)

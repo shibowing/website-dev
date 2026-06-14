@@ -1,6 +1,6 @@
 ---
 title: Car Platform
-subtitle: IMU Challenge
+subtitle: IMU Odometry Challenge
 layout: page
 show_sidebar: false
 platform_sidebar: true
@@ -11,18 +11,17 @@ hero_image: /img/tartanimu/car_overview.png
 permalink: /imuchallenge/platforms/car/
 ---
 
-## Data Summary (from current metadata snapshot)
+## Data Summary
 
-<div class="imu-card"><strong>Trajectories:</strong> 92</div>
-<div class="imu-card"><strong>Total Duration:</strong> 14.32 hours</div>
-<div class="imu-card"><strong>Total Size:</strong> 1.087 GiB</div>
-<div class="imu-card"><strong>Samples:</strong> 10,311,312</div>
-<div class="imu-card"><strong>Splits:</strong> train 67, val 16, test 9</div>
+<div class="imu-card"><strong>Trajectories:</strong> 56</div>
+<div class="imu-card"><strong>Total Duration:</strong> 8.58 hours</div>
+<div class="imu-card"><strong>Total Size:</strong> 0.342 GiB</div>
+<div class="imu-card"><strong>Samples:</strong> 6,176,242</div>
+<div class="imu-card"><strong>Splits:</strong> train 44, val 12</div>
 <div class="imu-card"><strong>Sample Rate:</strong> 200 Hz</div>
-<div class="imu-card"><strong>GT Availability:</strong> 100%</div>
-<div class="imu-card"><strong>Source(s):</strong> Unknown</div>
+<div class="imu-card"><strong>Source(s):</strong> TartanIMU</div>
 
-## IMU Sensor Notes (Draft)
+## IMU Sensor Notes
 
 <div class="imu-card">
 <strong>Sensor Type:</strong> onboard MEMS IMU (accelerometer + gyroscope)

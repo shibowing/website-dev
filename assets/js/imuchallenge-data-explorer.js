@@ -23,7 +23,7 @@
   ]);
 
   let rows = [];
-  let sortBy = 'traj_id';
+  let sortBy = null; // null = default multi-key sort (platform asc, traj_id asc)
   let sortAsc = true;
 
   function platformClass(v) {
@@ -32,6 +32,14 @@
     if (p === 'drone') return 'drone';
     if (p === 'quadruped' || p === 'dog') return 'quadruped';
     if (p === 'handheld' || p === 'human') return 'handheld';
+    return 'unknown';
+  }
+
+  function splitClass(v) {
+    const s = String(v || '').toLowerCase();
+    if (s === 'train') return 'train';
+    if (s === 'val') return 'val';
+    if (s === 'test') return 'test';
     return 'unknown';
   }
 
@@ -92,15 +100,19 @@
     });
   }
 
+  function cmpVal(av, bv) {
+    const an = Number(av), bn = Number(bv);
+    if (!Number.isNaN(an) && !Number.isNaN(bn) && av !== '' && bv !== '') return an - bn;
+    return String(av ?? '').localeCompare(String(bv ?? ''), undefined, { numeric: true, sensitivity: 'base' });
+  }
+
   function applySort(data) {
     return data.slice().sort((a, b) => {
-      const av = a[sortBy];
-      const bv = b[sortBy];
-      const an = Number(av);
-      const bn = Number(bv);
-      let cmp = 0;
-      if (!Number.isNaN(an) && !Number.isNaN(bn) && av !== '' && bv !== '') cmp = an - bn;
-      else cmp = String(av ?? '').localeCompare(String(bv ?? ''), undefined, { numeric: true, sensitivity: 'base' });
+      if (!sortBy) {
+        // default: platform A→Z, then split A→Z (train before val), then traj_id numerically
+        return cmpVal(a.platform, b.platform) || cmpVal(a.split, b.split) || cmpVal(a.traj_id, b.traj_id);
+      }
+      const cmp = cmpVal(a[sortBy], b[sortBy]);
       return sortAsc ? cmp : -cmp;
     });
   }
@@ -117,17 +129,24 @@
     };
     const html = sorted.map((r) => {
       const pClass = platformClass(r.platform);
+      const sClass = splitClass(r.split);
+      const bg = rowTint[pClass] || '#fff';
       const tds = columns.map((col) => {
-        if (col === 'platform') return `<td><span class="imu-platform-badge imu-p-${pClass}">${fmtValue(col, r[col])}</span></td>`;
-        if (col === 'traj_id') {
+        if (col === 'platform') {
+          return `<td><span class="imu-platform-badge imu-p-${pClass}">${fmtValue(col, r[col])}</span></td>`;
+        }
+        if (col === 'split') {
+          return `<td style="background:${bg}"><span class="imu-split-badge imu-s-${sClass}">${fmtValue(col, r[col])}</span></td>`;
+        }
+        if (col === 'npz_relpath') {
           const q = new URLSearchParams({
             platform: String(r.platform ?? ''),
             split: String(r.split ?? ''),
             traj_id: String(r.traj_id ?? '')
           });
-          return `<td style="background:${rowTint[pClass] || '#fff'}"><a href="/imuchallenge/data/preview/?${q.toString()}">${fmtValue(col, r[col])}</a></td>`;
+          return `<td style="background:${bg}"><a href="/imuchallenge/data/preview/?${q.toString()}">${fmtValue(col, r[col])}</a></td>`;
         }
-        return `<td style="background:${rowTint[pClass] || '#fff'}">${fmtValue(col, r[col])}</td>`;
+        return `<td style="background:${bg}">${fmtValue(col, r[col])}</td>`;
       }).join('');
       return `<tr class="imu-row-${pClass}">${tds}</tr>`;
     }).join('');
@@ -141,7 +160,7 @@
         const col = th.dataset.col;
         if (!col) return;
         if (sortBy === col) sortAsc = !sortAsc;
-        else { sortBy = col; sortAsc = true; }
+        else { sortBy = col || null; sortAsc = true; }
         render();
       });
     });

@@ -1,6 +1,6 @@
 ---
 title: Handheld Platform
-subtitle: IMU Challenge
+subtitle: IMU Odometry Challenge
 layout: page
 show_sidebar: false
 platform_sidebar: true
@@ -11,18 +11,17 @@ hero_image: /img/tartanimu/human_overview.png
 permalink: /imuchallenge/platforms/handheld/
 ---
 
-## Data Summary (from current metadata snapshot)
+## Data Summary
 
-<div class="imu-card"><strong>Trajectories:</strong> 72</div>
-<div class="imu-card"><strong>Total Duration:</strong> 10.31 hours</div>
-<div class="imu-card"><strong>Total Size:</strong> 0.387 GiB</div>
-<div class="imu-card"><strong>Samples:</strong> 3,711,780</div>
-<div class="imu-card"><strong>Splits:</strong> train 43, val 14, test 15</div>
-<div class="imu-card"><strong>Sample Rate:</strong> 100 Hz</div>
-<div class="imu-card"><strong>GT Availability:</strong> 100%</div>
-<div class="imu-card"><strong>Source(s):</strong> Unknown</div>
+<div class="imu-card"><strong>Trajectories:</strong> 33</div>
+<div class="imu-card"><strong>Total Duration:</strong> 10.28 hours</div>
+<div class="imu-card"><strong>Total Size:</strong> 0.410 GiB</div>
+<div class="imu-card"><strong>Samples:</strong> 7,405,047</div>
+<div class="imu-card"><strong>Splits:</strong> train 26, val 7</div>
+<div class="imu-card"><strong>Sample Rate:</strong> 200 Hz</div>
+<div class="imu-card"><strong>Source(s):</strong> TartanIMU</div>
 
-## IMU Sensor Notes (Draft)
+## IMU Sensor Notes
 
 <div class="imu-card">
 <strong>Sensor Type:</strong> handheld-device IMU (accelerometer + gyroscope)

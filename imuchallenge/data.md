@@ -1,5 +1,5 @@
 ---
-title: IMU Challenge Data
+title: IMU Odometry Challenge Data
 layout: page
 show_sidebar: false
 hide_footer: false
@@ -12,26 +12,45 @@ permalink: /imuchallenge/data/
 ## Downloads
 
 <ul class="imu-link-list">
-  <li><a href="https://huggingface.co/Tartan-IMU" target="_blank" rel="noopener">Main Hugging Face Organization (Tartan-IMU)</a></li>
-  <li><a href="https://huggingface.co/datasets/Tartan-IMU/Car/tree/main" target="_blank" rel="noopener">Car Dataset</a></li>
-  <li><a href="https://huggingface.co/datasets/Tartan-IMU/Drone/tree/main" target="_blank" rel="noopener">Drone Dataset</a></li>
-  <li><a href="https://huggingface.co/datasets/Tartan-IMU/Quadruped/tree/main" target="_blank" rel="noopener">Quadruped Dataset</a></li>
-  <li><a href="https://huggingface.co/datasets/Tartan-IMU/Handheld/tree/main" target="_blank" rel="noopener">Handheld Dataset</a></li>
-  <li><a href="#" aria-disabled="true">Humanoid Dataset (Placeholder: coming soon)</a></li>
+  <li><a href="https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge" target="_blank" rel="noopener">IROS Tartan IMU Challenge Dataset (all platforms)</a></li>
 </ul>
-
-*Licensing note: licensing details are still being finalized with the maintainers and are currently WIP.*
 
 ## Dataset Schema
 
-Each trajectory `.npz` includes:
+Each trajectory is a `.npz` file organized as `{split}/{platform}/{platform}_{split}_{i}.npz`. The task is to predict the mean body-frame velocity `(v_x, v_y, v_z)` in m/s for each 1.0 s window (200 samples @ 200 Hz) of IMU data.
 
-- `retargetted_ts`
-- `retargetted_imu` (`[:, :3]` acceleration, `[:, 3:]` gyroscope)
-- `retargetted_pos`
-- `retargetted_quat`
+<table class="imu-schema-table">
+  <thead>
+    <tr><th>Key</th><th>Shape</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>imu</code></td><td><code>(N,&nbsp;6)</code></td><td>6-axis IMU in <strong>body frame, SI units</strong>: columns <code>[acc_x, acc_y, acc_z, gyro_x, gyro_y, gyro_z]</code>. Accelerometer retains gravity (‖accel‖ ≈ 9.8 m/s² at rest). Gyroscope in rad/s.</td></tr>
+    <tr><td><code>ts</code></td><td><code>(N,)</code></td><td>Timestamps in seconds at 200 Hz.</td></tr>
+    <tr><td><code>pos</code></td><td><code>(N,&nbsp;3)</code></td><td>Ground-truth position in metres (world frame).</td></tr>
+    <tr><td><code>quat</code></td><td><code>(N,&nbsp;4)</code></td><td>Ground-truth orientation as quaternion <code>[x, y, z, w]</code>.</td></tr>
+    <tr><td><code>vel_body</code></td><td><code>(N,&nbsp;3)</code></td><td>Body-frame velocity target <code>[v_x, v_y, v_z]</code> in m/s, derived from <code>pos</code>/<code>quat</code>. This is the prediction target.</td></tr>
+    <tr><td><code>platform_id</code></td><td>scalar</td><td>Platform label: <code>0</code>=car, <code>1</code>=dog (quadruped), <code>2</code>=drone, <code>3</code>=human (handheld).</td></tr>
+    <tr><td><code>fs</code></td><td>scalar</td><td>Sample rate — always <code>200</code> Hz.</td></tr>
+  </tbody>
+</table>
 
-Ground truth alignment is included in the prepared files, and split organization is train/val/test.
+Window indices and per-window targets are in `index/`: `train_windows.csv` / `val_windows.csv` (window_id → trajectory + start sample) and `train_targets.csv` / `val_targets.csv` (window_id → `vx, vy, vz`).
+
+**Primary metric:** macro-averaged velocity RMSE (mean of per-platform RMSEs, so platform size imbalance cannot be gamed).
+
+**Secondary metric:** ATE — organizer integrates per-window velocity with ground-truth orientation over 5 m drift-corrected segments (position RMSE).
+
+Splits are deduplicated at the trajectory level (SHA-256 of raw IMU content); train/val/test share no recording.
+
+## Split Counts
+
+| Platform | Train | Val |
+|---|---|---|
+| Car | 44 | 12 |
+| Quadruped | 36 | 13 |
+| Drone | 61 | 17 |
+| Handheld | 26 | 7 |
+| **Total** | **167** | **49** |
 
 ## Data Explorer
 

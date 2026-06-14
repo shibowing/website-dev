@@ -1,5 +1,5 @@
 ---
-title: IMU Challenge About
+title: IMU Odometry Challenge About
 layout: page
 show_sidebar: false
 hide_footer: false
@@ -9,7 +9,7 @@ permalink: /imuchallenge/about/
 
 # About
 
-The IMU Challenge is hosted by **CMU AirLab**, with organization led by the TartanIMU and Super Odometry contributors.
+The IMU Odometry Challenge is hosted by **CMU AirLab**, with organization led by the TartanIMU and Super Odometry contributors.
 
 The challenge is also designed as a technical prelude to the [IROS'26 Workshop: Beyond Exteroception](/interoception/), which centers on interoceptive perception for resilient robotics.
 
@@ -19,7 +19,7 @@ Learning-based inertial methods have shown strong progress, but robust cross-pla
 
 This challenge is designed to provide:
 
-- A common benchmark for cross-platform inertial positioning
+- A common benchmark for cross-platform inertial odometry
 - Shared train/val resources and hidden test evaluation
 - A transparent evaluation path for comparing new methods
 
@@ -35,4 +35,4 @@ The benchmark is intended to surface concrete modeling, adaptation, and evaluati
 
 ## Contact
 
-Contact and participation links will be posted here once registration opens.
+For questions, reach out to the CMU AirLab organizers via the challenge registration page.

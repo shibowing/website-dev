@@ -20,10 +20,10 @@
                 <a href="{{ page.hero_link2 | prepend: site.baseurl  }}" class="button is-info is-large">{{ page.hero_link_text2 }}</a>
             {% endif %}
         </p>
-        {% if page.hero_announcement_title %}
+        {% if page.hero_announcement_text %}
         <div class="imu-hero-announcement">
             <div class="imu-hero-announcement-copy">
-                <strong>{{ page.hero_announcement_title }}</strong>
+                {% if page.hero_announcement_title %}<strong>{{ page.hero_announcement_title }}</strong>{% endif %}
                 <span>{{ page.hero_announcement_text }}</span>
             </div>
             {% if page.hero_announcement_link %}
