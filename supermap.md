@@ -108,29 +108,6 @@ hero_image: /img/place_holder_01.png
   .results-table tr:nth-child(even) { background: #f8f9fa; }
   .results-table tr.ours td { font-weight: 700; background: #e8f4fd !important; }
 
-  /* Point cloud viewer */
-  .pointcloud-wrapper {
-    background: #0a0a0f; border-radius: 16px; overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.25); position: relative;
-  }
-  #pointcloud-canvas { width: 100%; height: 520px; display: block; cursor: grab; }
-  #pointcloud-canvas:active { cursor: grabbing; }
-  .pc-hint {
-    position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
-    background: rgba(0,0,0,0.55); color: #ccc; font-size: 0.82rem;
-    padding: 5px 14px; border-radius: 20px; pointer-events: none; white-space: nowrap;
-  }
-  .pc-toolbar {
-    display: flex; align-items: center; gap: 10px;
-    padding: 12px 16px; background: #111; border-radius: 0 0 16px 16px;
-  }
-  #pc-status { color: #7a9abb; font-size: 0.88rem; flex: 1; }
-  .pc-btn {
-    background: #1e1e2e; color: #aac4e0; border: 1px solid #2a3a50;
-    border-radius: 8px; padding: 6px 16px; font-size: 0.88rem; cursor: pointer; transition: all 0.2s;
-  }
-  .pc-btn:hover { background: #2a3a50; color: white; }
-
   /* Citation */
   .citation-box {
     background: #f8f9fa; border-radius: 12px; border-left: 4px solid var(--accent);
@@ -198,6 +175,108 @@ hero_image: /img/place_holder_01.png
     color: var(--accent);
     font-weight: 700;
   }
+
+  /* ===== Interactive merged-map viewer (namespaced under #sm-viewer) ===== */
+  #sm-viewer { --sm-accent: var(--accent); }
+  #sm-viewer .sm-shell {
+    position: relative; display: grid; grid-template-columns: 230px 1fr;
+    height: 620px; border-radius: 16px; overflow: hidden;
+    background: #0a0a0f; box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  }
+  @media (max-width: 820px) {
+    #sm-viewer .sm-shell { grid-template-columns: 1fr; height: 540px; }
+    #sm-viewer #sm-panel { display: none; }
+  }
+  #sm-viewer #sm-panel {
+    background: #111; border-right: 1px solid #222; padding: 14px;
+    font-size: 12px; display: flex; flex-direction: column; overflow: hidden; color: #cdd6df;
+  }
+  #sm-viewer #sm-panel h3 { font-size: 13px; margin: 0 0 6px; font-weight: 600; color: #e6e6e6; }
+  #sm-viewer #stats { color: #7a9abb; margin-bottom: 10px; line-height: 1.4; }
+  #sm-viewer #legend { overflow-y: auto; flex: 1; }
+  #sm-viewer #legend .row { display: flex; align-items: center; gap: 6px; padding: 2px 0; cursor: pointer; user-select: none; }
+  #sm-viewer #legend .sw { width: 12px; height: 12px; border-radius: 2px; flex: none; }
+  #sm-viewer #legend .row.off { opacity: .38; }
+  #sm-viewer #legend .row .n { margin-left: auto; color: #7a9abb; }
+  #sm-viewer #sm-ctl { margin-top: 10px; border-top: 1px solid #222; padding-top: 10px; }
+  #sm-viewer #sm-ctl label { display: flex; align-items: center; gap: 6px; }
+  #sm-viewer #sm-ctl input[type=range] { width: 100%; }
+  #sm-viewer #sm-ctl .btnrow { margin-top: 8px; display: flex; gap: 6px; }
+  #sm-viewer #sm-ctl button {
+    background: #1e1e2e; color: #aac4e0; border: 1px solid #2a3a50;
+    border-radius: 8px; padding: 6px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  #sm-viewer #sm-ctl button:hover { background: #2a3a50; color: #fff; }
+  #sm-viewer .sm-map-area { position: relative; }
+  #sm-viewer #map-canvas { position: absolute; inset: 0; }
+  #sm-viewer #map-canvas canvas { width: 100%; height: 100%; display: block; cursor: grab; }
+  #sm-viewer #map-canvas canvas:active { cursor: grabbing; }
+  #sm-viewer #map-loading {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    font-size: 15px; color: #ccd; background: #0a0a0f; z-index: 5;
+  }
+  #sm-viewer #map-hint {
+    position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%);
+    background: rgba(0,0,0,0.55); color: #ccc; font-size: 0.82rem;
+    padding: 5px 14px; border-radius: 20px; pointer-events: none; white-space: nowrap; z-index: 6;
+  }
+  #tooltip {
+    position: fixed; pointer-events: none; padding: 3px 7px; background: rgba(20,22,26,.95);
+    border: 1px solid #444; border-radius: 4px; font-size: 12px; white-space: nowrap;
+    display: none; z-index: 4000; color: #fff;
+  }
+  #sm-viewer .sm-caption { color: #888; font-size: 0.9rem; margin: 1rem 0 0.5rem; text-align: center; }
+  #segment-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 14px; }
+  @media (max-width: 820px) { #segment-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { #segment-grid { grid-template-columns: 1fr; } }
+  #segment-grid .seg-card {
+    background: #fff; border: 1px solid #e9ecef; border-radius: 10px; overflow: hidden;
+    cursor: pointer; transition: border-color .12s, transform .12s, box-shadow .12s;
+  }
+  #segment-grid .seg-card:hover, #segment-grid .seg-card.active {
+    border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(26,111,196,0.18);
+  }
+  #segment-grid .seg-thumb { width: 100%; aspect-ratio: 16/10; object-fit: cover; display: block; background: #0a0a0f; }
+  #segment-grid .seg-thumb-missing { display: flex; align-items: center; justify-content: center; color: #999; font-size: 13px; }
+  #segment-grid .seg-meta { padding: 9px 11px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  #segment-grid .seg-title { font-size: 0.92rem; font-weight: 600; color: #2c3e50; }
+  #segment-grid .seg-idx { display: inline-block; font-size: 0.72rem; font-weight: 700;
+    color: #fff; background: var(--accent); border-radius: 5px; padding: 1px 6px; margin-right: 3px; }
+  #segment-grid .seg-play { font-size: 0.8rem; color: var(--accent); white-space: nowrap; }
+
+  /* Rerun replay modal */
+  .rr-modal { position: fixed; inset: 0; z-index: 5000; display: none;
+    background: rgba(6,7,9,.88); flex-direction: column; padding: 3vh 3vw; }
+  .rr-modal.open { display: flex; }
+  body.modal-open { overflow: hidden; }
+  .rr-modal-bar { display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 12px; background: #14171c; border: 1px solid #2a2d33; border-bottom: none; border-radius: 8px 8px 0 0; }
+  .rr-modal-title { font-size: 15px; font-weight: 600; color: #e6e6e6; }
+  .rr-modal-actions { display: flex; align-items: center; gap: 14px; }
+  .rr-modal-actions a { font-size: 13px; color: #6db3ff; }
+  .rr-status { font-size: 12px; color: #93a0ad; }
+  .rr-close { background: #23262c; color: #ddd; border: 1px solid #3a3d44; border-radius: 5px;
+    padding: 3px 9px; cursor: pointer; font-size: 14px; }
+  .rr-close:hover { background: #33383f; }
+  .rr-modal-body { flex: 1; border: 1px solid #2a2d33; border-radius: 0 0 8px 8px; overflow: hidden; background: #000; position: relative; }
+  .rr-modal-body canvas { width: 100% !important; height: 100% !important; display: block; }
+  .rr-error { padding: 24px; max-width: 620px; margin: 0 auto; color: #cdd6df; }
+  .rr-error code { background: #23262c; padding: 1px 5px; border-radius: 4px; }
+  /* Loading overlay that covers Rerun's default welcome screen while the .rrd streams */
+  .rr-loading {
+    position: absolute; inset: 0; z-index: 10; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 14px; text-align: center;
+    background: #0a0a0f; color: #e6e6e6; transition: opacity 0.3s ease;
+  }
+  .rr-loading.rr-hidden { opacity: 0; pointer-events: none; }
+  .rr-loading-text { font-size: 1.05rem; font-weight: 600; }
+  .rr-loading-sub { font-size: 0.85rem; color: #93a0ad; max-width: 340px; }
+  .rr-spinner {
+    width: 42px; height: 42px; border-radius: 50%;
+    border: 4px solid #2a3a50; border-top-color: var(--accent);
+    animation: rr-spin 0.9s linear infinite;
+  }
+  @keyframes rr-spin { to { transform: rotate(360deg); } }
 </style>
 
 <!-- Title Section -->
@@ -208,7 +287,7 @@ hero_image: /img/place_holder_01.png
       <li><a href="#abstract">Abstract</a></li>
       <li><a href="#contributions">Contributions</a></li>
       <li><a href="#method">System Architecture</a></li>
-      <li><a href="#demo">Point Cloud Demo</a></li>
+      <li><a href="#demo">Interactive 3D Map</a></li>
       <li><a href="#results">Results</a></li>
       <li><a href="#bibtex">Citation</a></li>
     </ul>
@@ -333,27 +412,51 @@ hero_image: /img/place_holder_01.png
   </div>
 </section>
 
-<!-- Point Cloud Demo -->
+<!-- Interactive 3D Map Explorer -->
 <section class="section content-section" id="demo">
   <div class="container">
-    <h2 class="title is-2">Interactive 3D Map — CMU Campus Segment 01</h2>
+    <h2 class="title is-2">Interactive 3D Map Explorer — CMU Campus</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <div class="pointcloud-wrapper">
-          <canvas id="pointcloud-canvas"></canvas>
-          <div class="pc-hint">Left drag: rotate &nbsp;|&nbsp; Scroll: zoom &nbsp;|&nbsp; Middle drag: pan</div>
-        </div>
-        <div class="pc-toolbar">
-          <span id="pc-status">Loading…</span>
-          <button class="pc-btn" id="pc-reset">Reset view</button>
-        </div>
-        <p style="text-align:center; font-style:italic; color:#888; font-size:0.9rem; margin-top:0.75rem;">
-          White: LiDAR point cloud (47k pts) &nbsp;|&nbsp; Yellow: SuperMap 3D bounding boxes
+        <p class="sm-caption" style="margin-top:0; margin-bottom:1rem;">
+          Explore the merged, semantically-annotated 3D map (drag to orbit, scroll to zoom,
+          right-drag to pan; hover a box for its label, click to pin). <strong>Hover a replay
+          card</strong> below to light up the robot's trajectory and the region it mapped;
+          <strong>click</strong> to play the dynamic reconstruction.
         </p>
+
+        <div id="sm-viewer">
+          <div class="sm-shell">
+            <div id="sm-panel">
+              <h3>Merged 3D Map</h3>
+              <div id="stats">loading…</div>
+              <div id="legend"></div>
+              <div id="sm-ctl">
+                <label>point size
+                  <input id="psize" type="range" min="0.05" max="2" step="0.05" value="0.3">
+                </label>
+                <div class="btnrow">
+                  <button id="reset">reset view</button>
+                  <button id="clearpins">clear pins</button>
+                </div>
+              </div>
+            </div>
+            <div class="sm-map-area">
+              <div id="map-canvas"></div>
+              <div id="map-hint">drag: orbit · scroll: zoom · right-drag: pan · hover a card to highlight</div>
+              <div id="map-loading">Loading map… (large, please be patient)</div>
+            </div>
+          </div>
+
+          <p class="sm-caption">Dynamic replays — hover to locate, click to play:</p>
+          <div id="segment-grid"></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<div id="tooltip"></div>
 
 <!-- Results -->
 <section class="section content-section" id="results">
@@ -427,102 +530,15 @@ hero_image: /img/place_holder_01.png
   </div>
 </section>
 
-<!-- Point cloud viewer script -->
-<script>
-(function () {
-    function loadScript(src, cb) {
-        var s = document.createElement('script'); s.src = src; s.onload = cb; document.head.appendChild(s);
-    }
-    var THREE, OrbitControls, PLYLoader, renderer, scene, camera, controls;
-    var canvas = document.getElementById('pointcloud-canvas');
-    var status = document.getElementById('pc-status');
-
-    function initThree() {
-        renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: false });
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-        renderer.setClearColor(0x0a0a0f);
-        scene = new THREE.Scene();
-        camera = new THREE.PerspectiveCamera(60, canvas.clientWidth / canvas.clientHeight, 0.01, 5000);
-        camera.position.set(0, 5, 20);
-        controls = new OrbitControls(camera, canvas);
-        controls.enableDamping = true; controls.dampingFactor = 0.08;
-        window.addEventListener('resize', function () {
-            var w = canvas.clientWidth, h = canvas.clientHeight;
-            renderer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix();
-        });
-        (function animate() { requestAnimationFrame(animate); controls.update(); renderer.render(scene, camera); })();
-    }
-
-    function fetchPLY(url) {
-        return fetch(url).then(function(r) {
-            if (!r.ok) throw new Error('Could not load ' + url); return r.arrayBuffer();
-        });
-    }
-
-    function autoLoadBoth() {
-        status.textContent = 'Loading point cloud…';
-        fetchPLY('/img/supermap/segment_01_cloud.ply').then(function(cloudBuf) {
-            status.textContent = 'Loading bounding boxes…';
-            fetchPLY('/img/supermap/segment_01_bboxes.ply').then(function(bboxBuf) {
-                var cloudGeo = PLYLoader.parse(cloudBuf);
-                cloudGeo.computeBoundingBox();
-                var cloudBox = cloudGeo.boundingBox;
-                var cloudCenter = new THREE.Vector3();
-                cloudBox.getCenter(cloudCenter);
-                cloudGeo.translate(-cloudCenter.x, -cloudCenter.y, -cloudCenter.z);
-                var cpos = cloudGeo.attributes.position;
-                var ccols = new Float32Array(cpos.count * 3);
-                for (var i = 0; i < cpos.count; i++) { ccols[i*3] = 1.0; ccols[i*3+1] = 1.0; ccols[i*3+2] = 1.0; }
-                cloudGeo.setAttribute('color', new THREE.BufferAttribute(ccols, 3));
-                var cloudMesh = new THREE.Points(cloudGeo, new THREE.PointsMaterial({ size: 0.15, vertexColors: true, sizeAttenuation: true, depthWrite: false }));
-                cloudMesh.renderOrder = 0; scene.add(cloudMesh);
-
-                var bboxGeo = PLYLoader.parse(bboxBuf);
-                bboxGeo.translate(-cloudCenter.x, -cloudCenter.y, -cloudCenter.z);
-                var bpos = bboxGeo.attributes.position;
-                var bcols = new Float32Array(bpos.count * 3);
-                for (var j = 0; j < bpos.count; j++) { bcols[j*3] = 1.0; bcols[j*3+1] = 0.85; bcols[j*3+2] = 0.0; }
-                bboxGeo.setAttribute('color', new THREE.BufferAttribute(bcols, 3));
-                var bboxMesh = new THREE.Points(bboxGeo, new THREE.PointsMaterial({ size: 0.4, vertexColors: true, sizeAttenuation: true, depthTest: false }));
-                bboxMesh.renderOrder = 1; scene.add(bboxMesh);
-
-                var cloudSize = new THREE.Vector3(); cloudBox.getSize(cloudSize);
-                var maxDim = Math.max(cloudSize.x, cloudSize.y, cloudSize.z);
-                camera.position.set(0, maxDim * 0.4, maxDim * 1.1);
-                controls.target.set(0, 0, 0); controls.update();
-                status.textContent = cpos.count.toLocaleString() + ' cloud pts + ' + bpos.count.toLocaleString() + ' bbox pts';
-            });
-        }).catch(function(err) { status.textContent = 'Error: ' + err.message; });
-    }
-
-    document.getElementById('pc-reset').addEventListener('click', function () {
-        if (!scene) return;
-        var box = new THREE.Box3();
-        scene.traverse(function(o) { if (o.isPoints) box.expandByObject(o); });
-        var size = new THREE.Vector3(); box.getSize(size);
-        var maxDim = Math.max(size.x, size.y, size.z);
-        camera.position.set(0, maxDim * 0.4, maxDim * 1.1);
-        controls.target.set(0, 0, 0); controls.update();
-    });
-
-    var observer = new IntersectionObserver(function(entries) {
-        if (!entries[0].isIntersecting) return;
-        observer.disconnect();
-        loadScript('https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js', function () {
-            THREE = window.THREE;
-            loadScript('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js', function () {
-                OrbitControls = THREE.OrbitControls;
-                loadScript('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/PLYLoader.js', function () {
-                    PLYLoader = new THREE.PLYLoader(); initThree(); autoLoadBoth();
-                });
-            });
-        });
-    }, { threshold: 0.1 });
-    observer.observe(canvas);
-
-})();
+<!-- Interactive merged-map viewer: three.js ES modules (import map) + replay modal -->
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}}
 </script>
+<script type="module" src="/assets/js/supermap_viewer.js"></script>
+<script src="/assets/js/supermap_replay.js"></script>
 
 <!-- TOC Scroll Behavior (matches SuperOdometry index.md) -->
 <script>
