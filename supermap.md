@@ -67,9 +67,12 @@ hide_hero: true
     display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline;
     gap: 0 0.55rem; line-height: 1.9;
   }
-  .author-rows .author-block { margin: 0 !important; font-size: clamp(0.95rem, 2vw, 1.1rem) !important; color: #222; font-weight: 500; }
-  .author-rows .author-block sup { color: var(--accent); font-weight: 700; }
+  .author-rows .author-block { margin: 0 !important; font-size: clamp(0.95rem, 2vw, 1.1rem) !important; color: #222; font-weight: 400; }
+  .author-rows .author-block sup { font-weight: 700; margin-left: 1px; }
   .author-rows .author-sep { color: #c9c9c9; font-weight: 400; }
+  /* Contribution markers: dagger = equal contribution, bold name = core contributor */
+  .author-rows .core-author, .author-rows .core-author a { font-weight: 700; }
+  .mk-dag { color: var(--accent); }
 
   /* Publication links as HumanEgo dark rounded pills */
   .publication-links { margin: 2rem 0 0.5rem !important; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; }
@@ -289,8 +292,7 @@ hide_hero: true
   #segment-grid .seg-card:hover, #segment-grid .seg-card.active {
     border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(26,111,196,0.18);
   }
-  #segment-grid .seg-thumb { width: 100%; aspect-ratio: 5/1; object-fit: contain; display: block; background: #0a0a0f; }
-  @media (max-width: 820px) { #segment-grid .seg-thumb { aspect-ratio: 5/1; } }
+  #segment-grid .seg-thumb { width: 100%; aspect-ratio: 3072/640; object-fit: contain; display: block; background: #0a0a0f; }
   #segment-grid .seg-thumb-missing { display: flex; align-items: center; justify-content: center; color: #999; font-size: 13px; }
   #segment-grid .seg-meta { padding: 9px 11px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
   #segment-grid .seg-title { font-size: 0.92rem; font-weight: 600; color: #2c3e50; }
@@ -360,14 +362,14 @@ hide_hero: true
 
         <div class="publication-authors author-rows" style="margin-top: 1.6rem;">
           <div class="author-row">
-            <span class="author-block"><a href="https://shibowing.github.io/" target="_blank">Shibo Zhao</a><sup>*&dagger;</sup></span><span class="author-sep">·</span>
-            <span class="author-block">Guofei Chen<sup>*&dagger;</sup></span><span class="author-sep">·</span>
-            <span class="author-block">Honghao Zhu<sup>&dagger;</sup></span><span class="author-sep">·</span>
-            <span class="author-block">Zhiheng Li<sup>&dagger;</sup></span><span class="author-sep">·</span>
-            <span class="author-block">Changwei Yao<sup>&dagger;</sup></span>
+            <span class="author-block core-author"><a href="https://shibowing.github.io/" target="_blank">Shibo Zhao</a><sup class="mk-dag">&dagger;</sup></span><span class="author-sep">·</span>
+            <span class="author-block core-author">Guofei Chen<sup class="mk-dag">&dagger;</sup></span><span class="author-sep">·</span>
+            <span class="author-block core-author">Honghao Zhu</span><span class="author-sep">·</span>
+            <span class="author-block core-author">Zhiheng Li</span><span class="author-sep">·</span>
+            <span class="author-block core-author">Changwei Yao</span>
           </div>
           <div class="author-row">
-            <span class="author-block">Nader Zantout<sup>&dagger;</sup></span><span class="author-sep">·</span>
+            <span class="author-block core-author">Nader Zantout</span><span class="author-sep">·</span>
             <span class="author-block">Seungchan Kim</span><span class="author-sep">·</span>
             <span class="author-block">Wenshan Wang</span><span class="author-sep">·</span>
             <span class="author-block">Ji Zhang</span><span class="author-sep">·</span>
@@ -377,8 +379,9 @@ hide_hero: true
         <div class="is-size-6" style="margin-top: 0.9rem; color: #555; font-weight: 500;">
           Carnegie Mellon University — AirLab
         </div>
-        <div style="margin-top: 0.35rem; color: #999; font-size: 0.85rem;">
-          <sup>*</sup> Equal contribution; author order decided by coin flip. &nbsp; <sup>&dagger;</sup> Core contributor.
+        <div style="margin-top: 0.45rem; color: #888; font-size: 0.85rem;">
+          <sup class="mk-dag">&dagger;</sup> Equal contribution (order decided by coin flip)
+          &nbsp;&nbsp;<strong style="color:#222;">Bold</strong> indicates core contributor
         </div>
 
         <div class="publication-links">
@@ -828,6 +831,9 @@ hide_hero: true
   document.addEventListener('DOMContentLoaded', function () {
     var vids = document.querySelectorAll('video.auto-play');
     var visible = new Set();
+    // Decoding many 1080p/10Mbps streams at once causes jank. Cap how many
+    // play simultaneously; prefer the ones closest to the viewport center.
+    var MAX_PLAYING = 3;
 
     function tryPlay(v) {
       v.muted = true;
@@ -835,14 +841,36 @@ hide_hero: true
       if (p && p.catch) p.catch(function () {});
     }
 
+    function distToCenter(v) {
+      var r = v.getBoundingClientRect();
+      return Math.abs((r.top + r.bottom) / 2 - window.innerHeight / 2);
+    }
+
+    var scheduleTimer = null;
+    function schedule() {
+      if (scheduleTimer) return;
+      scheduleTimer = setTimeout(function () {
+        scheduleTimer = null;
+        var sorted = Array.from(visible).sort(function (a, b) {
+          // user-started (unmuted or with controls interacted) videos keep priority
+          return distToCenter(a) - distToCenter(b);
+        });
+        sorted.forEach(function (v, i) {
+          if (i < MAX_PLAYING) { if (v.paused) tryPlay(v); }
+          else if (!v.paused && !v.hasAttribute('autoplay')) { v.pause(); }
+        });
+      }, 150);
+    }
+
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) {
           var v = e.target;
-          if (e.isIntersecting) { visible.add(v); tryPlay(v); }
+          if (e.isIntersecting) { visible.add(v); }
           else { visible.delete(v); if (!v.hasAttribute('autoplay')) v.pause(); }
         });
-      }, { threshold: 0.1, rootMargin: '120px 0px' });
+        schedule();
+      }, { threshold: 0.15 });
       vids.forEach(function (v) {
         v.muted = true;
         // Videos with the native autoplay attribute start themselves — never
@@ -851,13 +879,15 @@ hide_hero: true
         if (v.hasAttribute('autoplay')) { visible.add(v); tryPlay(v); }
         io.observe(v);
       });
+      // Re-rank on scroll so the cap follows the viewport
+      window.addEventListener('scroll', schedule, { passive: true });
     } else {
       vids.forEach(function (v) { visible.add(v); tryPlay(v); });
     }
 
     // Retry when media becomes ready (decoder freed up / data arrived)
     vids.forEach(function (v) {
-      v.addEventListener('canplay', function () { if (visible.has(v) && v.paused) tryPlay(v); });
+      v.addEventListener('canplay', function () { if (visible.has(v) && v.paused) schedule(); });
     });
 
     // Last-resort: some browsers only allow playback after first user gesture

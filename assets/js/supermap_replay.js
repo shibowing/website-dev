@@ -246,17 +246,38 @@ function buildCards(viewer) {
     grid.appendChild(card);
   }
 
-  // Play preview videos only while visible — starting a dozen decoders at once
-  // exhausts the browser's media resources and the first cards never play.
+  // Play preview videos only while visible, and cap concurrent playback —
+  // starting a dozen decoders at once exhausts media resources and janks
+  // scrolling. Closest-to-center cards win.
   if ('IntersectionObserver' in window) {
+    const MAX_PLAYING = 4;
+    const visible = new Set();
+    let timer = null;
+    const schedule = () => {
+      if (timer) return;
+      timer = setTimeout(() => {
+        timer = null;
+        const mid = window.innerHeight / 2;
+        const sorted = Array.from(visible).sort((a, b) => {
+          const ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect();
+          return Math.abs((ra.top + ra.bottom) / 2 - mid) - Math.abs((rb.top + rb.bottom) / 2 - mid);
+        });
+        sorted.forEach((v, i) => {
+          if (i < MAX_PLAYING) { if (v.paused) { v.muted = true; v.play().catch(() => {}); } }
+          else if (!v.paused) v.pause();
+        });
+      }, 150);
+    };
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         const v = e.target;
-        if (e.isIntersecting) { v.muted = true; v.play().catch(() => {}); }
-        else v.pause();
+        if (e.isIntersecting) visible.add(v);
+        else { visible.delete(v); v.pause(); }
       });
+      schedule();
     }, { threshold: 0.15 });
     grid.querySelectorAll('video.seg-thumb').forEach((v) => io.observe(v));
+    window.addEventListener('scroll', schedule, { passive: true });
   }
 }
 
