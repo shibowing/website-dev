@@ -363,17 +363,17 @@ hide_hero: true
         <div class="publication-authors author-rows" style="margin-top: 1.6rem;">
           <div class="author-row">
             <span class="author-block core-author"><a href="https://shibowing.github.io/" target="_blank">Shibo Zhao</a><sup class="mk-dag">&dagger;</sup></span><span class="author-sep">·</span>
-            <span class="author-block core-author">Guofei Chen<sup class="mk-dag">&dagger;</sup></span><span class="author-sep">·</span>
-            <span class="author-block core-author">Honghao Zhu</span><span class="author-sep">·</span>
-            <span class="author-block core-author">Zhiheng Li</span><span class="author-sep">·</span>
-            <span class="author-block core-author">Changwei Yao</span>
+            <span class="author-block core-author"><a href="https://gfchen01.cc/" target="_blank">Guofei Chen</a><sup class="mk-dag">&dagger;</sup></span><span class="author-sep">·</span>
+            <span class="author-block core-author"><a href="https://adrienzhh.github.io/honghao/" target="_blank">Honghao Zhu</a></span><span class="author-sep">·</span>
+            <span class="author-block core-author"><a href="https://zl3466.github.io/" target="_blank">Zhiheng Li</a></span><span class="author-sep">·</span>
+            <span class="author-block core-author"><a href="https://www.chad-yao.com/" target="_blank">Changwei Yao</a></span>
           </div>
           <div class="author-row">
-            <span class="author-block core-author">Nader Zantout</span><span class="author-sep">·</span>
-            <span class="author-block">Seungchan Kim</span><span class="author-sep">·</span>
-            <span class="author-block">Wenshan Wang</span><span class="author-sep">·</span>
-            <span class="author-block">Ji Zhang</span><span class="author-sep">·</span>
-            <span class="author-block">Sebastian Scherer</span>
+            <span class="author-block core-author"><a href="https://www.ri.cmu.edu/alumni/nader-zantout/" target="_blank">Nader Zantout</a></span><span class="author-sep">·</span>
+            <span class="author-block"><a href="https://seungchan-kim.github.io/" target="_blank">Seungchan Kim</a></span><span class="author-sep">·</span>
+            <span class="author-block"><a href="https://theairlab.org/team/wenshan/" target="_blank">Wenshan Wang</a></span><span class="author-sep">·</span>
+            <span class="author-block"><a href="https://frc.ri.cmu.edu/~zhangji/" target="_blank">Ji Zhang</a></span><span class="author-sep">·</span>
+            <span class="author-block"><a href="https://theairlab.org/team/sebastian/" target="_blank">Sebastian Scherer</a></span>
           </div>
         </div>
         <div class="is-size-6" style="margin-top: 0.9rem; color: #555; font-weight: 500;">
