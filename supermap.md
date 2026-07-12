@@ -163,6 +163,13 @@ hide_hero: true
   .demo-video-placeholder .icon-lg { font-size: 2.4rem; color: #55606b; }
   .demo-caption { color: var(--muted); font-size: 0.9rem; text-align: center; margin-top: 0.8rem; }
 
+  /* Overview figure below insights */
+  .overview-figure { margin-top: 2.5rem; width: min(880px, 94vw); }
+  .overview-figure img {
+    width: 100%; display: block; border-radius: 10px;
+    border: 1px solid var(--hair); background: #fff;
+  }
+
   /* Video subtitle row: letter tag + label above each demo video */
   .video-subtitle {
     display: flex; align-items: center; gap: 0.6rem;
@@ -199,15 +206,17 @@ hide_hero: true
 
   /* TOC: left-fixed mini sidebar (HumanEgo style), appears after scrolling past title */
   .toc {
-    width: 210px; font-family: 'Google Sans', sans-serif;
+    width: 185px; font-family: 'Google Sans', sans-serif;
     position: fixed; top: 110px; display: none; z-index: 900;
     max-height: calc(100vh - 200px); overflow-y: auto;
-    border-left: 2px solid var(--hair); padding-left: 14px;
+    border-left: 2px solid var(--hair); padding-left: 12px;
     scrollbar-width: none; opacity: 0; transition: opacity 0.3s ease-in-out;
   }
   .toc::-webkit-scrollbar { display: none; }
-  @media (min-width: 1400px) {
-    .toc.show { left: max(16px, calc(50vw - 690px)); display: block !important; opacity: 1; }
+  /* Show only when the sidebar clears the 1100px breakout media:
+     right edge (left + 197px) must stay left of the media edge (50vw - 550px). */
+  @media (min-width: 1560px) {
+    .toc.show { left: max(10px, calc(50vw - 770px)); display: block !important; opacity: 1; }
   }
   .toc h3 { font-size: 0.95rem; font-weight: 700; color: #1a1a1a; margin: 0 0 8px; }
   .toc hr { display: none; }
@@ -332,12 +341,13 @@ hide_hero: true
       <li><a href="#overview">1 · Perception</a></li>
       <li><a href="#memory">2 · Memory</a></li>
       <li><a href="#demos">3 · Reasoning &amp; Action</a></li>
-      <li><a href="#demo">4 · Interactive 3D Map</a></li>
-      <li><a href="#abstract">5 · Abstract</a></li>
-      <li><a href="#contributions">6 · Contributions</a></li>
-      <li><a href="#method">7 · Architecture</a></li>
-      <li><a href="#results">8 · Results</a></li>
-      <li><a href="#bibtex">9 · BibTeX</a></li>
+      <li><a href="#demo">4 · Interactive 3D Instance Map</a></li>
+      <li><a href="#insights">5 · Insight</a></li>
+      <li><a href="#abstract">6 · Abstract</a></li>
+      <li><a href="#contributions">7 · Contributions</a></li>
+      <li><a href="#method">8 · Architecture</a></li>
+      <li><a href="#results">9 · Results</a></li>
+      <li><a href="#bibtex">10 · BibTeX</a></li>
     </ul>
   </div>
 
@@ -498,11 +508,11 @@ hide_hero: true
 <!-- Interactive 3D Map Explorer -->
 <section class="section content-section" id="demo">
   <div class="container">
-    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">4 ·</span> Interactive 3D Map Explorer — CMU Campus</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">4 ·</span> Interactive 3D Instance Objects Map — 2 Hour CMU Campus Run from Indoor to Outdoor</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <p class="prose" style="color:var(--muted); margin-bottom:1rem;">
-          <strong style="color:var(--ink);">Generalization:</strong> SuperMap scales to a continuous 40-minute, campus-scale deployment
+          <strong style="color:var(--ink);">Generalization:</strong> SuperMap scales to a continuous 2-hour, campus-scale deployment
           across diverse indoor and outdoor environments without retraining. By maintaining persistent
           object identities and a temporally consistent semantic map, it transforms geometric mapping
           into a living spatial memory. This memory enables robots to ground language in 3D space,
@@ -552,8 +562,10 @@ hide_hero: true
 <!-- Insights -->
 <section class="section content-section" id="insights">
   <div class="container">
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">5 ·</span> Insight</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
+        <p class="prose" style="color:var(--muted); margin-bottom:1.5rem;"><strong style="color:var(--ink);">Insight:</strong> SuperMap turns frame-level perception into a persistent, model-agnostic spatial memory — the missing layer between vision foundation models and embodied reasoning.</p>
         <div class="insight-grid">
           <div class="insight">
             <div class="num">01</div>
@@ -571,6 +583,12 @@ hide_hero: true
             <p>High-frequency geometric SLAM fused with asynchronous open-vocabulary perception runs onboard in real time — released as a deployable baseline.</p>
           </div>
         </div>
+
+        <div class="overview-figure breakout">
+          <img src="/img/supermap/supermap_overview_figure.png"
+               alt="SuperMap overview: vision foundation models feed perception results into a persistent spatial memory (4D scene graph with past-present-future timeline), which interfaces with embodied AI applications such as VLN, VLA, and embodied agents."
+               loading="lazy">
+        </div>
       </div>
     </div>
   </div>
@@ -579,7 +597,7 @@ hide_hero: true
 <!-- Abstract -->
 <section class="section content-section" id="abstract">
   <div class="container">
-    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">5 ·</span> Abstract</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">6 ·</span> Abstract</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="prose">
@@ -595,7 +613,7 @@ hide_hero: true
 <!-- Contributions -->
 <section class="section content-section" id="contributions">
   <div class="container">
-    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">6 ·</span> Contributions</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">7 ·</span> Contributions</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="contrib-list">
@@ -624,7 +642,7 @@ hide_hero: true
 <!-- System Architecture -->
 <section class="section content-section" id="method">
   <div class="container">
-    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">7 ·</span> System Architecture</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">8 ·</span> System Architecture</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="prose">
@@ -663,7 +681,7 @@ hide_hero: true
 <!-- Results -->
 <section class="section content-section" id="results">
   <div class="container">
-    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">8 ·</span> Results</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">9 ·</span> Results</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
 
@@ -716,7 +734,7 @@ hide_hero: true
 <!-- Citation -->
 <section class="section content-section" id="bibtex">
   <div class="container">
-    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">9 ·</span> Citation</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">10 ·</span> Citation</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="citation-box">
