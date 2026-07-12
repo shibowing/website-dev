@@ -154,11 +154,15 @@ hide_hero: true
   .demo-video-placeholder .icon-lg { font-size: 2.4rem; color: #55606b; }
   .demo-caption { color: var(--muted); font-size: 0.9rem; text-align: center; margin-top: 0.8rem; }
 
-  /* Seg + 3D bbox side-by-side strip (below replay cards) */
-  .seg-bbox-strip { margin-top: 1.5rem; }
-  .seg-bbox-strip video {
-    width: 100%; display: block; border-radius: 8px;
-    border: 1px solid var(--hair); background: #0a0a0f;
+  /* Video subtitle row: letter tag + label above each demo video */
+  .video-subtitle {
+    display: flex; align-items: center; gap: 0.6rem;
+    font-size: 1.08rem; font-weight: 700; color: #1a1a1a; margin-bottom: 0.7rem;
+  }
+  .video-tag {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 26px; height: 26px; border-radius: 6px;
+    background: var(--accent); color: #fff; font-size: 0.85rem; font-weight: 800;
   }
 
   /* Scene demo video gallery */
@@ -319,13 +323,12 @@ hide_hero: true
       <li><a href="#overview">1 · Perception</a></li>
       <li><a href="#memory">2 · Memory</a></li>
       <li><a href="#demos">3 · Reasoning &amp; Action</a></li>
-      <li><a href="#demo">Interactive 3D Map</a></li>
-      <li><a href="#insights">Insights</a></li>
-      <li><a href="#abstract">Abstract</a></li>
-      <li><a href="#contributions">Contributions</a></li>
-      <li><a href="#method">Architecture</a></li>
-      <li><a href="#results">Results</a></li>
-      <li><a href="#bibtex">BibTeX</a></li>
+      <li><a href="#demo">4 · Interactive 3D Map</a></li>
+      <li><a href="#abstract">5 · Abstract</a></li>
+      <li><a href="#contributions">6 · Contributions</a></li>
+      <li><a href="#method">7 · Architecture</a></li>
+      <li><a href="#results">8 · Results</a></li>
+      <li><a href="#bibtex">9 · BibTeX</a></li>
     </ul>
   </div>
 
@@ -337,8 +340,8 @@ hide_hero: true
         </h1>
 
         <div class="is-size-5 publication-authors" style="margin-top: 1.5rem;">
-          <span class="author-block">Shibo Zhao,</span>
-          <span class="author-block">Guofei Chen,</span>
+          <span class="author-block">Shibo Zhao<sup>*</sup>,</span>
+          <span class="author-block">Guofei Chen<sup>*</sup>,</span>
           <span class="author-block">Honghao Zhu,</span>
           <span class="author-block">Zhiheng Li,</span>
           <span class="author-block">Changwei Yao,</span>
@@ -350,6 +353,9 @@ hide_hero: true
         </div>
         <div class="is-size-6 publication-authors" style="margin-top: 0.5rem; color: #777;">
           <span class="author-block">Carnegie Mellon University — AirLab</span>
+        </div>
+        <div class="is-size-7" style="margin-top: 0.4rem; color: #999; font-size: 0.85rem;">
+          <sup>*</sup> Equal contribution; author order decided by coin flip.
         </div>
 
         <div class="publication-links">
@@ -369,8 +375,8 @@ hide_hero: true
             </a>
           </span>
           <span class="link-block">
-            <a href="#" class="paper-link">
-              <span class="icon"><i class="fab fa-youtube"></i></span><span>Video</span>
+            <a href="https://www.youtube.com/watch?v=TQjTTqEewNQ" class="paper-link" target="_blank">
+              <span class="icon"><i class="fab fa-youtube"></i></span><span>Summary Video</span>
             </a>
           </span>
           <span class="link-block">
@@ -398,8 +404,15 @@ hide_hero: true
       <div class="column is-four-fifths">
         <p class="prose" style="color:var(--muted); margin-bottom:1.5rem;"><strong style="color:var(--ink);">Perception:</strong> Geometric and semantic consistency enable training-free, reliable 3D object mapping.</p>
         <div class="demo-video-wrap breakout" style="max-width:960px;">
+          <div class="video-subtitle"><span class="video-tag">A</span> From Outdoor to Indoor</div>
           <div class="demo-video-frame">
             <video class="auto-play" src="/video/supermap/video1_v4.mp4" controls playsinline preload="metadata" muted loop autoplay poster="/img/supermap/campus_segments.png"></video>
+          </div>
+        </div>
+        <div class="demo-video-wrap breakout" style="max-width:960px; margin-top:2.5rem;">
+          <div class="video-subtitle"><span class="video-tag">B</span> Indoor Environment</div>
+          <div class="demo-video-frame">
+            <video class="auto-play" src="/video/supermap/supermap_indoor_environment.mp4" poster="/img/supermap/posters/supermap_indoor_environment.jpg" controls playsinline preload="none" muted loop></video>
           </div>
         </div>
       </div>
@@ -467,7 +480,7 @@ hide_hero: true
 <!-- Interactive 3D Map Explorer -->
 <section class="section content-section" id="demo">
   <div class="container">
-    <h2 class="title is-2">Interactive 3D Map Explorer — CMU Campus</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">4 ·</span> Interactive 3D Map Explorer — CMU Campus</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <p class="prose" style="color:var(--muted); margin-bottom:1rem;">
@@ -511,14 +524,6 @@ hide_hero: true
           <p class="sm-caption">Dynamic replays — hover to locate, click to play:</p>
           <div id="segment-grid"></div>
         </div>
-
-        <div class="seg-bbox-strip breakout">
-          <video class="auto-play" src="/video/supermap/seg_bbox_strip.mp4" poster="/img/supermap/posters/seg_bbox_strip.jpg" controls playsinline preload="none" muted loop></video>
-          <p class="sm-caption" style="margin-top:0.6rem;">
-            Online perception, side by side — <strong>left:</strong> RGB with open-vocabulary instance segmentation ·
-            <strong>right:</strong> tracked 3D bounding boxes with persistent instance IDs.
-          </p>
-        </div>
       </div>
     </div>
   </div>
@@ -556,7 +561,7 @@ hide_hero: true
 <!-- Abstract -->
 <section class="section content-section" id="abstract">
   <div class="container">
-    <h2 class="title is-2">Abstract</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">5 ·</span> Abstract</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="prose">
@@ -572,7 +577,7 @@ hide_hero: true
 <!-- Contributions -->
 <section class="section content-section" id="contributions">
   <div class="container">
-    <h2 class="title is-2">Contributions</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">6 ·</span> Contributions</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="contrib-list">
@@ -601,7 +606,7 @@ hide_hero: true
 <!-- System Architecture -->
 <section class="section content-section" id="method">
   <div class="container">
-    <h2 class="title is-2">System Architecture</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">7 ·</span> System Architecture</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="prose">
@@ -640,7 +645,7 @@ hide_hero: true
 <!-- Results -->
 <section class="section content-section" id="results">
   <div class="container">
-    <h2 class="title is-2">Results</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">8 ·</span> Results</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
 
@@ -693,7 +698,7 @@ hide_hero: true
 <!-- Citation -->
 <section class="section content-section" id="bibtex">
   <div class="container">
-    <h2 class="title is-2">Citation</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">9 ·</span> Citation</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="citation-box">
@@ -799,10 +804,17 @@ hide_hero: true
         entries.forEach(function (e) {
           var v = e.target;
           if (e.isIntersecting) { visible.add(v); tryPlay(v); }
-          else { visible.delete(v); v.pause(); }
+          else { visible.delete(v); if (!v.hasAttribute('autoplay')) v.pause(); }
         });
-      }, { threshold: 0.2 });
-      vids.forEach(function (v) { v.muted = true; io.observe(v); });
+      }, { threshold: 0.1, rootMargin: '120px 0px' });
+      vids.forEach(function (v) {
+        v.muted = true;
+        // Videos with the native autoplay attribute start themselves — never
+        // pause them from script; a pause() racing the native start can wedge
+        // playback permanently.
+        if (v.hasAttribute('autoplay')) { visible.add(v); tryPlay(v); }
+        io.observe(v);
+      });
     } else {
       vids.forEach(function (v) { visible.add(v); tryPlay(v); });
     }
