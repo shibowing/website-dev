@@ -403,7 +403,7 @@ hide_hero: true
             </a>
           </span>
           <span class="link-block">
-            <a href="https://shibowing.github.io/" class="paper-link" target="_blank">
+            <a href="https://x.com/ShiboZhaoSLAM" class="paper-link" target="_blank">
               <span class="icon"><i class="fab fa-twitter"></i></span><span>Twitter</span>
             </a>
           </span>
