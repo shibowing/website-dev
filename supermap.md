@@ -316,8 +316,9 @@ hide_hero: true
   <div class="toc" id="toc">
     <h3>SuperMap</h3><hr>
     <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#demos">Scene Demonstrations</a></li>
+      <li><a href="#overview">1 · Perception</a></li>
+      <li><a href="#memory">2 · Memory</a></li>
+      <li><a href="#demos">3 · Reasoning &amp; Action</a></li>
       <li><a href="#demo">Interactive 3D Map</a></li>
       <li><a href="#insights">Insights</a></li>
       <li><a href="#abstract">Abstract</a></li>
@@ -381,9 +382,8 @@ hide_hero: true
 
         <div class="quote-block">
           <span class="qmark open">&ldquo;</span>
-          <p class="qtext">Spatial intelligence is not merely seeing the world&mdash;it is understanding how it is structured, remembering how it changes, and knowing how to act within it.</p>
+          <p class="qtext">The goal of SuperMap could be as a living spatial memory that not only perceives the world, but also remembers its evolution and supports reasoning and action for embodied AI.</p>
           <span class="qmark close">&rdquo;</span>
-          <div class="qattr">&mdash; SLAM Handbook</div>
         </div>
       </div>
     </div>
@@ -393,31 +393,46 @@ hide_hero: true
 <!-- Demo Video -->
 <section class="section content-section" id="overview">
   <div class="container">
-    <h2 class="title is-2 has-text-centered">Overview</h2>
-    <div class="demo-video-wrap breakout" style="max-width:960px;">
-      <div class="demo-video-frame">
-        <video class="auto-play" src="/video/supermap/video1_v4.mp4" controls playsinline preload="metadata" muted loop autoplay poster="/img/supermap/campus_segments.png"></video>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">1 ·</span> Perception</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <p class="prose" style="color:var(--muted); margin-bottom:1.5rem;"><strong style="color:var(--ink);">Perception:</strong> Geometric and semantic consistency enable training-free, reliable 3D object mapping.</p>
+        <div class="demo-video-wrap breakout" style="max-width:960px;">
+          <div class="demo-video-frame">
+            <video class="auto-play" src="/video/supermap/video1_v4.mp4" controls playsinline preload="metadata" muted loop autoplay poster="/img/supermap/campus_segments.png"></video>
+          </div>
+        </div>
       </div>
-      <p class="demo-caption">SuperMap builds a queryable 4D scene memory online — explore the live reconstruction below.</p>
     </div>
-    <div class="demo-video-wrap breakout" style="max-width:960px; margin-top:2rem;">
-      <div class="demo-video-frame">
-        <video class="auto-play" src="/video/supermap/video2_v2.mp4" controls playsinline preload="none" muted loop poster="/img/supermap/posters/video2_v2.jpg"></video>
+  </div>
+</section>
+
+<!-- Memory -->
+<section class="section content-section" id="memory">
+  <div class="container">
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">2 ·</span> Memory</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <p class="prose" style="color:var(--muted); margin-bottom:1.5rem;"><strong style="color:var(--ink);">Memory:</strong> Persistent object identities transform frame-level detections into long-term scene memory.</p>
+        <div class="demo-video-wrap breakout" style="max-width:960px;">
+          <div class="demo-video-frame">
+            <video class="auto-play" src="/video/supermap/video2_v2.mp4" controls playsinline preload="none" muted loop poster="/img/supermap/posters/video2_v2.jpg"></video>
+          </div>
+        </div>
       </div>
-      <p class="demo-caption">Language-guided navigation — the robot follows natural-language commands grounded in the 4D scene memory.</p>
     </div>
   </div>
 </section>
 
 
 
-<!-- Scene Demonstrations -->
+<!-- Reasoning & Action -->
 <section class="section content-section" id="demos">
   <div class="container">
-    <h2 class="title is-2">Scene Demonstrations</h2>
+    <h2 class="title is-2"><span style="color:var(--muted); font-weight:600;">3 ·</span> Reasoning &amp; Action</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <p class="prose" style="color:var(--muted); margin-bottom:1.5rem;">Real-robot runs across dynamic indoor scenes — objects appearing, disappearing, and relocating while SuperMap keeps a consistent 4D memory.</p>
+        <p class="prose" style="color:var(--muted); margin-bottom:1.5rem;"><strong style="color:var(--ink);">Reasoning &amp; Action:</strong> A structured spatio-temporal memory provides a direct interface for visual-language navigation and embodied reasoning.</p>
         <div class="scene-gallery breakout">
           <div class="scene-item">
             <video class="auto-play" src="/video/supermap/mecanum_boardgame_shelf.mp4" poster="/img/supermap/posters/mecanum_boardgame_shelf.jpg" controls playsinline preload="none" muted loop></video>
@@ -440,7 +455,7 @@ hide_hero: true
             <div class="scene-label">Wheelchair · plant · fire extinguisher</div>
           </div>
           <div class="scene-item">
-            <video class="auto-play" src="/video/supermap/video3_v2.mp4" poster="/img/supermap/posters/video3_v2.jpg" controls playsinline preload="none" muted loop></video>
+            <video class="auto-play" src="/video/supermap/wheelchair_print_edited.mp4" poster="/img/supermap/posters/wheelchair_print_edited.jpg" controls playsinline preload="none" muted loop></video>
             <div class="scene-label">Spatio-temporal query</div>
           </div>
         </div>
@@ -455,11 +470,19 @@ hide_hero: true
     <h2 class="title is-2">Interactive 3D Map Explorer — CMU Campus</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
+        <p class="prose" style="color:var(--muted); margin-bottom:1rem;">
+          <strong style="color:var(--ink);">Generalization:</strong> SuperMap scales to a continuous 40-minute, campus-scale deployment
+          across diverse indoor and outdoor environments without retraining. By maintaining persistent
+          object identities and a temporally consistent semantic map, it transforms geometric mapping
+          into a living spatial memory. This memory enables robots to ground language in 3D space,
+          reason about spatial relationships, remember how scenes evolve over time, and execute
+          visual-language navigation in complex, dynamic environments.
+        </p>
         <p class="sm-caption" style="margin-top:0; margin-bottom:1rem;">
-          Explore the merged, semantically-annotated 3D map (drag to orbit, scroll to zoom,
-          right-drag to pan; hover a box for its label, click to pin). <strong>Hover a replay
-          card</strong> below to light up the robot's trajectory and the region it mapped;
-          <strong>click</strong> to play the dynamic reconstruction.
+          <strong>Explore the map:</strong> Drag to orbit, scroll to zoom, and right-drag to pan.
+          Hover over a 3D bounding box to view its semantic label, or click to pin it. Hover over a
+          replay card to highlight the robot's trajectory and mapped region, then click to replay
+          the dynamic reconstruction.
         </p>
 
         <div id="sm-viewer" class="breakout">
@@ -511,13 +534,13 @@ hide_hero: true
         <div class="insight-grid">
           <div class="insight">
             <div class="num">01</div>
-            <h4>Consistency-driven mapping</h4>
+            <h4>Persistent Object Tracking</h4>
             <p>3D-aware instance association plus an existence-and-label confidence update keep object identities stable and prune stale content under occlusion and scene change.</p>
           </div>
           <div class="insight">
             <div class="num">02</div>
-            <h4>Queryable 4D scene graph</h4>
-            <p>A spatio-temporal scene graph interfaces naturally with Vision-Language Models, supporting compositional queries over object semantics, relations, and history.</p>
+            <h4>Model-Agnostic Spatial Perception</h4>
+            <p>Rather than replacing foundation models, SuperMap complements them by providing the missing spatial memory — connecting state-of-the-art vision foundation models with downstream embodied agents through a unified, persistent, and structured world representation.</p>
           </div>
           <div class="insight">
             <div class="num">03</div>
@@ -537,9 +560,9 @@ hide_hero: true
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="prose">
-          <p>Robotic navigation in human environments requires a spatio-temporal semantic representation that can reconcile open-vocabulary perception with long-term environmental changes. While foundation models provide strong zero-shot recognition, their predictions are intermittent and view-dependent, and naively integrating them into mapping pipelines leads to identity drift and stale semantics over time.</p>
-          <p>We present <strong>SuperMap</strong>, a 4D spatio-temporal mapping framework for language-guided navigation that integrates high-frequency geometric SLAM with asynchronous open-vocabulary perception. Our core contribution is a <em>consistency-driven mapping engine</em> that combines 3D-aware instance association and re-activation with a principled existence-and-label confidence update to maintain stable object identities and prune outdated map content under occlusions and scene changes.</p>
-          <p>SuperMap produces a queryable 4D scene-graph representation that interfaces naturally with Vision-Language Models by supporting compositional queries over object semantics, relations, and history. We demonstrate SuperMap on benchmarks and real robots, including dynamic scenes with appearance/disappearance and relocation, and provide ablations and runtime analysis. We will release the full system as open-source to provide the community with a deployable baseline for open-vocabulary spatio-temporal mapping.</p>
+          <p>Robotic navigation requires a persistent spatial memory that bridges open-vocabulary perception with long-term scene understanding. While vision foundation models provide strong zero-shot recognition, they operate at the frame level and cannot maintain consistent object identities or reason about scene evolution.</p>
+          <p>We present <strong>SuperMap</strong>, a training-free 4D spatio-temporal mapping framework that fuses geometric SLAM with open-vocabulary perception to build a persistent semantic world model. By jointly enforcing geometric and semantic consistency, SuperMap maintains stable object identities, tracks object appearance, disappearance, and relocation, and continuously updates the map as the environment evolves.</p>
+          <p>The resulting queryable 4D scene graph serves as a unified spatial memory for vision-language navigation and embodied AI, providing a model-agnostic interface between vision foundation models and downstream reasoning and planning systems.</p>
         </div>
       </div>
     </div>
@@ -763,14 +786,41 @@ hide_hero: true
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var vids = document.querySelectorAll('video.auto-play');
-    if (!('IntersectionObserver' in window)) return;
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        var v = e.target;
-        if (e.isIntersecting) { v.muted = true; v.play().catch(function () {}); }
-        else { v.pause(); }
-      });
-    }, { threshold: 0.2 });
-    vids.forEach(function (v) { v.muted = true; io.observe(v); });
+    var visible = new Set();
+
+    function tryPlay(v) {
+      v.muted = true;
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    }
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var v = e.target;
+          if (e.isIntersecting) { visible.add(v); tryPlay(v); }
+          else { visible.delete(v); v.pause(); }
+        });
+      }, { threshold: 0.2 });
+      vids.forEach(function (v) { v.muted = true; io.observe(v); });
+    } else {
+      vids.forEach(function (v) { visible.add(v); tryPlay(v); });
+    }
+
+    // Retry when media becomes ready (decoder freed up / data arrived)
+    vids.forEach(function (v) {
+      v.addEventListener('canplay', function () { if (visible.has(v) && v.paused) tryPlay(v); });
+    });
+
+    // Last-resort: some browsers only allow playback after first user gesture
+    function kick() {
+      visible.forEach(function (v) { if (v.paused) tryPlay(v); });
+      window.removeEventListener('pointerdown', kick);
+      window.removeEventListener('scroll', kick);
+      window.removeEventListener('keydown', kick);
+    }
+    window.addEventListener('pointerdown', kick, { passive: true });
+    window.addEventListener('scroll', kick, { passive: true });
+    window.addEventListener('keydown', kick);
   });
 </script>
