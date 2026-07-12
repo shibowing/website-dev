@@ -107,30 +107,18 @@ async function openModal(seg) {
     }
     if (myToken !== loadToken) return;   // superseded by a newer click
 
-    // 1) Fetch the .rrd bytes ourselves, so the overlay reflects the REAL
-    //    download and we control exactly when "loaded" happens. Show progress
-    //    when the server provides a content-length.
-    const bytes = await fetchRrd(seg.rrd_url, (frac, mb, totalMb) => {
-      if (myToken !== loadToken) return;
-      setLoadingText('Loading replay…',
-        totalMb ? `downloading ${mb} / ${totalMb} MB (${Math.round(frac * 100)}%)`
-                : `downloading… ${mb} MB`);
-    });
-    if (myToken !== loadToken) return;
-
-    // 2) Start the viewer WITHOUT a url (so it doesn't kick off its own fetch),
-    //    then push the fetched bytes through a log channel. The overlay covers
-    //    the brief welcome screen until we send the data.
-    setLoadingText('Loading replay…', 'decoding & rendering…');
+    // Stream the .rrd URL directly into the viewer. The recordings are large
+    // (hundreds of MB) — prefetching the whole file before rendering meant a
+    // very long blank wait. Rerun streams progressively: frames appear within
+    // seconds while the rest keeps downloading in the background.
+    setLoadingText('Loading replay…', 'connecting to the recording stream…');
     viewerInstance = new WebViewerClass();
-    await viewerInstance.start(null, modalBody, { width: '100%', height: '100%' });
+    await viewerInstance.start(seg.rrd_url, modalBody, { width: '100%', height: '100%' });
     if (myToken !== loadToken) { try { viewerInstance.stop(); } catch (e) {} return; }
 
-    const channel = viewerInstance.open_channel('supermap-replay');
-    channel.send_rrd(bytes);
-    // The recording is now in the viewer. Give it a beat to build the UI, then
-    // reveal it. (send_rrd is synchronous into wasm; the frame paints next tick.)
-    setTimeout(() => { if (myToken === loadToken) hideLoading(); }, 400);
+    // First frames are typically decoded within a couple of seconds of the
+    // stream opening; reveal the viewer then (it keeps streaming underneath).
+    setTimeout(() => { if (myToken === loadToken) hideLoading(); }, 2500);
   } catch (err) {
     if (myToken !== loadToken) return;
     // Most likely cause: the .rrd URL is not publicly reachable, or a network
@@ -148,33 +136,6 @@ async function openModal(seg) {
        <p class="muted">${(err && err.message) || err}</p>`;
     modalBody.appendChild(errBox);
   }
-}
-
-// Fetch an .rrd into a Uint8Array, reporting download progress when possible.
-async function fetchRrd(url, onProgress) {
-  const resp = await fetch(url);
-  if (!resp.ok) throw new Error(`HTTP ${resp.status} fetching the recording`);
-  const total = Number(resp.headers.get('content-length')) || 0;
-  const totalMb = total ? (total / 1e6).toFixed(0) : null;
-  if (!resp.body || !total) {
-    // No streaming / no length: fall back to a single buffered read.
-    const buf = await resp.arrayBuffer();
-    return new Uint8Array(buf);
-  }
-  const reader = resp.body.getReader();
-  const chunks = [];
-  let received = 0;
-  for (;;) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    chunks.push(value);
-    received += value.length;
-    if (onProgress) onProgress(received / total, (received / 1e6).toFixed(0), totalMb);
-  }
-  const out = new Uint8Array(received);
-  let off = 0;
-  for (const c of chunks) { out.set(c, off); off += c.length; }
-  return out;
 }
 
 function setLoadingText(main, sub) {
