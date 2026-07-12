@@ -58,8 +58,8 @@ hide_hero: true
   }
 
   .publication-authors { font-family: 'Google Sans', sans-serif; word-wrap: break-word; }
-  .publication-authors a { color: var(--accent) !important; text-decoration: none; }
-  .publication-authors a:hover { text-decoration: underline; }
+  .publication-authors a { color: #222 !important; text-decoration: none; }
+  .publication-authors a:hover { color: var(--accent) !important; text-decoration: underline; }
   .author-block { display: inline-block; margin: 0.15rem 0.35rem !important; font-size: clamp(0.9rem, 2vw, 1.05rem) !important; }
 
   /* Author rows: two balanced centered lines with dot separators */
@@ -108,6 +108,27 @@ hide_hero: true
   .quote-block .qmark.close { right: 0; bottom: -14px; }
   .quote-block p.qtext { font-style: italic; color: #444; font-size: 1.08rem; line-height: 1.8; margin: 0; }
   .quote-block .qattr { color: var(--accent); font-size: 0.95rem; font-weight: 600; margin-top: 0.8rem; }
+  .story-hl { color: var(--accent); font-weight: 700; font-style: normal; }
+
+  /* Perceive -> Remember -> Reason -> Act story strip (mirrors overview figure) */
+  .story-strip {
+    display: flex; align-items: center; justify-content: center;
+    gap: 0.6rem 1.1rem; flex-wrap: wrap; margin: 2rem auto 0.5rem;
+  }
+  .story-step { display: flex; flex-direction: column; align-items: center; min-width: 120px; }
+  .story-icon {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--accent-tint); color: var(--accent);
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+    border: 1.5px solid #f0d9c4; margin-bottom: 0.45rem;
+  }
+  .story-name { font-weight: 800; color: #1a1a1a; font-size: 1rem; }
+  .story-desc { color: var(--muted); font-size: 0.82rem; margin-top: 2px; }
+  .story-arrow { color: #d8b08c; font-size: 1.3rem; font-weight: 700; margin-top: -18px; }
+  @media (max-width: 640px) {
+    .story-arrow { display: none; }
+    .story-step { min-width: 42%; margin-bottom: 0.8rem; }
+  }
 
   /* Plain prose blocks (replaces .section-card) */
   .prose p { font-size: 1.05rem; color: var(--ink); line-height: 1.85; margin-bottom: 1rem; }
@@ -419,8 +440,34 @@ hide_hero: true
 
         <div class="quote-block">
           <span class="qmark open">&ldquo;</span>
-          <p class="qtext">The goal of SuperMap could be as a living spatial memory that not only perceives the world, but also remembers its evolution and supports reasoning and action for embodied AI.</p>
+          <p class="qtext">SuperMap is a living spatial memory for embodied AI &mdash; it <strong class="story-hl">perceives</strong> the world, <strong class="story-hl">remembers</strong> its evolution, and supports <strong class="story-hl">reasoning</strong> and <strong class="story-hl">action</strong>.</p>
           <span class="qmark close">&rdquo;</span>
+        </div>
+
+        <div class="story-strip">
+          <div class="story-step">
+            <div class="story-icon"><i class="fas fa-eye"></i></div>
+            <div class="story-name">Perceive</div>
+            <div class="story-desc">Understand the world</div>
+          </div>
+          <div class="story-arrow">&rarr;</div>
+          <div class="story-step">
+            <div class="story-icon"><i class="fas fa-history"></i></div>
+            <div class="story-name">Remember</div>
+            <div class="story-desc">Track and retain changes</div>
+          </div>
+          <div class="story-arrow">&rarr;</div>
+          <div class="story-step">
+            <div class="story-icon"><i class="fas fa-brain"></i></div>
+            <div class="story-name">Reason</div>
+            <div class="story-desc">Ground and plan</div>
+          </div>
+          <div class="story-arrow">&rarr;</div>
+          <div class="story-step">
+            <div class="story-icon"><i class="fas fa-robot"></i></div>
+            <div class="story-name">Act</div>
+            <div class="story-desc">Execute in the real world</div>
+          </div>
         </div>
       </div>
     </div>
