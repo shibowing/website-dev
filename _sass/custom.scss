@@ -1,256 +1,449 @@
 /* start custom scss snippet */
+/*
+  IMU Odometry Challenge — scoped design system.
+  Mimics https://grand-tour.leggedrobotics.com/: white surfaces, gray-900/600/500
+  text hierarchy, a red-600 interactive accent, indigo-600 "new/highlight" chips,
+  rounded-xl/full cards & pills, and a dark navy footer.
+  Every rule below is scoped under body.imuchallenge-site / body.imuchallenge-home
+  so no other page on the site is affected.
+*/
+
+body.imuchallenge-site {
+  background: #ffffff !important;
+  color: #111827;
+}
+
+/*
+  Reading measure: the whole content block gets ONE centered column width —
+  like grand-tour's body copy. Every child (headings, paragraphs, cards,
+  tables, grids) shares that exact same left/right edge, so nothing jumps
+  width as you scroll. Wide elements (tables, image grids) scroll
+  horizontally inside themselves rather than widening the column. The
+  column itself is fluid: it grows with the viewport up to 1080px, and on
+  small screens falls back to the viewport width minus a safe side gutter.
+*/
+body.imuchallenge-site .content {
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #374151;
+  text-align: left;
+}
+
+@media (max-width: 480px) {
+  body.imuchallenge-site .content {
+    font-size: 1rem;
+  }
+}
+
+body.imuchallenge-site .content ul,
+body.imuchallenge-site .content ol {
+  padding-left: 1.35rem;
+}
+
+body.imuchallenge-site .content h1,
+body.imuchallenge-site .content h2,
+body.imuchallenge-site .content h3,
+body.imuchallenge-site .content h4 {
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+
+body.imuchallenge-site .content h1 {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+body.imuchallenge-site .content h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 3.25rem;
+  margin-bottom: 1.1rem;
+  font-size: 1.5rem;
+}
+
+body.imuchallenge-site .content h2:first-child,
+body.imuchallenge-site .content h1 + h2 {
+  margin-top: 0.5rem;
+}
+
+body.imuchallenge-site .content h3 {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+body.imuchallenge-site .content p {
+  margin: 0 0 1.1rem;
+}
+
+body.imuchallenge-site .content strong,
+body.imuchallenge-site .content b {
+  color: #111827;
+  font-weight: 800;
+}
+
+/* Small accent icon inline before a heading, e.g. `## <i class="fas fa-bullhorn imu-h-icon"></i> Announcements` */
+body.imuchallenge-site .imu-h-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: #fef2f2;
+  color: #dc2626;
+  font-size: 0.85rem;
+}
+
+body.imuchallenge-site .content a {
+  color: #dc2626;
+  text-decoration: underline;
+  text-decoration-color: rgba(220, 38, 38, 0.35);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 150ms ease;
+}
+
+body.imuchallenge-site .content a:hover {
+  color: #b91c1c;
+  text-decoration-color: currentColor;
+}
+
+body.imuchallenge-site .content code {
+  background: #f3f4f6;
+  color: #111827;
+  font-size: 0.9em;
+}
+
+/* Plain markdown tables (organizer hardware specs, split counts, etc.) */
+body.imuchallenge-site .content table:not(.imu-schema-table):not(.imu-data-table) {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+body.imuchallenge-site .content table:not(.imu-schema-table):not(.imu-data-table) th,
+body.imuchallenge-site .content table:not(.imu-schema-table):not(.imu-data-table) td {
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+body.imuchallenge-site .content table:not(.imu-schema-table):not(.imu-data-table) th {
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #111827;
+}
+
+body.imuchallenge-site .section {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+/* ---------- Navbar ---------- */
 
 body.imuchallenge-site .navbar.is-imuchallenge {
-  background: linear-gradient(90deg, #0b1b2b 0%, #12324a 60%, #1a4f70 100%);
-  border-bottom: 1px solid rgba(122, 214, 255, 0.35);
-  box-shadow: 0 8px 22px rgba(4, 16, 27, 0.28);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  min-height: 60px;
 }
 
 body.imuchallenge-site .navbar.is-imuchallenge .navbar-item,
-body.imuchallenge-site .navbar.is-imuchallenge .navbar-link,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-link {
+  margin: 0 0.15rem;
+  border-radius: 999px;
+  color: #374151 !important;
+  font-weight: 600;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
 body.imuchallenge-site .navbar.is-imuchallenge .navbar-burger {
-  color: #e9f7ff !important;
+  color: #374151 !important;
+  font-weight: 600;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-logo {
+  background-image: url("/img/logos/Horizontal@2x.png");
+  background-repeat: no-repeat;
+  background-size: 172px auto;
+  background-position: 7px center;
+  border-radius: 10px;
 }
 
 body.imuchallenge-site .navbar.is-imuchallenge .navbar-item:hover,
-body.imuchallenge-site .navbar.is-imuchallenge .navbar-link:hover,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-link:hover {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-logo:hover {
+  background-color: transparent !important;
+}
+
 body.imuchallenge-site .navbar.is-imuchallenge .navbar-item.is-active,
 body.imuchallenge-site .navbar.is-imuchallenge .navbar-link.is-active {
-  background-color: rgba(255, 255, 255, 0.12) !important;
-  color: #ffffff !important;
+  background-color: transparent !important;
+  color: #dc2626 !important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
 }
 
 body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown {
-  background: #10283b;
-  border-top: 2px solid #59c4ff;
+  background: #ffffff;
+  border-top: 2px solid #dc2626;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.12);
 }
 
 body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown .navbar-item {
-  color: #e9f7ff !important;
+  margin: 0;
+  border-radius: 0;
+  color: #374151 !important;
 }
 
 body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown .navbar-item:hover,
 body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown .navbar-item.is-active {
-  background: rgba(89, 196, 255, 0.2) !important;
+  background: #f3f4f6 !important;
+  color: #111827 !important;
 }
 
 body.imuchallenge-site .imuchallenge-navbar-actions {
   align-items: center;
+  gap: 0.15rem;
 }
 
 body.imuchallenge-site .imuchallenge-navbar-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 44px;
-  padding-right: 0.65rem;
-  padding-left: 0.65rem;
-  font-size: 1.35rem;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  margin: 0 0.1rem;
+  padding: 0 !important;
+  border-radius: 999px;
+  font-size: 1.15rem;
+  color: #6b7280 !important;
+  transition: background-color 150ms ease, color 150ms ease;
 }
 
 body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon:visited,
-body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon:hover,
 body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon:focus,
 body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon:focus-visible,
 body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon:active {
-  background: transparent !important;
   border-color: transparent !important;
   box-shadow: none !important;
-  color: #f7fbff !important;
   outline: 0 !important;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon:hover {
+  background: #f3f4f6 !important;
+  color: #111827 !important;
 }
 
 body.imuchallenge-site .imuchallenge-navbar-icon img {
   display: block;
-  width: 25px;
-  max-height: 25px;
+  width: 20px;
+  max-height: 20px;
   object-fit: contain;
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25));
+  filter: none;
 }
 
 body.imuchallenge-site .imuchallenge-navbar-hf {
-  margin-right: 0.35rem;
+  margin-right: 0.3rem;
 }
 
-body.imuchallenge-home .navbar.is-imuchallenge {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-  background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.92) 100%) !important;
-  border-bottom: 0;
-  box-shadow: none;
+/* ---------- Hero ---------- */
+
+body.imuchallenge-site .hero {
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #111827;
 }
 
-body.imuchallenge-home .navbar.is-imuchallenge::after {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  left: 0;
-  height: 300px;
-  pointer-events: none;
-  content: "";
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.62) 34%, rgba(0, 0, 0, 0.28) 68%, rgba(0, 0, 0, 0) 100%);
+body.imuchallenge-site .hero.is-small .hero-body {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
 }
 
-body.imuchallenge-site {
-  background:
-    radial-gradient(circle at 5% 0%, rgba(62, 142, 191, 0.12), transparent 35%),
-    radial-gradient(circle at 95% 10%, rgba(44, 107, 153, 0.1), transparent 40%),
-    #f6fbff;
+body.imuchallenge-site .hero .title,
+body.imuchallenge-site .hero.is-primary .title {
+  color: #111827 !important;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  text-shadow: none;
 }
 
-body.imuchallenge-site .section {
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
+body.imuchallenge-site .hero .subtitle,
+body.imuchallenge-site .hero.is-primary .subtitle {
+  color: #4b5563 !important;
+  text-shadow: none;
 }
 
-body.imuchallenge-site .content h1,
-body.imuchallenge-site .content h2,
-body.imuchallenge-site .content h3 {
-  color: #0f2f48;
-  letter-spacing: 0.01em;
-}
-
-body.imuchallenge-home {
-  background: #0a0a0a !important;
+body.imuchallenge-site .hero.is-primary .subtitle a:not(.button),
+body.imuchallenge-site .hero.is-primary .subtitle strong,
+body.imuchallenge-site .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
+body.imuchallenge-site .hero.is-primary strong {
+  color: inherit;
 }
 
 body.imuchallenge-home .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 0;
   margin-top: 0;
-  overflow: hidden;
-  background-position: center center !important;
-  background-size: cover !important;
-  color: #fff;
-}
-
-body.imuchallenge-home .hero::before {
-  position: absolute;
-  inset: 0;
-  content: "";
-  background:
-    radial-gradient(circle at 74% 42%, rgba(30, 144, 255, 0.08), transparent 28%),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.48) 38%, rgba(0, 0, 0, 0.2) 74%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.08) 38%, rgba(0, 0, 0, 0.52) 100%);
-  z-index: 0;
+  overflow: visible;
 }
 
 body.imuchallenge-home .hero .hero-body {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  min-height: calc(100vh - 64px);
-  align-items: flex-end;
-  padding: 8rem 1.5rem 6rem;
+  display: block;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 6.5rem 1.5rem 4.5rem;
+  text-align: center;
 }
 
 body.imuchallenge-home .hero .container {
   width: 100%;
   max-width: none;
-  padding-left: clamp(1.2rem, 5vw, 5.5rem);
 }
 
 body.imuchallenge-home .hero .title {
   display: block;
-  margin-bottom: 1.05rem;
-  margin-left: 0;
-  padding-left: 0;
-  color: #fff;
-  font-size: clamp(3.7rem, 8vw, 6.6rem);
-  font-weight: 900;
-  letter-spacing: 0.02em;
-  line-height: 0.92;
-  text-transform: uppercase;
-  transform: translateX(-0.11em);
-  text-shadow: 0 4px 22px rgba(0, 0, 0, 0.42);
+  margin-bottom: 1rem;
+  color: #111827;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  text-transform: none;
+  transform: none;
+  text-shadow: none;
 }
 
 body.imuchallenge-home .hero .title::first-letter {
-  color: #fff;
+  color: #111827;
 }
 
 body.imuchallenge-home .hero .subtitle {
-  margin-left: 0;
-  padding-left: 0;
-  max-width: 720px;
-  color: rgba(255, 255, 255, 0.95);
-  font-size: clamp(1.1rem, 2vw, 1.45rem);
-  line-height: 1.35;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.48);
+  margin: 0 auto;
+  max-width: 620px;
+  color: #4b5563;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.45;
+  text-shadow: none;
 }
 
 body.imuchallenge-home .hero p.subtitle:last-of-type {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.9rem;
   margin-top: 1.9rem;
+  max-width: none;
 }
 
-body.imuchallenge-home .hero .button.is-info {
-  min-width: 240px;
-  height: 72px;
-  border-radius: 8px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.26);
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
+body.imuchallenge-site .hero .button.is-info {
+  height: auto;
+  min-width: 0;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px !important;
+  background: #4f46e5 !important;
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
+  color: #fff !important;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+body.imuchallenge-site .hero .button.is-info:hover {
+  background: #4338ca !important;
+  transform: translateY(-1px);
 }
 
 body.imuchallenge-home .hero .button.is-info:first-child {
-  background: #1e90ff !important;
+  background: transparent !important;
+  border: 1px solid rgba(17, 24, 39, 0.14) !important;
+  color: #111827 !important;
+}
+
+body.imuchallenge-home .hero .button.is-info:first-child:hover {
+  background: #f3f4f6 !important;
+  transform: translateY(-1px);
 }
 
 body.imuchallenge-home .hero .button.is-info:not(:first-child) {
-  background: #242a35 !important;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #4f46e5 !important;
+  border: 1px solid transparent !important;
 }
+
+/* ---------- Announcement banner (optional, hero_announcement_*) ---------- */
 
 .imu-hero-announcement {
   display: flex;
   width: 100%;
-  max-width: 440px;
-  margin-top: 1.75rem;
+  max-width: 560px;
+  margin: 1.75rem auto 0;
   overflow: hidden;
-  border: 1px solid rgba(30, 144, 255, 0.72);
-  border-radius: 8px;
-  background: rgba(9, 34, 64, 0.76);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(8px);
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  background: #f9fafb;
+  box-shadow: none;
 }
 
 .imu-hero-announcement-copy {
   flex: 1 1 auto;
-  padding: 0.6rem 0.9rem;
+  padding: 0.55rem 1rem;
 }
 
 .imu-hero-announcement-copy strong,
 .imu-hero-announcement-copy span {
-  display: block;
-  color: #fff;
-  line-height: 1.25;
+  display: inline;
+  color: #111827;
+  line-height: 1.3;
 }
 
 .imu-hero-announcement-copy strong {
-  font-size: 0.82rem;
-  font-weight: 900;
+  margin-right: 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 800;
 }
 
 .imu-hero-announcement-copy span {
-  margin-top: 0.1rem;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #4b5563;
 }
 
 .imu-hero-announcement-button {
   display: flex;
-  min-width: 110px;
-  padding: 0 0.75rem;
+  min-width: 100px;
+  padding: 0 0.9rem;
   align-items: center;
   justify-content: center;
-  background: #1e90ff;
+  background: #4f46e5;
   color: #fff !important;
   font-size: 0.72rem;
   font-weight: 800;
@@ -258,83 +451,24 @@ body.imuchallenge-home .hero .button.is-info:not(:first-child) {
   text-decoration: none !important;
 }
 
-.imu-hero {
-  background: linear-gradient(135deg, #0a1f30 0%, #154264 55%, #2a678c 100%);
-  color: #eaf7ff;
-  border-radius: 14px;
-  padding: 1.4rem 1.5rem;
-  box-shadow: 0 10px 30px rgba(9, 28, 43, 0.25);
-  margin-bottom: 1rem;
-}
-
-.imu-pill {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.16);
-  color: #eaf7ff;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 999px;
-  padding: 0.2rem 0.65rem;
-  font-size: 0.82rem;
-  margin-right: 0.35rem;
-  margin-bottom: 0.35rem;
-}
-
-.imu-card {
-  background: #ffffff;
-  border: 1px solid #d8ebf9;
-  border-radius: 12px;
-  padding: 1rem 1.1rem;
-  box-shadow: 0 4px 14px rgba(14, 50, 78, 0.08);
-  margin-bottom: 0.9rem;
-}
-
-.imu-announcements-feed {
-  max-height: 320px;
-  overflow-y: auto;
-  padding-right: 0.4rem;
-  margin-bottom: 1rem;
-}
-
-.imu-note {
-  border-left: 4px solid #2a84bd;
-  background: #edf7ff;
-  padding: 0.8rem 1rem;
-  border-radius: 8px;
-}
-
-.imu-metrics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.8rem;
-  margin: 0.8rem 0 1.2rem;
-}
-
-.imu-hero-stats-overlay {
-  margin-top: -12rem;
-  margin-bottom: 1.4rem;
-  position: relative;
-  z-index: 5;
-}
-
-.imu-hero-kpis-in-hero {
-  margin-top: 1.2rem;
-}
+/* ---------- KPI chips (optional, hero_kpis) ---------- */
 
 .imu-kpi-buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
   align-items: stretch;
 }
 
 .imu-kpi-button {
-  background-color: #cc002b !important;
-  border: 1px solid transparent !important;
-  color: #fff !important;
+  background-color: #f9fafb !important;
+  border: 1px solid #e5e7eb !important;
+  color: #111827 !important;
   height: auto;
-  min-width: 190px;
-  padding: 0.7rem 1rem;
-  border-radius: 10px;
+  min-width: 170px;
+  padding: 0.65rem 1rem;
+  border-radius: 12px;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -352,62 +486,294 @@ body.imuchallenge-home .hero .button.is-info:not(:first-child) {
 .imu-kpi-value {
   display: block !important;
   width: 100%;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 800;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.1rem;
   line-height: 1.05;
+  color: #111827;
 }
 
 .imu-kpi-label {
   display: block !important;
   width: 100%;
-  font-size: 0.78rem;
-  opacity: 0.96;
+  font-size: 0.76rem;
+  color: #6b7280;
   line-height: 1.2;
-}
-
-.imu-kpi-button:hover,
-.imu-kpi-button:focus,
-.imu-kpi-button:active {
-  transition: none !important;
-  transform: none !important;
-  box-shadow: none !important;
-  background-color: #cc002b !important;
-  border-color: transparent !important;
-  color: #fff !important;
 }
 
 @media (max-width: 768px) {
   body.imuchallenge-home .hero .hero-body {
-    padding: 7rem 1rem 3rem;
-  }
-
-  body.imuchallenge-home .hero .container {
-    padding-left: 0;
+    padding: 3.5rem 1.25rem 2.5rem;
   }
 
   .imu-hero-announcement {
     flex-direction: column;
+    border-radius: 12px;
   }
 
   .imu-hero-announcement-button {
-    min-height: 52px;
-  }
-
-  .imu-hero-stats-overlay {
-    margin-top: -6.5rem;
-  }
-  .imu-hero-kpis-in-hero {
-    margin-top: 0.8rem;
+    min-height: 44px;
   }
 }
 
+/* ---------- Cards & content components ---------- */
+
+.imu-hero {
+  background: #f9fafb;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.4rem 1.5rem;
+  box-shadow: none;
+  margin-bottom: 1rem;
+}
+
+.imu-pill {
+  display: inline-block;
+  background: #ffffff;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.82rem;
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.imu-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: none;
+  margin-bottom: 0.9rem;
+}
+
+.imu-announcements-feed {
+  max-height: none;
+  overflow-y: visible;
+  padding-right: 0;
+  margin-bottom: 1rem;
+}
+
+.imu-note {
+  border-left: 3px solid #dc2626;
+  background: #f9fafb;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+}
+
+/* ---------- Quiet updates feed (replaces boxed announcement cards) ---------- */
+
+.imu-updates {
+  margin: 0 0 1rem;
+}
+
+.imu-update {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.imu-updates .imu-update:last-child {
+  padding-bottom: 0;
+}
+
+.imu-update-date {
+  position: relative;
+  flex: 0 0 auto;
+  width: 8.5rem;
+  padding-left: 1rem;
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.imu-update-date::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #dc2626;
+}
+
+.imu-update-body {
+  flex: 1 1 auto;
+  color: #374151;
+}
+
+@media (max-width: 640px) {
+  .imu-update {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .imu-update-date {
+    width: auto;
+  }
+}
+
+/* ---------- Numbered steps (replaces boxed step cards) ---------- */
+
+.imu-steps {
+  counter-reset: imu-step;
+  margin: 0 0 1.25rem;
+}
+
+.imu-step {
+  position: relative;
+  counter-increment: imu-step;
+  padding: 1.1rem 0 1.1rem 3rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.imu-step:first-child {
+  border-top: 0;
+  padding-top: 0.25rem;
+}
+
+.imu-step::before {
+  content: counter(imu-step);
+  position: absolute;
+  left: 0;
+  top: 1.15rem;
+  display: flex;
+  width: 1.9rem;
+  height: 1.9rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #111827;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.imu-step:first-child::before {
+  top: 0.35rem;
+}
+
+.imu-step p,
+.imu-step > *:last-child {
+  margin-bottom: 0;
+}
+
+.imu-step ul {
+  margin-top: 0.5rem;
+}
+
+/* ---------- Stat grid (replaces boxed single-fact cards) ---------- */
+
+.imu-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.75rem;
+  margin: 1rem 0 1.75rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.imu-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.imu-stat .imu-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-bottom: 0.6rem;
+  border-radius: 999px;
+  background: #fef2f2;
+  color: #dc2626;
+  font-size: 0.9rem;
+}
+
+.imu-stat .imu-stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.15;
+}
+
+.imu-stat .imu-stat-label {
+  margin-top: 0.2rem;
+  color: #6b7280;
+  font-size: 0.82rem;
+}
+
+/* ---------- Feature grid (replaces boxed metric/benchmark cards) ---------- */
+
+.imu-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.imu-feature {
+  padding-top: 0.9rem;
+  border-top: 2px solid #111827;
+}
+
+.imu-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 0.75rem;
+  border-radius: 10px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.imu-feature-title {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #111827;
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+
+.imu-feature-tag {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  color: #dc2626;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.imu-feature p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.imu-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+  margin: 0.8rem 0 1.2rem;
+}
+
 .imu-metric {
-  background: #fff;
-  border: 1px solid #cfe6f7;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
   padding: 0.8rem 1rem;
-  box-shadow: 0 4px 12px rgba(10, 35, 54, 0.08);
+  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
 }
 
 .imu-metric .value {
@@ -415,26 +781,26 @@ body.imuchallenge-home .hero .button.is-info:not(:first-child) {
   font-size: clamp(1.7rem, 4vw, 2.4rem);
   line-height: 1.05;
   font-weight: 800;
-  color: #0f4f78;
+  color: #111827;
 }
 
 .imu-metric .label {
   display: block;
   margin-top: 0.28rem;
   font-size: 0.88rem;
-  color: #355268;
+  color: #6b7280;
 }
 
 .imu-video-placeholder {
   width: 100%;
   min-height: 240px;
   border-radius: 12px;
-  border: 1px dashed #78acd1;
-  background: linear-gradient(160deg, #ebf7ff 0%, #d9eefb 100%);
+  border: 1px dashed #d1d5db;
+  background: #f9fafb;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1b5d8a;
+  color: #6b7280;
   font-weight: 700;
   letter-spacing: 0.02em;
   margin-bottom: 1rem;
@@ -443,8 +809,8 @@ body.imuchallenge-home .hero .button.is-info:not(:first-child) {
 .imu-media-placeholder {
   width: 100%;
   border-radius: 12px;
-  border: 1px dashed #78acd1;
-  background: #f5fbff;
+  border: 1px dashed #d1d5db;
+  background: #f9fafb;
   padding: 0.5rem;
 }
 
@@ -457,17 +823,22 @@ body.imuchallenge-home .hero .button.is-info:not(:first-child) {
 
 .imu-link-grid a {
   display: block;
-  background: #fff;
-  border: 1px solid #d8ebf9;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 0.7rem 0.8rem;
-  color: #13496d;
+  color: #111827;
   font-weight: 600;
+  text-decoration: none;
+}
+
+.imu-link-grid a:hover {
+  border-color: #dc2626;
 }
 
 .imu-table-wrap {
   overflow-x: auto;
-  border: 1px solid #d8ebf9;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
   background: #fff;
 }
@@ -480,7 +851,7 @@ table.imu-data-table {
 
 table.imu-data-table th,
 table.imu-data-table td {
-  border-bottom: 1px solid #eef5fb;
+  border-bottom: 1px solid #f3f4f6;
   padding: 0.45rem 0.5rem;
   text-align: left;
   white-space: nowrap;
@@ -489,16 +860,16 @@ table.imu-data-table td {
 table.imu-data-table th {
   position: sticky;
   top: 0;
-  background: #f0f8ff;
+  background: #f9fafb;
   z-index: 2;
   cursor: pointer;
-  color: #123e5d;
+  color: #111827;
 }
 
 .imu-filter-row input {
   width: 100%;
   min-width: 96px;
-  border: 1px solid #c5deef;
+  border: 1px solid #e5e7eb;
   border-radius: 6px;
   padding: 0.26rem 0.35rem;
   font-size: 0.78rem;
@@ -511,7 +882,7 @@ table.imu-data-table th {
   gap: 0.6rem;
   margin: 0.6rem 0;
   font-size: 0.86rem;
-  color: #355268;
+  color: #6b7280;
 }
 
 pre code.language-bibtex {
@@ -524,6 +895,28 @@ pre code.language-bibtex {
   padding-left: 1.2rem;
 }
 
+/* Bulleted list with a small leading accent icon instead of a bullet dot */
+.imu-icon-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0 0 1.25rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.imu-icon-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+}
+
+.imu-icon-list li i {
+  flex: 0 0 auto;
+  width: 1.15rem;
+  color: #dc2626;
+  text-align: center;
+}
+
 .imu-schema-table {
   width: 100%;
   border-collapse: collapse;
@@ -532,7 +925,7 @@ pre code.language-bibtex {
 
   th, td {
     padding: 0.55rem 0.8rem;
-    border: 1px solid #d8e4ee;
+    border: 1px solid #e5e7eb;
     vertical-align: top;
     white-space: nowrap;
   }
@@ -542,13 +935,13 @@ pre code.language-bibtex {
   }
 
   th {
-    background: #f0f6fb;
+    background: #f9fafb;
     font-weight: 700;
     text-align: left;
   }
 
   tr:nth-child(even) td {
-    background: #f8fbfd;
+    background: #fafafa;
   }
 }
 
@@ -566,15 +959,15 @@ pre code.language-bibtex {
   height: 25px;
   object-fit: cover;
   border-radius: 4px;
-  border: 1px solid #d8ebf9;
+  border: 1px solid #e5e7eb;
   display: block;
 }
 
-body.imuchallenge-site .imu-p-car { background: #d97706 !important; }
-body.imuchallenge-site .imu-p-drone { background: #0ea5e9 !important; }
-body.imuchallenge-site .imu-p-quadruped { background: #16a34a !important; }
-body.imuchallenge-site .imu-p-handheld { background: #a855f7 !important; }
-body.imuchallenge-site .imu-p-human { background: #a855f7 !important; }
+body.imuchallenge-site .imu-p-car { background: #b45309 !important; }
+body.imuchallenge-site .imu-p-drone { background: #0369a1 !important; }
+body.imuchallenge-site .imu-p-quadruped { background: #15803d !important; }
+body.imuchallenge-site .imu-p-handheld { background: #7e22ce !important; }
+body.imuchallenge-site .imu-p-human { background: #7e22ce !important; }
 
 .imu-split-badge {
   display: inline-block;
@@ -586,15 +979,17 @@ body.imuchallenge-site .imu-p-human { background: #a855f7 !important; }
   text-transform: uppercase;
 }
 
-body.imuchallenge-site .imu-s-train { background: #dbeafe !important; color: #1e40af !important; }
-body.imuchallenge-site .imu-s-val   { background: #d1fae5 !important; color: #065f46 !important; }
+body.imuchallenge-site .imu-s-train { background: #e0e7ff !important; color: #3730a3 !important; }
+body.imuchallenge-site .imu-s-val   { background: #dcfce7 !important; color: #166534 !important; }
 body.imuchallenge-site .imu-s-test  { background: #fee2e2 !important; color: #991b1b !important; }
 
-body.imuchallenge-site .imu-data-table tr.imu-row-car td { background: #fff7ed !important; }
-body.imuchallenge-site .imu-data-table tr.imu-row-drone td { background: #e8f4ff !important; }
+body.imuchallenge-site .imu-data-table tr.imu-row-car td { background: #fffbeb !important; }
+body.imuchallenge-site .imu-data-table tr.imu-row-drone td { background: #f0f9ff !important; }
 body.imuchallenge-site .imu-data-table tr.imu-row-quadruped td { background: #f0fdf4 !important; }
 body.imuchallenge-site .imu-data-table tr.imu-row-handheld td,
 body.imuchallenge-site .imu-data-table tr.imu-row-human td { background: #faf5ff !important; }
+
+/* ---------- Platform sidebar & feature grid ---------- */
 
 .imuchallenge-platform-nav-column {
   align-self: stretch;
@@ -609,7 +1004,7 @@ body.imuchallenge-site .imu-data-table tr.imu-row-human td { background: #faf5ff
 .imuchallenge-platform-sidebar-title {
   display: block;
   margin-bottom: 0.8rem;
-  color: #0f2f48;
+  color: #111827;
   font-size: 0.86rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -623,13 +1018,11 @@ body.imuchallenge-site .imu-data-table tr.imu-row-human td { background: #faf5ff
 
 .imuchallenge-platform-links a {
   display: block;
-  border: 1px solid rgba(42, 132, 189, 0.22);
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(235, 247, 255, 0.88)),
-    #ffffff;
-  box-shadow: 0 6px 18px rgba(14, 50, 78, 0.08);
-  color: #13496d;
+  background: #ffffff;
+  box-shadow: none;
+  color: #111827;
   padding: 0.85rem 0.95rem;
   text-decoration: none;
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
@@ -637,9 +1030,9 @@ body.imuchallenge-site .imu-data-table tr.imu-row-human td { background: #faf5ff
 
 .imuchallenge-platform-links a:hover,
 .imuchallenge-platform-links a.is-active {
-  border-color: rgba(204, 0, 43, 0.55);
-  box-shadow: 0 10px 24px rgba(14, 50, 78, 0.14);
-  color: #0a1f30;
+  border-color: #dc2626;
+  box-shadow: 0 4px 14px rgba(17, 24, 39, 0.08);
+  color: #111827;
   transform: translateY(-1px);
 }
 
@@ -649,10 +1042,17 @@ body.imuchallenge-site .imu-data-table tr.imu-row-human td { background: #faf5ff
   font-weight: 800;
 }
 
+.imuchallenge-platform-links span i {
+  width: 1.15rem;
+  margin-right: 0.5rem;
+  color: #dc2626;
+  text-align: center;
+}
+
 .imuchallenge-platform-links small {
   display: block;
   margin-top: 0.15rem;
-  color: #466477;
+  color: #6b7280;
   font-size: 0.78rem;
   line-height: 1.25;
 }
@@ -669,9 +1069,9 @@ body.imuchallenge-site .imu-data-table tr.imu-row-human td { background: #faf5ff
   display: block;
   min-height: 220px;
   overflow: hidden;
-  border: 1px solid rgba(216, 235, 249, 0.9);
+  border: 1px solid #e5e7eb;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(9, 28, 43, 0.16);
+  box-shadow: none;
   color: #fff !important;
   text-decoration: none !important;
 }
@@ -680,7 +1080,7 @@ body.imuchallenge-site .imu-data-table tr.imu-row-human td { background: #faf5ff
   position: absolute;
   inset: 0;
   content: "";
-  background: linear-gradient(180deg, rgba(4, 16, 27, 0.08) 10%, rgba(4, 16, 27, 0.72) 100%);
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.06) 10%, rgba(17, 24, 39, 0.68) 100%);
 }
 
 .imu-platform-feature img {
@@ -706,6 +1106,11 @@ body.imuchallenge-site .imu-data-table tr.imu-row-human td { background: #faf5ff
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
+.imu-platform-feature span i {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
 @media (max-width: 768px) {
   .imuchallenge-platform-sidebar {
     position: static;
@@ -719,6 +1124,33 @@ body.imuchallenge-site .imu-data-table tr.imu-row-human td { background: #faf5ff
   .imu-platform-feature-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---------- Footer ---------- */
+
+body.imuchallenge-site footer.footer {
+  background: #1c3964 !important;
+  color: #8ca3c4 !important;
+  padding: 2.5rem 0;
+}
+
+body.imuchallenge-site footer.footer a {
+  color: #c7d5e8 !important;
+}
+
+body.imuchallenge-site footer.footer a:hover {
+  color: #ffffff !important;
+}
+
+body.imuchallenge-site footer.footer p {
+  color: #8ca3c4 !important;
+}
+
+body.imuchallenge-site footer.footer #block1 img,
+body.imuchallenge-site footer.footer #block3 img {
+  padding: 0.5rem 0.75rem;
+  background: #ffffff;
+  border-radius: 10px;
 }
 
 /* end custom scss snippet */

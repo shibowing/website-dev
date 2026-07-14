@@ -9,37 +9,28 @@ permalink: /imuchallenge/setup/
 
 # Setup
 
-## Quick Start
+## <i class="fas fa-list-ol imu-h-icon"></i> Quick Start
 
-<div class="imu-card">
-<strong>Step 1: Register your team.</strong> <a href="https://forms.gle/oRr4rCNxqTP1U6uS8" target="_blank" rel="noopener">Fill out the registration form.</a> Then <a href="https://www.kaggle.com" target="_blank" rel="noopener">sign up on Kaggle.</a>
+<div class="imu-steps" markdown="1">
+
+<div class="imu-step" markdown="1">
+**Register your team.** [Fill out the registration form.](https://forms.gle/oRr4rCNxqTP1U6uS8){:target="_blank" rel="noopener"} Then [sign up on Kaggle.](https://www.kaggle.com){:target="_blank" rel="noopener"}
 </div>
 
-<div class="imu-card">
-<strong>Step 2: Download the train/val splits.</strong> Get the data from the <a href="https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge" target="_blank" rel="noopener">IROS Tartan IMU Challenge dataset</a> on Hugging Face.
+<div class="imu-step" markdown="1">
+**Download the train/val splits.** Get the data from the [IROS Tartan IMU Challenge dataset](https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge){:target="_blank" rel="noopener"} on Hugging Face.
 </div>
 
-<div class="imu-card" markdown="1">
-<strong>Step 3: Clone the baseline repository.</strong> <a href="https://github.com/superxslam/TartanIMU" target="_blank" rel="noopener">superxslam/TartanIMU</a>.
+<div class="imu-step" markdown="1">
+**Clone the baseline repository.** [superxslam/TartanIMU](https://github.com/superxslam/TartanIMU){:target="_blank" rel="noopener"}.
 
 ```bash
 git clone https://github.com/superxslam/TartanIMU
 ```
 </div>
 
-<div class="imu-card">
-<strong>Reference models.</strong> We provide per-platform "specialist" checkpoints trained internally as a benchmarking reference, so you can gauge what good performance looks like before submitting. You can also try them interactively in the <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_demo" target="_blank" rel="noopener">live demo</a>.
-<ul>
-  <li><a href="https://huggingface.co/Tartan-IMU/IROS_workshop_car_specialist" target="_blank" rel="noopener">Car specialist</a></li>
-  <li><a href="https://huggingface.co/Tartan-IMU/IROS_workshop_quadruped_specialist" target="_blank" rel="noopener">Quadruped specialist</a></li>
-  <li><a href="https://huggingface.co/Tartan-IMU/IROS_workshop_drone_specialist" target="_blank" rel="noopener">Drone specialist</a></li>
-  <li><a href="https://huggingface.co/Tartan-IMU/IROS_workshop_human_specialist" target="_blank" rel="noopener">Handheld specialist</a></li>
-</ul>
-</div>
-
-<div class="imu-card">
-<strong>Step 4: Write a basic config file.</strong> For details on the available fields, see <code>TartanIMU/config/datasets</code>. A minimal example you can start from:
-</div>
+<div class="imu-step" markdown="1">
+**Write a basic config file.** For details on the available fields, see `TartanIMU/config/datasets`. A minimal example you can start from:
 
 <details markdown="1">
 <summary><strong>Show example config</strong> (<code>minimal_example_config.yaml</code>)</summary>
@@ -224,29 +215,45 @@ finetune:
 ```
 
 </details>
-
-<div class="imu-card">
-<strong>Step 5: Verify the model runs.</strong> Run an overfitting experiment on a small subset to confirm the training loop, data loading, and metrics are working end to end before scaling up.
 </div>
 
-<div class="imu-card">
-<strong>Step 6: Improve and <a href="https://www.kaggle.com" target="_blank" rel="noopener">submit</a>.</strong> Experiment with your own methods to push performance on the leaderboard.
+<div class="imu-step" markdown="1">
+**Verify the model runs.** Run an overfitting experiment on a small subset to confirm the training loop, data loading, and metrics are working end to end before scaling up.
 </div>
 
-## Recommended Workflow
+<div class="imu-step" markdown="1">
+**Improve and [submit](https://www.kaggle.com){:target="_blank" rel="noopener"}.** Experiment with your own methods to push performance on the leaderboard.
+</div>
+
+</div>
+
+## <i class="fas fa-robot imu-h-icon"></i> Reference Models
+
+We provide per-platform "specialist" checkpoints trained internally as a benchmarking reference, so you can gauge what good performance looks like before submitting. You can also try them interactively in the [live demo](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_demo){:target="_blank" rel="noopener"}.
+
+<ul class="imu-icon-list">
+  <li><i class="fas fa-car"></i> <a href="https://huggingface.co/Tartan-IMU/IROS_workshop_car_specialist" target="_blank" rel="noopener">Car specialist</a></li>
+  <li><i class="fas fa-dog"></i> <a href="https://huggingface.co/Tartan-IMU/IROS_workshop_quadruped_specialist" target="_blank" rel="noopener">Quadruped specialist</a></li>
+  <li><i class="fas fa-helicopter"></i> <a href="https://huggingface.co/Tartan-IMU/IROS_workshop_drone_specialist" target="_blank" rel="noopener">Drone specialist</a></li>
+  <li><i class="fas fa-mobile-alt"></i> <a href="https://huggingface.co/Tartan-IMU/IROS_workshop_human_specialist" target="_blank" rel="noopener">Handheld specialist</a></li>
+</ul>
+
+## <i class="fas fa-shoe-prints imu-h-icon"></i> Recommended Workflow
 
 1. Start from a known baseline.
 2. Validate per platform first, then test cross-platform transfer.
 3. Platform both aggregate and per-platform failure modes.
 4. Freeze your final model and produce reproducible inference logs.
 
-## System Requirements (Preliminary)
+## <i class="fas fa-desktop imu-h-icon"></i> System Requirements (Preliminary)
 
-- Linux or macOS development environment
-- Python + PyTorch toolchain
-- GPU required for both training and evaluation
+<ul class="imu-icon-list">
+  <li><i class="fas fa-check"></i> Linux or macOS development environment</li>
+  <li><i class="fas fa-check"></i> Python + PyTorch toolchain</li>
+  <li><i class="fas fa-check"></i> GPU required for both training and evaluation</li>
+</ul>
 
-## Organizer Reference System
+## <i class="fas fa-server imu-h-icon"></i> Organizer Reference System
 
 Results reported by the organizers were produced on the following hardware:
 

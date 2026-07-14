@@ -15,21 +15,24 @@ hero_subtitle2: "Held in conjunction with Beyond Exteroception: Interoceptive Pe
 permalink: /imuchallenge/
 ---
 
-## Announcements
+## <i class="fas fa-bullhorn imu-h-icon"></i> Announcements
 
-<div class="imu-announcements-feed">
-  <div class="imu-card">
-    <strong>May 30, 2026:</strong> The official dataset release hub is set to <a href="/imuchallenge/data/"><code>/imuchallenge/data/</code></a>.
+<div class="imu-updates">
+  <div class="imu-update">
+    <div class="imu-update-date">May 30, 2026</div>
+    <div class="imu-update-body">The official dataset release hub is set to <a href="/imuchallenge/data/"><code>/imuchallenge/data/</code></a>.</div>
   </div>
-  <div class="imu-card">
-    <strong>May 30, 2026:</strong> Platform pages (Car, Drone, Quadruped, Handheld) are published.
+  <div class="imu-update">
+    <div class="imu-update-date">May 30, 2026</div>
+    <div class="imu-update-body">Platform pages (Car, Drone, Quadruped, Handheld) are published.</div>
   </div>
-  <div class="imu-card">
-    <strong>May 30, 2026:</strong> Initial IMU Odometry Challenge website structure is now live under the <code>/imuchallenge/</code> namespace.
+  <div class="imu-update">
+    <div class="imu-update-date">May 30, 2026</div>
+    <div class="imu-update-body">Initial IMU Odometry Challenge website structure is now live under the <code>/imuchallenge/</code> namespace.</div>
   </div>
 </div>
 
-## What This Challenge Is
+## <i class="fas fa-lightbulb imu-h-icon"></i> What This Challenge Is
 
 The IMU Odometry Challenge is a CMU AirLab competition and benchmark for neural inertial odometry.
 
@@ -37,24 +40,20 @@ Participants train and evaluate models on shared train/validation splits and are
 
 This challenge is held in conjunction with the [IROS'26 Workshop: "Beyond Exteroception: Interoceptive Perception for Resilient Robotics"](/interoception/).
 
-## Intro Video: Learning IMU Odometry
+## <i class="fas fa-play-circle imu-h-icon"></i> Intro Video: Learning IMU Odometry
 
-<video controls preload="metadata" style="display:block; width:100%; border-radius:12px; border:1px solid #d8ebf9; margin:0 0 1rem 0;">
+<video controls preload="metadata" style="display:block; width:100%; border-radius:12px; border:1px solid #e5e7eb; margin:0 0 1rem 0;">
   <source src="/img/science_robotics/learning_imu_odometry_intro.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-<div class="imu-note">
-All official dataset packages, download links, and the live metadata explorer are published on <a href="/imuchallenge/data/"><strong>/imuchallenge/data</strong></a>.
-</div>
+All official dataset packages, download links, and the live metadata explorer are published on [/imuchallenge/data](/imuchallenge/data/).
 
-## Try the Live Demo
+## <i class="fas fa-rocket imu-h-icon"></i> Try the Live Demo
 
-<div class="imu-card">
-Run our reference TartanIMU specialist models on your own IMU sequences directly in the browser — no setup required. <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_demo" target="_blank" rel="noopener"><strong>Launch the Hugging Face Space demo &rarr;</strong></a>
-</div>
+Run our reference TartanIMU specialist models on your own IMU sequences directly in the browser — no setup required. [Launch the Hugging Face Space demo &rarr;](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_demo){:target="_blank" rel="noopener"}
 
-## Challenge Goal
+## <i class="fas fa-bullseye imu-h-icon"></i> Challenge Goal
 
 Build IMU odometry models that generalize across robot platforms and beat current state-of-the-art performance under a shared benchmark protocol, surfacing research questions for the workshop discussion on interoceptive robot perception.
 
@@ -68,24 +67,51 @@ Build IMU odometry models that generalize across robot platforms and beat curren
 
 Submissions are ranked on held-out test trajectories across all platforms using:
 
-<div class="imu-card"><strong>Velocity RMSE</strong> &nbsp;<em>(primary ranking metric)</em><br>Macro-averaged velocity RMSE — mean of per-platform RMSEs — so platform size imbalance cannot be gamed.</div>
+<div class="imu-feature-grid">
+  <div class="imu-feature">
+    <span class="imu-feature-icon"><i class="fas fa-tachometer-alt"></i></span>
+    <span class="imu-feature-tag">Primary</span>
+    <span class="imu-feature-title">Velocity RMSE</span>
+    <p>Macro-averaged velocity RMSE — mean of per-platform RMSEs — so platform size imbalance cannot be gamed.</p>
+  </div>
+  <div class="imu-feature">
+    <span class="imu-feature-icon"><i class="fas fa-map-marker-alt"></i></span>
+    <span class="imu-feature-tag">Secondary</span>
+    <span class="imu-feature-title">ATE — Absolute Trajectory Error</span>
+    <p>Position RMSE over 5 m drift-corrected segments, computed by the organizers by integrating predicted velocities with ground-truth orientation.</p>
+  </div>
+</div>
 
-<div class="imu-card"><strong>ATE — Absolute Trajectory Error</strong> &nbsp;<em>(secondary metric)</em><br>Position RMSE over 5 m drift-corrected segments, computed by the organizers by integrating predicted velocities with ground-truth orientation.</div>
+## <i class="fas fa-layer-group imu-h-icon"></i> Benchmark Structure
 
-## Benchmark Structure
+<div class="imu-feature-grid">
+  <div class="imu-feature">
+    <span class="imu-feature-icon"><i class="fas fa-graduation-cap"></i></span>
+    <span class="imu-feature-title">Train</span>
+    <p>Development data for model fitting and ablation.</p>
+  </div>
+  <div class="imu-feature">
+    <span class="imu-feature-icon"><i class="fas fa-check-double"></i></span>
+    <span class="imu-feature-title">Validation</span>
+    <p>Public split for model selection and error analysis.</p>
+  </div>
+  <div class="imu-feature">
+    <span class="imu-feature-icon"><i class="fas fa-flag-checkered"></i></span>
+    <span class="imu-feature-title">Test</span>
+    <p>Held-out benchmark split for official ranking.</p>
+  </div>
+</div>
 
-<div class="imu-card"><strong>Train:</strong> development data for model fitting and ablation.</div>
-<div class="imu-card"><strong>Validation:</strong> public split for model selection and error analysis.</div>
-<div class="imu-card"><strong>Test:</strong> held-out benchmark split for official ranking.</div>
+## <i class="fas fa-compass imu-h-icon"></i> Start Here
 
-## Start Here
+<ul class="imu-icon-list">
+  <li><i class="fas fa-wrench"></i> <a href="/imuchallenge/setup/">Setup</a></li>
+  <li><i class="fas fa-robot"></i> <a href="/imuchallenge/platforms/">Platforms</a></li>
+  <li><i class="fas fa-database"></i> <a href="/imuchallenge/data/">Data</a></li>
+  <li><i class="fas fa-info-circle"></i> <a href="/imuchallenge/about/">About</a></li>
+</ul>
 
-- [Setup](/imuchallenge/setup/)
-- [Platforms](/imuchallenge/platforms/)
-- [Data](/imuchallenge/data/)
-- [About](/imuchallenge/about/)
-
-## BibTeX
+## <i class="fas fa-book imu-h-icon"></i> BibTeX
 
 ```bibtex
 @inproceedings{zhao2025tartanimu,

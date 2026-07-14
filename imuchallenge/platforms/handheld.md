@@ -11,20 +11,22 @@ hero_image: /img/tartanimu/human_overview.png
 permalink: /imuchallenge/platforms/handheld/
 ---
 
-## Data Summary
+## <i class="fas fa-chart-bar imu-h-icon"></i> Data Summary
 
-<div class="imu-card"><strong>Trajectories:</strong> 33</div>
-<div class="imu-card"><strong>Total Duration:</strong> 10.28 hours</div>
-<div class="imu-card"><strong>Total Size:</strong> 0.410 GiB</div>
-<div class="imu-card"><strong>Samples:</strong> 7,405,047</div>
-<div class="imu-card"><strong>Splits:</strong> train 26, val 7</div>
-<div class="imu-card"><strong>Sample Rate:</strong> 200 Hz</div>
-<div class="imu-card"><strong>Source(s):</strong> TartanIMU</div>
+<div class="imu-stat-grid">
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-project-diagram"></i></span><span class="imu-stat-value">33</span><span class="imu-stat-label">Trajectories</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-clock"></i></span><span class="imu-stat-value">10.28 hrs</span><span class="imu-stat-label">Total Duration</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-hdd"></i></span><span class="imu-stat-value">0.410 GiB</span><span class="imu-stat-label">Total Size</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-hashtag"></i></span><span class="imu-stat-value">7,405,047</span><span class="imu-stat-label">Samples</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-code-branch"></i></span><span class="imu-stat-value">26 / 7</span><span class="imu-stat-label">Train / Val Splits</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-signal"></i></span><span class="imu-stat-value">200 Hz</span><span class="imu-stat-label">Sample Rate</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-satellite"></i></span><span class="imu-stat-value">TartanIMU</span><span class="imu-stat-label">Source(s)</span></div>
+</div>
 
-## IMU Sensor Notes
+## <i class="fas fa-microchip imu-h-icon"></i> IMU Sensor Notes
 
-<div class="imu-card">
-<strong>Sensor Type:</strong> handheld-device IMU (accelerometer + gyroscope)
-<br><strong>Expected Fields:</strong> timestamp, accel xyz, gyro xyz
-<br><strong>Typical Rate:</strong> 100 Hz
+<div class="imu-note">
+<strong>Sensor Type:</strong> handheld-device IMU (accelerometer + gyroscope)<br>
+<strong>Expected Fields:</strong> timestamp, accel xyz, gyro xyz<br>
+<strong>Typical Rate:</strong> 100 Hz
 </div>

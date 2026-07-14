@@ -9,13 +9,13 @@ permalink: /imuchallenge/data/
 
 # Data
 
-## Downloads
+## <i class="fas fa-download imu-h-icon"></i> Downloads
 
-<ul class="imu-link-list">
-  <li><a href="https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge" target="_blank" rel="noopener">IROS Tartan IMU Challenge Dataset (all platforms)</a></li>
+<ul class="imu-icon-list">
+  <li><i class="fas fa-database"></i> <a href="https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge" target="_blank" rel="noopener">IROS Tartan IMU Challenge Dataset (all platforms)</a></li>
 </ul>
 
-## Dataset Schema
+## <i class="fas fa-table imu-h-icon"></i> Dataset Schema
 
 Each trajectory is a `.npz` file organized as `{split}/{platform}/{platform}_{split}_{i}.npz`. The task is to predict the mean body-frame velocity `(v_x, v_y, v_z)` in m/s for each 1.0 s window (200 samples @ 200 Hz) of IMU data.
 
@@ -42,7 +42,7 @@ Window indices and per-window targets are in `index/`: `train_windows.csv` / `va
 
 Splits are deduplicated at the trajectory level (SHA-256 of raw IMU content); train/val/test share no recording.
 
-## Split Counts
+## <i class="fas fa-code-branch imu-h-icon"></i> Split Counts
 
 | Platform | Train | Val |
 |---|---|---|
@@ -52,7 +52,7 @@ Splits are deduplicated at the trajectory level (SHA-256 of raw IMU content); tr
 | Handheld | 26 | 7 |
 | **Total** | **167** | **49** |
 
-## Data Explorer
+## <i class="fas fa-search imu-h-icon"></i> Data Explorer
 
 All trajectories are sampled at **200 Hz**. Each 1-second window contains exactly 200 IMU samples.
 

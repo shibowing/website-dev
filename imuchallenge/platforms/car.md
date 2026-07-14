@@ -11,20 +11,22 @@ hero_image: /img/tartanimu/car_overview.png
 permalink: /imuchallenge/platforms/car/
 ---
 
-## Data Summary
+## <i class="fas fa-chart-bar imu-h-icon"></i> Data Summary
 
-<div class="imu-card"><strong>Trajectories:</strong> 56</div>
-<div class="imu-card"><strong>Total Duration:</strong> 8.58 hours</div>
-<div class="imu-card"><strong>Total Size:</strong> 0.342 GiB</div>
-<div class="imu-card"><strong>Samples:</strong> 6,176,242</div>
-<div class="imu-card"><strong>Splits:</strong> train 44, val 12</div>
-<div class="imu-card"><strong>Sample Rate:</strong> 200 Hz</div>
-<div class="imu-card"><strong>Source(s):</strong> TartanIMU</div>
+<div class="imu-stat-grid">
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-project-diagram"></i></span><span class="imu-stat-value">56</span><span class="imu-stat-label">Trajectories</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-clock"></i></span><span class="imu-stat-value">8.58 hrs</span><span class="imu-stat-label">Total Duration</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-hdd"></i></span><span class="imu-stat-value">0.342 GiB</span><span class="imu-stat-label">Total Size</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-hashtag"></i></span><span class="imu-stat-value">6,176,242</span><span class="imu-stat-label">Samples</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-code-branch"></i></span><span class="imu-stat-value">44 / 12</span><span class="imu-stat-label">Train / Val Splits</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-signal"></i></span><span class="imu-stat-value">200 Hz</span><span class="imu-stat-label">Sample Rate</span></div>
+  <div class="imu-stat"><span class="imu-stat-icon"><i class="fas fa-satellite"></i></span><span class="imu-stat-value">TartanIMU</span><span class="imu-stat-label">Source(s)</span></div>
+</div>
 
-## IMU Sensor Notes
+## <i class="fas fa-microchip imu-h-icon"></i> IMU Sensor Notes
 
-<div class="imu-card">
-<strong>Sensor Type:</strong> onboard MEMS IMU (accelerometer + gyroscope)
-<br><strong>Expected Fields:</strong> timestamp, accel xyz, gyro xyz
-<br><strong>Typical Rate:</strong> 200 Hz
+<div class="imu-note">
+<strong>Sensor Type:</strong> onboard MEMS IMU (accelerometer + gyroscope)<br>
+<strong>Expected Fields:</strong> timestamp, accel xyz, gyro xyz<br>
+<strong>Typical Rate:</strong> 200 Hz
 </div>
