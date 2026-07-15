@@ -1,0 +1,34 @@
+# Latest research news shown in the floating panel on the homepage.
+# Add new items at the top.
+# Fields: date, tag (optional), text (full content, can be multi-sentence),
+#         image (optional, shown below text), link (optional), link_text (optional).
+- date: "Jul 2026"
+  tag: "RSS 2026"
+  text: >-
+    Excited to present our work "SuperMap: A Spatio-Temporal SLAM System for
+    Visual-Language Navigation" at RSS 2026 next week! SuperMap fuses geometric
+    SLAM with open-vocabulary perception to build a queryable 4D scene graph —
+    a living spatial memory that tracks objects as they appear, move, and
+    disappear. Everything runs online, onboard, and without any training.
+  image: /img/supermap/supermap_overview_figure.png
+  link: /supermap
+  link_text: "Visit the project page"
+- date: "Jul 2026"
+  tag: "Open Source"
+  text: >-
+    SuperMap is now fully open source! Code, the change-detection benchmark,
+    ablations, and the real-robot visual-language navigation pipeline are all
+    released on GitHub. Plug in any detection + segmentation stack and build
+    your own persistent semantic world model.
+  link: https://github.com/superxslam/SuperMap
+  link_text: "Get the code on GitHub"
+- date: "2026"
+  tag: "Science Robotics"
+  text: >-
+    Super Odometry was selected as a top feature article on Science Robotics!
+    Our IMU-centric LiDAR-visual-inertial estimator delivers resilient odometry
+    through darkness, dust, and geometric degeneracy — battle-tested in the
+    DARPA SubT Challenge.
+  image: /img/science_robotics/science_feature_image.png
+  link: /#news
+  link_text: "Read the story"

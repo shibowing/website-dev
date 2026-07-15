@@ -1,4 +1,4 @@
-<section class="hero {% if page.hero_height %} {{ page.hero_height }} {% elsif layout.hero_height %} {{ layout.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: linear-gradient(180deg, rgba(204,0,44,.1),rgba(204,0,44,0)), url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
+<section class="hero {% if page.hero_height %} {{ page.hero_height }} {% elsif layout.hero_height %} {{ layout.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: linear-gradient(180deg, rgba(196,90,14,.1),rgba(196,90,14,0)), url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
     <div class="hero-body">
         <div class="container">
             {% unless page.remove_hero_title %}
@@ -16,8 +16,8 @@
             {% endunless %}
             {% if page.hero_buttons %}
                 {% for btn in page.hero_buttons %}
-                <a href="{{ btn.link }}" class="button is-large hero-social-btn" target="_blank" rel="noopener" {% if btn.color %}style="background-color:{{ btn.color }};"{% endif %}>
-                    {% if btn.icon %}<span class="icon"><i class="{{ btn.icon }}"></i></span>{% endif %}
+                <a href="{{ btn.link }}" class="button is-normal hero-social-btn" {% unless btn.link.first == "/" %}target="_blank" rel="noopener"{% endunless %} {% if btn.color %}style="background-color:{{ btn.color }};"{% endif %}>
+                    {% if btn.image %}<span class="icon"><img src="{{ btn.image | prepend: site.baseurl }}" alt="" class="hero-social-btn-img"></span>{% elsif btn.icon %}<span class="icon"><i class="{{ btn.icon }}"></i></span>{% endif %}
                     <span>{{ btn.text }}</span>
                 </a>
                 {% endfor %}
@@ -43,15 +43,15 @@
         {% if page.hero_kpis %}
         <div class="imu-hero-kpis-in-hero">
             <div class="imu-kpi-buttons">
-                <div class="imu-kpi-button" style="background:#cc002b;color:#fff;border-radius:10px;padding:0.7rem 1rem;min-width:190px;display:inline-block;">
+                <div class="imu-kpi-button" style="background:#C45A0E;color:#fff;border-radius:10px;padding:0.7rem 1rem;min-width:190px;display:inline-block;">
                     <div class="imu-kpi-value" style="display:block;font-size:1.35rem;font-weight:800;line-height:1.05;">{{ page.hero_kpis[0].value }}</div>
                     <div class="imu-kpi-label" style="display:block;font-size:0.78rem;line-height:1.2;">{{ page.hero_kpis[0].label }}</div>
                 </div>
-                <div class="imu-kpi-button" style="background:#cc002b;color:#fff;border-radius:10px;padding:0.7rem 1rem;min-width:190px;display:inline-block;">
+                <div class="imu-kpi-button" style="background:#C45A0E;color:#fff;border-radius:10px;padding:0.7rem 1rem;min-width:190px;display:inline-block;">
                     <div class="imu-kpi-value" style="display:block;font-size:1.35rem;font-weight:800;line-height:1.05;">{{ page.hero_kpis[1].value }}</div>
                     <div class="imu-kpi-label" style="display:block;font-size:0.78rem;line-height:1.2;">{{ page.hero_kpis[1].label }}</div>
                 </div>
-                <div class="imu-kpi-button" style="background:#cc002b;color:#fff;border-radius:10px;padding:0.7rem 1rem;min-width:190px;display:inline-block;">
+                <div class="imu-kpi-button" style="background:#C45A0E;color:#fff;border-radius:10px;padding:0.7rem 1rem;min-width:190px;display:inline-block;">
                     <div class="imu-kpi-value" style="display:block;font-size:1.35rem;font-weight:800;line-height:1.05;">{{ page.hero_kpis[2].value }}</div>
                     <div class="imu-kpi-label" style="display:block;font-size:0.78rem;line-height:1.2;">{{ page.hero_kpis[2].label }}</div>
                 </div>
@@ -64,22 +64,25 @@
 
 <style>
     .button.is-info {
-     background-color:#cc002b;
+     background-color:#C45A0E;
      border-color:transparent;
      color:#fff
     }
     .button.is-info.is-hovered {
-     background-color:#cc002b;
+     background-color:#C45A0E;
      border-color:transparent;
      color:#fff
     }
     .hero-social-btn {
-     background-color:#cc002b;
+     background-color:#C45A0E;
      border-color:transparent;
      color:#fff;
-     margin-right:0.5rem;
-     margin-bottom:0.5rem;
+     margin-right:0.4rem;
+     margin-bottom:0.4rem;
      border-radius:9999px;
+     font-size:0.9rem;
+     padding:0.4rem 1.1rem;
+     height:auto;
      transition:transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
     }
     .hero-social-btn:hover {
@@ -91,10 +94,15 @@
     .hero-social-btn .icon {
      margin-right:0.15rem;
     }
+    .hero-social-btn-img {
+     width:1.1em;
+     height:1.1em;
+     border-radius:3px;
+    }
     @media (max-width: 768px) {
      .hero-social-btn {
-      font-size:1rem;
-      padding:0.5rem 1rem;
+      font-size:0.85rem;
+      padding:0.35rem 0.9rem;
      }
     }
 </style>

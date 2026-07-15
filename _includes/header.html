@@ -36,6 +36,13 @@
                 {% endfor %}
                 {% endif %}
             </div>
+            {% unless is_imuchallenge_nav %}
+            <div class="navbar-end">
+                <a href="{{ site.baseurl }}/" class="navbar-item superx-brand" aria-label="{{ site.title }} home">
+                    <img src="{{ site.baseurl }}/img/logos/superx-logo-white.png" alt="SuperX — Spatial Intelligence for Robotics" class="superx-brand-img">
+                </a>
+            </div>
+            {% endunless %}
             {% if is_imuchallenge_nav %}
             <div class="navbar-end imuchallenge-navbar-actions">
                 <a href="https://github.com/shibowing/website-dev" class="navbar-item imuchallenge-navbar-icon" target="_blank" rel="noopener" aria-label="GitHub repository">
@@ -52,3 +59,25 @@
         </div>
     </div>
 </nav>
+
+<style>
+    .superx-brand {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        display: flex;
+        align-items: center;
+    }
+    .superx-brand-img {
+        height: 3.05rem;
+        max-height: none !important;
+        width: auto;
+        opacity: 0.97;
+        transition: opacity 0.15s ease;
+    }
+    .superx-brand:hover .superx-brand-img {
+        opacity: 1;
+    }
+    @media (max-width: 768px) {
+        .superx-brand-img { height: 2rem; }
+    }
+</style>

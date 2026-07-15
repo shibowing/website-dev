@@ -24,8 +24,10 @@
     - name: Sensor Fusion Track
       link: /iccv23_challenge_Mul
 - name: Research
-  link: /tartanimu
+  link: /research
   dropdown:
+    - name: All Research
+      link: /research
     - name: TartanIMU
       link: /tartanimu
     - name: SuperLoc
