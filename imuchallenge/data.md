@@ -13,6 +13,7 @@ permalink: /imuchallenge/data/
 
 <ul class="imu-link-list">
   <li><a href="https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge" target="_blank" rel="noopener">IROS Tartan IMU Challenge Dataset (all platforms)</a></li>
+  <li><a href="https://www.kaggle.com/competitions/tartanimu-iros2026/data" target="_blank" rel="noopener">Kaggle competition Data tab</a> — competition-formatted windows, <code>index/test_windows.csv</code>, and <code>sample_submission.csv</code></li>
 </ul>
 
 ## Dataset Schema
@@ -29,18 +30,18 @@ Each trajectory is a `.npz` file organized as `{split}/{platform}/{platform}_{sp
     <tr><td><code>pos</code></td><td><code>(N,&nbsp;3)</code></td><td>Ground-truth position in metres (world frame).</td></tr>
     <tr><td><code>quat</code></td><td><code>(N,&nbsp;4)</code></td><td>Ground-truth orientation as quaternion <code>[x, y, z, w]</code>.</td></tr>
     <tr><td><code>vel_body</code></td><td><code>(N,&nbsp;3)</code></td><td>Body-frame velocity target <code>[v_x, v_y, v_z]</code> in m/s, derived from <code>pos</code>/<code>quat</code>. This is the prediction target.</td></tr>
-    <tr><td><code>platform_id</code></td><td>scalar</td><td>Platform label: <code>0</code>=car, <code>1</code>=dog (quadruped), <code>2</code>=drone, <code>3</code>=human (handheld).</td></tr>
+    <tr><td><code>platform_id</code></td><td>scalar</td><td>Platform label: <code>0</code>=car, <code>1</code>=dog (quadruped), <code>2</code>=drone, <code>3</code>=human (handheld). <strong>Present in train/val only</strong> — test windows are anonymized with no platform label, so a single model must handle all four without being told which one it's looking at.</td></tr>
     <tr><td><code>fs</code></td><td>scalar</td><td>Sample rate — always <code>200</code> Hz.</td></tr>
   </tbody>
 </table>
 
-Window indices and per-window targets are in `index/`: `train_windows.csv` / `val_windows.csv` (window_id → trajectory + start sample) and `train_targets.csv` / `val_targets.csv` (window_id → `vx, vy, vz`).
+Window indices and per-window targets are in `index/`: `train_windows.csv` / `val_windows.csv` (window_id → trajectory + start sample) and `train_targets.csv` / `val_targets.csv` (window_id → `vx, vy, vz`). The Kaggle Data tab additionally provides `index/test_windows.csv` and `sample_submission.csv` for the held-out test set.
 
-**Primary metric:** macro-averaged velocity RMSE (mean of per-platform RMSEs, so platform size imbalance cannot be gamed).
+At competition scale, the dataset totals roughly **175k windows** across all platforms — about 7–12 hours of recorded motion per platform.
 
-**Secondary metric:** ATE — organizer integrates per-window velocity with ground-truth orientation over 5 m drift-corrected segments (position RMSE).
+**Metric — macro-averaged Absolute Trajectory Error (ATE), lower is better:** you submit one body-frame velocity per test window. The organizers rotate each prediction into the world frame using the ground-truth orientation (used only for scoring, never as model input), accumulate the per-window displacements into a path, align that path to ground truth with an SE(3) Umeyama alignment (rotation + translation, no scale), and compute ATE as the RMS position error between the aligned estimate and ground truth. Per-platform ATE is the mean over that platform's test trajectories; the final score is the equal-weight mean of the four per-platform ATEs, so no platform dominates.
 
-Splits are deduplicated at the trajectory level (SHA-256 of raw IMU content); train/val/test share no recording.
+Splits are deduplicated at the trajectory level (SHA-256 of raw IMU content); train / val / public-test / private-test share no recording. The public leaderboard is scored on the Public test trajectories; final standings use the held-out Private trajectories. The Public/Private split is at the whole-trajectory level, never per window.
 
 ## Sensors Used
 

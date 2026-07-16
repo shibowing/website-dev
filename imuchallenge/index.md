@@ -9,7 +9,9 @@ permalink: /imuchallenge/
 ---
 
 <div class="imu-gt-media">
-  <div class="imu-gt-media-placeholder">Hero media placeholder — drop in a video or image</div>
+  <video autoplay loop muted playsinline preload="auto">
+    <source src="/img/imuchallenge/hero_preview.mp4" type="video/mp4">
+  </video>
 </div>
 
 <div class="imu-gt-pill-row">
@@ -27,7 +29,7 @@ permalink: /imuchallenge/
 
 <h1 class="imu-gt-title" data-title="IMU Odometry Challenge">IMU Odometry Challenge</h1>
 
-<p class="imu-gt-subtitle">A CMU AirLab benchmark for neural inertial odometry: train and evaluate models across car, drone, quadruped, and handheld platforms on shared splits, ranked on held-out test sets.</p>
+<p class="imu-gt-subtitle">Can a single model sense motion for any robot? Estimate 3D body-frame velocity from raw 6-axis IMU — with <strong>one unified model</strong> across car, drone, quadruped, and human, scored on an anonymized, platform-blind test set.</p>
 
 <div class="imu-gt-button-row">
   <a class="imu-gt-button" href="/imuchallenge/setup/">Setup</a>
@@ -41,7 +43,7 @@ permalink: /imuchallenge/
 <div class="imu-gt-stats-band">
   <dl class="imu-gt-stats">
     <div><dt>Platforms</dt><dd>4</dd></div>
-    <div><dt>Trajectories</dt><dd>216</dd></div>
+    <div><dt>Windows</dt><dd>~175K</dd></div>
     <div><dt>Total Duration</dt><dd>29.5 hrs</dd></div>
     <div><dt>Sample Rate</dt><dd>200 Hz</dd></div>
   </dl>
@@ -61,8 +63,8 @@ permalink: /imuchallenge/
   <div class="imu-gt-feature">
     <div class="imu-gt-feature-icon"><i class="fas fa-layer-group"></i></div>
     <div class="imu-gt-feature-content">
-      <span class="imu-gt-feature-title">Cross-Platform Benchmark</span>
-      <p class="imu-gt-feature-body">Shared train/validation splits and held-out test sets across car, drone, quadruped, and handheld IMU data, so methods are ranked on generalization, not one platform.</p>
+      <span class="imu-gt-feature-title">One Unified Model, Four Embodiments</span>
+      <p class="imu-gt-feature-body">Train and val include platform labels, but the test set is anonymized — no platform id, no platform-revealing trajectory ids. A single model must handle car, drone, quadruped, and human at once; switching between per-platform experts isn't possible.</p>
     </div>
   </div>
   <div class="imu-gt-feature">
@@ -76,7 +78,7 @@ permalink: /imuchallenge/
     <div class="imu-gt-feature-icon"><i class="fas fa-balance-scale"></i></div>
     <div class="imu-gt-feature-content">
       <span class="imu-gt-feature-title">Standardized Evaluation</span>
-      <p class="imu-gt-feature-body">Macro-averaged velocity RMSE as the primary metric and ATE as a secondary metric, both computed with a shared, transparent protocol across all platforms.</p>
+      <p class="imu-gt-feature-body">Scored on macro-averaged Absolute Trajectory Error (ATE): predicted velocities are integrated into a path, aligned to ground truth via SE(3) Umeyama, then averaged per platform — an equal-weight mean across all four so no platform dominates.</p>
     </div>
   </div>
   <div class="imu-gt-feature">
@@ -120,6 +122,10 @@ permalink: /imuchallenge/
   <h2 class="imu-gt-section-title">Announcements</h2>
   </div>
   <div class="imu-gt-update-row is-latest">
+    <time datetime="2026-07-09">2026-07-09</time>
+    <span>The competition is live on Kaggle: <a href="https://www.kaggle.com/competitions/tartanimu-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</span>
+  </div>
+  <div class="imu-gt-update-row">
     <time datetime="2026-05-30">2026-05-30</time>
     <span>The official dataset release hub is set to <a href="/imuchallenge/data/"><code>/imuchallenge/data/</code></a>.</span>
   </div>

@@ -9,18 +9,20 @@ permalink: /imuchallenge/about/
 
 <h1 class="imu-page-title">{% include imu-bot.html %}About</h1>
 
-The IMU Odometry Challenge is hosted by **CMU AirLab**, with organization led by the TartanIMU and Super Odometry contributors.
+The IMU Odometry Challenge — run on Kaggle as the [**TartanIMU Challenge: Multi-Platform Inertial Odometry**](https://www.kaggle.com/competitions/tartanimu-iros2026){:target="_blank" rel="noopener"} — is hosted by **CMU AirLab**, with organization led by the TartanIMU and Super Odometry contributors.
 
-The challenge is also designed as a technical prelude to the [IROS'26 Workshop: Beyond Exteroception](/interoception/), which centers on interoceptive perception for resilient robotics.
+The challenge is the official benchmark of the [IROS 2026 Workshop: "Beyond Exteroception: Interoceptive Perception for Resilient Robotics"](/interoception/) (Sept 27 – Oct 1, 2026, Pittsburgh). Top entries will be invited to present their methods at the workshop. The competition does not award a cash prize — it's scored on Kudos rather than points or medals.
 
 ## Motivation
 
-Learning-based inertial methods have shown strong progress, but robust cross-platform generalization remains a major open problem.
+Learning-based inertial methods have shown strong progress, but almost always on a single platform, typically a pedestrian carrying a phone. Whether one inertial-perception method can generalize across embodiments with completely different dynamics, frequency content, and motion priors is still an open question.
+
+**The twist that defines this challenge: you must submit one unified model that handles all four platforms at once.** The test set is anonymized — no platform label, no platform-revealing trajectory ids — so per-platform experts switched at inference time are not an option. This is a cross-embodiment generalization benchmark, not four separate regressions.
 
 This challenge is designed to provide:
 
-- A common benchmark for cross-platform inertial odometry
-- Shared train/val resources and hidden test evaluation
+- A common benchmark for cross-platform, single-model inertial odometry
+- Shared train/val resources (with platform labels) and an anonymized, platform-blind test evaluation
 - A transparent evaluation path for comparing new methods
 
 ## Technical Context

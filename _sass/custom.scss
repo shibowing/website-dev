@@ -1183,6 +1183,15 @@ body.imuchallenge-site footer.footer #block3 img {
   text-transform: uppercase;
 }
 
+.imu-gt-media video {
+  display: block;
+  width: 100%;
+  height: 28vh;
+  min-height: 180px;
+  max-height: 320px;
+  object-fit: cover;
+}
+
 .imu-gt-pill-row {
   display: flex;
   flex-direction: column;

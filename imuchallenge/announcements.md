@@ -13,6 +13,10 @@ permalink: /imuchallenge/announcements/
 
 <div class="imu-updates">
   <div class="imu-update">
+    <div class="imu-update-date">Jul 9, 2026</div>
+    <div class="imu-update-body">The competition is live on Kaggle: <a href="https://www.kaggle.com/competitions/tartanimu-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</div>
+  </div>
+  <div class="imu-update">
     <div class="imu-update-date">May 30, 2026</div>
     <div class="imu-update-body">The official dataset release hub is set to <a href="/imuchallenge/data/"><code>/imuchallenge/data/</code></a>.</div>
   </div>
