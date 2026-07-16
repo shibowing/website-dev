@@ -90,7 +90,7 @@ mathjax: true
   }
   .hero-toc a.active {
     background: rgba(204, 0, 43, 0.12);
-    color: #cc002b;
+    color: #C45A0E;
     font-weight: 700;
   }
   .hero-main {

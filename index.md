@@ -7,8 +7,23 @@ hide_hero: false
 hide_footer: false
 hero_height: is-large
 hero_image: img/super_odometry/superodom_video.gif
-hero_link: https://github.com/superxslam/SuperOdom
-hero_link_text: See Our Code
+hero_buttons:
+  - text: See Our Research
+    link: /research
+    icon: fas fa-flask
+    color: "#C45A0E"
+  - text: Join Discord
+    link: https://discord.gg/GUh9zfXz
+    icon: fab fa-discord
+    color: "#5865F2"
+  - text: Follow on X
+    link: https://x.com/ShiboZhaoSLAM
+    icon: fab fa-twitter
+    color: "#000000"
+  - text: RedNote
+    link: https://www.xiaohongshu.com/user/profile/6466589d000000001f032fbc
+    image: /img/logos/rednote-logo.png
+    color: "#FF2442"
 ---
 
 <!-- Additional fonts and styles (loaded after theme's default styles) -->
@@ -328,7 +343,7 @@ hero_link_text: See Our Code
   
   .method-card {
     background: #fff;
-    border-left: 5px solid #cc002b;
+    border-left: 5px solid #C45A0E;
     padding: 1.5rem;
     margin-bottom: 1rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -337,7 +352,7 @@ hero_link_text: See Our Code
   
   .method-level {
     font-weight: 800;
-    color: #cc002b;
+    color: #C45A0E;
     margin-right: 10px;
     font-family: monospace;
     font-size: 1.2rem;
@@ -622,6 +637,214 @@ hero_link_text: See Our Code
     </div>
   </div>
 </section>
+
+<!-- Floating Latest Research News panel (right edge, collapsible) -->
+<div id="news-panel" class="news-panel">
+  <button id="news-panel-tab" class="news-panel-tab" aria-label="Toggle latest research news">
+    <span class="icon"><i class="fab fa-twitter"></i></span>
+    <span class="news-panel-tab-text">News</span>
+  </button>
+  <div class="news-panel-body">
+    <div class="news-panel-header">
+      <span class="icon" style="color:#C45A0E;"><i class="fab fa-twitter"></i></span>
+      <span>Latest Research News</span>
+      <button id="news-panel-close" class="news-panel-close" aria-label="Hide news panel">&times;</button>
+    </div>
+    <div class="news-panel-feed">
+      {% for item in site.data.news %}
+      <div class="news-item">
+        <div class="news-item-author">
+          <img class="news-item-avatar" src="/img/team/shibozNew.png" alt="Shibo Zhao">
+          <div class="news-item-author-meta">
+            <span class="news-item-name">Shibo Zhao</span>
+            <span class="news-item-handle">@ShiboZhaoSLAM · {{ item.date }}</span>
+          </div>
+          {% if item.tag %}<span class="news-item-tag">{{ item.tag }}</span>{% endif %}
+        </div>
+        <p class="news-item-text">{{ item.text }}</p>
+        {% if item.image %}
+        <a href="{{ item.link | default: item.image }}"><img class="news-item-image" src="{{ item.image }}" alt="" loading="lazy"></a>
+        {% endif %}
+        {% if item.link %}<a class="news-item-link" href="{{ item.link }}" {% unless item.link.first == "/" %}target="_blank" rel="noopener"{% endunless %}>{{ item.link_text | default: "Read more" }} &rarr;</a>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <a href="https://x.com/ShiboZhaoSLAM" target="_blank" rel="noopener" class="latest-news-follow-btn">
+      <span class="icon"><i class="fab fa-twitter"></i></span>
+      <span>Follow on X for updates</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  .news-panel {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  .news-panel.is-hidden-panel {
+    transform: translateY(-50%) translateX(400px);
+  }
+  .news-panel-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    background: #C45A0E;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px 0 0 10px;
+    padding: 0.7rem 0.45rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    box-shadow: -3px 3px 10px rgba(0,0,0,0.2);
+  }
+  .news-panel-tab:hover { filter: brightness(1.1); }
+  .news-panel-tab-text {
+    writing-mode: vertical-rl;
+    letter-spacing: 0.05em;
+  }
+  .news-panel-body {
+    width: 400px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.15);
+    padding: 0.8rem;
+  }
+  .news-panel-header {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+  }
+  .news-panel-close {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    line-height: 1;
+    color: #888;
+    cursor: pointer;
+  }
+  .news-panel-close:hover { color: #222; }
+  .news-panel-feed {
+    max-height: 60vh;
+    overflow-y: auto;
+    border-radius: 8px;
+  }
+  .news-item {
+    padding: 0.85rem 0.2rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-item-author {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 0.5rem;
+  }
+  .news-item-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .news-item-author-meta {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+    min-width: 0;
+  }
+  .news-item-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  .news-item-handle {
+    font-size: 0.78rem;
+    color: #888;
+  }
+  .news-item-tag {
+    margin-left: auto;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #C45A0E;
+    background: #fdf3ec;
+    border-radius: 9999px;
+    padding: 0.12rem 0.55rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .news-item-text {
+    font-size: 0.88rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 0 0 0.45rem 0;
+  }
+  .news-item-image {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    margin: 0.1rem 0 0.45rem 0;
+    display: block;
+  }
+  .news-item-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #C45A0E !important;
+  }
+  .news-item-link:hover { text-decoration: underline; }
+  .latest-news-follow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 9999px;
+    background: #000;
+    color: #fff !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: filter 0.15s ease;
+  }
+  .latest-news-follow-btn:hover { filter: brightness(1.25); }
+  @media (max-width: 900px) {
+    .news-panel { display: none; }
+  }
+</style>
+
+<script>
+  (function () {
+    var panel = document.getElementById('news-panel');
+    var tab = document.getElementById('news-panel-tab');
+    var close = document.getElementById('news-panel-close');
+    if (!panel || !tab || !close) return;
+    if (localStorage.getItem('newsPanelHidden') === '1') {
+      panel.classList.add('is-hidden-panel');
+    }
+    function setHidden(hidden) {
+      panel.classList.toggle('is-hidden-panel', hidden);
+      localStorage.setItem('newsPanelHidden', hidden ? '1' : '0');
+    }
+    tab.addEventListener('click', function () {
+      setHidden(!panel.classList.contains('is-hidden-panel'));
+    });
+    close.addEventListener('click', function () { setHidden(true); });
+  })();
+</script>
 
 <!-- Summary Video Section -->
 <section class="section content-section" id="summary-video" style="padding-top: 1rem !important;">

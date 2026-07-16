@@ -417,7 +417,7 @@ hide_hero: true
             </a>
           </span>
           <span class="link-block">
-            <a href="https://github.com/gfchen01/semantic_mapping" class="paper-link" target="_blank">
+            <a href="https://github.com/superxslam/SuperMap" class="paper-link" target="_blank">
               <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
             </a>
           </span>
