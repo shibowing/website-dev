@@ -7,9 +7,9 @@ hide_hero: true
 permalink: /imuchallenge/announcements/
 ---
 
-# Announcements
+<h1 class="imu-page-title">{% include imu-bot.html %}Announcements</h1>
 
-## <i class="fas fa-bullhorn imu-h-icon"></i> Latest Updates
+## Latest Updates
 
 <div class="imu-updates">
   <div class="imu-update">

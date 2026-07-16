@@ -7,15 +7,15 @@ hide_hero: true
 permalink: /imuchallenge/data/
 ---
 
-# Data
+<h1 class="imu-page-title">{% include imu-bot.html %}Data</h1>
 
-## <i class="fas fa-download imu-h-icon"></i> Downloads
+## Downloads
 
-<ul class="imu-icon-list">
-  <li><i class="fas fa-database"></i> <a href="https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge" target="_blank" rel="noopener">IROS Tartan IMU Challenge Dataset (all platforms)</a></li>
+<ul class="imu-link-list">
+  <li><a href="https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge" target="_blank" rel="noopener">IROS Tartan IMU Challenge Dataset (all platforms)</a></li>
 </ul>
 
-## <i class="fas fa-table imu-h-icon"></i> Dataset Schema
+## Dataset Schema
 
 Each trajectory is a `.npz` file organized as `{split}/{platform}/{platform}_{split}_{i}.npz`. The task is to predict the mean body-frame velocity `(v_x, v_y, v_z)` in m/s for each 1.0 s window (200 samples @ 200 Hz) of IMU data.
 
@@ -42,7 +42,61 @@ Window indices and per-window targets are in `index/`: `train_windows.csv` / `va
 
 Splits are deduplicated at the trajectory level (SHA-256 of raw IMU content); train/val/test share no recording.
 
-## <i class="fas fa-code-branch imu-h-icon"></i> Split Counts
+## Sensors Used
+
+Recordings across the four platforms come from two IMU models: the **Xsens MTi-100** and the **Epson M-G365**. Expand for full specs.
+
+<details class="imu-sensors-toggle">
+<summary>Show IMU sensor specs</summary>
+
+<div class="imu-sensor-grid">
+  <div class="imu-sensor-card">
+    <div class="imu-sensor-card-header">
+      {% include imu-chip-icon.html %}
+      <div>
+        <span class="imu-sensor-card-name">Xsens MTi-100</span>
+        <span class="imu-sensor-card-maker">Movella / Xsens</span>
+      </div>
+    </div>
+    <table class="imu-sensor-specs">
+      <tr><td>Gyro range</td><td>&plusmn;450 &deg;/s</td></tr>
+      <tr><td>Gyro bias instability</td><td>10 &deg;/h</td></tr>
+      <tr><td>Accel range</td><td>&plusmn;20 g</td></tr>
+      <tr><td>Accel bias instability</td><td>15 &micro;g</td></tr>
+      <tr><td>Output rate</td><td>up to 2 kHz</td></tr>
+      <tr><td>Interface</td><td>USB, RS232, RS422, UART</td></tr>
+      <tr><td>Dimensions</td><td>57 &times; 41.9 &times; 23.6 mm</td></tr>
+      <tr><td>Weight</td><td>55 g</td></tr>
+      <tr><td>Operating temp.</td><td>&minus;40 to 85&deg;C</td></tr>
+    </table>
+    <span class="imu-sensor-card-source">Source: <a href="https://www.xsens.com/hubfs/Downloads/Leaflets/MTi-100.pdf" target="_blank" rel="noopener">Movella MTi-100 datasheet</a> (now EOL, replaced by Xsens Sirius)</span>
+  </div>
+  <div class="imu-sensor-card">
+    <div class="imu-sensor-card-header">
+      {% include imu-chip-icon.html %}
+      <div>
+        <span class="imu-sensor-card-name">Epson M-G365</span>
+        <span class="imu-sensor-card-maker">Seiko Epson</span>
+      </div>
+    </div>
+    <table class="imu-sensor-specs">
+      <tr><td>Gyro range</td><td>&plusmn;450 &deg;/s</td></tr>
+      <tr><td>Gyro bias instability</td><td>1.2 &deg;/h</td></tr>
+      <tr><td>Accel range</td><td>&plusmn;4 g (PDC1) / &plusmn;10 g (PDF1)</td></tr>
+      <tr><td>Accel bias instability</td><td>14&ndash;16 &micro;g</td></tr>
+      <tr><td>Output rate</td><td>up to 2k Sps</td></tr>
+      <tr><td>Interface</td><td>SPI, UART</td></tr>
+      <tr><td>Dimensions</td><td>24 &times; 24 &times; 10 mm</td></tr>
+      <tr><td>Weight</td><td>10 g</td></tr>
+      <tr><td>Operating temp.</td><td>&minus;40 to 85&deg;C</td></tr>
+    </table>
+    <span class="imu-sensor-card-source">Source: <a href="https://www.epsondevice.com/sensing/en/pdf/m-g365pdc1_pdf1_briefsheet_e_rev20230630.pdf" target="_blank" rel="noopener">Epson M-G365PDC1/PDF1 datasheet</a></span>
+  </div>
+</div>
+
+</details>
+
+## Split Counts
 
 | Platform | Train | Val |
 |---|---|---|
@@ -52,7 +106,7 @@ Splits are deduplicated at the trajectory level (SHA-256 of raw IMU content); tr
 | Handheld | 26 | 7 |
 | **Total** | **167** | **49** |
 
-## <i class="fas fa-search imu-h-icon"></i> Data Explorer
+## Data Explorer
 
 All trajectories are sampled at **200 Hz**. Each 1-second window contains exactly 200 IMU samples.
 

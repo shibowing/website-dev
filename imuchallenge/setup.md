@@ -7,9 +7,9 @@ hide_hero: true
 permalink: /imuchallenge/setup/
 ---
 
-# Setup
+<h1 class="imu-page-title">{% include imu-bot.html %}Setup</h1>
 
-## <i class="fas fa-list-ol imu-h-icon"></i> Quick Start
+## Quick Start
 
 <div class="imu-steps" markdown="1">
 
@@ -227,33 +227,29 @@ finetune:
 
 </div>
 
-## <i class="fas fa-robot imu-h-icon"></i> Reference Models
+## Reference Models
 
 We provide per-platform "specialist" checkpoints trained internally as a benchmarking reference, so you can gauge what good performance looks like before submitting. You can also try them interactively in the [live demo](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_demo){:target="_blank" rel="noopener"}.
 
-<ul class="imu-icon-list">
-  <li><i class="fas fa-car"></i> <a href="https://huggingface.co/Tartan-IMU/IROS_workshop_car_specialist" target="_blank" rel="noopener">Car specialist</a></li>
-  <li><i class="fas fa-dog"></i> <a href="https://huggingface.co/Tartan-IMU/IROS_workshop_quadruped_specialist" target="_blank" rel="noopener">Quadruped specialist</a></li>
-  <li><i class="fas fa-helicopter"></i> <a href="https://huggingface.co/Tartan-IMU/IROS_workshop_drone_specialist" target="_blank" rel="noopener">Drone specialist</a></li>
-  <li><i class="fas fa-mobile-alt"></i> <a href="https://huggingface.co/Tartan-IMU/IROS_workshop_human_specialist" target="_blank" rel="noopener">Handheld specialist</a></li>
-</ul>
+- [Car specialist](https://huggingface.co/Tartan-IMU/IROS_workshop_car_specialist){:target="_blank" rel="noopener"}
+- [Quadruped specialist](https://huggingface.co/Tartan-IMU/IROS_workshop_quadruped_specialist){:target="_blank" rel="noopener"}
+- [Drone specialist](https://huggingface.co/Tartan-IMU/IROS_workshop_drone_specialist){:target="_blank" rel="noopener"}
+- [Handheld specialist](https://huggingface.co/Tartan-IMU/IROS_workshop_human_specialist){:target="_blank" rel="noopener"}
 
-## <i class="fas fa-shoe-prints imu-h-icon"></i> Recommended Workflow
+## Recommended Workflow
 
 1. Start from a known baseline.
 2. Validate per platform first, then test cross-platform transfer.
 3. Platform both aggregate and per-platform failure modes.
 4. Freeze your final model and produce reproducible inference logs.
 
-## <i class="fas fa-desktop imu-h-icon"></i> System Requirements (Preliminary)
+## System Requirements (Preliminary)
 
-<ul class="imu-icon-list">
-  <li><i class="fas fa-check"></i> Linux or macOS development environment</li>
-  <li><i class="fas fa-check"></i> Python + PyTorch toolchain</li>
-  <li><i class="fas fa-check"></i> GPU required for both training and evaluation</li>
-</ul>
+- Linux or macOS development environment
+- Python + PyTorch toolchain
+- GPU required for both training and evaluation
 
-## <i class="fas fa-server imu-h-icon"></i> Organizer Reference System
+## Organizer Reference System
 
 Results reported by the organizers were produced on the following hardware:
 

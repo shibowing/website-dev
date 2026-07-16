@@ -7,7 +7,7 @@ hide_hero: true
 permalink: /imuchallenge/data/preview/
 ---
 
-# Trajectory Preview
+<h1 class="imu-page-title">{% include imu-bot.html %}Trajectory Preview</h1>
 
 <div id="imu-preview-root" class="imu-card">Loading trajectory preview...</div>
 
