@@ -49,8 +49,23 @@ permalink: /imuchallenge/
   </dl>
 </div>
 
-<div class="imu-gt-media">
-  <div class="imu-gt-media-placeholder">Illustration placeholder — e.g. platform lineup or trajectory figure</div>
+<div class="imu-gt-platform-strip" aria-label="Platform trajectory previews">
+  <a class="imu-gt-platform-card" href="/imuchallenge/platforms/car/">
+    <img src="/img/imuchallenge/previews/car_train_0000.png" alt="Car training trajectory preview" width="423" height="268" loading="lazy" decoding="async">
+    <span class="imu-gt-platform-card-label"><strong>Car</strong><span>View platform <i class="fas fa-arrow-right" aria-hidden="true"></i></span></span>
+  </a>
+  <a class="imu-gt-platform-card" href="/imuchallenge/platforms/drone/">
+    <img src="/img/imuchallenge/previews/drone_train_0000.png" alt="Drone training trajectory preview" width="426" height="268" loading="lazy" decoding="async">
+    <span class="imu-gt-platform-card-label"><strong>Drone</strong><span>View platform <i class="fas fa-arrow-right" aria-hidden="true"></i></span></span>
+  </a>
+  <a class="imu-gt-platform-card" href="/imuchallenge/platforms/quadruped/">
+    <img src="/img/imuchallenge/previews/quadruped_train_0000.png" alt="Quadruped training trajectory preview" width="423" height="268" loading="lazy" decoding="async">
+    <span class="imu-gt-platform-card-label"><strong>Quadruped</strong><span>View platform <i class="fas fa-arrow-right" aria-hidden="true"></i></span></span>
+  </a>
+  <a class="imu-gt-platform-card" href="/imuchallenge/platforms/handheld/">
+    <img src="/img/imuchallenge/previews/handheld_train_0000.png" alt="Handheld training trajectory preview" width="417" height="268" loading="lazy" decoding="async">
+    <span class="imu-gt-platform-card-label"><strong>Handheld</strong><span>View platform <i class="fas fa-arrow-right" aria-hidden="true"></i></span></span>
+  </a>
 </div>
 
 <div class="imu-gt-divider"><span class="imu-gt-divider-mark">{% include imu-bot.html %}</span></div>
@@ -93,6 +108,59 @@ permalink: /imuchallenge/
 <div class="imu-gt-divider"><span class="imu-gt-divider-mark">{% include imu-bot.html %}</span></div>
 
 <div class="imu-gt-section-title-wrap">
+<h2 class="imu-gt-section-title">Task &amp; Evaluation</h2>
+</div>
+
+<div class="imu-gt-evaluation-grid">
+  <article class="imu-gt-evaluation-card">
+    <div class="imu-gt-evaluation-heading">
+      <span class="imu-gt-evaluation-icon"><i class="fas fa-wave-square" aria-hidden="true"></i></span>
+      <h3>The Task</h3>
+    </div>
+    <dl class="imu-gt-evaluation-list">
+      <div>
+        <dt>Input</dt>
+        <dd>Raw 6-axis IMU: acceleration in m/s² and angular velocity in rad/s, sampled at 200 Hz.</dd>
+      </div>
+      <div>
+        <dt>Context</dt>
+        <dd>One-second windows of 200 samples, provided as sequences of 10 consecutive windows.</dd>
+      </div>
+      <div>
+        <dt>Output</dt>
+        <dd>Per-window 3D body-frame velocity <strong>v = (v<sub>x</sub>, v<sub>y</sub>, v<sub>z</sub>)</strong> in m/s.</dd>
+      </div>
+    </dl>
+  </article>
+  <article class="imu-gt-evaluation-card">
+    <div class="imu-gt-evaluation-heading">
+      <span class="imu-gt-evaluation-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></span>
+      <h3>Scoring</h3>
+    </div>
+    <dl class="imu-gt-evaluation-list">
+      <div>
+        <dt>Primary</dt>
+        <dd>Macro-averaged Absolute Trajectory Error (ATE), with all four platforms weighted equally.</dd>
+      </div>
+      <div>
+        <dt>Evaluation</dt>
+        <dd>Organizers integrate predicted velocities with ground-truth orientation, then align and score each path.</dd>
+      </div>
+      <div>
+        <dt>Splits</dt>
+        <dd>Train for fitting, validation for model selection, and anonymized public/private test trajectories for ranking.</dd>
+      </div>
+    </dl>
+  </article>
+</div>
+
+<div class="imu-gt-cta-row">
+  <a class="imu-gt-button" href="/imuchallenge/setup/">Read the full protocol &rarr;</a>
+</div>
+
+<div class="imu-gt-divider"><span class="imu-gt-divider-mark">{% include imu-bot.html %}</span></div>
+
+<div class="imu-gt-section-title-wrap">
 <h2 class="imu-gt-section-title">Organizers &amp; Partners</h2>
 </div>
 
@@ -102,11 +170,15 @@ permalink: /imuchallenge/
     <span>CMU AirLab</span>
   </div>
   <div class="imu-gt-partner">
-    <div class="imu-gt-partner-mark imu-gt-partner-mark-text">Amazon FAR</div>
+    <div class="imu-gt-partner-mark imu-gt-partner-mark-amazon" aria-label="Amazon FAR">
+      <span class="imu-gt-amazon-name">amazon</span>
+      <span class="imu-gt-amazon-divider" aria-hidden="true"></span>
+      <span class="imu-gt-amazon-group">FAR</span>
+    </div>
     <span>Amazon FAR</span>
   </div>
   <div class="imu-gt-partner">
-    <div class="imu-gt-partner-mark imu-gt-partner-mark-text">Carnegie Mellon University</div>
+    <div class="imu-gt-partner-mark"><img src="/img/riLogo2019.svg" alt="Carnegie Mellon University Robotics Institute logo"></div>
     <span>Carnegie Mellon University</span>
   </div>
 </div>
