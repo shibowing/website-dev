@@ -35,32 +35,9 @@ This challenge is aligned with the Tartan IMU direction:
 
 The benchmark is intended to surface concrete modeling, adaptation, and evaluation questions that can feed into the workshop discussion around robot self-sensing and robustness beyond exteroceptive perception alone.
 
-## Organizers
+## Organizing Team
 
-<div class="imu-organizer-grid">
-  <div class="imu-organizer">
-    <div class="imu-organizer-photo"><i class="fas fa-user"></i></div>
-    <span class="imu-organizer-name">Organizer Name</span>
-    <span class="imu-organizer-role">Role · CMU AirLab</span>
-  </div>
-  <div class="imu-organizer">
-    <div class="imu-organizer-photo"><i class="fas fa-user"></i></div>
-    <span class="imu-organizer-name">Organizer Name</span>
-    <span class="imu-organizer-role">Role · CMU AirLab</span>
-  </div>
-  <div class="imu-organizer">
-    <div class="imu-organizer-photo"><i class="fas fa-user"></i></div>
-    <span class="imu-organizer-name">Organizer Name</span>
-    <span class="imu-organizer-role">Role · Amazon FAR</span>
-  </div>
-  <div class="imu-organizer">
-    <div class="imu-organizer-photo"><i class="fas fa-user"></i></div>
-    <span class="imu-organizer-name">Organizer Name</span>
-    <span class="imu-organizer-role">Role · Carnegie Mellon University</span>
-  </div>
-</div>
-
-To replace a placeholder, swap `<i class="fas fa-user"></i>` for `<img src="/img/tartanimu/your-photo.jpg" alt="Name">` inside `.imu-organizer-photo`, and fill in the name/role text.
+Challenge organization is coordinated by **CMU AirLab**, with benchmark, dataset, and baseline development led by **TartanIMU** and **Super Odometry** contributors. The effort brings together researchers from **Carnegie Mellon University** and **Amazon FAR**.
 
 ## Contact
 
