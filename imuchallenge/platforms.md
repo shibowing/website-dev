@@ -8,7 +8,7 @@ hide_hero: true
 permalink: /imuchallenge/platforms/
 ---
 
-# Platforms
+<h1 class="imu-page-title">{% include imu-bot.html %}Platforms</h1>
 
 This challenge is organized across multiple platforms to measure both in-domain performance and cross-platform generalization.
 

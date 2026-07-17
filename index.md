@@ -601,11 +601,11 @@ hero_buttons:
               </a>
             </span>
             <span class="link-block">
-              <a href="https://github.com/superxslam/SuperOdom" class="external-link button is-normal is-rounded is-dark" target="_blank">
+              <a href="https://github.com/superxslam/SuperOdom" class="external-link button is-normal is-rounded is-dark" target="_blank" rel="noopener">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
-                <span>Code Stay Tuned</span>
+                <span>Code</span>
               </a>
             </span>
             <span class="link-block">

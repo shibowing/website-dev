@@ -7,39 +7,30 @@ hide_hero: true
 permalink: /imuchallenge/setup/
 ---
 
-# Setup
+<h1 class="imu-page-title">{% include imu-bot.html %}Setup</h1>
 
 ## Quick Start
 
-<div class="imu-card">
-<strong>Step 1: Register your team.</strong> <a href="https://forms.gle/oRr4rCNxqTP1U6uS8" target="_blank" rel="noopener">Fill out the registration form.</a> Then <a href="https://www.kaggle.com" target="_blank" rel="noopener">sign up on Kaggle.</a>
+<div class="imu-steps" markdown="1">
+
+<div class="imu-step" markdown="1">
+**Register your team.** [Fill out the registration form.](https://forms.gle/oRr4rCNxqTP1U6uS8){:target="_blank" rel="noopener"} Then join the competition on Kaggle: [TartanIMU Challenge: Multi-Platform Inertial Odometry](https://www.kaggle.com/competitions/tartanimu-iros2026){:target="_blank" rel="noopener"}.
 </div>
 
-<div class="imu-card">
-<strong>Step 2: Download the train/val splits.</strong> Get the data from the <a href="https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge" target="_blank" rel="noopener">IROS Tartan IMU Challenge dataset</a> on Hugging Face.
+<div class="imu-step" markdown="1">
+**Download the train/val splits.** Get the data from the [IROS Tartan IMU Challenge dataset](https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge){:target="_blank" rel="noopener"} on Hugging Face, or from the [Kaggle competition Data tab](https://www.kaggle.com/competitions/tartanimu-iros2026/data){:target="_blank" rel="noopener"} (which also has `index/test_windows.csv` and `sample_submission.csv`).
 </div>
 
-<div class="imu-card" markdown="1">
-<strong>Step 3: Clone the baseline repository.</strong> <a href="https://github.com/superxslam/TartanIMU" target="_blank" rel="noopener">superxslam/TartanIMU</a>.
+<div class="imu-step" markdown="1">
+**Clone the baseline repository.** [superxslam/TartanIMU](https://github.com/superxslam/TartanIMU){:target="_blank" rel="noopener"}.
 
 ```bash
 git clone https://github.com/superxslam/TartanIMU
 ```
 </div>
 
-<div class="imu-card">
-<strong>Reference models.</strong> We provide per-platform "specialist" checkpoints trained internally as a benchmarking reference, so you can gauge what good performance looks like before submitting. You can also try them interactively in the <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_demo" target="_blank" rel="noopener">live demo</a>.
-<ul>
-  <li><a href="https://huggingface.co/Tartan-IMU/IROS_workshop_car_specialist" target="_blank" rel="noopener">Car specialist</a></li>
-  <li><a href="https://huggingface.co/Tartan-IMU/IROS_workshop_quadruped_specialist" target="_blank" rel="noopener">Quadruped specialist</a></li>
-  <li><a href="https://huggingface.co/Tartan-IMU/IROS_workshop_drone_specialist" target="_blank" rel="noopener">Drone specialist</a></li>
-  <li><a href="https://huggingface.co/Tartan-IMU/IROS_workshop_human_specialist" target="_blank" rel="noopener">Handheld specialist</a></li>
-</ul>
-</div>
-
-<div class="imu-card">
-<strong>Step 4: Write a basic config file.</strong> For details on the available fields, see <code>TartanIMU/config/datasets</code>. A minimal example you can start from:
-</div>
+<div class="imu-step" markdown="1">
+**Write a basic config file.** For details on the available fields, see `TartanIMU/config/datasets`. A minimal example you can start from:
 
 <details markdown="1">
 <summary><strong>Show example config</strong> (<code>minimal_example_config.yaml</code>)</summary>
@@ -224,20 +215,48 @@ finetune:
 ```
 
 </details>
-
-<div class="imu-card">
-<strong>Step 5: Verify the model runs.</strong> Run an overfitting experiment on a small subset to confirm the training loop, data loading, and metrics are working end to end before scaling up.
 </div>
 
-<div class="imu-card">
-<strong>Step 6: Improve and <a href="https://www.kaggle.com" target="_blank" rel="noopener">submit</a>.</strong> Experiment with your own methods to push performance on the leaderboard.
+<div class="imu-step" markdown="1">
+**Verify the model runs.** Run an overfitting experiment on a small subset to confirm the training loop, data loading, and metrics are working end to end before scaling up.
 </div>
+
+<div class="imu-step" markdown="1">
+**Improve and [submit](https://www.kaggle.com/competitions/tartanimu-iros2026/submissions){:target="_blank" rel="noopener"}.** Experiment with your own methods to push performance on the leaderboard.
+</div>
+
+</div>
+
+<div class="imu-note" markdown="1">
+**Submission format:** one predicted body-frame velocity per test window, as a CSV with a header row:
+
+```
+window_id,vx,vy,vz
+1,0.50,0.01,0.00
+2,0.49,-0.00,-0.01
+```
+
+`window_id` values come from `index/test_windows.csv`; see `sample_submission.csv` on the [Kaggle Data tab](https://www.kaggle.com/competitions/tartanimu-iros2026/data){:target="_blank" rel="noopener"} for the exact rows to fill in.
+</div>
+
+## Reference Models
+
+We provide per-platform "specialist" checkpoints trained internally as a benchmarking reference, so you can gauge what good performance looks like before submitting. You can also try them interactively in the [live demo](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_demo){:target="_blank" rel="noopener"}.
+
+<div class="imu-note" markdown="1">
+**These specialists are a reference, not a submission strategy.** The competition requires **one unified model scored on all four platforms** — the test set is anonymized with no platform label, so switching between per-platform experts at inference time isn't possible. Use these checkpoints to sanity-check per-platform performance during development, not as your final submission.
+</div>
+
+- [Car specialist](https://huggingface.co/Tartan-IMU/IROS_workshop_car_specialist){:target="_blank" rel="noopener"}
+- [Quadruped specialist](https://huggingface.co/Tartan-IMU/IROS_workshop_quadruped_specialist){:target="_blank" rel="noopener"}
+- [Drone specialist](https://huggingface.co/Tartan-IMU/IROS_workshop_drone_specialist){:target="_blank" rel="noopener"}
+- [Handheld specialist](https://huggingface.co/Tartan-IMU/IROS_workshop_human_specialist){:target="_blank" rel="noopener"}
 
 ## Recommended Workflow
 
 1. Start from a known baseline.
-2. Validate per platform first, then test cross-platform transfer.
-3. Platform both aggregate and per-platform failure modes.
+2. Validate per platform first, then converge on a single unified model — final submissions must be one model scored across all four platforms with no platform label at test time.
+3. Profile both aggregate (macro-averaged ATE) and per-platform failure modes.
 4. Freeze your final model and produce reproducible inference logs.
 
 ## System Requirements (Preliminary)

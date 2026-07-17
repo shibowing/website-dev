@@ -13,18 +13,20 @@ permalink: /imuchallenge/platforms/drone/
 
 ## Data Summary
 
-<div class="imu-card"><strong>Trajectories:</strong> 78</div>
-<div class="imu-card"><strong>Total Duration:</strong> 4.75 hours</div>
-<div class="imu-card"><strong>Total Size:</strong> 0.191 GiB</div>
-<div class="imu-card"><strong>Samples:</strong> 3,462,757</div>
-<div class="imu-card"><strong>Splits:</strong> train 61, val 17</div>
-<div class="imu-card"><strong>Sample Rate:</strong> 200–250 Hz</div>
-<div class="imu-card"><strong>Source(s):</strong> TartanIMU</div>
+<div class="imu-stat-grid">
+  <div class="imu-stat"><span class="imu-stat-value">78</span><span class="imu-stat-label">Trajectories</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">4.75 hrs</span><span class="imu-stat-label">Total Duration</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">0.191 GiB</span><span class="imu-stat-label">Total Size</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">3,462,757</span><span class="imu-stat-label">Samples</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">61 / 17</span><span class="imu-stat-label">Train / Val Splits</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">200–250 Hz</span><span class="imu-stat-label">Sample Rate</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">TartanIMU</span><span class="imu-stat-label">Source(s)</span></div>
+</div>
 
 ## IMU Sensor Notes
 
-<div class="imu-card">
-<strong>Sensor Type:</strong> onboard flight IMU (accelerometer + gyroscope)
-<br><strong>Fields:</strong> timestamp, accel xyz, gyro xyz
-<br><strong>Rate:</strong> 200–250 Hz depending on source sequence
+<div class="imu-note">
+<strong>Sensor Type:</strong> onboard flight IMU (accelerometer + gyroscope)<br>
+<strong>Fields:</strong> timestamp, accel xyz, gyro xyz<br>
+<strong>Rate:</strong> 200–250 Hz depending on source sequence
 </div>

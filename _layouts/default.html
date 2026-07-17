@@ -28,55 +28,6 @@
 <html>
 {% include head.html %}
 <body{% if is_imuchallenge_home %} class="imuchallenge-site imuchallenge-home"{% elsif is_imuchallenge_page %} class="imuchallenge-site"{% endif %}>
-    {% if is_imuchallenge_page %}
-    <style>
-      body.imuchallenge-site { background: #f4faff !important; }
-      body.imuchallenge-site .navbar.is-imuchallenge {
-        background: #000 !important;
-        border-bottom: 0 !important;
-        box-shadow: none !important;
-        min-height: 64px;
-      }
-      body.imuchallenge-site .navbar.is-imuchallenge .navbar-item,
-      body.imuchallenge-site .navbar.is-imuchallenge .navbar-link,
-      body.imuchallenge-site .navbar.is-imuchallenge .navbar-burger {
-        color: #f7fbff !important;
-        font-weight: 600;
-      }
-      body.imuchallenge-site .navbar.is-imuchallenge .navbar-item:hover,
-      body.imuchallenge-site .navbar.is-imuchallenge .navbar-link:hover,
-      body.imuchallenge-site .navbar.is-imuchallenge .navbar-item.is-active,
-      body.imuchallenge-site .navbar.is-imuchallenge .navbar-link.is-active {
-        background-color: transparent !important;
-        color: #fff !important;
-      }
-      body.imuchallenge-site .navbar.is-imuchallenge .navbar-item.is-active,
-      body.imuchallenge-site .navbar.is-imuchallenge .navbar-link.is-active {
-        color: #e6a817 !important;
-      }
-      body.imuchallenge-home .navbar.is-imuchallenge {
-        position: absolute !important;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 20;
-        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.92) 100%) !important;
-      }
-      body.imuchallenge-home .navbar.is-imuchallenge::after {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        height: 300px;
-        pointer-events: none;
-        content: "";
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.62) 34%, rgba(0, 0, 0, 0.28) 68%, rgba(0, 0, 0, 0) 100%);
-      }
-      body.imuchallenge-home .hero {
-        padding-top: 64px;
-      }
-    </style>
-    {% endif %}
     {% include header.html %} {% unless page.hide_hero %} {% include hero.html %} {% endunless %} {% include callouts.html %}
     <section class="section">
         <div class="container">
