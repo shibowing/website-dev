@@ -51,7 +51,8 @@
       return String(v);
     }
     if (col === 'file_size_bytes') return (Number(v) / (1024 * 1024)).toFixed(2) + ' MiB';
-    if (col === 'duration_s') return Number(v).toFixed(3);
+    if (col === 'duration_s') return Number(v).toFixed(1) + ' s';
+    if (col === 'n_samples') return Number(v).toLocaleString('en-US');
     if (typeof v === 'boolean') return v ? 'true' : 'false';
     return String(v);
   }
@@ -77,6 +78,7 @@
     filterRow.querySelectorAll('select').forEach((sel) => {
       const col = sel.dataset.col;
       const vals = Array.from(new Set(rows.map((r) => String(r[col])))).sort((a, b) => a.localeCompare(b));
+      sel.setAttribute('aria-label', `Filter by ${col.replace(/_/g, ' ')}`);
       sel.innerHTML = '<option value="">All</option>' + vals.map((v) => `<option value="${v.replace(/"/g, '&quot;')}">${v}</option>`).join('');
     });
   }

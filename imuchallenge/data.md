@@ -119,14 +119,14 @@ All trajectories are sampled at **200 Hz**. Each 1-second window contains exactl
   <table class="imu-data-table" id="imu-data-table" data-endpoint="{{ site.baseurl }}/assets/data/imuchallenge_metadata.json">
     <thead>
       <tr>
-        <th data-col="platform">platform</th>
-        <th data-col="split">split</th>
-        <th data-col="traj_id">traj_id</th>
-        <th data-col="npz_relpath">npz_relpath</th>
-        <th data-col="inferred_source">source</th>
-        <th data-col="n_samples">n_samples</th>
-        <th data-col="duration_s">duration_s</th>
-        <th data-col="file_size_bytes">file_size_bytes</th>
+        <th data-col="platform">Platform</th>
+        <th data-col="split">Split</th>
+        <th data-col="traj_id">Trajectory</th>
+        <th data-col="npz_relpath">Trajectory file</th>
+        <th data-col="inferred_source">Source</th>
+        <th data-col="n_samples">Samples</th>
+        <th data-col="duration_s">Duration</th>
+        <th data-col="file_size_bytes">File size</th>
       </tr>
       <tr class="imu-filter-row" id="imu-filter-row"></tr>
     </thead>

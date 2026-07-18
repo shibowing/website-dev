@@ -30,10 +30,10 @@ git clone https://github.com/superxslam/TartanIMU
 </div>
 
 <div class="imu-step" markdown="1">
-**Write a basic config file.** For details on the available fields, see `TartanIMU/config/datasets`. A minimal example you can start from:
+**Write a basic config file.** For details on the available fields, see `TartanIMU/config/datasets`. This complete starter example keeps the optional training, evaluation, and fine-tuning settings visible:
 
 <details markdown="1">
-<summary><strong>Show example config</strong> (<code>minimal_example_config.yaml</code>)</summary>
+<summary><strong>Show complete starter config</strong> (<code>minimal_example_config.yaml</code>)</summary>
 
 ```yaml
 # =============================================================================
@@ -55,7 +55,7 @@ git clone https://github.com/superxslam/TartanIMU
 model_param:
   # Input/Output Configuration
   input_dim: 6                    # IMU channels: [acc_x, acc_y, acc_z, gyro_x, gyro_y, gyro_z]
-  output_dim: 3                   # Position output: [x, y, z]
+  output_dim: 3                   # Body-frame velocity output: [vx, vy, vz]
 
   # LSTM Network Configuration
   lstm_size: 256                  # Hidden size of LSTM layers
@@ -226,6 +226,16 @@ finetune:
 </div>
 
 </div>
+
+## Schedule, Rules, and Leaderboard
+
+Competition dates, team and submission limits, and any external-data policy can change during the event. Use the live Kaggle pages as the source of truth:
+
+<ul class="imu-link-list">
+  <li><a href="https://www.kaggle.com/competitions/tartanimu-iros2026/overview" target="_blank" rel="noopener">Competition overview and schedule</a></li>
+  <li><a href="https://www.kaggle.com/competitions/tartanimu-iros2026/rules" target="_blank" rel="noopener">Official competition rules</a></li>
+  <li><a href="https://www.kaggle.com/competitions/tartanimu-iros2026/leaderboard" target="_blank" rel="noopener">Public leaderboard</a></li>
+</ul>
 
 <div class="imu-note" markdown="1">
 **Submission format:** one predicted body-frame velocity per test window, as a CSV with a header row:
