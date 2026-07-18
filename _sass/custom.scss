@@ -2024,3 +2024,399 @@ body.imuchallenge-home .content {
 }
 
 /* end custom scss snippet */
+
+/* ---------- Shared navbar brand, social links, and theme ---------- */
+
+.navbar-logo--superx {
+  width: 110px;
+  flex: 0 0 auto;
+  padding: 0 0.4rem !important;
+  background: none !important;
+  text-indent: 0 !important;
+}
+
+.navbar-logo--superx .navbar-superx-wordmark {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 34px;
+  object-fit: contain;
+}
+
+.navbar-airlab {
+  display: flex;
+  width: 44px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.15rem !important;
+  background: transparent !important;
+}
+
+.navbar-airlab img {
+  display: block;
+  width: auto;
+  height: 24px;
+  max-height: 24px;
+  object-fit: contain;
+}
+
+.navbar-airlab--full {
+  display: none;
+}
+
+.site-navbar-socials {
+  display: flex;
+  min-height: 0;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0.35rem !important;
+}
+
+.site-navbar-socials--compact {
+  margin-left: auto;
+}
+
+.site-navbar-socials--main,
+.site-navbar-socials--full {
+  display: none;
+}
+
+.site-navbar-social-link {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  min-height: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.08);
+  color: #ffffff !important;
+  line-height: 1;
+  text-decoration: none !important;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.site-navbar-social-link i,
+.site-navbar-social-link img {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 1rem;
+  object-fit: contain;
+}
+
+.site-navbar-social-link img {
+  filter: brightness(0) invert(1);
+}
+
+.site-navbar-social-link--rednote img {
+  filter: none;
+}
+
+.site-navbar-social-link--twitter:hover {
+  border-color: #111827;
+  background: #111827 !important;
+}
+
+.site-navbar-social-link--rednote:hover {
+  border-color: #ff2442;
+  background: #ff2442 !important;
+}
+
+.site-navbar-social-link--discord:hover {
+  border-color: #5865f2;
+  background: #5865f2 !important;
+}
+
+.site-navbar-social-link:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 2px;
+}
+
+.navbar-airlab--compact + .navbar-burger {
+  margin-left: 0;
+}
+
+.navbar.is-primary,
+body.imuchallenge-site .navbar.is-imuchallenge {
+  border-bottom: 0 !important;
+  background: linear-gradient(90deg, #9e2b04 0%, #cb640d 100%) !important;
+  box-shadow:
+    inset 0 -1px 0 rgba(255, 255, 255, 0.18),
+    0 1px 2px rgba(17, 24, 39, 0.12),
+    0 4px 10px rgba(17, 24, 39, 0.16) !important;
+}
+
+.navbar.is-primary .navbar-menu,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-menu {
+  background: transparent !important;
+}
+
+.navbar.is-primary .navbar-item,
+.navbar.is-primary .navbar-link,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-item,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-link {
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-weight: 600;
+}
+
+.navbar.is-primary .navbar-link::after,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-link::after {
+  border-color: #ffffff !important;
+}
+
+.navbar.is-primary .navbar-burger,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-burger {
+  color: #ffffff !important;
+}
+
+.navbar.is-primary .navbar-item:hover,
+.navbar.is-primary .navbar-link:hover,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-item:hover,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-link:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+
+.navbar.is-primary .navbar-logo,
+.navbar.is-primary .navbar-logo:hover,
+.navbar.is-primary .site-navbar-socials,
+.navbar.is-primary .site-navbar-socials:hover,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-logo,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-logo:hover,
+body.imuchallenge-site .navbar.is-imuchallenge .site-navbar-socials,
+body.imuchallenge-site .navbar.is-imuchallenge .site-navbar-socials:hover {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: transparent !important;
+}
+
+.navbar.is-primary .navbar-item.is-active,
+.navbar.is-primary .navbar-link.is-active,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-item.is-active,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-link.is-active {
+  background: rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+  text-decoration-color: #ffffff;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-logo--superx {
+  width: 123px;
+  height: 60px;
+  flex: 0 0 123px;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-brand,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-brand .site-navbar-socials {
+  min-height: 60px;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-brand .navbar-burger {
+  align-self: center;
+}
+
+.navbar.is-primary .site-navbar-social-link,
+body.imuchallenge-site .navbar.is-imuchallenge .site-navbar-social-link {
+  color: #ffffff !important;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon,
+body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon:visited,
+body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon:focus,
+body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon:active {
+  color: #ffffff !important;
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .imuchallenge-navbar-icon img {
+  filter: brightness(0) invert(1);
+}
+
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-airlab--full {
+  height: 40px;
+}
+
+.navbar.is-primary .navbar-dropdown,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown {
+  overflow: hidden;
+  border-top: 2px solid #9e2b04;
+  border-radius: 6px;
+  background: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.18);
+}
+
+.navbar.is-primary .navbar-dropdown .navbar-item,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown .navbar-item {
+  margin: 0;
+  border-radius: 0;
+  background: #ffffff !important;
+  color: #374151 !important;
+}
+
+.navbar.is-primary .navbar-dropdown .navbar-item:hover,
+.navbar.is-primary .navbar-dropdown .navbar-item.is-active,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown .navbar-item:hover,
+body.imuchallenge-site .navbar.is-imuchallenge .navbar-dropdown .navbar-item.is-active {
+  background: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+@media (min-width: 361px) {
+  .navbar-logo--superx {
+    width: 145px;
+  }
+
+  body.imuchallenge-site .navbar.is-imuchallenge .navbar-logo--superx {
+    flex-basis: 145px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1215px) {
+  .navbar-airlab--compact {
+    width: 52px;
+  }
+
+  .navbar-airlab--compact img {
+    height: 30px;
+    max-height: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-airlab--full {
+    width: 56px;
+  }
+
+  .navbar-airlab--full img {
+    height: 32px;
+    max-height: 32px;
+  }
+
+  body.imuchallenge-site .navbar.is-imuchallenge .navbar-logo--superx {
+    width: 172px;
+    flex-basis: 172px;
+  }
+
+  body.imuchallenge-site .site-navbar-socials--compact {
+    display: none;
+  }
+
+  body.imuchallenge-site .site-navbar-socials--full {
+    display: flex;
+  }
+
+  body.imuchallenge-site .navbar-airlab--compact {
+    display: none;
+  }
+
+  body.imuchallenge-site .navbar-airlab--full {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1215px) {
+  .navbar.is-primary:not(.is-imuchallenge) > .container {
+    display: block;
+  }
+
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-brand {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-burger {
+    display: block;
+  }
+
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-menu {
+    display: none;
+    margin-right: 0;
+    padding: 0.5rem 0;
+  }
+
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-menu.is-active {
+    display: block;
+  }
+
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-start,
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-end,
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-menu .navbar-item,
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-menu .navbar-link {
+    display: block;
+  }
+
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-link::after {
+    display: none;
+  }
+
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-dropdown {
+    display: block;
+    position: static;
+    min-width: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 1216px) {
+  .navbar.is-primary:not(.is-imuchallenge) .navbar-start {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+  }
+
+  .navbar-logo--superx {
+    width: 172px;
+  }
+
+  .navbar-logo--superx .navbar-superx-wordmark {
+    max-height: 42px;
+  }
+
+  .site-navbar-socials--compact {
+    display: none;
+  }
+
+  .site-navbar-socials--main {
+    display: flex;
+  }
+
+  .navbar-airlab--compact {
+    display: none;
+  }
+
+  .navbar-airlab--full {
+    display: flex;
+  }
+}
+
+@media (max-width: 1023px) {
+  .navbar.is-primary .navbar-menu,
+  body.imuchallenge-site .navbar.is-imuchallenge .navbar-menu {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar-airlab--compact {
+    width: 22px;
+    padding: 0 !important;
+  }
+
+  .navbar-airlab--compact img {
+    height: 14px;
+    max-height: 14px;
+  }
+
+  .site-navbar-socials--compact {
+    gap: 0.1rem;
+    padding-right: 0.15rem !important;
+    padding-left: 0.15rem !important;
+  }
+
+  .site-navbar-socials--compact .site-navbar-social-link {
+    width: 28px;
+    height: 28px;
+    min-height: 28px;
+  }
+}

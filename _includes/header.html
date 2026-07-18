@@ -8,8 +8,12 @@
 <nav class="navbar is-primary {% if is_imuchallenge_nav %}is-imuchallenge{% endif %}" >
     <div class="container">
         <div class="navbar-brand">
-            <a href="{{ site.baseurl }}/" class="navbar-item navbar-logo">
-                {{ site.title }}
+            <a href="{{ site.baseurl }}/" class="navbar-item navbar-logo navbar-logo--superx">
+                <img src="{{ site.baseurl }}/img/logos/superx-wordmark-white.png" alt="SuperX" class="navbar-superx-wordmark">
+            </a>
+            {% include social-follow.html class="site-navbar-socials--compact" %}
+            <a href="https://theairlab.org/" class="navbar-item navbar-airlab navbar-airlab--compact" target="_blank" rel="noopener" aria-label="CMU AirLab">
+                <img src="{{ site.baseurl }}/img/logos/StackedInvert.png" alt="CMU AirLab">
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span aria-hidden="true"></span>
@@ -38,13 +42,15 @@
             </div>
             {% unless is_imuchallenge_nav %}
             <div class="navbar-end">
-                <a href="{{ site.baseurl }}/" class="navbar-item superx-brand" aria-label="{{ site.title }} home">
-                    <img src="{{ site.baseurl }}/img/logos/superx-logo-white.png" alt="SuperX — Spatial Intelligence for Robotics" class="superx-brand-img">
+                {% include social-follow.html class="site-navbar-socials--main" %}
+                <a href="https://theairlab.org/" class="navbar-item navbar-airlab navbar-airlab--full" target="_blank" rel="noopener" aria-label="CMU AirLab">
+                    <img src="{{ site.baseurl }}/img/logos/StackedInvert.png" alt="CMU AirLab">
                 </a>
             </div>
             {% endunless %}
             {% if is_imuchallenge_nav %}
             <div class="navbar-end imuchallenge-navbar-actions">
+                {% include social-follow.html class="site-navbar-socials--full" %}
                 <a href="https://github.com/superxslam/TartanIMU" class="navbar-item imuchallenge-navbar-icon" target="_blank" rel="noopener" aria-label="GitHub repository">
                     <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
@@ -54,30 +60,11 @@
                 <a href="https://www.kaggle.com/competitions/tartanimu-iros2026" class="navbar-item imuchallenge-navbar-icon" target="_blank" rel="noopener" aria-label="Kaggle competition">
                     <i class="fab fa-kaggle" aria-hidden="true"></i>
                 </a>
+                <a href="https://theairlab.org/" class="navbar-item navbar-airlab navbar-airlab--full" target="_blank" rel="noopener" aria-label="CMU AirLab">
+                    <img src="{{ site.baseurl }}/img/logos/StackedInvert.png" alt="CMU AirLab">
+                </a>
             </div>
             {% endif %}
         </div>
     </div>
 </nav>
-
-<style>
-    .superx-brand {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        display: flex;
-        align-items: center;
-    }
-    .superx-brand-img {
-        height: 3.05rem;
-        max-height: none !important;
-        width: auto;
-        opacity: 0.97;
-        transition: opacity 0.15s ease;
-    }
-    .superx-brand:hover .superx-brand-img {
-        opacity: 1;
-    }
-    @media (max-width: 768px) {
-        .superx-brand-img { height: 2rem; }
-    }
-</style>

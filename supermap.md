@@ -46,10 +46,6 @@ hide_hero: true
   /* ===== Minimalist restyle (HumanEgo-inspired) ===== */
   body { color: var(--ink); background: #fff; }
 
-  /* Page-scoped navbar override: burnt orange on this page only */
-  nav.navbar.is-primary { background-color: var(--accent) !important; }
-  nav.navbar.is-primary .navbar-dropdown { background-color: var(--accent) !important; }
-
   /* Narrow paper column for text; media breaks out wider */
   .content-section .container { max-width: 800px !important; }
   .breakout {

@@ -1,0 +1,23 @@
+{% if site.data.social_follow %}
+<div class="navbar-item site-navbar-socials {{ include.class }}" aria-label="Follow us on social media">
+  {% for social in site.data.social_follow %}
+  {% assign social_action = social.action | default: "Follow us on" %}
+  {% unless social.main_navigation_only and include.hide_main_navigation_only %}
+  <a
+    class="site-navbar-social-link site-navbar-social-link--{{ social.key }}"
+    href="{{ social.url }}"
+    target="_blank"
+    rel="noopener"
+    aria-label="{{ social_action }} {{ social.name }}"
+    title="{{ social_action }} {{ social.name }}"
+  >
+    {% if social.image %}
+    <img src="{{ social.image | prepend: site.baseurl }}" alt="" aria-hidden="true">
+    {% else %}
+    <i class="{{ social.icon }}" aria-hidden="true"></i>
+    {% endif %}
+  </a>
+  {% endunless %}
+  {% endfor %}
+</div>
+{% endif %}

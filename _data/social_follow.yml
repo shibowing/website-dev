@@ -1,0 +1,16 @@
+- name: Twitter
+  url: https://x.com/ShiboZhaoSLAM
+  icon: fab fa-twitter
+  key: twitter
+
+- name: RedNote
+  url: https://www.xiaohongshu.com/user/profile/6466589d000000001f032fbc
+  image: /img/logos/rednote-logo.png
+  key: rednote
+
+- name: Discord
+  url: https://discord.gg/Huf2GJx32y
+  icon: fab fa-discord
+  key: discord
+  action: Join
+  main_navigation_only: true

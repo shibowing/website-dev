@@ -13,7 +13,7 @@ hero_buttons:
     icon: fas fa-flask
     color: "#C45A0E"
   - text: Join Discord
-    link: https://discord.gg/GUh9zfXz
+    link: https://discord.gg/Huf2GJx32y
     icon: fab fa-discord
     color: "#5865F2"
   - text: Follow on X
