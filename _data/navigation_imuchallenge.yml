@@ -5,6 +5,10 @@
 - name: Platforms
   link: /imuchallenge/platforms/
 - name: Data
-  link: /imuchallenge/data/
+  dropdown:
+    - name: Overview
+      link: /imuchallenge/data/
+    - name: Explorer
+      link: /imuchallenge/data/explorer/
 - name: About
   link: /imuchallenge/about/

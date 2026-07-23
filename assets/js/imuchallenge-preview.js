@@ -21,7 +21,7 @@ import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client@2.3.1/dist/i
         const item=rows.find(x=>String(x.platform)===platform && String(x.split)===split && String(x.traj_id)===traj)
           || rows.find(x=>String(x.traj_id)===traj);
         if(!item){
-          root.innerHTML='<p>Trajectory not found. Please return to <a href="/imuchallenge/data/">Data Explorer</a>.</p>';
+          root.innerHTML='<p>Trajectory not found. Please return to <a href="/imuchallenge/data/explorer/">Data Explorer</a>.</p>';
           return;
         }
         const modelNote=`<div class="imu-note" style="margin:0.5rem 0 1rem 0;">
@@ -53,7 +53,7 @@ import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client@2.3.1/dist/i
             <div class="imu-metric"><span class="value">${esc(item.sample_rate_hz)} Hz</span><span class="label">Sample Rate</span></div>
           </div>
           <div class="imu-card"><strong>Source:</strong> ${esc(item.inferred_source)}<br><strong>Samples:</strong> ${esc(item.n_samples)}<br><strong>Relative Path:</strong> <code>${esc(item.npz_relpath)}</code><br><strong>File Size:</strong> ${(Number(item.file_size_bytes)/(1024*1024)).toFixed(2)} MiB</div>
-          <p><a href="/imuchallenge/data/">Back to Data Explorer</a></p>
+          <p><a href="/imuchallenge/data/explorer/">Back to Data Explorer</a></p>
         `;
         loadLivePreview(item);
       })

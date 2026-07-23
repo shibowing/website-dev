@@ -109,29 +109,6 @@ Recordings across the four platforms come from two IMU models: the **Xsens MTi-1
 
 ## Data Explorer
 
-All trajectories are sampled at **200 Hz**. Each 1-second window contains exactly 200 IMU samples.
+Browse every trajectory in the dataset — filter by platform or split, sort any column, and open a live model preview.
 
-<div class="imu-table-toolbar">
-  <div id="imu-row-count">Loading metadata...</div>
-</div>
-
-<div class="imu-table-wrap">
-  <table class="imu-data-table" id="imu-data-table" data-endpoint="{{ site.baseurl }}/assets/data/imuchallenge_metadata.json">
-    <thead>
-      <tr>
-        <th data-col="platform">Platform</th>
-        <th data-col="split">Split</th>
-        <th data-col="traj_id">Trajectory</th>
-        <th data-col="npz_relpath">Trajectory file</th>
-        <th data-col="inferred_source">Source</th>
-        <th data-col="n_samples">Samples</th>
-        <th data-col="duration_s">Duration</th>
-        <th data-col="file_size_bytes">File size</th>
-      </tr>
-      <tr class="imu-filter-row" id="imu-filter-row"></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</div>
-
-<script src="{{ site.baseurl }}/assets/js/imuchallenge-data-explorer.js"></script>
+<p><a class="imu-gt-button" href="/imuchallenge/data/explorer/">Open the Data Explorer &rarr;</a></p>

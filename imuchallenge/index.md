@@ -35,6 +35,7 @@ permalink: /imuchallenge/
   <a class="imu-gt-button" href="/imuchallenge/setup/">Setup</a>
   <a class="imu-gt-button" href="/imuchallenge/platforms/">Platforms</a>
   <a class="imu-gt-button" href="/imuchallenge/data/">Data Overview</a>
+  <a class="imu-gt-button" href="/imuchallenge/data/explorer/">Data Explorer</a>
   <a class="imu-gt-button" href="/imuchallenge/about/">About</a>
 </div>
 
