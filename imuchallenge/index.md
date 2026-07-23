@@ -36,6 +36,7 @@ permalink: /imuchallenge/
   <a class="imu-gt-button" href="/imuchallenge/platforms/">Platforms</a>
   <a class="imu-gt-button" href="/imuchallenge/data/">Data Overview</a>
   <a class="imu-gt-button" href="/imuchallenge/data/explorer/">Data Explorer</a>
+  <a class="imu-gt-button" href="https://github.com/superxslam/TartanIMU" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> TartanIMU Code</a>
   <a class="imu-gt-button" href="/imuchallenge/about/">About</a>
 </div>
 
