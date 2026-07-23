@@ -9,8 +9,7 @@
     "duration_s": 729.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 8613340,
-    "sha256": "813305673293d24cfc5d6634d82d6a285dd758b299a1aa7507aecf3ea81f2235",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0000.png"
+    "sha256": "813305673293d24cfc5d6634d82d6a285dd758b299a1aa7507aecf3ea81f2235"
   },
   {
     "platform": "car",
@@ -22,8 +21,7 @@
     "duration_s": 278.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 3357188,
-    "sha256": "fa5ecfc0668fc5b01910d45b9c56a05a062d77cc364881df9517aa07e631add9",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0001.png"
+    "sha256": "fa5ecfc0668fc5b01910d45b9c56a05a062d77cc364881df9517aa07e631add9"
   },
   {
     "platform": "car",
@@ -35,8 +33,7 @@
     "duration_s": 722.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 8668889,
-    "sha256": "1e3e7104b793a909e451a195c5327116b632c221904ec18c465bb3453c719830",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0002.png"
+    "sha256": "1e3e7104b793a909e451a195c5327116b632c221904ec18c465bb3453c719830"
   },
   {
     "platform": "car",
@@ -48,8 +45,7 @@
     "duration_s": 603.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 7156226,
-    "sha256": "2f0f19c56c72f82b3812b7e31b30859f0a61ed23ef0a4e5dbdd17c8e77c5563a",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0003.png"
+    "sha256": "2f0f19c56c72f82b3812b7e31b30859f0a61ed23ef0a4e5dbdd17c8e77c5563a"
   },
   {
     "platform": "car",
@@ -61,8 +57,7 @@
     "duration_s": 106.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 1283544,
-    "sha256": "47bf0530d5d651d26ced40cc4858709c87477160fdbbb683da67f9a07056bfb8",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0004.png"
+    "sha256": "47bf0530d5d651d26ced40cc4858709c87477160fdbbb683da67f9a07056bfb8"
   },
   {
     "platform": "car",
@@ -71,11 +66,10 @@
     "npz_relpath": "train/car/car_train_0005.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 67439,
-    "duration_s": 337.195,
+    "duration_s": 337.19,
     "sample_rate_hz": 200,
     "file_size_bytes": 4070257,
-    "sha256": "efab308d6f4a50e6f45acf8942baefe3e2d423e4e185b1d614487dc53d47a1e8",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0005.png"
+    "sha256": "efab308d6f4a50e6f45acf8942baefe3e2d423e4e185b1d614487dc53d47a1e8"
   },
   {
     "platform": "car",
@@ -87,8 +81,7 @@
     "duration_s": 803.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 9399619,
-    "sha256": "92fafc61b1f0df42d5037d72aa79f7caeb1c5c6eae5fde9fb8ab4604867a1b58",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0006.png"
+    "sha256": "92fafc61b1f0df42d5037d72aa79f7caeb1c5c6eae5fde9fb8ab4604867a1b58"
   },
   {
     "platform": "car",
@@ -100,8 +93,7 @@
     "duration_s": 696.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 8301718,
-    "sha256": "860ec40c000ac6950d0c961a3949cc0f60bc8a1ae5df535699d9540be6e23e38",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0007.png"
+    "sha256": "860ec40c000ac6950d0c961a3949cc0f60bc8a1ae5df535699d9540be6e23e38"
   },
   {
     "platform": "car",
@@ -113,8 +105,7 @@
     "duration_s": 674.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 8091757,
-    "sha256": "9a419e6e3cf9adadffb0b7f5dd6e69119e1d3e131b138832096fdd674543ad2c",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0008.png"
+    "sha256": "9a419e6e3cf9adadffb0b7f5dd6e69119e1d3e131b138832096fdd674543ad2c"
   },
   {
     "platform": "car",
@@ -126,8 +117,7 @@
     "duration_s": 866.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 10368119,
-    "sha256": "baa2d7ed18436cf841607f23f8fcb85ad1318fa0d8c0c8361fe7a50e36815492",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0009.png"
+    "sha256": "baa2d7ed18436cf841607f23f8fcb85ad1318fa0d8c0c8361fe7a50e36815492"
   },
   {
     "platform": "car",
@@ -139,8 +129,7 @@
     "duration_s": 513.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 6070530,
-    "sha256": "9f68e121b43cc766b0eb3e16b3e3ea758cb9febbdb774fb1ccade0c7999650c8",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0010.png"
+    "sha256": "9f68e121b43cc766b0eb3e16b3e3ea758cb9febbdb774fb1ccade0c7999650c8"
   },
   {
     "platform": "car",
@@ -152,8 +141,7 @@
     "duration_s": 171.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 2056211,
-    "sha256": "7f767e19cdafb3ad27101644118a74aa9f503982b08a779ed93ca834e8742596",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0011.png"
+    "sha256": "7f767e19cdafb3ad27101644118a74aa9f503982b08a779ed93ca834e8742596"
   },
   {
     "platform": "car",
@@ -165,8 +153,7 @@
     "duration_s": 163.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 1961316,
-    "sha256": "cb53067a203f88673271e63679190464be7df84a27bc600f6ec2246bde29c28b",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0012.png"
+    "sha256": "cb53067a203f88673271e63679190464be7df84a27bc600f6ec2246bde29c28b"
   },
   {
     "platform": "car",
@@ -178,8 +165,7 @@
     "duration_s": 346.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 4188208,
-    "sha256": "60fa9263c7f0eea15eeeb1d81450b8fc2ccd4b2cad42771176016d53c8916f51",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0013.png"
+    "sha256": "60fa9263c7f0eea15eeeb1d81450b8fc2ccd4b2cad42771176016d53c8916f51"
   },
   {
     "platform": "car",
@@ -191,8 +177,7 @@
     "duration_s": 138.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 1625952,
-    "sha256": "90eb8fcfa42c86ffb3033bbad0f2d6798f9f7a408f80b106e134c429be0fa672",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0014.png"
+    "sha256": "90eb8fcfa42c86ffb3033bbad0f2d6798f9f7a408f80b106e134c429be0fa672"
   },
   {
     "platform": "car",
@@ -204,8 +189,7 @@
     "duration_s": 251.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 2977152,
-    "sha256": "6057a169264e15c943cc87bdef6caecab0f8bd433a32c517624cb1138fd13d54",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0015.png"
+    "sha256": "6057a169264e15c943cc87bdef6caecab0f8bd433a32c517624cb1138fd13d54"
   },
   {
     "platform": "car",
@@ -217,8 +201,7 @@
     "duration_s": 1510.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 17775441,
-    "sha256": "acf62836a41a9a125e318e6617ed62e9f7a69718c78200ba292c2b54c48b93d5",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0016.png"
+    "sha256": "acf62836a41a9a125e318e6617ed62e9f7a69718c78200ba292c2b54c48b93d5"
   },
   {
     "platform": "car",
@@ -230,8 +213,7 @@
     "duration_s": 935.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 11267373,
-    "sha256": "8839942dc1b48b7fc2d7c251c13583a6878a137d4ccca11fbfa46da63bbb3374",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0017.png"
+    "sha256": "8839942dc1b48b7fc2d7c251c13583a6878a137d4ccca11fbfa46da63bbb3374"
   },
   {
     "platform": "car",
@@ -243,8 +225,7 @@
     "duration_s": 549.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 6541382,
-    "sha256": "99702cc0356a49423170ac7b751315fa10ac9801708b67078598c1d13a2f9828",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0018.png"
+    "sha256": "99702cc0356a49423170ac7b751315fa10ac9801708b67078598c1d13a2f9828"
   },
   {
     "platform": "car",
@@ -256,8 +237,7 @@
     "duration_s": 143.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 1733637,
-    "sha256": "762c8748edb89fcf9c25065354b5f52d5f43a2a9565beeeca535c38317a93f6c",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0019.png"
+    "sha256": "762c8748edb89fcf9c25065354b5f52d5f43a2a9565beeeca535c38317a93f6c"
   },
   {
     "platform": "car",
@@ -269,8 +249,7 @@
     "duration_s": 174.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 2081914,
-    "sha256": "174a97741377e310ecd53ea19caad9f1b481fa0ec10c4be4b483b57db0a472b5",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0020.png"
+    "sha256": "174a97741377e310ecd53ea19caad9f1b481fa0ec10c4be4b483b57db0a472b5"
   },
   {
     "platform": "car",
@@ -282,8 +261,7 @@
     "duration_s": 468.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 5643647,
-    "sha256": "b3689a54a311cc84064681f15a74e18f4c1e74126827044552f80390546470a1",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0021.png"
+    "sha256": "b3689a54a311cc84064681f15a74e18f4c1e74126827044552f80390546470a1"
   },
   {
     "platform": "car",
@@ -295,8 +273,7 @@
     "duration_s": 224.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 2615734,
-    "sha256": "38fa6c31b33a9540ab9c67ae1719f3dccb654d8e06993677089fcfab32f47760",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0022.png"
+    "sha256": "38fa6c31b33a9540ab9c67ae1719f3dccb654d8e06993677089fcfab32f47760"
   },
   {
     "platform": "car",
@@ -308,8 +285,7 @@
     "duration_s": 238.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 2764378,
-    "sha256": "8e89f6575267351ebb0de1001ecb5473bec20544a56f19ad79fc44298de4fb50",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0023.png"
+    "sha256": "8e89f6575267351ebb0de1001ecb5473bec20544a56f19ad79fc44298de4fb50"
   },
   {
     "platform": "car",
@@ -321,8 +297,7 @@
     "duration_s": 851.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 10203592,
-    "sha256": "a77346ce4abacb76f2a76ee99a3479cb5dc2b0d96acd6cc6aa9af7bae14ad865",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0024.png"
+    "sha256": "a77346ce4abacb76f2a76ee99a3479cb5dc2b0d96acd6cc6aa9af7bae14ad865"
   },
   {
     "platform": "car",
@@ -334,8 +309,7 @@
     "duration_s": 190.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 2238442,
-    "sha256": "4b564564492c2f316c5415afc12e5ace8dc5c3de659298bda5441321d464f1b0",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0025.png"
+    "sha256": "4b564564492c2f316c5415afc12e5ace8dc5c3de659298bda5441321d464f1b0"
   },
   {
     "platform": "car",
@@ -347,8 +321,7 @@
     "duration_s": 472.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 5576096,
-    "sha256": "75d5eb1e93b0e94725861c6b449807a289da6b7868bd37185db221829872931b",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0026.png"
+    "sha256": "75d5eb1e93b0e94725861c6b449807a289da6b7868bd37185db221829872931b"
   },
   {
     "platform": "car",
@@ -360,8 +333,7 @@
     "duration_s": 597.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 7132146,
-    "sha256": "fbe97d197726a0525776c00c5b065dcbdc76dc9afa73e22c4bedbb3b3d9e7f02",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0027.png"
+    "sha256": "fbe97d197726a0525776c00c5b065dcbdc76dc9afa73e22c4bedbb3b3d9e7f02"
   },
   {
     "platform": "car",
@@ -373,8 +345,7 @@
     "duration_s": 1448.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 17134937,
-    "sha256": "2e462c8efba2fde371f06ac348f7d0e6fc3b38a8505bdd8eb385955b9feabb9e",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0028.png"
+    "sha256": "2e462c8efba2fde371f06ac348f7d0e6fc3b38a8505bdd8eb385955b9feabb9e"
   },
   {
     "platform": "car",
@@ -386,8 +357,7 @@
     "duration_s": 2108.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 25021324,
-    "sha256": "0d1b22f79bc7d4e8aac465cd9b9c80697697541cfa59c77b9a02f3d17a80279c",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0029.png"
+    "sha256": "0d1b22f79bc7d4e8aac465cd9b9c80697697541cfa59c77b9a02f3d17a80279c"
   },
   {
     "platform": "car",
@@ -399,8 +369,7 @@
     "duration_s": 285.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 3408728,
-    "sha256": "5e1d7bdd5d95f3fab685974f31a21297c98cc52a8e1b82f5e08b75bda743e7e5",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0030.png"
+    "sha256": "5e1d7bdd5d95f3fab685974f31a21297c98cc52a8e1b82f5e08b75bda743e7e5"
   },
   {
     "platform": "car",
@@ -412,8 +381,7 @@
     "duration_s": 652.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 7667257,
-    "sha256": "9bc072c4faf41c6bc4fe352277ed36debb57a29de929aed585e3546f50bb44ac",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0031.png"
+    "sha256": "9bc072c4faf41c6bc4fe352277ed36debb57a29de929aed585e3546f50bb44ac"
   },
   {
     "platform": "car",
@@ -425,8 +393,7 @@
     "duration_s": 274.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 3292822,
-    "sha256": "6659e2448ffd9272fb11758751974763ee26b5333faeff5b282eea64cfc2ad23",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0032.png"
+    "sha256": "6659e2448ffd9272fb11758751974763ee26b5333faeff5b282eea64cfc2ad23"
   },
   {
     "platform": "car",
@@ -438,8 +405,7 @@
     "duration_s": 110.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 1326633,
-    "sha256": "4322309181e0d0ba2fc82c845d74b46db2fdb9a4bca4985a88a1d73b781829c2",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0033.png"
+    "sha256": "4322309181e0d0ba2fc82c845d74b46db2fdb9a4bca4985a88a1d73b781829c2"
   },
   {
     "platform": "car",
@@ -451,8 +417,7 @@
     "duration_s": 220.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 2593566,
-    "sha256": "90e4f1a5fe37c3ce22ecb872105c70754d4824839e76de30a3b149547f087650",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0034.png"
+    "sha256": "90e4f1a5fe37c3ce22ecb872105c70754d4824839e76de30a3b149547f087650"
   },
   {
     "platform": "car",
@@ -464,8 +429,7 @@
     "duration_s": 1091.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 12959008,
-    "sha256": "1552631a74132fd8e56c33d3fc2b887a7740058a3d969b07fa176fccbb30801a",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0035.png"
+    "sha256": "1552631a74132fd8e56c33d3fc2b887a7740058a3d969b07fa176fccbb30801a"
   },
   {
     "platform": "car",
@@ -477,8 +441,7 @@
     "duration_s": 217.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 2619622,
-    "sha256": "43df827e0a8855fd7480427dd05114d804de2ca3a6592d98d3d8ac32e0ae5eba",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0036.png"
+    "sha256": "43df827e0a8855fd7480427dd05114d804de2ca3a6592d98d3d8ac32e0ae5eba"
   },
   {
     "platform": "car",
@@ -490,8 +453,7 @@
     "duration_s": 535.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 6448842,
-    "sha256": "bc910f62f63e4d9bd97df693b516551cfd003d5fb5b6ea2f2b770322cf08553d",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0037.png"
+    "sha256": "bc910f62f63e4d9bd97df693b516551cfd003d5fb5b6ea2f2b770322cf08553d"
   },
   {
     "platform": "car",
@@ -503,8 +465,7 @@
     "duration_s": 223.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 2541424,
-    "sha256": "5d4f440995e7d36ae73f16fcfed1b5fece632889039139d418ec078a12982f19",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0038.png"
+    "sha256": "5d4f440995e7d36ae73f16fcfed1b5fece632889039139d418ec078a12982f19"
   },
   {
     "platform": "car",
@@ -516,8 +477,7 @@
     "duration_s": 763.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 9081420,
-    "sha256": "9624c08d1bf872da01198f0b507b4ded824383c26b866629c38bc224f3567f86",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0039.png"
+    "sha256": "9624c08d1bf872da01198f0b507b4ded824383c26b866629c38bc224f3567f86"
   },
   {
     "platform": "car",
@@ -529,8 +489,7 @@
     "duration_s": 503.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 5976286,
-    "sha256": "c40dbe8adda3a9b8cd54f56851a82734841ea82d0c3c38ac8bda88cd6644dc99",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0040.png"
+    "sha256": "c40dbe8adda3a9b8cd54f56851a82734841ea82d0c3c38ac8bda88cd6644dc99"
   },
   {
     "platform": "car",
@@ -539,11 +498,10 @@
     "npz_relpath": "train/car/car_train_0041.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 70003,
-    "duration_s": 350.015,
+    "duration_s": 350.01,
     "sample_rate_hz": 200,
     "file_size_bytes": 4095727,
-    "sha256": "75f5b9e460163b3ae747d2f7800f81d481047754d3abb8e2af8d6197307287f7",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0041.png"
+    "sha256": "75f5b9e460163b3ae747d2f7800f81d481047754d3abb8e2af8d6197307287f7"
   },
   {
     "platform": "car",
@@ -555,8 +513,7 @@
     "duration_s": 851.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 10309484,
-    "sha256": "46666e1492f448bf0b83f621e6df2d8099229a71b2e914d8a83ce3f6a61b98e9",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0042.png"
+    "sha256": "46666e1492f448bf0b83f621e6df2d8099229a71b2e914d8a83ce3f6a61b98e9"
   },
   {
     "platform": "car",
@@ -568,8 +525,7 @@
     "duration_s": 156.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 1870738,
-    "sha256": "2fec858bedb5b1adf7e70379288f43ea350bbd016cdd22ae7e000d78df55091e",
-    "thumbnail": "/img/imuchallenge/previews/car_train_0043.png"
+    "sha256": "2fec858bedb5b1adf7e70379288f43ea350bbd016cdd22ae7e000d78df55091e"
   },
   {
     "platform": "quadruped",
@@ -581,8 +537,7 @@
     "duration_s": 312.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 3642512,
-    "sha256": "a60c316693554af8f46941ae1fff2ab1f5faf82cc2e8d88c02ab4733d5263297",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0000.png"
+    "sha256": "a60c316693554af8f46941ae1fff2ab1f5faf82cc2e8d88c02ab4733d5263297"
   },
   {
     "platform": "quadruped",
@@ -594,8 +549,7 @@
     "duration_s": 413.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 4997523,
-    "sha256": "44e77dd3a0f43a7b6442d2c755e1a4b4d0a1fd5b2c8d0a4c8c9b13bc4d8ff2f2",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0001.png"
+    "sha256": "44e77dd3a0f43a7b6442d2c755e1a4b4d0a1fd5b2c8d0a4c8c9b13bc4d8ff2f2"
   },
   {
     "platform": "quadruped",
@@ -607,8 +561,7 @@
     "duration_s": 242.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 2881619,
-    "sha256": "003cd3326388137e88176301c4eb7c2f7979726fe5313c1d884c81b6ee30553a",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0002.png"
+    "sha256": "003cd3326388137e88176301c4eb7c2f7979726fe5313c1d884c81b6ee30553a"
   },
   {
     "platform": "quadruped",
@@ -620,8 +573,7 @@
     "duration_s": 96.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 1115517,
-    "sha256": "12b3ae0b0d4a0ae5ebf8ab3244c3ca7e6feee9067997c00df8e0d670583a9a5d",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0003.png"
+    "sha256": "12b3ae0b0d4a0ae5ebf8ab3244c3ca7e6feee9067997c00df8e0d670583a9a5d"
   },
   {
     "platform": "quadruped",
@@ -633,8 +585,7 @@
     "duration_s": 310.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 3699748,
-    "sha256": "62a224dccedc80095288b43bf2578331b334bb5bdb15b91e096bbebdd3fbef4f",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0004.png"
+    "sha256": "62a224dccedc80095288b43bf2578331b334bb5bdb15b91e096bbebdd3fbef4f"
   },
   {
     "platform": "quadruped",
@@ -646,8 +597,7 @@
     "duration_s": 70.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 802609,
-    "sha256": "6b6a320d3d34bd3fc7008657710b7fc5c05aa2af7e2f67ae76e62d619c47334b",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0005.png"
+    "sha256": "6b6a320d3d34bd3fc7008657710b7fc5c05aa2af7e2f67ae76e62d619c47334b"
   },
   {
     "platform": "quadruped",
@@ -659,8 +609,7 @@
     "duration_s": 23.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 270469,
-    "sha256": "4e4802257a5906e2372e3a86ed89342841fceacd91bd8049fe1bb139f3bfe829",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0006.png"
+    "sha256": "4e4802257a5906e2372e3a86ed89342841fceacd91bd8049fe1bb139f3bfe829"
   },
   {
     "platform": "quadruped",
@@ -672,8 +621,7 @@
     "duration_s": 324.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 3791079,
-    "sha256": "1bb60219969bd71c97912c452d2a0ff60513d442babfd5eecffd98606302748f",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0007.png"
+    "sha256": "1bb60219969bd71c97912c452d2a0ff60513d442babfd5eecffd98606302748f"
   },
   {
     "platform": "quadruped",
@@ -685,8 +633,7 @@
     "duration_s": 573.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 6621324,
-    "sha256": "88e8ec278827c7620a17338d5fb1eab4e0937ec8ea55766df4d1534aa5eeef3b",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0008.png"
+    "sha256": "88e8ec278827c7620a17338d5fb1eab4e0937ec8ea55766df4d1534aa5eeef3b"
   },
   {
     "platform": "quadruped",
@@ -695,11 +642,10 @@
     "npz_relpath": "train/dog/dog_train_0009.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 73451,
-    "duration_s": 367.255,
+    "duration_s": 367.25,
     "sample_rate_hz": 200,
     "file_size_bytes": 4379809,
-    "sha256": "d05c2e172ef3acf669eeb2f3461c90810e86426bd43fae3477b60e138237dc7e",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0009.png"
+    "sha256": "d05c2e172ef3acf669eeb2f3461c90810e86426bd43fae3477b60e138237dc7e"
   },
   {
     "platform": "quadruped",
@@ -711,8 +657,7 @@
     "duration_s": 275.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 3261053,
-    "sha256": "3b90a41a0a1aafa699947c4139db00744af9ed954eb979900f2f395d11cc6ceb",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0010.png"
+    "sha256": "3b90a41a0a1aafa699947c4139db00744af9ed954eb979900f2f395d11cc6ceb"
   },
   {
     "platform": "quadruped",
@@ -724,8 +669,7 @@
     "duration_s": 228.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 2731755,
-    "sha256": "faf613a003f2f31c147fd36b09ed0923f9e5dbbfec6012afcfd1173737c88155",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0011.png"
+    "sha256": "faf613a003f2f31c147fd36b09ed0923f9e5dbbfec6012afcfd1173737c88155"
   },
   {
     "platform": "quadruped",
@@ -737,8 +681,7 @@
     "duration_s": 79.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 940742,
-    "sha256": "4285d0f741a93e2b6d9a0dd9fb9a9af159b1841e4d62dc6eed659e86dfe9ab62",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0012.png"
+    "sha256": "4285d0f741a93e2b6d9a0dd9fb9a9af159b1841e4d62dc6eed659e86dfe9ab62"
   },
   {
     "platform": "quadruped",
@@ -750,8 +693,7 @@
     "duration_s": 49.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 575076,
-    "sha256": "3cc52a7f4a38339db3138e3fe91e7792c7072ebfe5bc5914f92ba2a2062b6167",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0013.png"
+    "sha256": "3cc52a7f4a38339db3138e3fe91e7792c7072ebfe5bc5914f92ba2a2062b6167"
   },
   {
     "platform": "quadruped",
@@ -763,8 +705,7 @@
     "duration_s": 419.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 5100005,
-    "sha256": "4110d82439df78dc0ee0fade6b8ee6f6f39f9d7df317d8845eb623f35e5cfbef",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0014.png"
+    "sha256": "4110d82439df78dc0ee0fade6b8ee6f6f39f9d7df317d8845eb623f35e5cfbef"
   },
   {
     "platform": "quadruped",
@@ -776,8 +717,7 @@
     "duration_s": 399.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 4787955,
-    "sha256": "5d6382b263ca77400613179b30f35ab517e24c3cd2c9065030dbffac69a91e08",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0015.png"
+    "sha256": "5d6382b263ca77400613179b30f35ab517e24c3cd2c9065030dbffac69a91e08"
   },
   {
     "platform": "quadruped",
@@ -786,11 +726,10 @@
     "npz_relpath": "train/dog/dog_train_0016.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 774081,
-    "duration_s": 3870.494,
+    "duration_s": 3870.49,
     "sample_rate_hz": 199,
     "file_size_bytes": 42347234,
-    "sha256": "6fecd929d2d6bb6e5744447c4fd7fa872a020937b34a8629d5c9cfce7820bbf3",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0016.png"
+    "sha256": "6fecd929d2d6bb6e5744447c4fd7fa872a020937b34a8629d5c9cfce7820bbf3"
   },
   {
     "platform": "quadruped",
@@ -802,8 +741,7 @@
     "duration_s": 436.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 4997252,
-    "sha256": "fa65c66dc626b01022036226245ce45f0efc92875858e9febbacfb3c5b1d0981",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0017.png"
+    "sha256": "fa65c66dc626b01022036226245ce45f0efc92875858e9febbacfb3c5b1d0981"
   },
   {
     "platform": "quadruped",
@@ -815,8 +753,7 @@
     "duration_s": 1166.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 13401362,
-    "sha256": "b4eadf5bfb1d09b02f08c82abfcb773443fefcf5ba4c2f9f4318bac3749366f7",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0018.png"
+    "sha256": "b4eadf5bfb1d09b02f08c82abfcb773443fefcf5ba4c2f9f4318bac3749366f7"
   },
   {
     "platform": "quadruped",
@@ -828,8 +765,7 @@
     "duration_s": 145.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 1699356,
-    "sha256": "0ee40959f0d8b904f0336823d7572c1791d8c862bb9908ea984301c7e1cf9939",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0019.png"
+    "sha256": "0ee40959f0d8b904f0336823d7572c1791d8c862bb9908ea984301c7e1cf9939"
   },
   {
     "platform": "quadruped",
@@ -838,11 +774,10 @@
     "npz_relpath": "train/dog/dog_train_0020.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 490441,
-    "duration_s": 2452.261,
+    "duration_s": 2452.26,
     "sample_rate_hz": 199,
     "file_size_bytes": 25367508,
-    "sha256": "1aab77ea23a562ecd30247cb36c45f475ef56f6bcab660546bdfe0823e7e2ec5",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0020.png"
+    "sha256": "1aab77ea23a562ecd30247cb36c45f475ef56f6bcab660546bdfe0823e7e2ec5"
   },
   {
     "platform": "quadruped",
@@ -854,8 +789,7 @@
     "duration_s": 131.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 1525695,
-    "sha256": "2a94384d135cef68c62ccf5e12497cea607b61147a1df62dd2568a59943f1069",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0021.png"
+    "sha256": "2a94384d135cef68c62ccf5e12497cea607b61147a1df62dd2568a59943f1069"
   },
   {
     "platform": "quadruped",
@@ -867,8 +801,7 @@
     "duration_s": 304.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 3641604,
-    "sha256": "6d2c988a4b3244547d084e44fea29f332703e3da362524b8a47051e279bd4bac",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0022.png"
+    "sha256": "6d2c988a4b3244547d084e44fea29f332703e3da362524b8a47051e279bd4bac"
   },
   {
     "platform": "quadruped",
@@ -880,8 +813,7 @@
     "duration_s": 66.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 753033,
-    "sha256": "7acc4d7b116aa3e1137e28d981ed2a806d1250173d5f8bc427fb78b86ce5f904",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0023.png"
+    "sha256": "7acc4d7b116aa3e1137e28d981ed2a806d1250173d5f8bc427fb78b86ce5f904"
   },
   {
     "platform": "quadruped",
@@ -893,8 +825,7 @@
     "duration_s": 50.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 597465,
-    "sha256": "3952c0b0a4dc1b10dd04aae512fc7439a41677cbd030a24b1a25f02f349defd0",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0024.png"
+    "sha256": "3952c0b0a4dc1b10dd04aae512fc7439a41677cbd030a24b1a25f02f349defd0"
   },
   {
     "platform": "quadruped",
@@ -906,8 +837,7 @@
     "duration_s": 268.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 3089089,
-    "sha256": "cac2fe0720402fcaa9fe9f7674954682845336702daa5882630c44ffec131632",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0025.png"
+    "sha256": "cac2fe0720402fcaa9fe9f7674954682845336702daa5882630c44ffec131632"
   },
   {
     "platform": "quadruped",
@@ -919,8 +849,7 @@
     "duration_s": 20.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 244310,
-    "sha256": "55ff57c53f874de69fe25d6171366ea5c2a79e019dbdea310e0890af54e0ad1b",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0026.png"
+    "sha256": "55ff57c53f874de69fe25d6171366ea5c2a79e019dbdea310e0890af54e0ad1b"
   },
   {
     "platform": "quadruped",
@@ -932,8 +861,7 @@
     "duration_s": 525.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 6102135,
-    "sha256": "a4fb66c323be1e9fcc41c21db64f81a1c67da660ee52327b3e85a76c7dc4faff",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0027.png"
+    "sha256": "a4fb66c323be1e9fcc41c21db64f81a1c67da660ee52327b3e85a76c7dc4faff"
   },
   {
     "platform": "quadruped",
@@ -945,8 +873,7 @@
     "duration_s": 68.39,
     "sample_rate_hz": 199,
     "file_size_bytes": 802849,
-    "sha256": "1728de702038e2a24fa2a91348bce50a9ed532d6a3dcd49e239a88de2fe55736",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0028.png"
+    "sha256": "1728de702038e2a24fa2a91348bce50a9ed532d6a3dcd49e239a88de2fe55736"
   },
   {
     "platform": "quadruped",
@@ -958,8 +885,7 @@
     "duration_s": 30.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 363225,
-    "sha256": "aae9da67a5797294b96195e371583c2333eda160d61796be39f08e383b324e4b",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0029.png"
+    "sha256": "aae9da67a5797294b96195e371583c2333eda160d61796be39f08e383b324e4b"
   },
   {
     "platform": "quadruped",
@@ -971,8 +897,7 @@
     "duration_s": 29.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 339413,
-    "sha256": "1636830d033d5189809f7e15ec3fd60e5bdeb36d55362b9cebc0e1a44b449b50",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0030.png"
+    "sha256": "1636830d033d5189809f7e15ec3fd60e5bdeb36d55362b9cebc0e1a44b449b50"
   },
   {
     "platform": "quadruped",
@@ -984,8 +909,7 @@
     "duration_s": 153.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 1832291,
-    "sha256": "fa3c7dfbcec932db55919e4c7efdc09ec27ed5af0ef0afa4f6f6c225105e4e93",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0031.png"
+    "sha256": "fa3c7dfbcec932db55919e4c7efdc09ec27ed5af0ef0afa4f6f6c225105e4e93"
   },
   {
     "platform": "quadruped",
@@ -997,8 +921,7 @@
     "duration_s": 145.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 1721423,
-    "sha256": "c7f4562c3776b8f5f3fc7fa0dd37e2ec5260582adec56ea8b1d18b05d97f9efd",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0032.png"
+    "sha256": "c7f4562c3776b8f5f3fc7fa0dd37e2ec5260582adec56ea8b1d18b05d97f9efd"
   },
   {
     "platform": "quadruped",
@@ -1010,8 +933,7 @@
     "duration_s": 405.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 4643810,
-    "sha256": "aae8a8039fb55499a7a4d993a029735909df7831bc25329918db8131e26ad321",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0033.png"
+    "sha256": "aae8a8039fb55499a7a4d993a029735909df7831bc25329918db8131e26ad321"
   },
   {
     "platform": "quadruped",
@@ -1020,11 +942,10 @@
     "npz_relpath": "train/dog/dog_train_0034.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 80781,
-    "duration_s": 403.905,
+    "duration_s": 403.9,
     "sample_rate_hz": 200,
     "file_size_bytes": 4745135,
-    "sha256": "ce64585224c980497274e2f1bbe9ed5663dc7b37a1b81f06ce9787b77a544c87",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0034.png"
+    "sha256": "ce64585224c980497274e2f1bbe9ed5663dc7b37a1b81f06ce9787b77a544c87"
   },
   {
     "platform": "quadruped",
@@ -1036,8 +957,7 @@
     "duration_s": 70.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 846005,
-    "sha256": "42749c46d426329b1fe7949f6d287458d846bdcd9328b0bd5800e2ac1015b6d2",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_train_0035.png"
+    "sha256": "42749c46d426329b1fe7949f6d287458d846bdcd9328b0bd5800e2ac1015b6d2"
   },
   {
     "platform": "drone",
@@ -1045,12 +965,11 @@
     "traj_id": "0000",
     "npz_relpath": "train/drone/drone_train_0000.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 28200,
-    "duration_s": 141.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1708267,
-    "sha256": "0fd82bd396fb26f8916d60e4528ca07377050e1d2147c556ab75a6229f5e4e55",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0000.png"
+    "file_size_bytes": 554334,
+    "sha256": "edc29f74b4d4d8f0f5439ef72a2d8e4a571c47ebcd740a80f56367ae54fd9e06"
   },
   {
     "platform": "drone",
@@ -1058,12 +977,11 @@
     "traj_id": "0001",
     "npz_relpath": "train/drone/drone_train_0001.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 20931,
-    "duration_s": 104.655,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1085266,
-    "sha256": "00851c965c91bd5561c2bbdfde72594f7ff27027571a64402b4805e3aca7adda",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0001.png"
+    "file_size_bytes": 611322,
+    "sha256": "bbad0e3352cb084db13a8e7f6930496b67c50056831fd3f7eab7520cbf6e44a4"
   },
   {
     "platform": "drone",
@@ -1071,12 +989,11 @@
     "traj_id": "0002",
     "npz_relpath": "train/drone/drone_train_0002.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 4399,
-    "duration_s": 17.596,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 240573,
-    "sha256": "d6e7e00f767c8f8b3eeb0deacba5f02fa0854a9ce040a4edb182dd5572d26b1c",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0002.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 607429,
+    "sha256": "936bb7be1f124b618584ec38e6765d46a190e64c1b490b134e2d6e3245b1e847"
   },
   {
     "platform": "drone",
@@ -1084,12 +1001,11 @@
     "traj_id": "0003",
     "npz_relpath": "train/drone/drone_train_0003.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 28711,
-    "duration_s": 143.555,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1452151,
-    "sha256": "6019aee6d495cdfaebfe82a9577f3ddf509f1b7a5761653cdb6a41634f3e78c1",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0003.png"
+    "file_size_bytes": 585501,
+    "sha256": "8bf64df51d980c21057500a9727f458ed161460a039a6143dc3d02a89a56da65"
   },
   {
     "platform": "drone",
@@ -1097,12 +1013,11 @@
     "traj_id": "0004",
     "npz_relpath": "train/drone/drone_train_0004.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 10650,
-    "duration_s": 42.6,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 556027,
-    "sha256": "603a1d71753994f79544076562b0d347f8911240a68ebf9455ba8f44f2686a9c",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0004.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 609083,
+    "sha256": "8ca22145441439813ed53e357ba0b266ec600f4f1881963cb564136bea568eca"
   },
   {
     "platform": "drone",
@@ -1110,12 +1025,11 @@
     "traj_id": "0005",
     "npz_relpath": "train/drone/drone_train_0005.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 13800,
-    "duration_s": 69.0,
+    "n_samples": 5992,
+    "duration_s": 29.96,
     "sample_rate_hz": 200,
-    "file_size_bytes": 833844,
-    "sha256": "c29aba4bc0532bb1819a775eb069fb3c64bbf65a7a2fdc858fff292babf9be12",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0005.png"
+    "file_size_bytes": 304275,
+    "sha256": "dc89d3f2470d36784627196c85764e2e31e1bd5dcbcacb3f7ba87ab8816f1b8e"
   },
   {
     "platform": "drone",
@@ -1123,12 +1037,11 @@
     "traj_id": "0006",
     "npz_relpath": "train/drone/drone_train_0006.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 90425,
-    "duration_s": 452.125,
+    "n_samples": 5859,
+    "duration_s": 29.29,
     "sample_rate_hz": 200,
-    "file_size_bytes": 5478495,
-    "sha256": "b6f7cf6dc7c661e02c7d6671056fd6c82386fdb2de199205755a1fa53dc51ce2",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0006.png"
+    "file_size_bytes": 285540,
+    "sha256": "813a9e158cf71d5954482c9aec6d99c9e12a59d4dd8606496add5abb3d54775a"
   },
   {
     "platform": "drone",
@@ -1136,12 +1049,11 @@
     "traj_id": "0007",
     "npz_relpath": "train/drone/drone_train_0007.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 9350,
-    "duration_s": 37.4,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 506760,
-    "sha256": "c2f1438a342ee91681b6fecc0c05e3bbdda8f6993d7dc7812f0fe4443f60566b",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0007.png"
+    "n_samples": 3659,
+    "duration_s": 18.3,
+    "sample_rate_hz": 199,
+    "file_size_bytes": 190364,
+    "sha256": "8c3194387e6b97da5dcefd9ba66397ba30d533afbd8f1c48fd0587a3a0b23eca"
   },
   {
     "platform": "drone",
@@ -1149,12 +1061,11 @@
     "traj_id": "0008",
     "npz_relpath": "train/drone/drone_train_0008.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 10000,
-    "duration_s": 50.0,
+    "n_samples": 3940,
+    "duration_s": 19.7,
     "sample_rate_hz": 200,
-    "file_size_bytes": 604799,
-    "sha256": "8bbe999e6d04ee478530d0bec60cd7e60d08cbcf6085fc4a2a22ab4b1e6df7c9",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0008.png"
+    "file_size_bytes": 205646,
+    "sha256": "3c806d1d10becb12edb4e40003ac76c7fa88374ed6d44a451a18966d309b3678"
   },
   {
     "platform": "drone",
@@ -1162,12 +1073,11 @@
     "traj_id": "0009",
     "npz_relpath": "train/drone/drone_train_0009.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 5349,
-    "duration_s": 21.396,
-    "sample_rate_hz": 249,
-    "file_size_bytes": 297240,
-    "sha256": "81aee1a80c2d00c9b2f98f8f0cc895738fc27502be9677c362c71a204f8c0612",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0009.png"
+    "n_samples": 3860,
+    "duration_s": 19.3,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 198351,
+    "sha256": "99fe0249b454486b615d98d9d7e96459b61d0410fc27a46367e4029ded8651ac"
   },
   {
     "platform": "drone",
@@ -1175,12 +1085,11 @@
     "traj_id": "0010",
     "npz_relpath": "train/drone/drone_train_0010.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 9249,
-    "duration_s": 36.996,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 508404,
-    "sha256": "fe49e20ee70d67965476a7af76715a24db98bcc227b5b8279fc1b80de301c8fe",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0010.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 199,
+    "file_size_bytes": 608500,
+    "sha256": "feeba08a920628a09dc44a39340c3030d57fdcbe404f7388851875eb45c9a86c"
   },
   {
     "platform": "drone",
@@ -1188,12 +1097,11 @@
     "traj_id": "0011",
     "npz_relpath": "train/drone/drone_train_0011.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 132000,
-    "duration_s": 660.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 7918833,
-    "sha256": "2a1733433e8c415137d04e3ed08b6da3eb02b109e620a35fc3bf4c24e82fc7a9",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0011.png"
+    "file_size_bytes": 611550,
+    "sha256": "fdd6096a2ce8200ebcb9ae9d0592e934375c7ecc8cf09a550156321b0c592809"
   },
   {
     "platform": "drone",
@@ -1201,12 +1109,11 @@
     "traj_id": "0012",
     "npz_relpath": "train/drone/drone_train_0012.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 92493,
-    "duration_s": 462.465,
+    "n_samples": 4711,
+    "duration_s": 23.55,
     "sample_rate_hz": 200,
-    "file_size_bytes": 5620041,
-    "sha256": "fc1b09c8baf7db59b8d4f80e229608c9d19dd382041272087bf2a190b492ba7a",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0012.png"
+    "file_size_bytes": 241220,
+    "sha256": "346fdf6f4635e4bfe61fcb268da16f62769b5d548abda32268af74a4ccfb28aa"
   },
   {
     "platform": "drone",
@@ -1214,12 +1121,11 @@
     "traj_id": "0013",
     "npz_relpath": "train/drone/drone_train_0013.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 31800,
-    "duration_s": 159.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1905627,
-    "sha256": "b584a03d930d0ec63e5dc7f37119b3968f96db375d4d20b0c9e4753d3f9d04f9",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0013.png"
+    "file_size_bytes": 621317,
+    "sha256": "d55b12072277fa9f3fa6b2b5e0eab06ebe7487dc06c729b788ebe5c22640c755"
   },
   {
     "platform": "drone",
@@ -1227,12 +1133,11 @@
     "traj_id": "0014",
     "npz_relpath": "train/drone/drone_train_0014.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 10799,
-    "duration_s": 43.196,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 582788,
-    "sha256": "64f8521ccb0a2d2e06472a66ee582d3466f98fe2a7b3bbcb09d4e97086f04b7d",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0014.png"
+    "n_samples": 4700,
+    "duration_s": 23.5,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 247734,
+    "sha256": "0fd1a6887e4f073383bc9cbd239f31224548e4409c8613de4db30ca836e7e64d"
   },
   {
     "platform": "drone",
@@ -1240,12 +1145,11 @@
     "traj_id": "0015",
     "npz_relpath": "train/drone/drone_train_0015.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 78600,
-    "duration_s": 393.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 4763563,
-    "sha256": "2e2ab658eca4433d2a6f7d5c5e7824b1a63dfc57ae9ce19c9252a41bbd60896e",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0015.png"
+    "file_size_bytes": 610539,
+    "sha256": "9c7805cb146ae7ac7689a04d6d9c8af717c74368007e9df373e37bd5c5171a19"
   },
   {
     "platform": "drone",
@@ -1253,12 +1157,11 @@
     "traj_id": "0016",
     "npz_relpath": "train/drone/drone_train_0016.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 53800,
-    "duration_s": 269.0,
+    "n_samples": 10400,
+    "duration_s": 52.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 3185230,
-    "sha256": "da9fe3a4b41dfd71bd44faeac5da1e01c8613877f9c63dfdde851d71e055e019",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0016.png"
+    "file_size_bytes": 522354,
+    "sha256": "a8127474d3325213addb9c54e147cde92ba58d9d59b8dbe08543f81d7f01cca6"
   },
   {
     "platform": "drone",
@@ -1266,12 +1169,11 @@
     "traj_id": "0017",
     "npz_relpath": "train/drone/drone_train_0017.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 35800,
-    "duration_s": 179.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 2155038,
-    "sha256": "d8504d0dd5e4be46db3531c5ded409480fa472cb03c922b8a165f45b643c1e5f",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0017.png"
+    "file_size_bytes": 627492,
+    "sha256": "6735efe6546afd9955f2cdf0a15d3995dbf326b16b6c49a4f2e99b60539c3068"
   },
   {
     "platform": "drone",
@@ -1279,12 +1181,11 @@
     "traj_id": "0018",
     "npz_relpath": "train/drone/drone_train_0018.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 27133,
-    "duration_s": 135.665,
+    "n_samples": 11089,
+    "duration_s": 55.44,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1614537,
-    "sha256": "1d9d769add883c88ffdaaa33a359e1ea63c2eb62fe10128c97b484894a791e9e",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0018.png"
+    "file_size_bytes": 578070,
+    "sha256": "590114b55bb7d6dec35d19667bea72d6aacff7e92b5411722eba8e990b2cbf80"
   },
   {
     "platform": "drone",
@@ -1292,12 +1193,11 @@
     "traj_id": "0019",
     "npz_relpath": "train/drone/drone_train_0019.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 98000,
-    "duration_s": 490.0,
+    "n_samples": 9899,
+    "duration_s": 49.49,
     "sample_rate_hz": 200,
-    "file_size_bytes": 5916489,
-    "sha256": "6c6c26c356025e9eebacda6263fbc834dd82a9d02d4b2937637c2b98afbc690f",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0019.png"
+    "file_size_bytes": 609904,
+    "sha256": "bd7f31ec683f553512dfc79a1e5ca3124c06c5bb0453d6b88356085a33241bbd"
   },
   {
     "platform": "drone",
@@ -1305,12 +1205,11 @@
     "traj_id": "0020",
     "npz_relpath": "train/drone/drone_train_0020.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 53943,
-    "duration_s": 269.715,
+    "n_samples": 9899,
+    "duration_s": 49.49,
     "sample_rate_hz": 200,
-    "file_size_bytes": 3270124,
-    "sha256": "2c7f978f72655491c0f2ae2fe230d92d2190222603e834879c2fca908e8137e0",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0020.png"
+    "file_size_bytes": 611166,
+    "sha256": "106efbfcd09813803919424067e001698f6a9c11a05e0998a9166cf62a72ca21"
   },
   {
     "platform": "drone",
@@ -1318,12 +1217,11 @@
     "traj_id": "0021",
     "npz_relpath": "train/drone/drone_train_0021.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 25600,
-    "duration_s": 128.0,
+    "n_samples": 6039,
+    "duration_s": 30.19,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1547473,
-    "sha256": "5a5456044d1b7f6ab85c8815065819218cdb3878f2548cb39e16f2903850b5cf",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0021.png"
+    "file_size_bytes": 373012,
+    "sha256": "3a0c2a06fd291a8d3a405b69b671e12b4366e710ffcbb9cd3fa1973aa5d6e554"
   },
   {
     "platform": "drone",
@@ -1331,12 +1229,11 @@
     "traj_id": "0022",
     "npz_relpath": "train/drone/drone_train_0022.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 12374,
-    "duration_s": 49.496,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 681915,
-    "sha256": "1daa7f76feee9640e3931b5d9ab1a188206e32c93c87332819dbb9c0d7151ef5",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0022.png"
+    "n_samples": 6040,
+    "duration_s": 30.2,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 373526,
+    "sha256": "1e08a188ca8d46835b92058669deba0ddf781ef3449fe983825b91be4d9fd628"
   },
   {
     "platform": "drone",
@@ -1344,12 +1241,11 @@
     "traj_id": "0023",
     "npz_relpath": "train/drone/drone_train_0023.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 14000,
-    "duration_s": 70.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 839461,
-    "sha256": "c05749a398c90ef8d2c8f4ce035ccf7a8ac98d2b6c5e45d281e07c82799acb4a",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0023.png"
+    "file_size_bytes": 737019,
+    "sha256": "d20f97d7f14f4c85afc3ab9c2283f87818e1373966e48e3d85a992caead77fb4"
   },
   {
     "platform": "drone",
@@ -1357,12 +1253,11 @@
     "traj_id": "0024",
     "npz_relpath": "train/drone/drone_train_0024.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 19752,
-    "duration_s": 98.76,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 982207,
-    "sha256": "8d0ec2c2a913825386d077304f77c6602268198ebdfcc1e356945880bec8517c",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0024.png"
+    "file_size_bytes": 738894,
+    "sha256": "b9fb096ab3cf5a8e73e290f9e44742f9819915320b41ea98fe691eec48be7179"
   },
   {
     "platform": "drone",
@@ -1370,12 +1265,11 @@
     "traj_id": "0025",
     "npz_relpath": "train/drone/drone_train_0025.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 82800,
-    "duration_s": 414.0,
+    "n_samples": 5759,
+    "duration_s": 28.79,
     "sample_rate_hz": 200,
-    "file_size_bytes": 5001345,
-    "sha256": "883e36902e63608a2d501bbaf2a00838637a637ba472b50a747551c2511d764e",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0025.png"
+    "file_size_bytes": 355022,
+    "sha256": "92ce5ebb9e88d180284e3cb8d742e4da5599b2b6b1e4fb2fa2759ea124c0503f"
   },
   {
     "platform": "drone",
@@ -1383,12 +1277,11 @@
     "traj_id": "0026",
     "npz_relpath": "train/drone/drone_train_0026.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 23089,
-    "duration_s": 115.445,
+    "n_samples": 5760,
+    "duration_s": 28.8,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1200204,
-    "sha256": "c205fa84e66bfa4946d06fce4b3d83ff4a3adcdc547c688bf78a856cb4522745",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0026.png"
+    "file_size_bytes": 356179,
+    "sha256": "3529b1284879fc85b55fa87d7295b04f25dde6639fdb9ab7bbc908f6e83a7ca9"
   },
   {
     "platform": "drone",
@@ -1396,12 +1289,11 @@
     "traj_id": "0027",
     "npz_relpath": "train/drone/drone_train_0027.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 130848,
-    "duration_s": 654.24,
+    "n_samples": 5980,
+    "duration_s": 29.9,
     "sample_rate_hz": 200,
-    "file_size_bytes": 7685283,
-    "sha256": "25e66900a39f6270bbb6ac145197814328815e43d08383ca7652d10dcd2d65ee",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0027.png"
+    "file_size_bytes": 369010,
+    "sha256": "e84190df1939e75783a90c3029b871b9c12c5b41ab6dd4103dcd312a08ae4829"
   },
   {
     "platform": "drone",
@@ -1409,12 +1301,11 @@
     "traj_id": "0028",
     "npz_relpath": "train/drone/drone_train_0028.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 137636,
-    "duration_s": 688.18,
+    "n_samples": 5979,
+    "duration_s": 29.89,
     "sample_rate_hz": 200,
-    "file_size_bytes": 8147207,
-    "sha256": "8f0a569e866715d8f6af39f218fe2b2d9dd39d6c69e59c3686a9631e9f1860ec",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0028.png"
+    "file_size_bytes": 369873,
+    "sha256": "e45b2902fe328c1d9b7628ebadafc3e1252f5838c1b11ab0077448f6b5846415"
   },
   {
     "platform": "drone",
@@ -1422,12 +1313,11 @@
     "traj_id": "0029",
     "npz_relpath": "train/drone/drone_train_0029.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 10214,
-    "duration_s": 51.07,
+    "n_samples": 9879,
+    "duration_s": 49.39,
     "sample_rate_hz": 200,
-    "file_size_bytes": 616868,
-    "sha256": "a7a69fac1f620b85bd722f29bd8b510bc9cc0f13510d41ca07dd450823b73938",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0029.png"
+    "file_size_bytes": 608659,
+    "sha256": "0e543e167aa725808ec81bbe5afb5f87656fe5a079b2cccba6a8427d7060a3bb"
   },
   {
     "platform": "drone",
@@ -1435,12 +1325,11 @@
     "traj_id": "0030",
     "npz_relpath": "train/drone/drone_train_0030.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 63800,
-    "duration_s": 319.0,
+    "n_samples": 9879,
+    "duration_s": 49.39,
     "sample_rate_hz": 200,
-    "file_size_bytes": 3863961,
-    "sha256": "7a58ec477ad95e272c0a59ec2c0ce2d9aee63475cda69992497c43cb238428ba",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0030.png"
+    "file_size_bytes": 611036,
+    "sha256": "cdf3bbb44ab2be3385c6ea97a9b7a1522d720fdd44c30256bb49ec93ffb11168"
   },
   {
     "platform": "drone",
@@ -1448,12 +1337,11 @@
     "traj_id": "0031",
     "npz_relpath": "train/drone/drone_train_0031.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 42600,
-    "duration_s": 213.0,
+    "n_samples": 8639,
+    "duration_s": 43.19,
     "sample_rate_hz": 200,
-    "file_size_bytes": 2555083,
-    "sha256": "8fa5149ca8a2adbc0312d6e456971b2cdcd5992e0cf6fcfe59b7d9dce44c122b",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0031.png"
+    "file_size_bytes": 531729,
+    "sha256": "694c2194e33a59ea7aad77bcd5fa7f5c9938866a3b2324e9c5570c56010c0bc4"
   },
   {
     "platform": "drone",
@@ -1461,12 +1349,11 @@
     "traj_id": "0032",
     "npz_relpath": "train/drone/drone_train_0032.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 24600,
-    "duration_s": 123.0,
+    "n_samples": 8639,
+    "duration_s": 43.19,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1480709,
-    "sha256": "f82e2540afe40e9734c9bbc2b27948a17b58c7bd0cee328328c9944f83f50976",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0032.png"
+    "file_size_bytes": 533934,
+    "sha256": "cbce72acbfc636515bd2fb84da04874afa6d11ed84e33ec07b07dfd5e6ab7429"
   },
   {
     "platform": "drone",
@@ -1474,12 +1361,11 @@
     "traj_id": "0033",
     "npz_relpath": "train/drone/drone_train_0033.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 10799,
-    "duration_s": 43.196,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 575734,
-    "sha256": "65cdbf68bd5d5d91a4a60819dc6b6ebd2499c0f506ffff7d0197b357d0f237d4",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0033.png"
+    "n_samples": 7479,
+    "duration_s": 37.39,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 460393,
+    "sha256": "0d98d409a62d980d46ea03cb5468e0dc6529d98f9a5b3bbb7a75e407485fd8fc"
   },
   {
     "platform": "drone",
@@ -1487,12 +1373,11 @@
     "traj_id": "0034",
     "npz_relpath": "train/drone/drone_train_0034.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 24800,
-    "duration_s": 124.0,
+    "n_samples": 7480,
+    "duration_s": 37.4,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1501865,
-    "sha256": "0b8c6e0784a37793e589f23458aca130044b0e0742f37f2cd7d17c653ed6d217",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0034.png"
+    "file_size_bytes": 462310,
+    "sha256": "a65d15f49ad2e8af6ee6e8132c8847491a7b8d3a3f01376ef089172b5d4684ec"
   },
   {
     "platform": "drone",
@@ -1500,12 +1385,11 @@
     "traj_id": "0035",
     "npz_relpath": "train/drone/drone_train_0035.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 104000,
-    "duration_s": 520.0,
+    "n_samples": 7400,
+    "duration_s": 37.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 6237416,
-    "sha256": "db4b1922653a3e798f0dd949f93389855e54501d75ecf0f876a6bd12526a6b58",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0035.png"
+    "file_size_bytes": 456810,
+    "sha256": "f78102361fea0d898494ebeb076bebb5f4250f43d7427875946b42904430a0c9"
   },
   {
     "platform": "drone",
@@ -1513,12 +1397,11 @@
     "traj_id": "0036",
     "npz_relpath": "train/drone/drone_train_0036.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 7550,
-    "duration_s": 30.2,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 422369,
-    "sha256": "b459d4b04234899e8b475f47c0526a705ad6ea82b6254f81fcf8e60fb10cf127",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0036.png"
+    "n_samples": 7399,
+    "duration_s": 36.99,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 457423,
+    "sha256": "233ba010974a50053107ab69c3bc51540fa1898de1ed3c5c317414beebec3e32"
   },
   {
     "platform": "drone",
@@ -1526,12 +1409,11 @@
     "traj_id": "0037",
     "npz_relpath": "train/drone/drone_train_0037.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 10650,
-    "duration_s": 42.6,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 570914,
-    "sha256": "52fd97dcbccdf555942a790e1c4bac3613a0c9464cc62a34f5e3c7d5b18e1162",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0037.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733016,
+    "sha256": "2437fe35cd85334c7462b9fa58f9ce857ef2f8a3dac38d5a9a84552507387bdc"
   },
   {
     "platform": "drone",
@@ -1539,12 +1421,11 @@
     "traj_id": "0038",
     "npz_relpath": "train/drone/drone_train_0038.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 112800,
-    "duration_s": 564.0,
+    "n_samples": 5140,
+    "duration_s": 25.7,
     "sample_rate_hz": 200,
-    "file_size_bytes": 6801537,
-    "sha256": "09687a3379949d267a9ce17296d6dd5ce06a408120e4fcf5615a546158f2e299",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0038.png"
+    "file_size_bytes": 315315,
+    "sha256": "c19d17a17d7db7144a9630cb04ff180b9e9076e2f09291c63329ac36997444f7"
   },
   {
     "platform": "drone",
@@ -1552,12 +1433,11 @@
     "traj_id": "0039",
     "npz_relpath": "train/drone/drone_train_0039.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 11400,
-    "duration_s": 57.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 691132,
-    "sha256": "99961ed31eac983610453a0399f0a26926fcc3a15a7cc83f4f451676859b6526",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0039.png"
+    "file_size_bytes": 735433,
+    "sha256": "9784bd0f9126efbae73a555e8f00bd8b158eca5e80de23a8a8065be90b33cf4e"
   },
   {
     "platform": "drone",
@@ -1565,12 +1445,11 @@
     "traj_id": "0040",
     "npz_relpath": "train/drone/drone_train_0040.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 4999,
-    "duration_s": 19.996,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 270898,
-    "sha256": "c9c0dbebf2f90847d76e23518ffb46b3d5c9586d83f524403d4a0b366bff675c",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0040.png"
+    "n_samples": 5140,
+    "duration_s": 25.7,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 316454,
+    "sha256": "a16d462297bef1505ceff3f4cc068fce6d6b804b4617b61cc47d054f7a946ee0"
   },
   {
     "platform": "drone",
@@ -1578,12 +1457,11 @@
     "traj_id": "0041",
     "npz_relpath": "train/drone/drone_train_0041.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 68800,
-    "duration_s": 344.0,
+    "n_samples": 3999,
+    "duration_s": 19.99,
     "sample_rate_hz": 200,
-    "file_size_bytes": 4116378,
-    "sha256": "f29b958b34944dd6d294f6b4d7dcb36bc151618bd9cf9b39aacb4849ce9a125a",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0041.png"
+    "file_size_bytes": 246356,
+    "sha256": "6c0555554d0751436ce219a3c77e80a36fe2cccad255271125994b333b8fd00f"
   },
   {
     "platform": "drone",
@@ -1591,12 +1469,11 @@
     "traj_id": "0042",
     "npz_relpath": "train/drone/drone_train_0042.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 4399,
-    "duration_s": 17.596,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 236790,
-    "sha256": "df36aedc66f47aabd461cc649ed53378e468e6d8f7e006b046c26446d652a9be",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0042.png"
+    "n_samples": 4000,
+    "duration_s": 20.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 246784,
+    "sha256": "b851b54081916e7e7dbd2905aece8571f12af54385b732f1bcdcc4de77aa1da7"
   },
   {
     "platform": "drone",
@@ -1604,12 +1481,11 @@
     "traj_id": "0043",
     "npz_relpath": "train/drone/drone_train_0043.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 22211,
-    "duration_s": 111.055,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1099040,
-    "sha256": "fde368da3f931ab2349f58fd335f727861d4d72b85f708c02f6e7b2f74ee2849",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0043.png"
+    "file_size_bytes": 718116,
+    "sha256": "c6e94f646145bad198348fa1c63aeac4657e2bd1af16d0c44942f40a2520507a"
   },
   {
     "platform": "drone",
@@ -1617,12 +1493,11 @@
     "traj_id": "0044",
     "npz_relpath": "train/drone/drone_train_0044.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 4825,
-    "duration_s": 19.3,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 262552,
-    "sha256": "34592f844dbaf4d4ed7b6ad67924ff24f0f1065dd9420eecba3a77576a47124a",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0044.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 720862,
+    "sha256": "260afb55f80801912edc37e74c9f9a29d200bdca4559470cf59e022b8cdfcfc9"
   },
   {
     "platform": "drone",
@@ -1630,12 +1505,11 @@
     "traj_id": "0045",
     "npz_relpath": "train/drone/drone_train_0045.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 29992,
-    "duration_s": 149.96,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1489358,
-    "sha256": "bd029cc373d7a8c69cf30fa82bfe0f9b147752f526ea99b3b89a04a89f0415cb",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0045.png"
+    "file_size_bytes": 722036,
+    "sha256": "a75dafca00be7c03348d6a78f64684903a631d5412cd2911e5bb60a3e12402b0"
   },
   {
     "platform": "drone",
@@ -1643,12 +1517,11 @@
     "traj_id": "0046",
     "npz_relpath": "train/drone/drone_train_0046.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 12374,
-    "duration_s": 49.496,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 668998,
-    "sha256": "b277cdcbf9751a15ab07523107c2a03a40a8ab0bbf11869380dda426b4d60f3a",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0046.png"
+    "n_samples": 5580,
+    "duration_s": 27.9,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 337224,
+    "sha256": "a7c86f0bf312c3b40c20dbd931c78afb97b09ef30082442f5d1e43384ac6a26a"
   },
   {
     "platform": "drone",
@@ -1656,12 +1529,11 @@
     "traj_id": "0047",
     "npz_relpath": "train/drone/drone_train_0047.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 12349,
-    "duration_s": 49.396,
-    "sample_rate_hz": 249,
-    "file_size_bytes": 668555,
-    "sha256": "d4abd0913e5c223a141b2c3d0abed8f2d997e7952b2c832b97f5ed51159af4cb",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0047.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 721339,
+    "sha256": "2bd8ee63b1925239b4df197f97b3fe12c1ce945e45653d6f99f3a91be619d40e"
   },
   {
     "platform": "drone",
@@ -1669,12 +1541,11 @@
     "traj_id": "0048",
     "npz_relpath": "train/drone/drone_train_0048.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 21425,
-    "duration_s": 85.7,
-    "sample_rate_hz": 249,
-    "file_size_bytes": 1133219,
-    "sha256": "697359d393b4de192a78c2c88b594f3ad82824b55b86f0a1f694fc3de39946cb",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0048.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 722978,
+    "sha256": "47889a392bc5ee6cce6e20c8dbc1f582deb48a4ca69dab12784d76b73d9f0dad"
   },
   {
     "platform": "drone",
@@ -1682,12 +1553,11 @@
     "traj_id": "0049",
     "npz_relpath": "train/drone/drone_train_0049.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 132400,
-    "duration_s": 662.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 7989128,
-    "sha256": "fec949061db6cdcbce95596f6b27b29ed4b503899b8950687f9f55d68754417a",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0049.png"
+    "file_size_bytes": 727664,
+    "sha256": "cb94f1a2bef10b71d1ec367da82cba520c202a43973dc76125e9f780094323a4"
   },
   {
     "platform": "drone",
@@ -1695,12 +1565,11 @@
     "traj_id": "0050",
     "npz_relpath": "train/drone/drone_train_0050.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 141605,
-    "duration_s": 708.025,
+    "n_samples": 4118,
+    "duration_s": 20.59,
     "sample_rate_hz": 200,
-    "file_size_bytes": 8486317,
-    "sha256": "80c1ea84cfb84bd3735e508f89d3790ea4869619dab10d75241463fd5a4cd49b",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0050.png"
+    "file_size_bytes": 250926,
+    "sha256": "a33084aacdb804b35874b1561154ea6e5e84139d466a2ef7145d7fdedb44e46e"
   },
   {
     "platform": "drone",
@@ -1708,12 +1577,11 @@
     "traj_id": "0051",
     "npz_relpath": "train/drone/drone_train_0051.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 24400,
-    "duration_s": 122.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1443320,
-    "sha256": "9d778053084746ddda0c09d366911e01c24e759a0951ace2d5ce11c56050050a",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0051.png"
+    "file_size_bytes": 726440,
+    "sha256": "b2693f9c9d181c5133f5dbc71c7b7557fb1565ecf177a2067b09484370632e96"
   },
   {
     "platform": "drone",
@@ -1721,12 +1589,11 @@
     "traj_id": "0052",
     "npz_relpath": "train/drone/drone_train_0052.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 4825,
-    "duration_s": 19.3,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 255242,
-    "sha256": "b47c0c597ff21b2829d6c128ac4f10813fd45bdb23f49b1b9d42ce760a5e612a",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0052.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732933,
+    "sha256": "0429b5842d3ca2c1107f97e6a1e837b82a833a4efcfcaaaf692f5c0cbf25df83"
   },
   {
     "platform": "drone",
@@ -1734,12 +1601,11 @@
     "traj_id": "0053",
     "npz_relpath": "train/drone/drone_train_0053.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 13800,
-    "duration_s": 69.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 837062,
-    "sha256": "52092484e329980ba1034e65d43dd03eed2cf09cc2e04fadacd51323217c9098",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0053.png"
+    "file_size_bytes": 729389,
+    "sha256": "aa23490a430e3a605a53a2da32d00a4d496f4527f9e6548fdd088903f5297c7e"
   },
   {
     "platform": "drone",
@@ -1747,12 +1613,11 @@
     "traj_id": "0054",
     "npz_relpath": "train/drone/drone_train_0054.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 21425,
-    "duration_s": 85.7,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 1159908,
-    "sha256": "1626389dc181d679dbe805e2a41e20463d0815c57421cf66d2ce9604ef6b7cbf",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0054.png"
+    "n_samples": 4980,
+    "duration_s": 24.9,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 294106,
+    "sha256": "658225b49523b5fb993dd5fda56d9562b011e787444725642483854319e0a254"
   },
   {
     "platform": "drone",
@@ -1760,12 +1625,11 @@
     "traj_id": "0055",
     "npz_relpath": "train/drone/drone_train_0055.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 108149,
-    "duration_s": 540.745,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 6462173,
-    "sha256": "800c5b088176203d072bd42d017584a4481090ffa01b1fbc51c7f5fe7e5c9ace",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0055.png"
+    "file_size_bytes": 729925,
+    "sha256": "c61b6200a223d983606903d41d2fb95e22db312fdef2965a5a414c70c657f65a"
   },
   {
     "platform": "drone",
@@ -1773,12 +1637,11 @@
     "traj_id": "0056",
     "npz_relpath": "train/drone/drone_train_0056.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 60000,
-    "duration_s": 300.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 3635761,
-    "sha256": "68d48ba6aed9f87f7c64723ee456ed6d2665958293249d669a8426eb9475dc75",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0056.png"
+    "file_size_bytes": 736344,
+    "sha256": "2a3fc15236bdd3aecc0bbfd0f33d011c5b3e7a5087d37d3d13b81894a1ec3980"
   },
   {
     "platform": "drone",
@@ -1786,12 +1649,11 @@
     "traj_id": "0057",
     "npz_relpath": "train/drone/drone_train_0057.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 18000,
-    "duration_s": 90.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1083448,
-    "sha256": "51153870ea24303c8aa3975fcbba6a42d0ddacf481aca0a3ef17ff779d3cfcf0",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0057.png"
+    "file_size_bytes": 736809,
+    "sha256": "5841dc64ecdf965f6afd7357dca68d85a87f97ae758072ad50751663ac8d9d1b"
   },
   {
     "platform": "drone",
@@ -1799,12 +1661,11 @@
     "traj_id": "0058",
     "npz_relpath": "train/drone/drone_train_0058.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 29800,
-    "duration_s": 149.0,
+    "n_samples": 5034,
+    "duration_s": 25.17,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1810801,
-    "sha256": "9422504bcc8226ec4b57a694e7ec8bf209aae10f03ba9fdcc75edd5308bc6994",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0058.png"
+    "file_size_bytes": 301931,
+    "sha256": "7a4420e2c0eeb761990c22edd8062fa07ef91e13be0a58e0fd68549ba26c5927"
   },
   {
     "platform": "drone",
@@ -1812,12 +1673,11 @@
     "traj_id": "0059",
     "npz_relpath": "train/drone/drone_train_0059.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 16674,
-    "duration_s": 66.696,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 924931,
-    "sha256": "304a7bd4c1cdc9df1266a8ee99aff4c647edf779545c2cc769f7b6ba76b82508",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0059.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736640,
+    "sha256": "9b7ff586502587623e477c2eaa46ebd9249a59ab3c6c0b14f94282332bcdfa9a"
   },
   {
     "platform": "drone",
@@ -1825,12 +1685,2747 @@
     "traj_id": "0060",
     "npz_relpath": "train/drone/drone_train_0060.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 5350,
-    "duration_s": 21.4,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 295344,
-    "sha256": "1768616bf3f59c1e1694e2e2e1e46adfabe5767f770ed74a16b4876c64673c56",
-    "thumbnail": "/img/imuchallenge/previews/drone_train_0060.png"
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737737,
+    "sha256": "db016229c06d09afe876f8e2135c97274f0557ab85e4c448c2b44d79d9a75929"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0061",
+    "npz_relpath": "train/drone/drone_train_0061.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738094,
+    "sha256": "647ebc320a38fe0ec1a1976609e27388866c0018ab8a6510f6d8f4eaba447719"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0062",
+    "npz_relpath": "train/drone/drone_train_0062.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737911,
+    "sha256": "b113cf79e945294a1a111aee8f43bd534c571241beb14e09e581d64990fce679"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0063",
+    "npz_relpath": "train/drone/drone_train_0063.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3994,
+    "duration_s": 19.97,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 241424,
+    "sha256": "4d2ab9235c45f6303a39909b7e07d7bdc779851ffded71ed35e36f3087bb33e7"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0064",
+    "npz_relpath": "train/drone/drone_train_0064.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726229,
+    "sha256": "6c5d697b79b16553d5bd70ec79eede00b8ed63b0b7d6c605d0700650899fe095"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0065",
+    "npz_relpath": "train/drone/drone_train_0065.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726113,
+    "sha256": "eccce2344c3ae3998c4ace3fa8ba0a923277e78bbfc4913123f95572de243e00"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0066",
+    "npz_relpath": "train/drone/drone_train_0066.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726964,
+    "sha256": "c6be214230856f9377b8a77f6a2a823509678020b09a8202fdd4b620894698de"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0067",
+    "npz_relpath": "train/drone/drone_train_0067.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 5584,
+    "duration_s": 27.92,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 338962,
+    "sha256": "c01cbc718d331944b871ead9d009a2e9e38b6a3fef7a8b383c42366cb46c3d17"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0068",
+    "npz_relpath": "train/drone/drone_train_0068.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734450,
+    "sha256": "8e1b4b9f4a8ff03a38334ede606f79947dd1e230aa0e46cb7543f48bb4809648"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0069",
+    "npz_relpath": "train/drone/drone_train_0069.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738245,
+    "sha256": "6470effe8081347bfe493948ad47ed9161e555e80edf8edb774661eecb28c729"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0070",
+    "npz_relpath": "train/drone/drone_train_0070.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737502,
+    "sha256": "96c96205e8f1490c8b7e3724840f5d4dd05aa0131817b7ba88c7dbc4315beebe"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0071",
+    "npz_relpath": "train/drone/drone_train_0071.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3374,
+    "duration_s": 16.87,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 206890,
+    "sha256": "68747cd090850c2018033233e6211fb7b8d47ac5f5f7179722d645e576ce9b71"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0072",
+    "npz_relpath": "train/drone/drone_train_0072.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 721348,
+    "sha256": "c25fe48ba3ba9ca52b489172f228c2cbaff01b75955534f52151ef6e877db5f4"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0073",
+    "npz_relpath": "train/drone/drone_train_0073.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 724736,
+    "sha256": "7f4b295e69617432273f61f8a3f8d7a7a7734e91611f4a736dd2a112e9e3bb36"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0074",
+    "npz_relpath": "train/drone/drone_train_0074.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726123,
+    "sha256": "29ce4f3a210ef6e693dd49e6892a34344568a51c28ec44da1c852bd9a087b8b7"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0075",
+    "npz_relpath": "train/drone/drone_train_0075.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 5930,
+    "duration_s": 29.65,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 361324,
+    "sha256": "4e4dd5b2a0737832fd30bc43ad0151d8b6d8ac514172c301bc8f622df9bdb319"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0076",
+    "npz_relpath": "train/drone/drone_train_0076.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 720557,
+    "sha256": "80b9207f0b4ce0306a84095898c33d77f17c5bf365cba4fa9551eb2b2124bf9d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0077",
+    "npz_relpath": "train/drone/drone_train_0077.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 11824,
+    "duration_s": 59.12,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 718393,
+    "sha256": "c7c3ce8016693fe723e60265572153b536337b94c33691ecfa3dadb09870b1c1"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0078",
+    "npz_relpath": "train/drone/drone_train_0078.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732684,
+    "sha256": "e2093b87f10f6f8f19bb5064e0a7624b9cb46c6d50ab103915f4ebbde8e29dde"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0079",
+    "npz_relpath": "train/drone/drone_train_0079.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737865,
+    "sha256": "c089b15f089f06de865bb4522a0b3473169da29e8605d8721d294d817f454a07"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0080",
+    "npz_relpath": "train/drone/drone_train_0080.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738160,
+    "sha256": "829ee05cb55294895f88752d9f7dfd97918e62548d5cb9f75ee4be918d6f5250"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0081",
+    "npz_relpath": "train/drone/drone_train_0081.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3938,
+    "duration_s": 19.69,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 241991,
+    "sha256": "49b267d70cc6eae50788bb9fa1e7b912254f7c06cbfa277a77cad11ba5d066a3"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0082",
+    "npz_relpath": "train/drone/drone_train_0082.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734752,
+    "sha256": "1d82d0b0433d645044f4e6990d8b6641dc410f9470e254380f2fdd914623c6c8"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0083",
+    "npz_relpath": "train/drone/drone_train_0083.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 739005,
+    "sha256": "6057d334d0d9608baf8cacdd5285a7f5ed2349e9546a64da5710afca8ae2b342"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0084",
+    "npz_relpath": "train/drone/drone_train_0084.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 739128,
+    "sha256": "25bd55221f50615e85704c05ccd054360af03372718bbd6d566d1bb8a239b78f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0085",
+    "npz_relpath": "train/drone/drone_train_0085.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3876,
+    "duration_s": 19.38,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 238546,
+    "sha256": "80bf2d9b2b537e0f3d97fa2ad10929aab017ecc18492805a06e1eb93dc7b5527"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0086",
+    "npz_relpath": "train/drone/drone_train_0086.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732835,
+    "sha256": "1aed2c73cf2c2241bb92ca6d50f983c65f099a204717b6f515a960580fbe29b7"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0087",
+    "npz_relpath": "train/drone/drone_train_0087.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734569,
+    "sha256": "d7986bbf53d34b03f6457fa81ecaf0660d946c1d7366b556085bcff86c700f9e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0088",
+    "npz_relpath": "train/drone/drone_train_0088.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735728,
+    "sha256": "a57271ef48101c12a2eac35aef751f8155d8a16f01e5a50040c155baa42a66e1"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0089",
+    "npz_relpath": "train/drone/drone_train_0089.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 723802,
+    "sha256": "b3a37b631787d30bdab28fef6976680089547f2cd022c7bd96afe87d7b5d2933"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0090",
+    "npz_relpath": "train/drone/drone_train_0090.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737990,
+    "sha256": "a8f6701555452a09d64e564b452fed54d851c2f0beabebe1f08dc27b85559b3b"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0091",
+    "npz_relpath": "train/drone/drone_train_0091.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4484,
+    "duration_s": 22.42,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 275588,
+    "sha256": "e181c94efb15c6c937b45ac4e379a6869c0352cf5dafa44097a5590ac910a1cb"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0092",
+    "npz_relpath": "train/drone/drone_train_0092.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734967,
+    "sha256": "4aedddd736a283aaf471686a8ce74ad899ab863abac86826637bc74bb06eccbe"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0093",
+    "npz_relpath": "train/drone/drone_train_0093.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738450,
+    "sha256": "3992adc4be0a69efb7ad8430388000c4d1cc49c60176ce7d29d331b45e17b2c9"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0094",
+    "npz_relpath": "train/drone/drone_train_0094.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738580,
+    "sha256": "546ef86898455ed6bfd0255d858e1ed5ad339d6557f2b77e1a2fbba0c27b8c6f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0095",
+    "npz_relpath": "train/drone/drone_train_0095.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 729450,
+    "sha256": "9efe84aec2bb5a7d406fe4c849c7858e4ade4bd87a5b41c2b7d4a04a66a675c1"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0096",
+    "npz_relpath": "train/drone/drone_train_0096.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 731374,
+    "sha256": "1b6e429c744442998cfadf0c5ac28afc9977bb0ecd619efe3536d39f59fc7145"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0097",
+    "npz_relpath": "train/drone/drone_train_0097.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726200,
+    "sha256": "d18af5beb973b6d07833015931e0f43237118457264a4415595858af653f2cdb"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0098",
+    "npz_relpath": "train/drone/drone_train_0098.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 730875,
+    "sha256": "794a16e868bafd2b604a6eda140d47efeb398ec9eaf36566e936d0d5ccf5c951"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0099",
+    "npz_relpath": "train/drone/drone_train_0099.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738313,
+    "sha256": "ff9a9e9a85abc3ddab124c7d53700ed41ec5ebb05ae2da8048c0ccd5ec93db85"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0100",
+    "npz_relpath": "train/drone/drone_train_0100.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 9708,
+    "duration_s": 48.54,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 593030,
+    "sha256": "76a7ca6c49ff3145c2c28f70f976beded68e13fd0d562f343e88b30856f73a3a"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0101",
+    "npz_relpath": "train/drone/drone_train_0101.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737524,
+    "sha256": "d7cb3087c9ff05ac0bb5f38564153b5bc7b7c19bf74ed3167ae4223d8c7420a1"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0102",
+    "npz_relpath": "train/drone/drone_train_0102.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738812,
+    "sha256": "bd167bab17fc46fafae6648ad82cef3055cbc75bdab503f02ef3cc59e7f8cbc2"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0103",
+    "npz_relpath": "train/drone/drone_train_0103.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3490,
+    "duration_s": 17.45,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 214163,
+    "sha256": "8dc886ac3de4cbdc8d12b1fe0bad6bf01a1cb82885574f0a9000a100dcbc26fe"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0104",
+    "npz_relpath": "train/drone/drone_train_0104.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 716271,
+    "sha256": "0af46f5d4f742e9dd2f502e11875fa39f7901f0253530b56f3c0c0bcf9e19554"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0105",
+    "npz_relpath": "train/drone/drone_train_0105.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 715334,
+    "sha256": "2829b88de869e729f379a6c0d518d2d782c81fccfba03f094a74e94f673abf6e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0106",
+    "npz_relpath": "train/drone/drone_train_0106.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 715629,
+    "sha256": "7637f1fd100785cb173e4e7c7e96310e36757f2cacb24b2a7394054e12cb961e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0107",
+    "npz_relpath": "train/drone/drone_train_0107.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 5318,
+    "duration_s": 26.59,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 320148,
+    "sha256": "e8dfa1e18f9b3046f178b876397429399bf958ddb34b5517bf64d0f7738c91d0"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0108",
+    "npz_relpath": "train/drone/drone_train_0108.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 716556,
+    "sha256": "8ea60636ef723bdfb90a65b4290cb6214a4d3fc545d5b83dfca37e9e5bced1a9"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0109",
+    "npz_relpath": "train/drone/drone_train_0109.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 721473,
+    "sha256": "150a741b288c722b57bf1c3c49bf377562620055693578f086a5a936551c75d3"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0110",
+    "npz_relpath": "train/drone/drone_train_0110.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4640,
+    "duration_s": 23.2,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 282580,
+    "sha256": "76c1ff345b23318a7d5f49293087c5bd055e0dbc57929cb3ae75d48bd8b2f080"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0111",
+    "npz_relpath": "train/drone/drone_train_0111.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 724568,
+    "sha256": "689588d3c14627dd788cfc0c4450f97662bf9fa5c6043286babd087edd9d1939"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0112",
+    "npz_relpath": "train/drone/drone_train_0112.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 729975,
+    "sha256": "8d95d6b680cfc90b4bb230dbbc5227e9947f75b2046747a880468773ea2a93e6"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0113",
+    "npz_relpath": "train/drone/drone_train_0113.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 722098,
+    "sha256": "87186afc18344cc7134c88784483339654c238c0464031451ddae1fe14ad509a"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0114",
+    "npz_relpath": "train/drone/drone_train_0114.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3414,
+    "duration_s": 17.07,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 207253,
+    "sha256": "f7944945c4692d8d27e29f246e765bcad0f228037eabf64f559779b176feede6"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0115",
+    "npz_relpath": "train/drone/drone_train_0115.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 725146,
+    "sha256": "7dc3417a307fcfe8c0e852b3aacce797016521b38a266d90c7341ba99dd449bf"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0116",
+    "npz_relpath": "train/drone/drone_train_0116.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 10108,
+    "duration_s": 50.54,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 611871,
+    "sha256": "be7ad13ae01c20df48c27ce4328ca30dd1cf7599e073469c749f635f49c88110"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0117",
+    "npz_relpath": "train/drone/drone_train_0117.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732485,
+    "sha256": "f59922320833f09abd59e8fa1b5f838f6e1a8be71ca1fe02211ce10a4f7c002e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0118",
+    "npz_relpath": "train/drone/drone_train_0118.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735468,
+    "sha256": "69f793e0d7a79377579fd564b8668f7fe7f867cc795a9fdbc68689307e2b8d34"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0119",
+    "npz_relpath": "train/drone/drone_train_0119.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735644,
+    "sha256": "f0e6f522a7110256754984279dd3524862a6311ecf988ace30a734f72ba6217f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0120",
+    "npz_relpath": "train/drone/drone_train_0120.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3306,
+    "duration_s": 16.53,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 203160,
+    "sha256": "00dbdc82dd9875337dc867ade259bc3584c803a82825ab6363f9b785a01c6d31"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0121",
+    "npz_relpath": "train/drone/drone_train_0121.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733298,
+    "sha256": "6643947cef91e354b14ba1fa378228fd9429afef76e6a04e8bb984248703a4db"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0122",
+    "npz_relpath": "train/drone/drone_train_0122.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736496,
+    "sha256": "34dc5df68a1bde84fce915ab61a54942a18968e5ed43f004df0906a64682e658"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0123",
+    "npz_relpath": "train/drone/drone_train_0123.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735880,
+    "sha256": "1d12b14c565c28875ce2e366960332270a64bc70f84c7c3129a53d094294e2ab"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0124",
+    "npz_relpath": "train/drone/drone_train_0124.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3068,
+    "duration_s": 15.34,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 189103,
+    "sha256": "8d442bbd1a410012258cf8aeabed7a2395f7a6dfe00eb0551035bc55f06377eb"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0125",
+    "npz_relpath": "train/drone/drone_train_0125.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735508,
+    "sha256": "d310d8061e9ece9f43d2e54764fb6d50dbd229fb45f70d77501552900c90d00d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0126",
+    "npz_relpath": "train/drone/drone_train_0126.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737247,
+    "sha256": "eaec29713cba04f5636ad848be3b081af349f3f20f239df585faa4db05f50db0"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0127",
+    "npz_relpath": "train/drone/drone_train_0127.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737209,
+    "sha256": "7d5eb668a394e1fd8fda372155821235816582229d07e65cbdab59915c63fc9f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0128",
+    "npz_relpath": "train/drone/drone_train_0128.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2490,
+    "duration_s": 12.45,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 153663,
+    "sha256": "3bd210da62357d535e6e6be21d6fe400e26fde5a4401753f2db12a2e6007e461"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0129",
+    "npz_relpath": "train/drone/drone_train_0129.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735144,
+    "sha256": "3beef788baecb58d89fbaea3b066dbc2e96d44d6aad9fa44f301830ea9560fa9"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0130",
+    "npz_relpath": "train/drone/drone_train_0130.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738424,
+    "sha256": "2bf1cb5c4d42dbea10d718411ba433b73d267c06e3f3a19f0755110d79a5320e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0131",
+    "npz_relpath": "train/drone/drone_train_0131.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738867,
+    "sha256": "b9c8bc6046227a5e73f3f13bdabcdbeb2a659ee878cd6446561feb458628cf9e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0132",
+    "npz_relpath": "train/drone/drone_train_0132.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2738,
+    "duration_s": 13.69,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 169431,
+    "sha256": "17c5b391169ed92c4233cd6c032d0ac66b5a3c61374f74f891daab65b75be161"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0133",
+    "npz_relpath": "train/drone/drone_train_0133.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 725453,
+    "sha256": "b582b6b3b2f9337472bd5942bb5d127133c00501e06e3ac97042152262bca3d1"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0134",
+    "npz_relpath": "train/drone/drone_train_0134.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 723785,
+    "sha256": "a67fe430fe3bec5a049393d967916f022987dd9c3dd5a36d5ca7a2e911d9c9f8"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0135",
+    "npz_relpath": "train/drone/drone_train_0135.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 722277,
+    "sha256": "a1820a7258eb9ad2f18c876389b4fe07dcfb09a21c655297774ed326a05c30ef"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0136",
+    "npz_relpath": "train/drone/drone_train_0136.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 724215,
+    "sha256": "d84c57697eef7cadb81ea6c6b4b27bc67e22a49b148f2869634f6c04c82e4145"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0137",
+    "npz_relpath": "train/drone/drone_train_0137.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4554,
+    "duration_s": 22.77,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 275566,
+    "sha256": "252494579fda14045dc3ebe22ef70586c0f8948842f0e37499140845170dd90a"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0138",
+    "npz_relpath": "train/drone/drone_train_0138.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 727285,
+    "sha256": "0ba63e857fc1d85cd8b58a9edd1508872a03261c3518294e6ec5a16ed265a162"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0139",
+    "npz_relpath": "train/drone/drone_train_0139.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726828,
+    "sha256": "4e8d246e93be42bacfb3b3ff3bd216d76e9d077a9019d4e0c636442cc1e4b424"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0140",
+    "npz_relpath": "train/drone/drone_train_0140.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2826,
+    "duration_s": 14.13,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 172326,
+    "sha256": "5a8582232561a45a3d02bd386349df068e97bb853455fecd3e88f08436446e54"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0141",
+    "npz_relpath": "train/drone/drone_train_0141.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 731469,
+    "sha256": "ceb32fe411cbef979f10e536f3ced282bd2d77cc5454e923402fa108fdff41e5"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0142",
+    "npz_relpath": "train/drone/drone_train_0142.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737829,
+    "sha256": "f6cf035794378483c7b653ab8c606e453b5d8648ceb11a22dc662fc263b357ac"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0143",
+    "npz_relpath": "train/drone/drone_train_0143.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3370,
+    "duration_s": 16.85,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 207304,
+    "sha256": "25271b1e5a596095b52fe23d3faa1182700ca9e09e8ee8df4aa4d4681b81243d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0144",
+    "npz_relpath": "train/drone/drone_train_0144.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734745,
+    "sha256": "0f1cada0e4d64b3b88ead4353cf90f67a5fdcdb28e5a81565deeee4cb0a46c2f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0145",
+    "npz_relpath": "train/drone/drone_train_0145.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738420,
+    "sha256": "28166ce143a32dc6d8570a3b65b790d935643c3c0246b3156201f1187a42c921"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0146",
+    "npz_relpath": "train/drone/drone_train_0146.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3554,
+    "duration_s": 17.77,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 217884,
+    "sha256": "ca42edf8d0bb5170a94de7d06148685d58872bedc73c9cdeb61f542a2f5c5813"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0147",
+    "npz_relpath": "train/drone/drone_train_0147.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732217,
+    "sha256": "e4e22a5fa2619d72c73ed7c08e7e16ec199587581d68e864c8a46af92ee4b2ec"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0148",
+    "npz_relpath": "train/drone/drone_train_0148.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734933,
+    "sha256": "167c268661c592054f9ef1f6be7e14461a30be727443fbbba20919dfa3c729fd"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0149",
+    "npz_relpath": "train/drone/drone_train_0149.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735658,
+    "sha256": "3691ed00fb33d4b9cc39c7b4054d1030a4a2a2114d50c3c700c8284fd63b21b7"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0150",
+    "npz_relpath": "train/drone/drone_train_0150.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2938,
+    "duration_s": 14.69,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 180271,
+    "sha256": "46b1f561452b2733f2aebadc63cf7f611f0485f42f11da280b6fb3e382fb5d13"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0151",
+    "npz_relpath": "train/drone/drone_train_0151.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 730984,
+    "sha256": "2d1baefc367bc940cbf6015f2793992bf240e36fc5f2a6158d33578c01ec0a0a"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0152",
+    "npz_relpath": "train/drone/drone_train_0152.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732149,
+    "sha256": "8e8ce14a60c50e47712d93318c4527a0ac74cfbe973f050b34d34ffd95fc243f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0153",
+    "npz_relpath": "train/drone/drone_train_0153.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 731917,
+    "sha256": "bd147e533b09ba38894db431124fd2e9c984e2025888967a4ed6676d2fc66c65"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0154",
+    "npz_relpath": "train/drone/drone_train_0154.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732562,
+    "sha256": "7f13371bea390454ee044812d5a5c490e8d264bbb4009dbaf2b3d6698b3b6614"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0155",
+    "npz_relpath": "train/drone/drone_train_0155.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2540,
+    "duration_s": 12.7,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 152929,
+    "sha256": "79d4ec3e56f75b1281b6fa1eb871a3ee0e416fa3d77d646ede86d1c32d7dc4b3"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0156",
+    "npz_relpath": "train/drone/drone_train_0156.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 729936,
+    "sha256": "935974d1c9cacd1a6979b75e42c9afa5e83fbf499039a74602c3b9b000f4a68e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0157",
+    "npz_relpath": "train/drone/drone_train_0157.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732174,
+    "sha256": "9ad042832471124c2846a626aabfe8820ff0dcf58c3c45cba5a32088828dd135"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0158",
+    "npz_relpath": "train/drone/drone_train_0158.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 731586,
+    "sha256": "e36cd6041763f1bb367ddc3b72c461639a8e95e58397cc9ac86726e02544ef46"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0159",
+    "npz_relpath": "train/drone/drone_train_0159.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2638,
+    "duration_s": 13.19,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 161730,
+    "sha256": "a677045a26d631eb5f87f934cd6bbbdbc15deb22c4ba13b4a1669f81391e7287"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0160",
+    "npz_relpath": "train/drone/drone_train_0160.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 728458,
+    "sha256": "6d4fe5ed95ce1557ac62f74f0b088f33ec2bbe2c23283635bdeeed3d65c1526c"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0161",
+    "npz_relpath": "train/drone/drone_train_0161.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734220,
+    "sha256": "5f912fe4efed104d759d71f939a0ef3dd5e695e7ece0f503ddd4816fdc671c0b"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0162",
+    "npz_relpath": "train/drone/drone_train_0162.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734310,
+    "sha256": "0f7f6a2ff65bde6f724b3b03bc733abbff4ada39ebd631cf633b4b47f7423c6b"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0163",
+    "npz_relpath": "train/drone/drone_train_0163.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3610,
+    "duration_s": 18.05,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 220966,
+    "sha256": "afd8aaa7f3be7eb4cba0e61f6912cf919dcb5c20ad073a15310eb422a01b323b"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0164",
+    "npz_relpath": "train/drone/drone_train_0164.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 720623,
+    "sha256": "27e3d8eeee7ff7d6ad88cc315be4df57ca4eb34ec837dc22411ad90c6d6fdc31"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0165",
+    "npz_relpath": "train/drone/drone_train_0165.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 729495,
+    "sha256": "ee22fce73045416ac52646d65fa1afbd2f0500057351acb4fe129a2d567d5a61"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0166",
+    "npz_relpath": "train/drone/drone_train_0166.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 728131,
+    "sha256": "bfc9c1062379af4667704d2ab233f587578052e09fcdc80b51d0c2c60fb28425"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0167",
+    "npz_relpath": "train/drone/drone_train_0167.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 5014,
+    "duration_s": 25.07,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 305812,
+    "sha256": "f85dea7fe08bdd07b3d61479f74f1c8c840d822c4e3ea31b97339165667068aa"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0168",
+    "npz_relpath": "train/drone/drone_train_0168.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 729045,
+    "sha256": "80993290bf4073c2e3723da7d8ad0578622273469d9fdbe20f4a010500719f3b"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0169",
+    "npz_relpath": "train/drone/drone_train_0169.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733368,
+    "sha256": "22237baa62d360c47d3011acd888e28bd5511f38f295183311d0747ce27e0884"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0170",
+    "npz_relpath": "train/drone/drone_train_0170.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732679,
+    "sha256": "fdc87415d870db78d84b7966d4717e396dddfee3c87554d598e565fe2add91b2"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0171",
+    "npz_relpath": "train/drone/drone_train_0171.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3322,
+    "duration_s": 16.61,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 204953,
+    "sha256": "91039c3903293da852bc348aa1c471ae40ec0070a073aaf1639d26ee5c6f219f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0172",
+    "npz_relpath": "train/drone/drone_train_0172.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 728452,
+    "sha256": "101f7254d3e5f43ff6404292bcf403c80d437e8b4b29191a5eb8340dda1349fe"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0173",
+    "npz_relpath": "train/drone/drone_train_0173.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 739274,
+    "sha256": "2f7faa1e80e640e065fa9c17ee274008d6c08a1b14b0b3ffa829a847228d6369"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0174",
+    "npz_relpath": "train/drone/drone_train_0174.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 739576,
+    "sha256": "5acfd1813ce33caecf51f6e033fb8ef05127d8e5826411f6ef434b0d75f1fb13"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0175",
+    "npz_relpath": "train/drone/drone_train_0175.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4434,
+    "duration_s": 22.17,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 272471,
+    "sha256": "9d7385a278082b26c5b857560f4fa53bc6cbe9d57e2776df54a76d84579054c7"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0176",
+    "npz_relpath": "train/drone/drone_train_0176.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 720049,
+    "sha256": "a15c5131736338ed1bce11bab886590961a884f5d90ddd822de68e9032c1937e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0177",
+    "npz_relpath": "train/drone/drone_train_0177.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 720259,
+    "sha256": "7bdb1bb432de7e48475276a8a6c004df7c52e4e5e99062b44e95c5cbbe9c7c25"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0178",
+    "npz_relpath": "train/drone/drone_train_0178.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 722163,
+    "sha256": "d085a2e1391b0c678c5e2530feb5ac5330a96fb3defcb2423b89a3baa317a137"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0179",
+    "npz_relpath": "train/drone/drone_train_0179.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3170,
+    "duration_s": 15.85,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 193517,
+    "sha256": "82e1ccef096a536cf14261df3a419527b2a467a053e110d33d8ac0937423c7cd"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0180",
+    "npz_relpath": "train/drone/drone_train_0180.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 729657,
+    "sha256": "ef57f3f9e258ea2ad3ea065e6d040aa5316f53276d54fe70be6e015fbdb4eabc"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0181",
+    "npz_relpath": "train/drone/drone_train_0181.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732956,
+    "sha256": "8663d68b4c976f7e48300855bdf513f6f548e739d1433e29299334922678d7a2"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0182",
+    "npz_relpath": "train/drone/drone_train_0182.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734918,
+    "sha256": "42c93d3148835c2909462a85e92fd250dead7affd6b6ff05be908a709d3cf508"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0183",
+    "npz_relpath": "train/drone/drone_train_0183.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4548,
+    "duration_s": 22.74,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 272320,
+    "sha256": "5268aa702d005d99d48cf7f138cfac78762101b43e9ab19799f6c671db6ac01d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0184",
+    "npz_relpath": "train/drone/drone_train_0184.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 731934,
+    "sha256": "21f51832beada03780890d18cfa66ff252dd078270a6ec454f07c8674bf17e39"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0185",
+    "npz_relpath": "train/drone/drone_train_0185.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733072,
+    "sha256": "d685a33a232aaaf4dd61efa6cac0d6c8c2e381d80c55956f152a50cbdd316066"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0186",
+    "npz_relpath": "train/drone/drone_train_0186.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733445,
+    "sha256": "50fb0df0ffa2d15c00257683820196f805f29f23c1d7b42c507c3d4575925c20"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0187",
+    "npz_relpath": "train/drone/drone_train_0187.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733359,
+    "sha256": "72cdac87fb76c11ef91981593667a42f8e0976acc86b845021ac1c7b30a3c835"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0188",
+    "npz_relpath": "train/drone/drone_train_0188.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2892,
+    "duration_s": 14.46,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 175182,
+    "sha256": "6a7006f3cb70f076d5df513c535044d60ec7eef4195d3ae77f2d7dec43704892"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0189",
+    "npz_relpath": "train/drone/drone_train_0189.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726569,
+    "sha256": "84c042e8131d3df5b6ce66a572d47bfe211213809e3ddca10028851b84eb4afd"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0190",
+    "npz_relpath": "train/drone/drone_train_0190.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 725672,
+    "sha256": "a69f4d06fdfa6c9058afc307dfa99ff3bbf1a882f914a5e348ffeda9ad486b01"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0191",
+    "npz_relpath": "train/drone/drone_train_0191.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726241,
+    "sha256": "d1af518eed699f1a6886cd1f8a863c98dab0f76c1a64ca345578e20f8ff458de"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0192",
+    "npz_relpath": "train/drone/drone_train_0192.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726620,
+    "sha256": "d73bd48f4bb150954e533f7a7379942dcc63444c64dbc3636a8faa162d59ca8a"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0193",
+    "npz_relpath": "train/drone/drone_train_0193.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 5288,
+    "duration_s": 26.44,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 312912,
+    "sha256": "bb17933e49fb4be5558dcccd36b4999ec4a096083a64ccd242e5cedd1d2ef00c"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0194",
+    "npz_relpath": "train/drone/drone_train_0194.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726783,
+    "sha256": "aade374a70689f2c6813d71e639a3c8f930216d210aa78a609a8dfeac7a41adb"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0195",
+    "npz_relpath": "train/drone/drone_train_0195.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732985,
+    "sha256": "7b135b44f4058647232d11277bbb01a63736349fa95190d01427744d79615ec4"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0196",
+    "npz_relpath": "train/drone/drone_train_0196.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 731705,
+    "sha256": "7a7af83af578d4ef5a235f7a7643cb4c2a45b1d561d3cd00fbf924b7f678a6d3"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0197",
+    "npz_relpath": "train/drone/drone_train_0197.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 7010,
+    "duration_s": 35.05,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 417247,
+    "sha256": "3f904a8068eb8d5a8227a5e9f9abb65604a55b7d4a1ca18da3d2beb39e4dc768"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0198",
+    "npz_relpath": "train/drone/drone_train_0198.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733962,
+    "sha256": "b6e0885bf379b65e1938b6b270ab13024ba8f474130963c53cb190a1289516f5"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0199",
+    "npz_relpath": "train/drone/drone_train_0199.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738846,
+    "sha256": "4d3b5d9c69b6816a648b37abf130ce0f71a2c1729a29a37bc94b5cdbf7c9673d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0200",
+    "npz_relpath": "train/drone/drone_train_0200.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 739010,
+    "sha256": "cc4d284a37963c8078b1aff33941f391a76a32f0195cbcd0c930925c15d615e6"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0201",
+    "npz_relpath": "train/drone/drone_train_0201.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4708,
+    "duration_s": 23.54,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 289833,
+    "sha256": "9382e8a6b24f3268ef0d5cb6116a78bf453bed985db6c88b0b867441aaa5f76c"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0202",
+    "npz_relpath": "train/drone/drone_train_0202.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734833,
+    "sha256": "09164b34f383b2848ba0f096f0782d7bf26b8d206fa8fd8f13e5a5e86a5ed555"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0203",
+    "npz_relpath": "train/drone/drone_train_0203.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 739436,
+    "sha256": "5d44912caafdec05bd2cd0a81ec2f1b5dba4ea1d58a7151e3554189cfcb40e19"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0204",
+    "npz_relpath": "train/drone/drone_train_0204.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 739432,
+    "sha256": "0db9724adf16946950501be7bf57a0c236a7e72b6c459d07fd6502c334d19b13"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0205",
+    "npz_relpath": "train/drone/drone_train_0205.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3858,
+    "duration_s": 19.29,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 238763,
+    "sha256": "6a145a4a494361b6ed6c4041a1a870b053f6eab9c40d2b8e7d814a4a8da4852e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0206",
+    "npz_relpath": "train/drone/drone_train_0206.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 728159,
+    "sha256": "851c393549b1e2f1803b7877454ad2bb3ac570a2a4c296f6b08565ac6e8eecaf"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0207",
+    "npz_relpath": "train/drone/drone_train_0207.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733396,
+    "sha256": "d539b95ec0eb28ecc3e47b09c18a272eace9c675a4d0b587dca40d07d3c68cff"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0208",
+    "npz_relpath": "train/drone/drone_train_0208.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 730907,
+    "sha256": "81f41b788b834a687187aa88c382cc9e0e2e7c6deafb7aa8b6dc6b9c4e71b12f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0209",
+    "npz_relpath": "train/drone/drone_train_0209.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3686,
+    "duration_s": 18.43,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 226392,
+    "sha256": "f22dd498b4c18548b6066d49a65fa5c3f848decfcfc7a519be68e069f27873c6"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0210",
+    "npz_relpath": "train/drone/drone_train_0210.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733443,
+    "sha256": "5b7e9ac34b68f6aabaead9de915db36216c887965ed6169ffb69eeaf0e668e04"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0211",
+    "npz_relpath": "train/drone/drone_train_0211.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733622,
+    "sha256": "7a8369b83cfe79c50ab82e7ed6bb1072bfdc31fa4555267e2ab0d6dd37da60d8"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0212",
+    "npz_relpath": "train/drone/drone_train_0212.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735732,
+    "sha256": "05bcc560ea20fedf3e463989f5fbb612c78fc43091c48f2082139ace06f47607"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0213",
+    "npz_relpath": "train/drone/drone_train_0213.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2794,
+    "duration_s": 13.97,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 171969,
+    "sha256": "933ca37e0a3aabe3b608ca236948b2a442c7e51a8fe3da56c70f7b1626df7c23"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0214",
+    "npz_relpath": "train/drone/drone_train_0214.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734125,
+    "sha256": "c7c06a328e7230f31773a9dcfbaff963b4f4453d373946e8871947f96609f467"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0215",
+    "npz_relpath": "train/drone/drone_train_0215.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738267,
+    "sha256": "03ed7a43e8f688cc72490f3b87dee5f661369236089ea7143531db4febaa6b86"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0216",
+    "npz_relpath": "train/drone/drone_train_0216.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738352,
+    "sha256": "34772b74c57e10f75ee4d4c3f91b425e95b7ad7d3c0dc6e3b397ec88e7338a5c"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0217",
+    "npz_relpath": "train/drone/drone_train_0217.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2732,
+    "duration_s": 13.66,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 168155,
+    "sha256": "e4527476cfc2737024e7ef7ecb19384d5e096d063cd42dcb18210cf471c8e644"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0218",
+    "npz_relpath": "train/drone/drone_train_0218.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 727928,
+    "sha256": "a396d110547e6b8a423408688f34ad72365c6b7d6a40aeab4dcc5cd7b760ffee"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0219",
+    "npz_relpath": "train/drone/drone_train_0219.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 727542,
+    "sha256": "e3d789de6822d4008ead26f25d3e68c0f6a0db8974ea5b929ca714f3148f1ec0"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0220",
+    "npz_relpath": "train/drone/drone_train_0220.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4192,
+    "duration_s": 20.96,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 256614,
+    "sha256": "137505fafe0cd106ecae9a5fbbacd3153043d04f7048ce9baa741f97c6161dc0"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0221",
+    "npz_relpath": "train/drone/drone_train_0221.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 727616,
+    "sha256": "f37030eccce64839d72f34adb96cdb911243dd573e940cef69f4b569e667dbdc"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0222",
+    "npz_relpath": "train/drone/drone_train_0222.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732045,
+    "sha256": "6aea1f592f9675d4e9393c563152ab9e54b93e9789159bce0ed13a36065c76a3"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0223",
+    "npz_relpath": "train/drone/drone_train_0223.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4430,
+    "duration_s": 22.15,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 271140,
+    "sha256": "f4c4230fb14dc0b315a3af95c3f26c6ce1e9adaf342254ad141ba52abf2e939a"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0224",
+    "npz_relpath": "train/drone/drone_train_0224.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 721607,
+    "sha256": "927b807b341de1e031a432ddfd6693ca78c1015e51fc5e1309d7c71eba3e8577"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0225",
+    "npz_relpath": "train/drone/drone_train_0225.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737617,
+    "sha256": "a4eeef75a848466899c298b410aa137b32f8766fdff9d58916d7bb135bad3423"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0226",
+    "npz_relpath": "train/drone/drone_train_0226.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 6928,
+    "duration_s": 34.64,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 424577,
+    "sha256": "35764441682ae2a8a30a2d7c99fd7360ca638e67328606b269c6d4f040761693"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0227",
+    "npz_relpath": "train/drone/drone_train_0227.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 716742,
+    "sha256": "152f5167e7b369f22e4f4a0a3497e3ef2b51f78cdd7c49317ebe657684ece5e0"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0228",
+    "npz_relpath": "train/drone/drone_train_0228.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 719248,
+    "sha256": "97b45baf0a1052cb15da1030d40135edadb934e4e34e447c4ee7dbd4dbcb8ad4"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0229",
+    "npz_relpath": "train/drone/drone_train_0229.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 717026,
+    "sha256": "87477adde4a01acc2d928be4f51415386351c8076c7ccb40f5c58e0892f10379"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0230",
+    "npz_relpath": "train/drone/drone_train_0230.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4646,
+    "duration_s": 23.23,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 280490,
+    "sha256": "a9a39f34aca8a88f52fde950b5037994c51236babe10007f5565d63a463e6519"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0231",
+    "npz_relpath": "train/drone/drone_train_0231.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 724846,
+    "sha256": "2f6c644c9b91290998cb2f445ec7b8efcc76391b3f160815f3d7b8e0ac2d2b8d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0232",
+    "npz_relpath": "train/drone/drone_train_0232.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 723557,
+    "sha256": "5bfb1df94f447990ac67e4810f13d13b4074fdf666acaa63af645a426e4caa05"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0233",
+    "npz_relpath": "train/drone/drone_train_0233.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 725214,
+    "sha256": "a42d3dda901217f0d49b68e6d18520678d7549b6f3e1528f93b9818c7b40fd98"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0234",
+    "npz_relpath": "train/drone/drone_train_0234.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3256,
+    "duration_s": 16.28,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 199383,
+    "sha256": "31b47a8ade86f75731ece69528eed3da895cb413a73d89383b8d6f6f40d978c0"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0235",
+    "npz_relpath": "train/drone/drone_train_0235.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 727076,
+    "sha256": "5ddac45949fde86fda58d7cdd1f4cd61066e4398e38617aceebfaa1f7d0acd4a"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0236",
+    "npz_relpath": "train/drone/drone_train_0236.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 730386,
+    "sha256": "cb186e0cd826f77bea925b523c7109fbb10797bd456c95d16fa475d0e45e7875"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0237",
+    "npz_relpath": "train/drone/drone_train_0237.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 730640,
+    "sha256": "96843b0f427e3120695e300dd47537ad5814bae74d1ca12411772bb5c111d3cf"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0238",
+    "npz_relpath": "train/drone/drone_train_0238.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2690,
+    "duration_s": 13.45,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 164695,
+    "sha256": "7efd326efd1047ae3659e7f6df668a867b099d89b7a1981d77ac80209f977b2b"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0239",
+    "npz_relpath": "train/drone/drone_train_0239.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 730223,
+    "sha256": "0d6776491a15474b0d60d1dce2b589d2ac2290bbc4cda2454efdb71670f31acd"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0240",
+    "npz_relpath": "train/drone/drone_train_0240.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735833,
+    "sha256": "25d39a079f5dc6a18d00bde980d18ae1acdeee44cf6bb5af047a9237ba66cd0d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0241",
+    "npz_relpath": "train/drone/drone_train_0241.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736190,
+    "sha256": "37485c94ecc71baf60aabbdbd4098023f22eb33f09541962a42b9d1ca904af6d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0242",
+    "npz_relpath": "train/drone/drone_train_0242.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4212,
+    "duration_s": 21.06,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 256906,
+    "sha256": "fa10391bb0a6148e2cde48e78ee420e108a5c6cbbf00aa4062955a360aed5898"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0243",
+    "npz_relpath": "train/drone/drone_train_0243.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733694,
+    "sha256": "7f052219634770a787a1a0a52cdbc28ef5503d58fecd281da95923a1c2b5479c"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0244",
+    "npz_relpath": "train/drone/drone_train_0244.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736751,
+    "sha256": "1201134c3988590b6ba10a9477bb5007b8cb43ce07e182d511062c1984aacb9f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0245",
+    "npz_relpath": "train/drone/drone_train_0245.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736675,
+    "sha256": "1b186287d68ec47264d5e1af8afb489b330b2f30e85ded234d7f6a597d308498"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0246",
+    "npz_relpath": "train/drone/drone_train_0246.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2620,
+    "duration_s": 13.1,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 160597,
+    "sha256": "c14a3faa98cadff802f39f6f85068c7c17165da6af2a050eee2bef0a339069f8"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0247",
+    "npz_relpath": "train/drone/drone_train_0247.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735874,
+    "sha256": "e994080156f922b31348d3bb460558d4433a788abc751c6148166be8ee247d69"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0248",
+    "npz_relpath": "train/drone/drone_train_0248.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734621,
+    "sha256": "d591ba8446786359ba930055b2502d15d9f998a7bbd6fa2da4ea62f285c691e3"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0249",
+    "npz_relpath": "train/drone/drone_train_0249.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734463,
+    "sha256": "22363295c6478e7983cd3290227ed047dec0f815b5c64dd7fabe6f7e4b506c96"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0250",
+    "npz_relpath": "train/drone/drone_train_0250.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2772,
+    "duration_s": 13.86,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 168784,
+    "sha256": "0dc8be8dfac62ea39c622591a2d59c090fbd33e4859f0eb5215540fa6a6f78af"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0251",
+    "npz_relpath": "train/drone/drone_train_0251.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 725391,
+    "sha256": "936c88c0161d8e8afd1a93bcce9d87adafac17a8a55dc467b29ee963a81bb623"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0252",
+    "npz_relpath": "train/drone/drone_train_0252.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 727768,
+    "sha256": "950581542b96ded92a837efbb44f97a7e9e8a43b6408918624cf08067a363b4f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0253",
+    "npz_relpath": "train/drone/drone_train_0253.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 725436,
+    "sha256": "2bc6aab9df94fe02b0808b256366747604a8661ece4d0679c90b8e5718a667d4"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0254",
+    "npz_relpath": "train/drone/drone_train_0254.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 725783,
+    "sha256": "f5193ec26fff896ce5964c21ef39a9ac3f953bae5fc42bb3694671491acd6ffb"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0255",
+    "npz_relpath": "train/drone/drone_train_0255.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4854,
+    "duration_s": 24.27,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 291100,
+    "sha256": "98f5b30f3533d4a66abd5194872cb09bcf445aeda4fbc5cb6290d2154deb8df9"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0256",
+    "npz_relpath": "train/drone/drone_train_0256.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732237,
+    "sha256": "3d078d330507c1350d0fe00f255a25c86aa313fe3d654d46372a9b532d15b711"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0257",
+    "npz_relpath": "train/drone/drone_train_0257.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 730424,
+    "sha256": "03e2502dc047373c54077513249ea14a45036e6f1817cc31e807f20221c80c29"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0258",
+    "npz_relpath": "train/drone/drone_train_0258.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 731688,
+    "sha256": "9cb1716c9e5a431459d05005445ea721ffc578a6e9174c363bb3925c6663ad6a"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0259",
+    "npz_relpath": "train/drone/drone_train_0259.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 730633,
+    "sha256": "3bf8d37cdc95f87e2ac7863a06eb377d3819d6283cedad25ad832aeba8500006"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0260",
+    "npz_relpath": "train/drone/drone_train_0260.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3426,
+    "duration_s": 17.13,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 207059,
+    "sha256": "0942ff82fb24934bf8c35c5baa63e3abddcfbb9d8a176ec84e14f170d8a7f5ec"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0261",
+    "npz_relpath": "train/drone/drone_train_0261.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734607,
+    "sha256": "c4ad1cc808c0b02584441a6dc8c656835d3fbf617523000185117f66cb391439"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0262",
+    "npz_relpath": "train/drone/drone_train_0262.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738090,
+    "sha256": "f239c76a1c602682bdc397968fe2abffff6833d4c873a4e56445a2e386eb5822"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0263",
+    "npz_relpath": "train/drone/drone_train_0263.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738433,
+    "sha256": "4b2bd6bddca59ba86f5f088dc3e0c475884bd408bc03e1639066e4c79facf717"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0264",
+    "npz_relpath": "train/drone/drone_train_0264.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735950,
+    "sha256": "02d9b1a549d0a8e3fae112db82c435a2112f84276b53400d35fd90def78e15c7"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0265",
+    "npz_relpath": "train/drone/drone_train_0265.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 740044,
+    "sha256": "dcf142d958b6c53e45144c57a4fac113b84977200aa92b7a7a02f0a499dd8133"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0266",
+    "npz_relpath": "train/drone/drone_train_0266.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 739626,
+    "sha256": "b49a6e32a52d548c0bc82a0308f802f63dcb17a1693705071fa94bbac5d3a616"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0267",
+    "npz_relpath": "train/drone/drone_train_0267.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2774,
+    "duration_s": 13.87,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 170717,
+    "sha256": "ea5ac4c4c1d8963cc1c9d64adb6bbf54c2ecc8628306f839b8f0db7b84a1768e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0268",
+    "npz_relpath": "train/drone/drone_train_0268.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735604,
+    "sha256": "c328ed8acd7c362acb1f3580edfa0676b37d445aa1b9f17f642c7c2b8d0b822c"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0269",
+    "npz_relpath": "train/drone/drone_train_0269.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 739151,
+    "sha256": "7551f49ab5496054544ee8decc73146f5530bc330af1af25e39e55dfffb34543"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0270",
+    "npz_relpath": "train/drone/drone_train_0270.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738970,
+    "sha256": "74b3de2260d83adea843d448b4986e2adf30746e61b330f909f24334e9a65278"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0271",
+    "npz_relpath": "train/drone/drone_train_0271.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3424,
+    "duration_s": 17.12,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 209037,
+    "sha256": "de13fb0cd49480ee0395594dc1403494b50409f691c3049524cc93c4c0de2a4d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0272",
+    "npz_relpath": "train/drone/drone_train_0272.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 725442,
+    "sha256": "f528c7149724d86cac7689f2415a0e74f7342905c67f08bb291d20a1ef4071ea"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0273",
+    "npz_relpath": "train/drone/drone_train_0273.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 727147,
+    "sha256": "0fb9ccbee59cf85e99f8211019e7e3885f1bc0155e9df2ae27ca30e1ae05900a"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0274",
+    "npz_relpath": "train/drone/drone_train_0274.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 727746,
+    "sha256": "0370339e6f09ce058af5a7213b898bd40aef33e46ffc364eb5196284114c9915"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0275",
+    "npz_relpath": "train/drone/drone_train_0275.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4608,
+    "duration_s": 23.04,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 281265,
+    "sha256": "28e7ff15337a1638f16011b7022746f0f715911148af527fd01a225f8a79846e"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0276",
+    "npz_relpath": "train/drone/drone_train_0276.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 729469,
+    "sha256": "016f48103d6b99e9f7a7ff1c07940b0e3dbcb11d8a8fd1c76afb0eef1480f79d"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0277",
+    "npz_relpath": "train/drone/drone_train_0277.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733678,
+    "sha256": "f61c7a34b126b5712eaf3dbc892df5e9f740ab8d02c330369bd33802e0fe55af"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0278",
+    "npz_relpath": "train/drone/drone_train_0278.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734575,
+    "sha256": "62957da84967e94007c348ffa4ec5d3624e8796d3213c905bae7ce0245119e2f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0279",
+    "npz_relpath": "train/drone/drone_train_0279.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 2852,
+    "duration_s": 14.26,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 175798,
+    "sha256": "9df173f3a5ffcd96d98c24f2a386a8206eca079270799bb30239e34eccd16624"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0280",
+    "npz_relpath": "train/drone/drone_train_0280.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733380,
+    "sha256": "7320bb3529a2767b69fa4ffc2b6ef34214f3f0b37672b35c46e9e96d0dbd7653"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0281",
+    "npz_relpath": "train/drone/drone_train_0281.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734191,
+    "sha256": "723a09d1109520ca253aeaa8fb2d40194607eb4fff3b5dd7891aa7c4c2fd9eae"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0282",
+    "npz_relpath": "train/drone/drone_train_0282.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734411,
+    "sha256": "6664f5994fea00ba7354647d9952444f67b34b54da868781da417c6b6f5115c6"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0283",
+    "npz_relpath": "train/drone/drone_train_0283.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734245,
+    "sha256": "3dda804481e5484549d5f10a8fa6cec3ffea1aa3972138d506aeb295fa58def0"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0284",
+    "npz_relpath": "train/drone/drone_train_0284.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 4746,
+    "duration_s": 23.73,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 277199,
+    "sha256": "be4a0043aad212117f012882da85b278ff6e32bb99b8394cad1fa67fba09c201"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0285",
+    "npz_relpath": "train/drone/drone_train_0285.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733646,
+    "sha256": "bcb9728bb155de839ed7deb409f2732d02719e44c3c71687e1cb40c757468126"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0286",
+    "npz_relpath": "train/drone/drone_train_0286.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737352,
+    "sha256": "a6fbf239724e58b0f5d0f14e23ce91ef41240a92553164d26667ff66b0ff857f"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0287",
+    "npz_relpath": "train/drone/drone_train_0287.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737644,
+    "sha256": "5a6bbee9c89da1fb77739d1a4ac212e66371c98d3774dc4200c27ae55b3a18d4"
+  },
+  {
+    "platform": "drone",
+    "split": "train",
+    "traj_id": "0288",
+    "npz_relpath": "train/drone/drone_train_0288.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3792,
+    "duration_s": 18.96,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 232426,
+    "sha256": "764e01cdd06d6247534cfa8683c3568267d1757d35c17b50e2fb179ac4d7cda0"
   },
   {
     "platform": "handheld",
@@ -1842,8 +4437,7 @@
     "duration_s": 1110.78,
     "sample_rate_hz": 200,
     "file_size_bytes": 12866061,
-    "sha256": "625dc496bf0f57d39818fe3e6df39880b4414df57d919eb16dc9bd2d3384ceb0",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0000.png"
+    "sha256": "625dc496bf0f57d39818fe3e6df39880b4414df57d919eb16dc9bd2d3384ceb0"
   },
   {
     "platform": "handheld",
@@ -1852,11 +4446,10 @@
     "npz_relpath": "train/human/human_train_0001.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 207299,
-    "duration_s": 1036.495,
+    "duration_s": 1036.49,
     "sample_rate_hz": 200,
     "file_size_bytes": 12513658,
-    "sha256": "8bf808f207d5bb07db2212f3ba541acab83bc7aab8ce8570aada3dfc23bf786b",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0001.png"
+    "sha256": "8bf808f207d5bb07db2212f3ba541acab83bc7aab8ce8570aada3dfc23bf786b"
   },
   {
     "platform": "handheld",
@@ -1868,8 +4461,7 @@
     "duration_s": 1098.45,
     "sample_rate_hz": 200,
     "file_size_bytes": 13175985,
-    "sha256": "5c12a73c4f53de815300e87cd155392680d9a4f2b93bac6e86f3d0b1627d5556",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0002.png"
+    "sha256": "5c12a73c4f53de815300e87cd155392680d9a4f2b93bac6e86f3d0b1627d5556"
   },
   {
     "platform": "handheld",
@@ -1878,11 +4470,10 @@
     "npz_relpath": "train/human/human_train_0003.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 246173,
-    "duration_s": 1230.865,
+    "duration_s": 1230.86,
     "sample_rate_hz": 200,
     "file_size_bytes": 14757290,
-    "sha256": "c6a68f2ed974fc887e679ee61c46d07aa13a0532b28b91d192ea11c2a971ef1d",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0003.png"
+    "sha256": "c6a68f2ed974fc887e679ee61c46d07aa13a0532b28b91d192ea11c2a971ef1d"
   },
   {
     "platform": "handheld",
@@ -1891,11 +4482,10 @@
     "npz_relpath": "train/human/human_train_0004.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 206819,
-    "duration_s": 1034.095,
+    "duration_s": 1034.09,
     "sample_rate_hz": 200,
     "file_size_bytes": 12528970,
-    "sha256": "a2f197a0103a3e6bbf2db8df2f2fa28f8da8c84d596d3b24cd3799d75edd4c22",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0004.png"
+    "sha256": "a2f197a0103a3e6bbf2db8df2f2fa28f8da8c84d596d3b24cd3799d75edd4c22"
   },
   {
     "platform": "handheld",
@@ -1904,11 +4494,10 @@
     "npz_relpath": "train/human/human_train_0005.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 266929,
-    "duration_s": 1334.645,
+    "duration_s": 1334.64,
     "sample_rate_hz": 200,
     "file_size_bytes": 15356487,
-    "sha256": "feffb79d1d8a199cc7b343cad98e6779c5f9f7d8ad25e7123cf0f3f7ae6fa925",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0005.png"
+    "sha256": "feffb79d1d8a199cc7b343cad98e6779c5f9f7d8ad25e7123cf0f3f7ae6fa925"
   },
   {
     "platform": "handheld",
@@ -1920,8 +4509,7 @@
     "duration_s": 1123.88,
     "sample_rate_hz": 200,
     "file_size_bytes": 13525554,
-    "sha256": "02192d82304d08ac1876afe77e5e6f1f728fc66d5a5af37dc3dd19b4f175fbaa",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0006.png"
+    "sha256": "02192d82304d08ac1876afe77e5e6f1f728fc66d5a5af37dc3dd19b4f175fbaa"
   },
   {
     "platform": "handheld",
@@ -1930,11 +4518,10 @@
     "npz_relpath": "train/human/human_train_0007.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 215711,
-    "duration_s": 1078.555,
+    "duration_s": 1078.55,
     "sample_rate_hz": 200,
     "file_size_bytes": 12165383,
-    "sha256": "8dc7c10dc4210f10236545d345f1978a67fa44a66b3661886879cef966e2c3c7",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0007.png"
+    "sha256": "8dc7c10dc4210f10236545d345f1978a67fa44a66b3661886879cef966e2c3c7"
   },
   {
     "platform": "handheld",
@@ -1943,11 +4530,10 @@
     "npz_relpath": "train/human/human_train_0008.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 208139,
-    "duration_s": 1040.695,
+    "duration_s": 1040.69,
     "sample_rate_hz": 200,
     "file_size_bytes": 12397951,
-    "sha256": "bfb93c899d173127ff27163b59c8bda9956ecefb9cb518aef63bbee960633939",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0008.png"
+    "sha256": "bfb93c899d173127ff27163b59c8bda9956ecefb9cb518aef63bbee960633939"
   },
   {
     "platform": "handheld",
@@ -1959,8 +4545,7 @@
     "duration_s": 1193.27,
     "sample_rate_hz": 200,
     "file_size_bytes": 14261752,
-    "sha256": "3c9b7ce6e0cfdcc5132dad72a5ad83782c2aca6fdd0b8dab1b60ca0e6aad3305",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0009.png"
+    "sha256": "3c9b7ce6e0cfdcc5132dad72a5ad83782c2aca6fdd0b8dab1b60ca0e6aad3305"
   },
   {
     "platform": "handheld",
@@ -1972,8 +4557,7 @@
     "duration_s": 1143.48,
     "sample_rate_hz": 200,
     "file_size_bytes": 13578982,
-    "sha256": "d8eb9618c29784f074f33e3f5edb58fca2c77fc9eb757d0d8f3487b0ea1a7e6c",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0010.png"
+    "sha256": "d8eb9618c29784f074f33e3f5edb58fca2c77fc9eb757d0d8f3487b0ea1a7e6c"
   },
   {
     "platform": "handheld",
@@ -1982,11 +4566,10 @@
     "npz_relpath": "train/human/human_train_0011.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 213931,
-    "duration_s": 1069.655,
+    "duration_s": 1069.65,
     "sample_rate_hz": 200,
     "file_size_bytes": 12738723,
-    "sha256": "c24c2c95f0425facd204748aa127e2cd6a18160496604cc57a91cac026cdeda8",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0011.png"
+    "sha256": "c24c2c95f0425facd204748aa127e2cd6a18160496604cc57a91cac026cdeda8"
   },
   {
     "platform": "handheld",
@@ -1998,8 +4581,7 @@
     "duration_s": 1156.11,
     "sample_rate_hz": 200,
     "file_size_bytes": 13903896,
-    "sha256": "9c9928ec32b662fb1609a135ef280292e1483a8ca0903e83c48d355f319499cd",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0012.png"
+    "sha256": "9c9928ec32b662fb1609a135ef280292e1483a8ca0903e83c48d355f319499cd"
   },
   {
     "platform": "handheld",
@@ -2011,8 +4593,7 @@
     "duration_s": 1230.83,
     "sample_rate_hz": 200,
     "file_size_bytes": 14621621,
-    "sha256": "2667098996f1cdd4834ab86522f4c18cd27d8d905becbdcbdde9e26feb7611d4",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0013.png"
+    "sha256": "2667098996f1cdd4834ab86522f4c18cd27d8d905becbdcbdde9e26feb7611d4"
   },
   {
     "platform": "handheld",
@@ -2024,8 +4605,7 @@
     "duration_s": 998.47,
     "sample_rate_hz": 200,
     "file_size_bytes": 11779506,
-    "sha256": "71e5ee5ce16dd1ded42d4ebb7eacd88f63f3c19519c1efce1252ca707860cff2",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0014.png"
+    "sha256": "71e5ee5ce16dd1ded42d4ebb7eacd88f63f3c19519c1efce1252ca707860cff2"
   },
   {
     "platform": "handheld",
@@ -2037,8 +4617,7 @@
     "duration_s": 1202.47,
     "sample_rate_hz": 200,
     "file_size_bytes": 14431845,
-    "sha256": "b6e38ae5586080c6108b589cfc879f71fd65e558fc66a975b74bddfdfb85ffeb",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0015.png"
+    "sha256": "b6e38ae5586080c6108b589cfc879f71fd65e558fc66a975b74bddfdfb85ffeb"
   },
   {
     "platform": "handheld",
@@ -2047,11 +4626,10 @@
     "npz_relpath": "train/human/human_train_0016.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 223083,
-    "duration_s": 1115.415,
+    "duration_s": 1115.41,
     "sample_rate_hz": 200,
     "file_size_bytes": 12820320,
-    "sha256": "0e54dba07321e7adc2d7193353e434b6ccf72a79c49fb90dadde5da022916f4e",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0016.png"
+    "sha256": "0e54dba07321e7adc2d7193353e434b6ccf72a79c49fb90dadde5da022916f4e"
   },
   {
     "platform": "handheld",
@@ -2060,11 +4638,10 @@
     "npz_relpath": "train/human/human_train_0017.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 191795,
-    "duration_s": 958.975,
+    "duration_s": 958.97,
     "sample_rate_hz": 200,
     "file_size_bytes": 11628396,
-    "sha256": "dbc175c9ba07b236c7ac25b2cbdf9dd8ea2863858e4d239ff231e13d07be2373",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0017.png"
+    "sha256": "dbc175c9ba07b236c7ac25b2cbdf9dd8ea2863858e4d239ff231e13d07be2373"
   },
   {
     "platform": "handheld",
@@ -2076,8 +4653,7 @@
     "duration_s": 1133.08,
     "sample_rate_hz": 200,
     "file_size_bytes": 13673318,
-    "sha256": "f8820bea2468314c1e447295d39d4ba34cf5692b22f25c4a78c8d58600ba3131",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0018.png"
+    "sha256": "f8820bea2468314c1e447295d39d4ba34cf5692b22f25c4a78c8d58600ba3131"
   },
   {
     "platform": "handheld",
@@ -2086,11 +4662,10 @@
     "npz_relpath": "train/human/human_train_0019.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 213311,
-    "duration_s": 1066.555,
+    "duration_s": 1066.55,
     "sample_rate_hz": 200,
     "file_size_bytes": 12552468,
-    "sha256": "308e323fd875e6e78287cd63562cbac5b0cada00b938351fc8d894569095f79e",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0019.png"
+    "sha256": "308e323fd875e6e78287cd63562cbac5b0cada00b938351fc8d894569095f79e"
   },
   {
     "platform": "handheld",
@@ -2099,11 +4674,10 @@
     "npz_relpath": "train/human/human_train_0020.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 230155,
-    "duration_s": 1150.775,
+    "duration_s": 1150.77,
     "sample_rate_hz": 200,
     "file_size_bytes": 13811619,
-    "sha256": "5db33f93794d59a42d4fbf916ed69e9e2ba23a2e33318c6e23b486e84ef0ca8f",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0020.png"
+    "sha256": "5db33f93794d59a42d4fbf916ed69e9e2ba23a2e33318c6e23b486e84ef0ca8f"
   },
   {
     "platform": "handheld",
@@ -2112,11 +4686,10 @@
     "npz_relpath": "train/human/human_train_0021.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 233275,
-    "duration_s": 1166.375,
+    "duration_s": 1166.37,
     "sample_rate_hz": 200,
     "file_size_bytes": 14089244,
-    "sha256": "0c8313f4025d115070a3769bf1970440edf5f9b9104ea001a1e5088e5a0401db",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0021.png"
+    "sha256": "0c8313f4025d115070a3769bf1970440edf5f9b9104ea001a1e5088e5a0401db"
   },
   {
     "platform": "handheld",
@@ -2125,11 +4698,10 @@
     "npz_relpath": "train/human/human_train_0022.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 254451,
-    "duration_s": 1272.255,
+    "duration_s": 1272.25,
     "sample_rate_hz": 200,
     "file_size_bytes": 15211471,
-    "sha256": "f6acdaa2d0d02f91dc1ae310c0951e8ae4ed40ddfdff0668310c3f2e234f27fa",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0022.png"
+    "sha256": "f6acdaa2d0d02f91dc1ae310c0951e8ae4ed40ddfdff0668310c3f2e234f27fa"
   },
   {
     "platform": "handheld",
@@ -2141,8 +4713,7 @@
     "duration_s": 1177.07,
     "sample_rate_hz": 200,
     "file_size_bytes": 14014611,
-    "sha256": "b5697e6431e8ea372cc5ae739d7551b0b226d950674bbf4d0051d4036fb3c65c",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0023.png"
+    "sha256": "b5697e6431e8ea372cc5ae739d7551b0b226d950674bbf4d0051d4036fb3c65c"
   },
   {
     "platform": "handheld",
@@ -2154,8 +4725,7 @@
     "duration_s": 1109.95,
     "sample_rate_hz": 200,
     "file_size_bytes": 13188470,
-    "sha256": "c149cd74531c0ede5a55b64d9965cd4ae9944a2efada9dd71f0b465ac4b3fe72",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0024.png"
+    "sha256": "c149cd74531c0ede5a55b64d9965cd4ae9944a2efada9dd71f0b465ac4b3fe72"
   },
   {
     "platform": "handheld",
@@ -2167,8 +4737,7 @@
     "duration_s": 1050.39,
     "sample_rate_hz": 200,
     "file_size_bytes": 12717722,
-    "sha256": "9008fd847f6bb58f1d9cd535b7e022e88810c61028b3f6b9b10ec74e1a354c5f",
-    "thumbnail": "/img/imuchallenge/previews/handheld_train_0025.png"
+    "sha256": "9008fd847f6bb58f1d9cd535b7e022e88810c61028b3f6b9b10ec74e1a354c5f"
   },
   {
     "platform": "car",
@@ -2180,8 +4749,7 @@
     "duration_s": 181.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 2161679,
-    "sha256": "34c01bed808c6086573079f0f7a5342902b66505df3d7626e47c60917c248ef7",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0000.png"
+    "sha256": "34c01bed808c6086573079f0f7a5342902b66505df3d7626e47c60917c248ef7"
   },
   {
     "platform": "car",
@@ -2193,8 +4761,7 @@
     "duration_s": 696.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 8311055,
-    "sha256": "42d48b6bed99f63347cc448ac4ae9219dc166fa4b15288af5d1801c61d6b85b6",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0001.png"
+    "sha256": "42d48b6bed99f63347cc448ac4ae9219dc166fa4b15288af5d1801c61d6b85b6"
   },
   {
     "platform": "car",
@@ -2206,8 +4773,7 @@
     "duration_s": 678.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 8153745,
-    "sha256": "6120728307d053653e9f448cc807d83d5278b9631bf6038e99c8a6b7e7115eb6",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0002.png"
+    "sha256": "6120728307d053653e9f448cc807d83d5278b9631bf6038e99c8a6b7e7115eb6"
   },
   {
     "platform": "car",
@@ -2219,8 +4785,7 @@
     "duration_s": 384.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 4637450,
-    "sha256": "8151ceb20fefb91d7fcc0ac3ecb66f441e62df5fdb5dd248f83d23402904148d",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0003.png"
+    "sha256": "8151ceb20fefb91d7fcc0ac3ecb66f441e62df5fdb5dd248f83d23402904148d"
   },
   {
     "platform": "car",
@@ -2232,8 +4797,7 @@
     "duration_s": 2032.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 23773560,
-    "sha256": "fb6c47ed26818df38411d8ff9563ca3f5d805473927206ad1e90e39597ba9211",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0004.png"
+    "sha256": "fb6c47ed26818df38411d8ff9563ca3f5d805473927206ad1e90e39597ba9211"
   },
   {
     "platform": "car",
@@ -2245,8 +4809,7 @@
     "duration_s": 389.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 4682147,
-    "sha256": "7838dc97b1fb971f76993830b87943c1814e3752bb7fcef6261fc3de1ff894f3",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0005.png"
+    "sha256": "7838dc97b1fb971f76993830b87943c1814e3752bb7fcef6261fc3de1ff894f3"
   },
   {
     "platform": "car",
@@ -2258,8 +4821,7 @@
     "duration_s": 268.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 3239730,
-    "sha256": "e6e4289767fd713cea5fc1487960f2da25613d8789a553b000952c4a2cb54821",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0006.png"
+    "sha256": "e6e4289767fd713cea5fc1487960f2da25613d8789a553b000952c4a2cb54821"
   },
   {
     "platform": "car",
@@ -2271,8 +4833,7 @@
     "duration_s": 543.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 6556551,
-    "sha256": "6524c01da225e1b6927c1295717bc4b48b23f4d6012aac0135246b4328d2462d",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0007.png"
+    "sha256": "6524c01da225e1b6927c1295717bc4b48b23f4d6012aac0135246b4328d2462d"
   },
   {
     "platform": "car",
@@ -2284,8 +4845,7 @@
     "duration_s": 968.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 11424601,
-    "sha256": "51674d1413264eff0ecb4e042bbca8eed801694a8fe8299530c6c5b20011b6a9",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0008.png"
+    "sha256": "51674d1413264eff0ecb4e042bbca8eed801694a8fe8299530c6c5b20011b6a9"
   },
   {
     "platform": "car",
@@ -2297,8 +4857,7 @@
     "duration_s": 134.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 1613321,
-    "sha256": "b3c3517b049bd6e1acb8de55aace29d5ea3761b610ed403cb38e6f6c97934d76",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0009.png"
+    "sha256": "b3c3517b049bd6e1acb8de55aace29d5ea3761b610ed403cb38e6f6c97934d76"
   },
   {
     "platform": "car",
@@ -2310,8 +4869,7 @@
     "duration_s": 91.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 1089985,
-    "sha256": "d9d57c91e41cb0bcbd9c03b923da366db757c502ae6f708999726596a24c534f",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0010.png"
+    "sha256": "d9d57c91e41cb0bcbd9c03b923da366db757c502ae6f708999726596a24c534f"
   },
   {
     "platform": "car",
@@ -2323,8 +4881,7 @@
     "duration_s": 984.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 11772992,
-    "sha256": "e8f7712de50f1015f255e3e38098f9e1191209ec05930c7afad478542f875390",
-    "thumbnail": "/img/imuchallenge/previews/car_val_0011.png"
+    "sha256": "e8f7712de50f1015f255e3e38098f9e1191209ec05930c7afad478542f875390"
   },
   {
     "platform": "quadruped",
@@ -2336,8 +4893,7 @@
     "duration_s": 121.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 1412489,
-    "sha256": "2e52693c236b6aff8e3945f8ab53562b1c80e364bdf7b7a9b5164a3d468d731b",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0000.png"
+    "sha256": "2e52693c236b6aff8e3945f8ab53562b1c80e364bdf7b7a9b5164a3d468d731b"
   },
   {
     "platform": "quadruped",
@@ -2349,8 +4905,7 @@
     "duration_s": 1243.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 14321138,
-    "sha256": "c32c2cdce27c7a03498e3b55d12f190a90eb3a1e5e06ebbd707e7c2f1bf77ece",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0001.png"
+    "sha256": "c32c2cdce27c7a03498e3b55d12f190a90eb3a1e5e06ebbd707e7c2f1bf77ece"
   },
   {
     "platform": "quadruped",
@@ -2362,8 +4917,7 @@
     "duration_s": 258.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 3030900,
-    "sha256": "89a18ec58037b7c25caa69a860b2c6f85b9fb5fcbc8f56f140cbb6522abeee53",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0002.png"
+    "sha256": "89a18ec58037b7c25caa69a860b2c6f85b9fb5fcbc8f56f140cbb6522abeee53"
   },
   {
     "platform": "quadruped",
@@ -2375,8 +4929,7 @@
     "duration_s": 22.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 265738,
-    "sha256": "7cd9e532c485a6783a68e7f8953b8c573543ef59e082dd7b0ef26d77433cbd8d",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0003.png"
+    "sha256": "7cd9e532c485a6783a68e7f8953b8c573543ef59e082dd7b0ef26d77433cbd8d"
   },
   {
     "platform": "quadruped",
@@ -2388,8 +4941,7 @@
     "duration_s": 65.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 768718,
-    "sha256": "6168ae448588a7b22072e3483afae2b8daf4cf7dc9dbdc7e7ee79c8d7ebe7faf",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0004.png"
+    "sha256": "6168ae448588a7b22072e3483afae2b8daf4cf7dc9dbdc7e7ee79c8d7ebe7faf"
   },
   {
     "platform": "quadruped",
@@ -2401,8 +4953,7 @@
     "duration_s": 68.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 821825,
-    "sha256": "3d3df09ffa2e3af77491cf963d9e1db625993e33de4295c3a648365c71452d86",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0005.png"
+    "sha256": "3d3df09ffa2e3af77491cf963d9e1db625993e33de4295c3a648365c71452d86"
   },
   {
     "platform": "quadruped",
@@ -2414,8 +4965,7 @@
     "duration_s": 35.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 429656,
-    "sha256": "9a443f75985c9d21cae477e5e60f4308267894a2412e03b4756d8e9db11774b3",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0006.png"
+    "sha256": "9a443f75985c9d21cae477e5e60f4308267894a2412e03b4756d8e9db11774b3"
   },
   {
     "platform": "quadruped",
@@ -2427,8 +4977,7 @@
     "duration_s": 90.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 1078686,
-    "sha256": "b352342e801077e79ef918dbecdf74f43a5d07e05ae2cd4019f8b41428eb7e1a",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0007.png"
+    "sha256": "b352342e801077e79ef918dbecdf74f43a5d07e05ae2cd4019f8b41428eb7e1a"
   },
   {
     "platform": "quadruped",
@@ -2440,8 +4989,7 @@
     "duration_s": 375.0,
     "sample_rate_hz": 199,
     "file_size_bytes": 4464366,
-    "sha256": "ba691bc3d74330451989220d07c1bbf1eaa90b1bafeeecce911be06463730107",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0008.png"
+    "sha256": "ba691bc3d74330451989220d07c1bbf1eaa90b1bafeeecce911be06463730107"
   },
   {
     "platform": "quadruped",
@@ -2453,8 +5001,7 @@
     "duration_s": 505.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 5993185,
-    "sha256": "a75c754626b82707ea774769998e0fec004b9e4b64de1e3a987b30ebd2158665",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0009.png"
+    "sha256": "a75c754626b82707ea774769998e0fec004b9e4b64de1e3a987b30ebd2158665"
   },
   {
     "platform": "quadruped",
@@ -2463,11 +5010,10 @@
     "npz_relpath": "val/dog/dog_val_0010.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 285121,
-    "duration_s": 1425.638,
+    "duration_s": 1425.64,
     "sample_rate_hz": 199,
     "file_size_bytes": 15856589,
-    "sha256": "529554982250364dff74c0d28f4f26169628e36022b32edab42259104b12a2b4",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0010.png"
+    "sha256": "529554982250364dff74c0d28f4f26169628e36022b32edab42259104b12a2b4"
   },
   {
     "platform": "quadruped",
@@ -2479,8 +5025,7 @@
     "duration_s": 407.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 4911725,
-    "sha256": "6e86ad42a193d0c794b9b7747732c0e70ec582b2491686ddf4a6f9ec336727a2",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0011.png"
+    "sha256": "ebf07ee26464a1eec11e760521fe74902aec05b4a9c86d2265be59f2fc79cf68"
   },
   {
     "platform": "quadruped",
@@ -2492,8 +5037,7 @@
     "duration_s": 1687.0,
     "sample_rate_hz": 200,
     "file_size_bytes": 19882869,
-    "sha256": "f3157299138d276828e215e2d89251748744480bb36ed451ea0db952c2bff864",
-    "thumbnail": "/img/imuchallenge/previews/quadruped_val_0012.png"
+    "sha256": "f3157299138d276828e215e2d89251748744480bb36ed451ea0db952c2bff864"
   },
   {
     "platform": "drone",
@@ -2501,12 +5045,11 @@
     "traj_id": "0000",
     "npz_relpath": "val/drone/drone_val_0000.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 11400,
-    "duration_s": 57.0,
+    "n_samples": 8899,
+    "duration_s": 44.49,
     "sample_rate_hz": 200,
-    "file_size_bytes": 688327,
-    "sha256": "663a59bd9a82585bd52f486f6540efd97051fcbab2d19a7984968c4e0f09b3fd",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0000.png"
+    "file_size_bytes": 436721,
+    "sha256": "72cc385996f6a6314f34558098ff099052d47edb648483abd169e0de006d583c"
   },
   {
     "platform": "drone",
@@ -2514,12 +5057,11 @@
     "traj_id": "0001",
     "npz_relpath": "val/drone/drone_val_0001.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 73108,
-    "duration_s": 365.54,
-    "sample_rate_hz": 200,
-    "file_size_bytes": 4437120,
-    "sha256": "4aa5962ed540eb360c9ed8a93f19b90cdbae53530682abc470d84096c26b652e",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0001.png"
+    "n_samples": 5150,
+    "duration_s": 25.75,
+    "sample_rate_hz": 199,
+    "file_size_bytes": 264819,
+    "sha256": "d8471f34b2346e8d2af9125e3b2b6899a9cf48501be384abb78ca48f739143a6"
   },
   {
     "platform": "drone",
@@ -2527,12 +5069,11 @@
     "traj_id": "0002",
     "npz_relpath": "val/drone/drone_val_0002.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 7549,
-    "duration_s": 30.196,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 416405,
-    "sha256": "d6c132d70767145e87356cc647a55a7bae8d81f4cafa06449878b680ca48301a",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0002.png"
+    "n_samples": 4181,
+    "duration_s": 20.9,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 213322,
+    "sha256": "209e39cff4f9a15e55584483899868571441cccfa6afec81872a9bb4d8b039cd"
   },
   {
     "platform": "drone",
@@ -2540,12 +5081,11 @@
     "traj_id": "0003",
     "npz_relpath": "val/drone/drone_val_0003.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 3400,
-    "duration_s": 17.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 208725,
-    "sha256": "c76abe1a993a26e2f5a470235a44f21cd09860f6d7f80525a314fd67b14aec32",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0003.png"
+    "file_size_bytes": 624598,
+    "sha256": "a87f043f5452ec1b071e17e4f77c8ee3df7e352d9baa370ce347561ef012715d"
   },
   {
     "platform": "drone",
@@ -2553,12 +5093,11 @@
     "traj_id": "0004",
     "npz_relpath": "val/drone/drone_val_0004.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 38800,
-    "duration_s": 194.0,
+    "n_samples": 10969,
+    "duration_s": 54.84,
     "sample_rate_hz": 200,
-    "file_size_bytes": 2293034,
-    "sha256": "cfb3af7fc3d50cedbb3d396b731516b543679d49431f72cc0388521044c75c82",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0004.png"
+    "file_size_bytes": 575782,
+    "sha256": "0ca3a46ff973c624872c80fe5893deff7119ada301eb813e99413076da2bc4cf"
   },
   {
     "platform": "drone",
@@ -2566,12 +5105,11 @@
     "traj_id": "0005",
     "npz_relpath": "val/drone/drone_val_0005.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 4400,
-    "duration_s": 22.0,
+    "n_samples": 4280,
+    "duration_s": 21.4,
     "sample_rate_hz": 200,
-    "file_size_bytes": 263253,
-    "sha256": "10bc8a39fb5367282f3dbca28df402f419f16919bc87c6cc0e425fed24fff882",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0005.png"
+    "file_size_bytes": 265777,
+    "sha256": "254bcbb63b2c90346a7050fc52eed54762cbf88a80889a800c291970d783ca1a"
   },
   {
     "platform": "drone",
@@ -2579,12 +5117,11 @@
     "traj_id": "0006",
     "npz_relpath": "val/drone/drone_val_0006.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 5200,
-    "duration_s": 26.0,
+    "n_samples": 4279,
+    "duration_s": 21.39,
     "sample_rate_hz": 200,
-    "file_size_bytes": 316499,
-    "sha256": "fa25d684750e8d4ba190df874d3d0e9897bf85eb55592bd00b38d5e7e5848f72",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0006.png"
+    "file_size_bytes": 266143,
+    "sha256": "c67f781d9da69901ce7e16146ac1b8723fa66f4c60af76b1bbe355e5978f1422"
   },
   {
     "platform": "drone",
@@ -2592,12 +5129,11 @@
     "traj_id": "0007",
     "npz_relpath": "val/drone/drone_val_0007.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 104600,
-    "duration_s": 523.0,
+    "n_samples": 8060,
+    "duration_s": 40.3,
     "sample_rate_hz": 200,
-    "file_size_bytes": 6304460,
-    "sha256": "5c92818457825470b85129d7ab69554942c062b75f1edfad081cb129e2fe0bf3",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0007.png"
+    "file_size_bytes": 494502,
+    "sha256": "3c4ebc5f09a630378e978c18c7cbbce45dbd4935273fc9207de4665ce6e306b2"
   },
   {
     "platform": "drone",
@@ -2605,12 +5141,11 @@
     "traj_id": "0008",
     "npz_relpath": "val/drone/drone_val_0008.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 7199,
-    "duration_s": 28.796,
-    "sample_rate_hz": 250,
-    "file_size_bytes": 383482,
-    "sha256": "d31f075ec857cbebbe93fbeabee52c1b6a722d5cf720fd9841394e995fbd0526",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0008.png"
+    "n_samples": 8060,
+    "duration_s": 40.3,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 497860,
+    "sha256": "5858314d7e66e6af9e0dd071c7b331e1f6f632a39144045565dac4d8742e84c1"
   },
   {
     "platform": "drone",
@@ -2618,12 +5153,11 @@
     "traj_id": "0009",
     "npz_relpath": "val/drone/drone_val_0009.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 24600,
-    "duration_s": 123.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1476448,
-    "sha256": "fd188aaec9c7150f21d10c1b81934ecb1ef6d5ee6dd33fb4fe46a16359bde9a9",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0009.png"
+    "file_size_bytes": 732135,
+    "sha256": "3836df0f9f011e4b3401f1952081eca5357b14b00d4a6ac477ee32ca553e0880"
   },
   {
     "platform": "drone",
@@ -2631,12 +5165,11 @@
     "traj_id": "0010",
     "npz_relpath": "val/drone/drone_val_0010.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 26301,
-    "duration_s": 131.505,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 1323876,
-    "sha256": "8ad1d8483f3cc671fb09680c84a4c2bfdd8aee877ac721160ba260197284e7ba",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0010.png"
+    "file_size_bytes": 735041,
+    "sha256": "9e6777f8388a2062da4669544637caec3ad9c3d1357c997397e3dd9ea6b9d564"
   },
   {
     "platform": "drone",
@@ -2644,12 +5177,11 @@
     "traj_id": "0011",
     "npz_relpath": "val/drone/drone_val_0011.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 68200,
-    "duration_s": 341.0,
+    "n_samples": 9608,
+    "duration_s": 48.04,
     "sample_rate_hz": 200,
-    "file_size_bytes": 4134066,
-    "sha256": "4e730824df501549c777249222ce6a2477919daeb1dbdf8e2f4d620d528de92d",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0011.png"
+    "file_size_bytes": 583576,
+    "sha256": "5f3124270d12ed0d93eb2ac569402070e962d41dfa14ff20c52de3ae5fe0da59"
   },
   {
     "platform": "drone",
@@ -2657,12 +5189,11 @@
     "traj_id": "0012",
     "npz_relpath": "val/drone/drone_val_0012.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 188789,
-    "duration_s": 943.945,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 11394318,
-    "sha256": "35581b633497b05d05ae408017a1f1850c4773c7f0a729e9472bace212579a54",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0012.png"
+    "file_size_bytes": 729415,
+    "sha256": "a4703f6e7de1e836f7b96ced0b76cc6b75e8fff35bd7f23ece91578ff1e31dd8"
   },
   {
     "platform": "drone",
@@ -2670,12 +5201,11 @@
     "traj_id": "0013",
     "npz_relpath": "val/drone/drone_val_0013.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 68000,
-    "duration_s": 340.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 4083085,
-    "sha256": "71ec575fcea2cf194b519fb7b0652cba2577f75478e1b48152ec8b2bc06f5841",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0013.png"
+    "file_size_bytes": 734761,
+    "sha256": "a74cb881f5978b7a2046f4e01bd75650215edc3b7fa65c3ae21811ba0bf3b9af"
   },
   {
     "platform": "drone",
@@ -2683,12 +5213,11 @@
     "traj_id": "0014",
     "npz_relpath": "val/drone/drone_val_0014.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 153600,
-    "duration_s": 768.0,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 9302926,
-    "sha256": "02ddbe30d44b58c176248563c04ec8143c9b029eca99a5102cb2a1ce39fb2477",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0014.png"
+    "file_size_bytes": 735163,
+    "sha256": "78bb0cf340262a962e12076b37b77a19a2de5fe582b3d025d8d98730ba8a7772"
   },
   {
     "platform": "drone",
@@ -2696,12 +5225,11 @@
     "traj_id": "0015",
     "npz_relpath": "val/drone/drone_val_0015.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 110896,
-    "duration_s": 554.48,
+    "n_samples": 4674,
+    "duration_s": 23.37,
     "sample_rate_hz": 200,
-    "file_size_bytes": 6703666,
-    "sha256": "48c0c966a5fc3a7372174d2e7d9dcf4fe1a98ce883d3dbe4b4e0b143cf12f07a",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0015.png"
+    "file_size_bytes": 280963,
+    "sha256": "f9ff12ab740b6382b66bb872c9fbf7226100f6c0a38059318251752d97e45cbc"
   },
   {
     "platform": "drone",
@@ -2709,12 +5237,383 @@
     "traj_id": "0016",
     "npz_relpath": "val/drone/drone_val_0016.npz",
     "inferred_source": "TartanIMU",
-    "n_samples": 94169,
-    "duration_s": 470.845,
+    "n_samples": 12000,
+    "duration_s": 60.0,
     "sample_rate_hz": 200,
-    "file_size_bytes": 5628045,
-    "sha256": "0b19d458fdaecc2851cd93047900c33b291607876b72725a6b24943abf2e75c0",
-    "thumbnail": "/img/imuchallenge/previews/drone_val_0016.png"
+    "file_size_bytes": 732443,
+    "sha256": "88845898d5f3102ac395bc27c58cc806cbb08a5119d2fe31a34ea5e5b3f1a8f6"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0017",
+    "npz_relpath": "val/drone/drone_val_0017.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735934,
+    "sha256": "83a2826a2ed9b266756d57336346a9ac41d1febeeeef1ec808f7102f3c5dac7f"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0018",
+    "npz_relpath": "val/drone/drone_val_0018.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735986,
+    "sha256": "9c7daae9251a1563607268c9f3aca0b400677b97ead3acbf89668e59ead06998"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0019",
+    "npz_relpath": "val/drone/drone_val_0019.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3804,
+    "duration_s": 19.02,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 233965,
+    "sha256": "446fc4b9a750318833cae5681083a799a0124f803d7182ae90ee963241df379c"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0020",
+    "npz_relpath": "val/drone/drone_val_0020.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736292,
+    "sha256": "6fb4ad0af7addf4bf558b4abf247d088b173c450641de9c59c4d624465adf545"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0021",
+    "npz_relpath": "val/drone/drone_val_0021.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 737161,
+    "sha256": "04fbcb88d0792e32258a11c4aec76241055d3e937912914eb82d02a15eaa467c"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0022",
+    "npz_relpath": "val/drone/drone_val_0022.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 8698,
+    "duration_s": 43.49,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 525312,
+    "sha256": "138f2a1f308831159f39e240028256e7b46e285f1c24f9766c169e58e4a244f4"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0023",
+    "npz_relpath": "val/drone/drone_val_0023.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 735027,
+    "sha256": "0eb86700386f7ab175c3decebc166cffac9c7753bb85384c5d383a2007922a13"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0024",
+    "npz_relpath": "val/drone/drone_val_0024.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736186,
+    "sha256": "a7d033e293306aa0c6b7d31353f71c1158a2964f2b5bb974f00d9c15f08e22f6"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0025",
+    "npz_relpath": "val/drone/drone_val_0025.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736734,
+    "sha256": "69061448ecd8911fab1e6054f71477a521b484803f5ff44d1a855d624c6b96f5"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0026",
+    "npz_relpath": "val/drone/drone_val_0026.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 730947,
+    "sha256": "e2893ce00bddb107b3e9b309ad594503d9633dd55032afbf9b5dc520551498fa"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0027",
+    "npz_relpath": "val/drone/drone_val_0027.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 732526,
+    "sha256": "d0b35deb7d445c8790d935ec690168072781dbf76e837eb78c00ed8e4d4327f6"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0028",
+    "npz_relpath": "val/drone/drone_val_0028.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3866,
+    "duration_s": 19.33,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 234802,
+    "sha256": "64e78cbd8138d528d86841bf97293411749a794d2ebce55ac38063d862eeb216"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0029",
+    "npz_relpath": "val/drone/drone_val_0029.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 719533,
+    "sha256": "739b481e10f54ffff7dcf7d01590dd9d4e8660cd866a231339a07964d4b63116"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0030",
+    "npz_relpath": "val/drone/drone_val_0030.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 724691,
+    "sha256": "42e77f3f433f85e6d27e56ea188e960e01e9e867f08ed2b9e5c4646eab6b64e4"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0031",
+    "npz_relpath": "val/drone/drone_val_0031.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 722606,
+    "sha256": "edbaaced437eab7a69a5b556a8235aa7b7cf5e112232f2446d3230e17ba3a55a"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0032",
+    "npz_relpath": "val/drone/drone_val_0032.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3958,
+    "duration_s": 19.79,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 240688,
+    "sha256": "659b11cfb63d9ae28f0dc3b0fa2dc68f9c8738600d0aa348924d5064f97a20b8"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0033",
+    "npz_relpath": "val/drone/drone_val_0033.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 722139,
+    "sha256": "bfabea1477b14718cff15560d51e79988cbe513790ee917a8e282ad43d8769fe"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0034",
+    "npz_relpath": "val/drone/drone_val_0034.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 721355,
+    "sha256": "1d1ac7eb4114a8baf78b30809cfeb15281b206453e6369482813f54dd6a0d5c3"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0035",
+    "npz_relpath": "val/drone/drone_val_0035.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 7606,
+    "duration_s": 38.03,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 461393,
+    "sha256": "b9da07d1185322587456712b15bd4803212a43bd538c30567c032dff645bfda5"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0036",
+    "npz_relpath": "val/drone/drone_val_0036.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 733681,
+    "sha256": "f759e7899fe9d607502160869ab4e3b6d9a42946b25afaa14c4f01e2d9b3231e"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0037",
+    "npz_relpath": "val/drone/drone_val_0037.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738408,
+    "sha256": "d2e4e3df4ca4fc155bf5ef70c5c83b23aa04c486994aa76b440bc0f1c163c9b4"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0038",
+    "npz_relpath": "val/drone/drone_val_0038.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 738266,
+    "sha256": "f76116d296cb05b1cce251762eeabb1a49a9017ab25c117d8a2b3f765a1308df"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0039",
+    "npz_relpath": "val/drone/drone_val_0039.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3726,
+    "duration_s": 18.63,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 228437,
+    "sha256": "0f9dbd33112ca32f5569c2a4d81ab921111a541e4019752d2d7ca8025168f224"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0040",
+    "npz_relpath": "val/drone/drone_val_0040.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 726080,
+    "sha256": "34315bf64bd3bb99358c24d283dbdb8dfe88acfc7599c5213efeb4057431280f"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0041",
+    "npz_relpath": "val/drone/drone_val_0041.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 728456,
+    "sha256": "d981e18cd350512e26135d752901889a52685ed38183ecdf894eb1301667c434"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0042",
+    "npz_relpath": "val/drone/drone_val_0042.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 728544,
+    "sha256": "b4834976fa6aa016944ddf85cf5fc7e0e45587678a733d07a39e163c52be741d"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0043",
+    "npz_relpath": "val/drone/drone_val_0043.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3674,
+    "duration_s": 18.37,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 224126,
+    "sha256": "7ad36dccfafcea6d141a5b7c3416e58f500132a871a5f1fd04a118812570ba14"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0044",
+    "npz_relpath": "val/drone/drone_val_0044.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 734005,
+    "sha256": "5503952a8dc99d810fedcfb46be5cdf255538b5fd8dffb67681b16c9ff1e16f0"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0045",
+    "npz_relpath": "val/drone/drone_val_0045.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736990,
+    "sha256": "d60abfca600a6db18740c842957ce2313787d716039a032a7fdd0e97834b57ed"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0046",
+    "npz_relpath": "val/drone/drone_val_0046.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 12000,
+    "duration_s": 60.0,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 736246,
+    "sha256": "399f288a432409465eb483dd1675b7337a746e33fa70a2a291953b8b81e5f2a9"
+  },
+  {
+    "platform": "drone",
+    "split": "val",
+    "traj_id": "0047",
+    "npz_relpath": "val/drone/drone_val_0047.npz",
+    "inferred_source": "TartanIMU",
+    "n_samples": 3542,
+    "duration_s": 17.71,
+    "sample_rate_hz": 200,
+    "file_size_bytes": 216654,
+    "sha256": "f6959fd06a2659cab0e05ddd810b4d1ac124dd4af332777d7cebbd5c593ccd39"
   },
   {
     "platform": "handheld",
@@ -2726,8 +5625,7 @@
     "duration_s": 1052.89,
     "sample_rate_hz": 200,
     "file_size_bytes": 12686240,
-    "sha256": "34234df0b5a10c39aaca50787f5c4c479423d2bebe300f96ba2ed75a038e3e1d",
-    "thumbnail": "/img/imuchallenge/previews/handheld_val_0000.png"
+    "sha256": "34234df0b5a10c39aaca50787f5c4c479423d2bebe300f96ba2ed75a038e3e1d"
   },
   {
     "platform": "handheld",
@@ -2739,8 +5637,7 @@
     "duration_s": 1029.06,
     "sample_rate_hz": 200,
     "file_size_bytes": 12379493,
-    "sha256": "b13bfb3fe34574c6de267d67eeed8c1c1aa01cf1094a43624251e0d4d20ddc31",
-    "thumbnail": "/img/imuchallenge/previews/handheld_val_0001.png"
+    "sha256": "b13bfb3fe34574c6de267d67eeed8c1c1aa01cf1094a43624251e0d4d20ddc31"
   },
   {
     "platform": "handheld",
@@ -2752,8 +5649,7 @@
     "duration_s": 1034.93,
     "sample_rate_hz": 200,
     "file_size_bytes": 12525383,
-    "sha256": "91e4b2f37c5a49f5bbdb29ff760b1439e441539a801e5dda80641e3fbe4fac2f",
-    "thumbnail": "/img/imuchallenge/previews/handheld_val_0002.png"
+    "sha256": "91e4b2f37c5a49f5bbdb29ff760b1439e441539a801e5dda80641e3fbe4fac2f"
   },
   {
     "platform": "handheld",
@@ -2762,11 +5658,10 @@
     "npz_relpath": "val/human/human_val_0003.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 262077,
-    "duration_s": 1310.385,
+    "duration_s": 1310.38,
     "sample_rate_hz": 200,
     "file_size_bytes": 15060351,
-    "sha256": "86f1b660df984a90ace11e283de25b22325a775310f384e252284691e5e1c049",
-    "thumbnail": "/img/imuchallenge/previews/handheld_val_0003.png"
+    "sha256": "86f1b660df984a90ace11e283de25b22325a775310f384e252284691e5e1c049"
   },
   {
     "platform": "handheld",
@@ -2775,11 +5670,10 @@
     "npz_relpath": "val/human/human_val_0004.npz",
     "inferred_source": "TartanIMU",
     "n_samples": 245613,
-    "duration_s": 1228.065,
+    "duration_s": 1228.06,
     "sample_rate_hz": 200,
     "file_size_bytes": 13853974,
-    "sha256": "330775d45440fb2bc6bea6825a5e027f30273ef459654476b5c83e82625cecbf",
-    "thumbnail": "/img/imuchallenge/previews/handheld_val_0004.png"
+    "sha256": "330775d45440fb2bc6bea6825a5e027f30273ef459654476b5c83e82625cecbf"
   },
   {
     "platform": "handheld",
@@ -2791,8 +5685,7 @@
     "duration_s": 1049.39,
     "sample_rate_hz": 200,
     "file_size_bytes": 12664299,
-    "sha256": "c2366ba76aee47c02929fac3578b703285d5a1ada3dd98a90c48b040ea7dabc0",
-    "thumbnail": "/img/imuchallenge/previews/handheld_val_0005.png"
+    "sha256": "c2366ba76aee47c02929fac3578b703285d5a1ada3dd98a90c48b040ea7dabc0"
   },
   {
     "platform": "handheld",
@@ -2804,7 +5697,6 @@
     "duration_s": 1036.93,
     "sample_rate_hz": 200,
     "file_size_bytes": 12315925,
-    "sha256": "044f92a4c4949ab378edd7d134fcf0307563f04941b4f7c74875f676bba4d9c9",
-    "thumbnail": "/img/imuchallenge/previews/handheld_val_0006.png"
+    "sha256": "044f92a4c4949ab378edd7d134fcf0307563f04941b4f7c74875f676bba4d9c9"
   }
 ]

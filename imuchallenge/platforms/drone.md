@@ -14,11 +14,11 @@ permalink: /imuchallenge/platforms/drone/
 ## Data Summary
 
 <div class="imu-stat-grid">
-  <div class="imu-stat"><span class="imu-stat-value">78</span><span class="imu-stat-label">Trajectories</span></div>
-  <div class="imu-stat"><span class="imu-stat-value">4.75 hrs</span><span class="imu-stat-label">Total Duration</span></div>
-  <div class="imu-stat"><span class="imu-stat-value">0.191 GiB</span><span class="imu-stat-label">Total Size</span></div>
-  <div class="imu-stat"><span class="imu-stat-value">3,462,757</span><span class="imu-stat-label">Samples</span></div>
-  <div class="imu-stat"><span class="imu-stat-value">61 / 17</span><span class="imu-stat-label">Train / Val Splits</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">337</span><span class="imu-stat-label">Trajectories</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">4.61 hrs</span><span class="imu-stat-label">Total Duration</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">0.186 GiB</span><span class="imu-stat-label">Total Size</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">3,318,376</span><span class="imu-stat-label">Samples</span></div>
+  <div class="imu-stat"><span class="imu-stat-value">289 / 48</span><span class="imu-stat-label">Train / Val Splits</span></div>
   <div class="imu-stat"><span class="imu-stat-value">200–250 Hz</span><span class="imu-stat-label">Sample Rate</span></div>
   <div class="imu-stat"><span class="imu-stat-value">TartanIMU</span><span class="imu-stat-label">Source(s)</span></div>
 </div>

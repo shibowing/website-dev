@@ -37,7 +37,7 @@ Each trajectory is a `.npz` file organized as `{split}/{platform}/{platform}_{sp
 
 Window indices and per-window targets are in `index/`: `train_windows.csv` / `val_windows.csv` (window_id → trajectory + start sample) and `train_targets.csv` / `val_targets.csv` (window_id → `vx, vy, vz`). The Kaggle Data tab additionally provides `index/test_windows.csv` and `sample_submission.csv` for the held-out test set.
 
-At competition scale, the dataset totals roughly **175k windows** across all platforms — about 7–12 hours of recorded motion per platform.
+At competition scale, the dataset totals **136,289 one-second windows** across all platforms — **81,931 train / 23,714 val / 30,644 held-out test** — for about **37.9 hours** of recorded motion in total, ranging from about 5.2 hours (drone) to 13.4 hours (human) of motion per platform across all three splits.
 
 **Metric — macro-averaged Absolute Trajectory Error (ATE), lower is better:** you submit one body-frame velocity per test window. The organizers rotate each prediction into the world frame using the ground-truth orientation (used only for scoring, never as model input), accumulate the per-window displacements into a path, align that path to ground truth with an SE(3) Umeyama alignment (rotation + translation, no scale), and compute ATE as the RMS position error between the aligned estimate and ground truth. Per-platform ATE is the mean over that platform's test trajectories; the final score is the equal-weight mean of the four per-platform ATEs, so no platform dominates.
 
@@ -103,9 +103,9 @@ Recordings across the four platforms come from two IMU models: the **Xsens MTi-1
 |---|---|---|
 | Car | 44 | 12 |
 | Quadruped | 36 | 13 |
-| Drone | 61 | 17 |
+| Drone | 289 | 48 |
 | Handheld | 26 | 7 |
-| **Total** | **167** | **49** |
+| **Total** | **395** | **80** |
 
 ## Data Explorer
 

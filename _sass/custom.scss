@@ -589,6 +589,51 @@ body.imuchallenge-home .hero .button.is-info:not(:first-child) {
   margin-bottom: 0.9rem;
 }
 
+.imu-preview-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.imu-spinner {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 4px solid #FCE3CE;
+  border-top-color: #C45A0E;
+  animation: imu-spin 0.8s linear infinite;
+}
+
+@keyframes imu-spin {
+  to { transform: rotate(360deg); }
+}
+
+.imu-preview-loading-text {
+  color: #5f7f99;
+  font-size: 0.9rem;
+}
+
+.imu-progress {
+  width: 100%;
+  max-width: 280px;
+  height: 6px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.imu-progress-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #C45A0E, #f59e0b);
+  transition: width 1.5s cubic-bezier(0.15, 0.7, 0.3, 1);
+}
+
 .imu-announcements-feed {
   max-height: none;
   overflow-y: visible;
