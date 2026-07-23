@@ -954,6 +954,14 @@ pre code.language-bibtex {
   }
 }
 
+body.imuchallenge-site .content .imu-schema-table :not(pre) > code {
+  white-space: nowrap;
+}
+
+body.imuchallenge-site .content .imu-schema-table td:last-child > code {
+  white-space: normal;
+}
+
 .imu-platform-badge {
   display: inline-block;
   border-radius: 999px;
