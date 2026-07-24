@@ -589,6 +589,35 @@ body.imuchallenge-home .hero .button.is-info:not(:first-child) {
   margin-bottom: 0.9rem;
 }
 
+.imu-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+.imu-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ef4444;
+  animation: imu-live-blink 1.4s ease-in-out infinite;
+}
+
+@keyframes imu-live-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
 .imu-preview-loading {
   display: flex;
   flex-direction: column;
