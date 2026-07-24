@@ -14,7 +14,7 @@ permalink: /imuchallenge/setup/
 <div class="imu-steps" markdown="1">
 
 <div class="imu-step" markdown="1">
-**Register your team.** [Fill out the registration form.](https://forms.gle/oRr4rCNxqTP1U6uS8){:target="_blank" rel="noopener"} Then join the competition on Kaggle: [TartanIMU Challenge: Multi-Platform Inertial Odometry](https://www.kaggle.com/competitions/tartanimu-iros2026){:target="_blank" rel="noopener"}.
+**Register your team.** [Fill out the registration form.](https://forms.gle/7rUg7ENctuBU9kTN8){:target="_blank" rel="noopener"} Then join the competition on Kaggle: [TartanIMU Challenge: Multi-Platform Inertial Odometry](https://www.kaggle.com/competitions/tartanimu-iros2026){:target="_blank" rel="noopener"}.
 </div>
 
 <div class="imu-step" markdown="1">

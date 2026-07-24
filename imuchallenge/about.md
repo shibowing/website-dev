@@ -41,4 +41,4 @@ Challenge organization is coordinated by **CMU AirLab**, with benchmark, dataset
 
 ## Contact
 
-For challenge questions, post in the [Kaggle discussion forum](https://www.kaggle.com/competitions/tartanimu-iros2026/discussion){:target="_blank" rel="noopener"} so answers remain visible to every team. Use the [team registration form](https://forms.gle/oRr4rCNxqTP1U6uS8){:target="_blank" rel="noopener"} for registration details.
+For challenge questions, post in the [Kaggle discussion forum](https://www.kaggle.com/competitions/tartanimu-iros2026/discussion){:target="_blank" rel="noopener"} so answers remain visible to every team. Use the [team registration form](https://forms.gle/7rUg7ENctuBU9kTN8){:target="_blank" rel="noopener"} for registration details.

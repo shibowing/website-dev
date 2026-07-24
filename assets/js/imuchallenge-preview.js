@@ -14,6 +14,10 @@ import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client@2.3.1/dist/i
 
   const BEST_MODEL_URL='https://huggingface.co/Tartan-IMU/TartanIMU/tree/main';
 
+  // Metadata stores display names (quadruped/handheld); the inference API expects
+  // the raw platform keys the dataset files actually use (dog/human).
+  const DISPLAY_TO_RAW_PLATFORM={quadruped:'dog', handheld:'human', car:'car', drone:'drone'};
+
   function init(){
     fetch('/assets/data/imuchallenge_metadata.json')
       .then(r=>r.json())
@@ -34,6 +38,7 @@ import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client@2.3.1/dist/i
           :'';
         root.innerHTML=`
           <h2 style="margin-top:0;">${esc(item.traj_id)}</h2>
+          <div class="imu-live-badge"><span class="imu-live-dot"></span>Live inference</div>
           <div id="imu-preview-thumb" style="width:100%;max-width:980px;aspect-ratio:16/9;border-radius:12px;border:1px solid #d8ebf9;margin:0.5rem 0 1rem 0;background:#f2f9ff;">
             <div class="imu-preview-loading">
               <div class="imu-spinner"></div>
@@ -70,8 +75,9 @@ import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client@2.3.1/dist/i
       if(fill) requestAnimationFrame(()=>{ fill.style.width='92%'; });
       try{
         const client=await Client.connect(SPACE_ID);
-        const trajStem=`${item.platform}_${item.split}_${item.traj_id}`;
-        const job=client.submit('/request_preview',{split:item.split,platform:item.platform,traj_id:trajStem});
+        const rawPlatform=DISPLAY_TO_RAW_PLATFORM[item.platform]||item.platform;
+        const trajStem=`${rawPlatform}_${item.split}_${item.traj_id}`;
+        const job=client.submit('/request_preview',{split:item.split,platform:rawPlatform,traj_id:trajStem});
         let final=null;
         for await (const msg of job){
           if(msg.type==='data') final=msg.data;
