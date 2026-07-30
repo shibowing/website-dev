@@ -77,8 +77,8 @@ body_class: tartanimu-site
   .timu-hero {
     position: relative;
     width: 100vw;
-    height: min(620px, calc(100vh - 120px));
-    min-height: 480px;
+    height: clamp(420px, 58vh, 540px);
+    min-height: 420px;
     margin-left: calc(50% - 50vw);
     overflow: hidden;
     isolation: isolate;
@@ -97,7 +97,7 @@ body_class: tartanimu-site
     z-index: -2;
     object-fit: cover;
     object-position: center;
-    transform: scale(1.025);
+    transform: scale(1.015);
     animation: timu-hero-settle 1400ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
   }
 
@@ -110,7 +110,7 @@ body_class: tartanimu-site
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: min(1120px, calc(100% - 3rem));
+    width: min(1040px, calc(100% - 3rem));
     height: 100%;
     margin: 0 auto;
   }
@@ -149,7 +149,7 @@ body_class: tartanimu-site
     max-width: 760px;
     margin: 0;
     color: #ffffff;
-    font-size: 4.6rem;
+    font-size: 4.1rem;
     font-weight: 800;
     line-height: 1.02;
     letter-spacing: 0;
@@ -217,8 +217,102 @@ body_class: tartanimu-site
     color: #ffffff !important;
   }
 
+  .timu-inference-callout {
+    width: 100%;
+    margin-bottom: 1.75rem;
+    border-top: 1px solid #dce2df;
+    border-bottom: 1px solid #dce2df;
+    background: #f3f6f5;
+  }
+
+  .timu-inference-callout-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(1040px, calc(100% - 3rem));
+    gap: 2.5rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+  }
+
+  .timu-inference-callout-copy {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .timu-inference-callout-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #d7b08e;
+    border-radius: 6px;
+    color: var(--timu-accent-dark);
+    background: #ffffff;
+    box-shadow: 0 5px 14px rgba(32, 35, 41, 0.08);
+    font-size: 1.15rem;
+  }
+
+  .timu-inference-callout-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.25rem;
+    color: #32664e;
+    font-size: 0.76rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .timu-inference-callout-label::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    flex: none;
+    border-radius: 50%;
+    background: #2e8b57;
+    box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.14);
+  }
+
+  .timu-inference-callout h2 {
+    margin: 0;
+    color: var(--timu-ink);
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 0;
+  }
+
+  .timu-inference-callout p {
+    margin: 0.35rem 0 0;
+    color: var(--timu-muted);
+    font-size: 0.94rem;
+    line-height: 1.5;
+  }
+
+  .timu-inference-cta,
+  .timu-inference-cta:visited {
+    min-height: 46px;
+    flex: none;
+    border-color: var(--timu-accent-dark);
+    color: #ffffff !important;
+    background: var(--timu-accent-dark);
+    box-shadow: 0 7px 18px rgba(145, 59, 5, 0.2);
+    backdrop-filter: none;
+  }
+
+  .timu-inference-cta:hover,
+  .timu-inference-cta:focus-visible {
+    border-color: #6f2b03;
+    color: #ffffff !important;
+    background: #6f2b03;
+  }
+
   .timu-paper-meta {
-    padding: 2.75rem 1.5rem 3rem;
+    padding: 2.25rem 1.5rem 2.5rem;
     text-align: center;
   }
 
@@ -304,7 +398,7 @@ body_class: tartanimu-site
     justify-content: space-between;
     gap: 2rem;
     width: min(1040px, calc(100% - 3rem));
-    margin: 0 auto 3.5rem;
+    margin: 0 auto 2.75rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--timu-line);
     border-bottom: 1px solid var(--timu-line);
@@ -336,7 +430,7 @@ body_class: tartanimu-site
 
   .timu-section {
     width: 100%;
-    padding: 4rem 1.5rem;
+    padding: 3.5rem 1.5rem;
     border-top: 1px solid var(--timu-line);
     scroll-margin-top: 76px;
   }
@@ -352,7 +446,7 @@ body_class: tartanimu-site
   }
 
   .timu-inner--wide {
-    max-width: 1100px;
+    max-width: 1040px;
   }
 
   .timu-section-heading {
@@ -420,7 +514,8 @@ body_class: tartanimu-site
   }
 
   .timu-feature-video {
-    margin: 0;
+    width: min(920px, 100%);
+    margin: 0 auto;
   }
 
   .timu-feature-video-heading {
@@ -477,7 +572,8 @@ body_class: tartanimu-site
   }
 
   .timu-comparison {
-    margin: 3.5rem 0 0;
+    width: min(980px, 100%);
+    margin: 3.25rem auto 0;
     padding-top: 3rem;
     border-top: 1px solid var(--timu-line);
   }
@@ -652,13 +748,6 @@ body_class: tartanimu-site
     background: #111318;
   }
 
-  .timu-result-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.25rem;
-  }
-
-  .timu-result-card,
   .timu-platform-card {
     overflow: hidden;
     border: 1px solid var(--timu-line);
@@ -670,7 +759,6 @@ body_class: tartanimu-site
 
   @media (hover: hover) {
     .timu-comparison-card:hover,
-    .timu-result-card:hover,
     .timu-platform-card:hover {
       border-color: #d7b397;
       box-shadow: 0 12px 28px rgba(32, 35, 41, 0.11);
@@ -678,89 +766,169 @@ body_class: tartanimu-site
     }
   }
 
-  .timu-result-card video {
+  .timu-science-showcase {
+    width: min(880px, 100%);
+    margin: 2.75rem auto 0;
+    padding-top: 2.25rem;
+    border-top: 1px solid var(--timu-line);
+  }
+
+  .timu-science-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .timu-science-header h3 {
+    margin: 0;
+    color: var(--timu-ink);
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+
+  .timu-science-header p {
+    max-width: 430px;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    text-align: right;
+  }
+
+  .timu-science-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin: 1.35rem 0 1rem;
+  }
+
+  .timu-science-tab {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr);
+    align-items: center;
+    min-width: 0;
+    min-height: 64px;
+    gap: 0.65rem;
+    padding: 0.7rem 0.75rem;
+    border: 1px solid #cfd3d8;
+    border-radius: 6px;
+    color: var(--timu-ink);
+    background: #ffffff;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease;
+  }
+
+  .timu-science-tab:hover,
+  .timu-science-tab:focus-visible {
+    border-color: var(--timu-accent);
+    background: var(--timu-accent-soft);
+  }
+
+  .timu-science-tab.active {
+    border-color: var(--timu-accent);
+    color: var(--timu-accent-dark);
+    background: var(--timu-accent-soft);
+    box-shadow: inset 0 3px 0 var(--timu-accent);
+  }
+
+  .timu-science-tab-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    color: var(--timu-muted);
+    background: #eef0f2;
+  }
+
+  .timu-science-tab.active .timu-science-tab-icon {
+    color: #ffffff;
+    background: var(--timu-accent);
+  }
+
+  .timu-science-tab-copy {
+    min-width: 0;
+  }
+
+  .timu-science-tab-name,
+  .timu-science-tab-duration {
+    display: block;
+  }
+
+  .timu-science-tab-name {
+    overflow: hidden;
+    font-size: 0.87rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .timu-science-tab-duration {
+    margin-top: 0.25rem;
+    color: var(--timu-muted);
+    font-size: 0.76rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .timu-science-stage {
+    width: 100%;
+    margin: 0 !important;
+    overflow: hidden;
+    border: 1px solid var(--timu-line);
+    border-radius: 8px;
+    background: #111318;
+    box-shadow: 0 12px 30px rgba(32, 35, 41, 0.1);
+  }
+
+  .timu-science-video {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
+    object-fit: contain;
     background: #111318;
   }
 
-  .timu-result-caption {
+  .timu-science-caption {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 0.9rem 1rem;
-  }
-
-  .timu-result-caption strong {
-    color: var(--timu-ink);
-  }
-
-  .timu-platform-dot {
-    width: 10px;
-    height: 10px;
-    flex: none;
-    border-radius: 50%;
-    background: var(--platform-color, var(--timu-accent));
-  }
-
-  .timu-additional-results {
-    margin-top: 3rem;
+    padding: 0.85rem 1rem;
     border-top: 1px solid var(--timu-line);
-    border-bottom: 1px solid var(--timu-line);
+    color: var(--timu-muted);
+    background: #ffffff;
+    font-size: 0.86rem;
   }
 
-  .timu-additional-results summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 72px;
-    gap: 1rem;
-    padding: 1rem 0;
+  .timu-science-caption strong {
     color: var(--timu-ink);
-    cursor: pointer;
-    list-style: none;
   }
 
-  .timu-additional-results summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .timu-additional-results summary strong {
-    display: block;
-    font-size: 1.05rem;
-  }
-
-  .timu-additional-results summary > i {
+  .timu-science-caption-duration {
+    flex: none;
     color: var(--timu-accent-dark);
-    transition: transform 150ms ease;
-  }
-
-  .timu-additional-results[open] summary > i {
-    transform: rotate(180deg);
-  }
-
-  .timu-additional-results:not([open]) > :not(summary) {
-    display: none;
-  }
-
-  .timu-additional-results .timu-result-grid {
-    padding: 0.5rem 0 1.5rem;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
   }
 
   .timu-page figure.timu-figure {
     position: relative;
     left: 50%;
-    width: min(1080px, calc(100vw - 2rem));
-    margin: 2.5rem 0 0;
+    width: min(900px, calc(100vw - 3rem));
+    margin: 2.25rem 0 0;
     transform: translateX(-50%);
   }
 
   .timu-page figure.timu-figure--contained {
     left: auto;
-    width: 100%;
+    width: min(860px, 100%);
+    margin-right: auto;
+    margin-left: auto;
     transform: none;
   }
 
@@ -821,9 +989,10 @@ body_class: tartanimu-site
 
   .timu-stage {
     display: grid;
-    grid-template-columns: 250px minmax(0, 1fr);
-    gap: 2.5rem;
-    padding: 2.5rem 0;
+    grid-template-columns: 210px minmax(0, 720px);
+    justify-content: center;
+    gap: 2rem;
+    padding: 2.25rem 0;
     border-top: 1px solid var(--timu-line);
   }
 
@@ -861,9 +1030,11 @@ body_class: tartanimu-site
   .timu-stage-media img {
     display: block;
     width: 100%;
+    max-height: 520px;
     height: auto;
     border: 1px solid var(--timu-line);
     border-radius: 8px;
+    object-fit: contain;
     background: #ffffff;
   }
 
@@ -878,7 +1049,8 @@ body_class: tartanimu-site
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
-    margin-top: 2.5rem;
+    width: min(1000px, 100%);
+    margin: 2.5rem auto 0;
   }
 
   .timu-platform-card img {
@@ -910,7 +1082,8 @@ body_class: tartanimu-site
     display: flex;
     flex-wrap: wrap;
     gap: 1rem 1.5rem;
-    margin-top: 2rem;
+    width: min(1000px, 100%);
+    margin: 2rem auto 0;
   }
 
   .timu-note {
@@ -1006,8 +1179,8 @@ body_class: tartanimu-site
   }
 
   @keyframes timu-hero-settle {
-    from { transform: scale(1.055); }
-    to { transform: scale(1.025); }
+    from { transform: scale(1.04); }
+    to { transform: scale(1.015); }
   }
 
   @keyframes timu-hero-content {
@@ -1030,7 +1203,6 @@ body_class: tartanimu-site
     }
 
     .timu-comparison-card,
-    .timu-result-card,
     .timu-platform-card {
       transition: none;
     }
@@ -1038,7 +1210,7 @@ body_class: tartanimu-site
 
   @media (max-width: 1024px) {
     .timu-hero h1 {
-      font-size: 3.8rem;
+      font-size: 3.55rem;
     }
 
     .timu-contributions {
@@ -1053,8 +1225,8 @@ body_class: tartanimu-site
 
   @media (max-width: 768px) {
     .timu-hero {
-      height: min(580px, calc(100vh - 96px));
-      min-height: 470px;
+      height: 500px;
+      min-height: 440px;
     }
 
     .timu-hero-inner {
@@ -1087,14 +1259,39 @@ body_class: tartanimu-site
     }
 
     .timu-challenge-link,
+    .timu-inference-callout-inner,
     .timu-bottom-cta-inner {
       align-items: flex-start;
       flex-direction: column;
       gap: 1rem;
     }
 
+    .timu-inference-callout-inner {
+      width: min(1040px, calc(100% - 2rem));
+      padding: 1.25rem 0;
+    }
+
+    .timu-inference-cta {
+      align-self: stretch;
+    }
+
+    .timu-science-header {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .timu-science-header p {
+      max-width: 620px;
+      text-align: left;
+    }
+
+    .timu-science-tabs {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .timu-section {
-      padding: 3.5rem 1rem;
+      padding: 3rem 1rem;
     }
 
     .timu-section h2 {
@@ -1117,7 +1314,6 @@ body_class: tartanimu-site
       border-top: 1px solid var(--timu-line);
     }
 
-    .timu-result-grid,
     .timu-stage,
     .timu-stage-media-grid,
     .timu-comparison-grid {
@@ -1150,7 +1346,7 @@ body_class: tartanimu-site
     .timu-page figure.timu-figure {
       left: auto;
       width: 100%;
-      margin: 2.5rem 0 0;
+      margin: 2.25rem 0 0;
       transform: none;
     }
 
@@ -1162,7 +1358,8 @@ body_class: tartanimu-site
 
   @media (max-width: 520px) {
     .timu-hero {
-      min-height: 520px;
+      height: 500px;
+      min-height: 500px;
     }
 
     .timu-hero h1 {
@@ -1171,7 +1368,7 @@ body_class: tartanimu-site
 
     .timu-actions {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       width: 100%;
     }
 
@@ -1205,7 +1402,8 @@ body_class: tartanimu-site
       <p class="timu-hero-subtitle">A Light Foundation Model for Inertial Positioning in Robotics</p>
       <p class="timu-hero-summary">One inertial model learns motion across ground vehicles, quadrupeds, drones, and humans, then adapts efficiently to new robots and operating conditions.</p>
       <div class="timu-actions" aria-label="TartanIMU resources">
-        <a class="timu-action timu-action--primary" href="https://github.com/superxslam/TartanIMU" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+        <a class="timu-action timu-action--primary" href="https://superodometry.com/imuchallenge/data/explorer/" target="_blank" rel="noopener"><i class="fas fa-bolt" aria-hidden="true"></i> Live Inference</a>
+        <a class="timu-action" href="https://github.com/superxslam/TartanIMU" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
         <a class="timu-action" href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhao_Tartan_IMU_A_Light_Foundation_Model_for_Inertial_Positioning_in_CVPR_2025_paper.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>
         <a class="timu-action" href="/imuchallenge/data/"><i class="fas fa-database" aria-hidden="true"></i> Dataset</a>
       </div>
@@ -1242,6 +1440,20 @@ body_class: tartanimu-site
           <span class="timu-story-name">Deploy</span>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="timu-inference-callout" aria-labelledby="timu-inference-title">
+    <div class="timu-inference-callout-inner">
+      <div class="timu-inference-callout-copy">
+        <span class="timu-inference-callout-icon" aria-hidden="true"><i class="fas fa-bolt"></i></span>
+        <div>
+          <span class="timu-inference-callout-label">Live TartanIMU</span>
+          <h2 id="timu-inference-title">Run TartanIMU inference online</h2>
+          <p>Explore IMU sequences and inspect model predictions directly in your browser.</p>
+        </div>
+      </div>
+      <a class="timu-action timu-inference-cta" href="https://superodometry.com/imuchallenge/data/explorer/" target="_blank" rel="noopener">Launch Data Explorer <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
     </div>
   </section>
 
@@ -1321,35 +1533,37 @@ body_class: tartanimu-site
         {% endfor %}
       </section>
 
-      <details class="timu-additional-results">
-        <summary><span><span class="timu-block-label">Additional results</span><strong>Platform-specific TartanIMU demonstrations</strong></span><i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
-        <div class="timu-result-grid">
-        <article class="timu-result-card" style="--platform-color:#b45309;">
-          <video controls muted loop playsinline preload="none" poster="/img/tartanimu/car_overview.png" aria-label="Ground vehicle foundation model result">
-            <source src="/video/tartanimu/exp1_video_compare_car.m4v" type="video/mp4">
-          </video>
-          <div class="timu-result-caption"><strong>Ground vehicle</strong><span class="timu-platform-dot" aria-hidden="true"></span></div>
-        </article>
-        <article class="timu-result-card" style="--platform-color:#0f766e;">
-          <video controls muted loop playsinline preload="none" poster="/img/tartanimu/dog_overview.png" aria-label="Quadruped foundation model result">
-            <source src="/video/tartanimu/exp1_video_compare_dog.m4v" type="video/mp4">
-          </video>
-          <div class="timu-result-caption"><strong>Quadruped</strong><span class="timu-platform-dot" aria-hidden="true"></span></div>
-        </article>
-        <article class="timu-result-card" style="--platform-color:#2563eb;">
-          <video controls muted loop playsinline preload="none" poster="/img/tartanimu/drone_overview.png" aria-label="Drone foundation model result">
-            <source src="/video/tartanimu/exp1_video_compare_drone.m4v" type="video/mp4">
-          </video>
-          <div class="timu-result-caption"><strong>Drone</strong><span class="timu-platform-dot" aria-hidden="true"></span></div>
-        </article>
-        <article class="timu-result-card" style="--platform-color:#15803d;">
-          <video controls muted loop playsinline preload="none" poster="/img/tartanimu/human_overview.png" aria-label="Human motion foundation model result">
-            <source src="/video/tartanimu/exp1_video_compare_human.m4v" type="video/mp4">
-          </video>
-          <div class="timu-result-caption"><strong>Human motion</strong><span class="timu-platform-dot" aria-hidden="true"></span></div>
-        </article>
+      <section class="timu-science-showcase" aria-labelledby="timu-science-title">
+        <header class="timu-science-header">
+          <div>
+            <span class="timu-block-label">Science Robotics Movie 5.1</span>
+            <h3 id="timu-science-title">TartanIMU predictions by platform</h3>
+          </div>
+          <p>Ground-truth trajectories and network predictions across four robot platforms.</p>
+        </header>
+
+        <div class="timu-science-tabs" role="tablist" aria-label="Robot platform results">
+          <button class="timu-science-tab active" id="timu-science-tab-ground" type="button" role="tab" aria-selected="true" aria-controls="timu-science-panel" tabindex="0" data-science-source="/video/tartanimu/science-robotics-ground-vehicle.mp4" data-science-poster="/img/tartanimu/science-robotics-ground-vehicle.jpg" data-science-name="Ground vehicle" data-science-duration="00:30">
+            <span class="timu-science-tab-icon"><i class="fas fa-car-side" aria-hidden="true"></i></span><span class="timu-science-tab-copy"><span class="timu-science-tab-name">Ground vehicle</span><span class="timu-science-tab-duration">00:30</span></span>
+          </button>
+          <button class="timu-science-tab" id="timu-science-tab-quadruped" type="button" role="tab" aria-selected="false" aria-controls="timu-science-panel" tabindex="-1" data-science-source="/video/tartanimu/science-robotics-quadruped.mp4" data-science-poster="/img/tartanimu/science-robotics-quadruped.jpg" data-science-name="Quadruped" data-science-duration="00:36">
+            <span class="timu-science-tab-icon"><i class="fas fa-robot" aria-hidden="true"></i></span><span class="timu-science-tab-copy"><span class="timu-science-tab-name">Quadruped</span><span class="timu-science-tab-duration">00:36</span></span>
+          </button>
+          <button class="timu-science-tab" id="timu-science-tab-drone" type="button" role="tab" aria-selected="false" aria-controls="timu-science-panel" tabindex="-1" data-science-source="/video/tartanimu/science-robotics-drone.mp4" data-science-poster="/img/tartanimu/science-robotics-drone.jpg" data-science-name="Drone" data-science-duration="00:21">
+            <span class="timu-science-tab-icon"><i class="fas fa-paper-plane" aria-hidden="true"></i></span><span class="timu-science-tab-copy"><span class="timu-science-tab-name">Drone</span><span class="timu-science-tab-duration">00:21</span></span>
+          </button>
+          <button class="timu-science-tab" id="timu-science-tab-human" type="button" role="tab" aria-selected="false" aria-controls="timu-science-panel" tabindex="-1" data-science-source="/video/tartanimu/science-robotics-human-motion.mp4" data-science-poster="/img/tartanimu/science-robotics-human-motion.jpg" data-science-name="Human motion" data-science-duration="00:23">
+            <span class="timu-science-tab-icon"><i class="fas fa-walking" aria-hidden="true"></i></span><span class="timu-science-tab-copy"><span class="timu-science-tab-name">Human motion</span><span class="timu-science-tab-duration">00:23</span></span>
+          </button>
         </div>
-      </details>
+
+        <figure class="timu-science-stage" id="timu-science-panel" role="tabpanel" aria-labelledby="timu-science-tab-ground">
+          <video class="timu-science-video" id="timu-science-video" controls playsinline preload="metadata" poster="/img/tartanimu/science-robotics-ground-vehicle.jpg" aria-label="Science Robotics Ground vehicle TartanIMU prediction">
+            <source src="/video/tartanimu/science-robotics-ground-vehicle.mp4" type="video/mp4">
+          </video>
+          <figcaption class="timu-science-caption"><span><strong id="timu-science-platform">Ground vehicle</strong> · Science Robotics Movie 5.1</span><span class="timu-science-caption-duration" id="timu-science-duration">00:30</span></figcaption>
+        </figure>
+      </section>
     </div>
   </section>
 
@@ -1638,7 +1852,49 @@ body_class: tartanimu-site
       });
     });
 
+    var scienceTabs = Array.from(document.querySelectorAll(".timu-science-tab"));
+    var scienceVideo = document.getElementById("timu-science-video");
+    var scienceSource = scienceVideo ? scienceVideo.querySelector("source") : null;
+    var sciencePanel = document.getElementById("timu-science-panel");
+    var sciencePlatform = document.getElementById("timu-science-platform");
+    var scienceDuration = document.getElementById("timu-science-duration");
+
+    function activateScienceTab(tab) {
+      scienceTabs.forEach(function (item) {
+        var selected = item === tab;
+        item.classList.toggle("active", selected);
+        item.setAttribute("aria-selected", selected ? "true" : "false");
+        item.setAttribute("tabindex", selected ? "0" : "-1");
+      });
+
+      if (!scienceVideo || !scienceSource) return;
+      scienceVideo.pause();
+      scienceSource.setAttribute("src", tab.getAttribute("data-science-source"));
+      scienceVideo.setAttribute("poster", tab.getAttribute("data-science-poster"));
+      scienceVideo.setAttribute("aria-label", "Science Robotics " + tab.getAttribute("data-science-name") + " TartanIMU prediction");
+      if (sciencePanel) sciencePanel.setAttribute("aria-labelledby", tab.id);
+      if (sciencePlatform) sciencePlatform.textContent = tab.getAttribute("data-science-name");
+      if (scienceDuration) scienceDuration.textContent = tab.getAttribute("data-science-duration");
+      scienceVideo.load();
+    }
+
+    scienceTabs.forEach(function (tab, index) {
+      tab.addEventListener("click", function () { activateScienceTab(tab); });
+      tab.addEventListener("keydown", function (event) {
+        var nextIndex = null;
+        if (event.key === "ArrowRight") nextIndex = (index + 1) % scienceTabs.length;
+        if (event.key === "ArrowLeft") nextIndex = (index - 1 + scienceTabs.length) % scienceTabs.length;
+        if (event.key === "Home") nextIndex = 0;
+        if (event.key === "End") nextIndex = scienceTabs.length - 1;
+        if (nextIndex === null) return;
+        event.preventDefault();
+        activateScienceTab(scienceTabs[nextIndex]);
+        scienceTabs[nextIndex].focus();
+      });
+    });
+
     var revealTargets = Array.from(document.querySelectorAll(
+      ".timu-inference-callout-inner, .timu-science-showcase, " +
       '.timu-challenge-link, .timu-section-heading, .timu-metrics, .timu-feature-video, ' +
       '.timu-comparison, .timu-contributions, .timu-figure, .timu-stage, ' +
       '.timu-platform-grid, .timu-note, .timu-citation-bar, .timu-citation, .timu-bottom-cta-inner'
@@ -1707,7 +1963,7 @@ body_class: tartanimu-site
         });
       }, { rootMargin: '100px 0px' });
 
-      document.querySelectorAll('.timu-result-card video').forEach(function (video) {
+      document.querySelectorAll(".timu-science-video").forEach(function (video) {
         videoObserver.observe(video);
       });
     }
