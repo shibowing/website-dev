@@ -31,6 +31,9 @@ permalink: /imuchallenge/
       <a class="imu-workshop-action" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">
         <i class="fab fa-kaggle" aria-hidden="true"></i><span>Compete on Kaggle</span>
       </a>
+      <a class="imu-workshop-action is-secondary" href="https://github.com/superxslam/TartanIMU" target="_blank" rel="noopener">
+        <i class="fab fa-github" aria-hidden="true"></i><span>TartanIMU Code</span>
+      </a>
       <a class="imu-workshop-action is-secondary" href="https://forms.gle/7rUg7ENctuBU9kTN8" target="_blank" rel="noopener">
         <i class="fas fa-user-plus" aria-hidden="true"></i><span>Register Team</span>
       </a>
