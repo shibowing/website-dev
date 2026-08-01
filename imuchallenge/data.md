@@ -13,7 +13,7 @@ permalink: /imuchallenge/data/
 
 <ul class="imu-link-list">
   <li><a href="https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge" target="_blank" rel="noopener">IROS Tartan IMU Challenge Dataset (all platforms)</a></li>
-  <li><a href="https://www.kaggle.com/competitions/tartanimu-iros2026/data" target="_blank" rel="noopener">Kaggle competition Data tab</a> — competition-formatted windows, <code>index/test_windows.csv</code>, and <code>sample_submission.csv</code></li>
+  <li><a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/data" target="_blank" rel="noopener">Kaggle competition Data tab</a> — competition-formatted windows, <code>index/test_windows.csv</code>, and <code>sample_submission.csv</code></li>
 </ul>
 
 ## Dataset Schema

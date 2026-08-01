@@ -25,10 +25,10 @@ permalink: /imuchallenge/
     <div class="imu-workshop-meta" aria-label="Challenge status">
       <span><i class="fas fa-trophy" aria-hidden="true"></i> Live on Kaggle</span>
       <span><i class="fas fa-robot" aria-hidden="true"></i> Four platforms</span>
-      <span><i class="fas fa-wave-square" aria-hidden="true"></i> 200 Hz measurements</span>
+      <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> Final submission: Sep 20, 23:55 UTC</span>
     </div>
     <div class="imu-workshop-actions" aria-label="Challenge actions">
-      <a class="imu-workshop-action" href="https://www.kaggle.com/competitions/tartanimu-iros2026" target="_blank" rel="noopener">
+      <a class="imu-workshop-action" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">
         <i class="fab fa-kaggle" aria-hidden="true"></i><span>Compete on Kaggle</span>
       </a>
       <a class="imu-workshop-action is-secondary" href="https://forms.gle/7rUg7ENctuBU9kTN8" target="_blank" rel="noopener">
@@ -221,8 +221,12 @@ permalink: /imuchallenge/
 
     <div class="imu-workshop-updates">
       <article class="imu-workshop-update is-latest">
+        <time datetime="2026-08-01">Aug 01, 2026</time>
+        <div><span>Latest</span><p>Final Kaggle submissions, the technical report, and model weights are due <strong>September 20, 2026, at 23:55 UTC</strong>. See the <a href="/imuchallenge/setup/#schedule-rules-and-leaderboard">rules timeline</a>.</p></div>
+      </article>
+      <article class="imu-workshop-update">
         <time datetime="2026-07-09">Jul 09, 2026</time>
-        <div><span>Latest</span><p>The competition is live on Kaggle: <a href="https://www.kaggle.com/competitions/tartanimu-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</p></div>
+        <div><p>The competition is live on Kaggle: <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</p></div>
       </article>
       <article class="imu-workshop-update">
         <time datetime="2026-05-30">May 30, 2026</time>

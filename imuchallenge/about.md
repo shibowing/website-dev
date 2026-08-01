@@ -9,9 +9,11 @@ permalink: /imuchallenge/about/
 
 <h1 class="imu-page-title">{% include imu-bot.html %}About</h1>
 
-The IMU Odometry Challenge — run on Kaggle as the [**TartanIMU Challenge: Multi-Platform Inertial Odometry**](https://www.kaggle.com/competitions/tartanimu-iros2026){:target="_blank" rel="noopener"} — is hosted by **CMU AirLab**, with organization led by the TartanIMU and Super Odometry contributors.
+The IMU Odometry Challenge — run on Kaggle as the [**TartanIMU Challenge: Multi-Platform Inertial Odometry**](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026){:target="_blank" rel="noopener"} — is hosted by **CMU AirLab**, with organization led by the TartanIMU and Super Odometry contributors.
 
 The challenge is the official benchmark of the [IROS 2026 Workshop: "Beyond Exteroception: Interoceptive Perception for Resilient Robotics"](/interoception/) (Sept 27 – Oct 1, 2026, Pittsburgh). Top entries will be invited to present their methods at the workshop. The competition does not award a cash prize — it's scored on Kudos rather than points or medals.
+
+Final Kaggle submissions, the technical report, and model weights are due **September 20, 2026, at 23:55 UTC**.
 
 ## Motivation
 
@@ -41,4 +43,4 @@ Challenge organization is coordinated by **CMU AirLab**, with benchmark, dataset
 
 ## Contact
 
-For challenge questions, post in the [Kaggle discussion forum](https://www.kaggle.com/competitions/tartanimu-iros2026/discussion){:target="_blank" rel="noopener"} so answers remain visible to every team. Use the [team registration form](https://forms.gle/7rUg7ENctuBU9kTN8){:target="_blank" rel="noopener"} for registration details.
+For challenge questions, post in the [Kaggle discussion forum](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/discussion){:target="_blank" rel="noopener"} so answers remain visible to every team. Use the [team registration form](https://forms.gle/7rUg7ENctuBU9kTN8){:target="_blank" rel="noopener"} for registration details.

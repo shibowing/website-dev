@@ -13,8 +13,12 @@ permalink: /imuchallenge/announcements/
 
 <div class="imu-updates">
   <div class="imu-update">
+    <div class="imu-update-date">Aug 1, 2026</div>
+    <div class="imu-update-body">Final Kaggle submissions, the technical report, and model weights are due <strong>September 20, 2026, at 23:55 UTC</strong>. See the <a href="/imuchallenge/setup/#schedule-rules-and-leaderboard">rules timeline</a>.</div>
+  </div>
+  <div class="imu-update">
     <div class="imu-update-date">Jul 9, 2026</div>
-    <div class="imu-update-body">The competition is live on Kaggle: <a href="https://www.kaggle.com/competitions/tartanimu-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</div>
+    <div class="imu-update-body">The competition is live on Kaggle: <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</div>
   </div>
   <div class="imu-update">
     <div class="imu-update-date">May 30, 2026</div>

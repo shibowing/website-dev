@@ -1,6 +1,6 @@
 ---
 title: "IROS'26 Workshop: Beyond Exteroception"
-subtitle: "Interoceptive Perception for Resilient Robotics — Tentative: Sep 27, 2026"
+subtitle: "Interoceptive Perception for Resilient Robotics — September 27, 2026"
 layout: page
 show_sidebar: false
 hide_footer: true
@@ -707,7 +707,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       <span>Interoceptive Perception for Resilient Robotics</span>
     </h1>
     <div class="workshop-meta" aria-label="Workshop details">
-      <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> September 27, 2026 (tentative)</span>
+      <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> September 27, 2026</span>
       <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Pittsburgh, PA</span>
       <span><i class="fas fa-users" aria-hidden="true"></i> Full-day workshop</span>
     </div>
@@ -720,7 +720,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
         <span class="icon" aria-hidden="true"><i class="fas fa-user-plus"></i></span>
         <span>Register Team</span>
       </a>
-      <a class="challenge-cta is-secondary" href="https://www.kaggle.com/competitions/tartanimu-iros2026/submissions" target="_blank" rel="noopener">
+      <a class="challenge-cta is-secondary" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/submissions" target="_blank" rel="noopener">
         <span class="icon" aria-hidden="true"><i class="fas fa-upload"></i></span>
         <span>Submit on Kaggle</span>
       </a>
@@ -765,31 +765,23 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       <div class="column is-four-fifths">
         <div class="dates-list">
           <div class="date-row">
-            <time datetime="2026-03">March 2026</time>
-            <p>Challenge website launch and team pre-registration opens.</p>
-          </div>
-          <div class="date-row">
-            <time datetime="2026-04">April 2026</time>
+            <time datetime="2026-08-01">August 1, 2026</time>
             <p>Training data, baseline code, and evaluation toolkit released.</p>
           </div>
           <div class="date-row">
-            <time datetime="2026-05">May–August 2026</time>
-            <p>Open development phase with public leaderboard updates.</p>
+            <time datetime="2026-09-20T23:55:00Z">September 20, 2026, 23:55 UTC</time>
+            <p>Final challenge submission, technical report, and model weights deadline.</p>
           </div>
           <div class="date-row">
-            <time datetime="2026-08-15">August 15, 2026</time>
-            <p>Final challenge submission deadline.</p>
-          </div>
-          <div class="date-row">
-            <time datetime="2026-09-01">September 1, 2026</time>
-            <p>Top teams notified and spotlight invitations issued.</p>
+            <time datetime="2026-09-24">September 24, 2026</time>
+            <p>Top teams notified and workshop spotlight invitations issued.</p>
           </div>
           <div class="date-row">
             <time datetime="2026-09-27">September 27, 2026</time>
-            <p>Workshop, challenge spotlight talks, and award announcements (tentative).</p>
+            <p>Workshop, challenge spotlight talks, and award announcements.</p>
           </div>
         </div>
-        <p class="timeline-note">The workshop date is tentative. Live competition rules and submission deadlines on Kaggle remain the source of truth.</p>
+        <p class="timeline-note">The final submission deadline is listed in UTC. Live competition rules on Kaggle remain the source of truth.</p>
       </div>
     </div>
   </div>
@@ -855,9 +847,9 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Maani_Ghaffari.jpg" alt="Maani Ghaffari"/>
             <p class="speaker-name"><a href="https://robotics.umich.edu/people/faculty/maani-ghaffari/">Maani Ghaffari</a></p>
-            <p class="speaker-role">Assistant Professor, Naval Architecture and Marine Engineering and Robotics</p>
+            <p class="speaker-role">Associate Professor, Naval Architecture and Marine Engineering and Robotics</p>
             <p class="speaker-affiliation">University of Michigan</p>
-            <p class="speaker-topic">Talk title to be announced</p>
+            <p class="speaker-topic">Equivariant Proprioceptive Estimation and Learning for Robotics</p>
           </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Chen_Feng.jpg" alt="Chen Feng"/>
@@ -951,7 +943,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <tr>
             <td>11:00 - 11:30 AM</td>
             <td><strong>Maani Ghaffari</strong><br><span style="color:#999; font-size:0.85rem;">University of Michigan</span></td>
-            <td>Title to be announced</td>
+            <td>Equivariant Proprioceptive Estimation and Learning for Robotics</td>
           </tr>
           <tr>
             <td>11:30 - 12:00 PM</td>

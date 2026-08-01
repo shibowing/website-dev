@@ -14,11 +14,11 @@ permalink: /imuchallenge/setup/
 <div class="imu-steps" markdown="1">
 
 <div class="imu-step" markdown="1">
-**Register your team.** [Fill out the registration form.](https://forms.gle/7rUg7ENctuBU9kTN8){:target="_blank" rel="noopener"} Then join the competition on Kaggle: [TartanIMU Challenge: Multi-Platform Inertial Odometry](https://www.kaggle.com/competitions/tartanimu-iros2026){:target="_blank" rel="noopener"}.
+**Register your team.** [Fill out the registration form.](https://forms.gle/7rUg7ENctuBU9kTN8){:target="_blank" rel="noopener"} Then join the competition on Kaggle: [TartanIMU Challenge: Multi-Platform Inertial Odometry](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026){:target="_blank" rel="noopener"}.
 </div>
 
 <div class="imu-step" markdown="1">
-**Download the train/val splits.** Get the data from the [IROS Tartan IMU Challenge dataset](https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge){:target="_blank" rel="noopener"} on Hugging Face, or from the [Kaggle competition Data tab](https://www.kaggle.com/competitions/tartanimu-iros2026/data){:target="_blank" rel="noopener"} (which also has `index/test_windows.csv` and `sample_submission.csv`).
+**Download the train/val splits.** Get the data from the [IROS Tartan IMU Challenge dataset](https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge){:target="_blank" rel="noopener"} on Hugging Face, or from the [Kaggle competition Data tab](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/data){:target="_blank" rel="noopener"} (which also has `index/test_windows.csv` and `sample_submission.csv`).
 </div>
 
 <div class="imu-step" markdown="1">
@@ -222,7 +222,7 @@ finetune:
 </div>
 
 <div class="imu-step" markdown="1">
-**Improve and [submit](https://www.kaggle.com/competitions/tartanimu-iros2026/submissions){:target="_blank" rel="noopener"}.** Experiment with your own methods to push performance on the leaderboard.
+**Improve and [submit](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/submissions){:target="_blank" rel="noopener"}.** Experiment with your own methods to push performance on the leaderboard.
 </div>
 
 </div>
@@ -231,10 +231,16 @@ finetune:
 
 Competition dates, team and submission limits, and any external-data policy can change during the event. Use the live Kaggle pages as the source of truth:
 
+<div class="imu-note" markdown="1">
+### Timeline
+
+- **Final Kaggle submission, technical report, and model weights:** September 20, 2026, 23:55 UTC
+</div>
+
 <ul class="imu-link-list">
-  <li><a href="https://www.kaggle.com/competitions/tartanimu-iros2026/overview" target="_blank" rel="noopener">Competition overview and schedule</a></li>
-  <li><a href="https://www.kaggle.com/competitions/tartanimu-iros2026/rules" target="_blank" rel="noopener">Official competition rules</a></li>
-  <li><a href="https://www.kaggle.com/competitions/tartanimu-iros2026/leaderboard" target="_blank" rel="noopener">Public leaderboard</a></li>
+  <li><a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/overview" target="_blank" rel="noopener">Competition overview and schedule</a></li>
+  <li><a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/rules" target="_blank" rel="noopener">Official competition rules</a></li>
+  <li><a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard" target="_blank" rel="noopener">Public leaderboard</a></li>
 </ul>
 
 <div class="imu-note" markdown="1">
@@ -246,7 +252,7 @@ window_id,vx,vy,vz
 2,0.49,-0.00,-0.01
 ```
 
-`window_id` values come from `index/test_windows.csv`; see `sample_submission.csv` on the [Kaggle Data tab](https://www.kaggle.com/competitions/tartanimu-iros2026/data){:target="_blank" rel="noopener"} for the exact rows to fill in.
+`window_id` values come from `index/test_windows.csv`; see `sample_submission.csv` on the [Kaggle Data tab](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/data){:target="_blank" rel="noopener"} for the exact rows to fill in.
 </div>
 
 ## Reference Models
