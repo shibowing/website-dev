@@ -356,7 +356,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     font-size: 0.88rem;
   }
 
-  .topic-list {
+  .content .topic-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
@@ -392,6 +392,10 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     margin-top: 1.25rem;
+  }
+
+  .speaker-grid--invited {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .speaker-card {
@@ -530,6 +534,10 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     .speaker-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .speaker-grid--invited {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   @media (max-width: 720px) {
@@ -657,6 +665,10 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     .speaker-grid {
       grid-template-columns: 1fr;
       gap: 0.75rem;
+    }
+
+    .speaker-grid--invited {
+      grid-template-columns: 1fr;
     }
 
     .speaker-card {
@@ -828,8 +840,8 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     <h2 class="title is-2" style="text-align: left; margin-bottom: 0.75rem;">Invited Speakers</h2>
     <p class="section-intro">The current invited lineup spans locomotion, state estimation, learning, and resilient perception. Additional program updates will be posted as they are finalized.</p>
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <div class="speaker-grid">
+      <div class="column is-full">
+        <div class="speaker-grid speaker-grid--invited">
           <div class="speaker-card">
             <img src="/img/invited_speakers/marco_hutter.jpeg" alt="Marco Hutter"/>
             <p class="speaker-name"><a href="https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html">Marco Hutter</a></p>
@@ -877,6 +889,13 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-name"><a href="https://haozhi.io/">Haozhi Qi</a></p>
             <p class="speaker-role">Member of Technical Staff; Incoming Assistant Professor, Computer Science</p>
             <p class="speaker-affiliation">Amazon FAR / University of Chicago</p>
+            <p class="speaker-topic">Talk title to be announced</p>
+          </div>
+          <div class="speaker-card">
+            <img src="/img/IROS_2026_tab/Daniel_Gehrig.jpg" alt="Daniel Gehrig"/>
+            <p class="speaker-name"><a href="https://danielgehrig18.github.io/">Daniel Gehrig</a></p>
+            <p class="speaker-role">Postdoctoral Researcher</p>
+            <p class="speaker-affiliation">GRASP Lab, University of Pennsylvania</p>
             <p class="speaker-topic">Talk title to be announced</p>
           </div>
           <div class="speaker-card">
@@ -966,12 +985,12 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           </tr>
           <tr>
             <td>2:30 - 3:00 PM</td>
-            <td><strong>Poster Session</strong></td>
-            <td>Contributed abstracts and demos</td>
+            <td><strong>Daniel Gehrig</strong><br><span style="color:#999; font-size:0.85rem;">GRASP Lab, University of Pennsylvania</span></td>
+            <td>Title to be announced</td>
           </tr>
           <tr class="break-row">
             <td>3:00 - 3:30 PM</td>
-            <td colspan="2"><strong>Coffee Break</strong> — Networking and posters</td>
+            <td colspan="2"><strong>Coffee Break</strong> — Contributed posters, demos, and networking</td>
           </tr>
           <tr>
             <td>3:30 - 4:00 PM</td>
