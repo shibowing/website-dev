@@ -10,6 +10,107 @@ permalink: /imuchallenge/
 
 <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
+<style>
+  .imu-workshop-wechat-dialog {
+    width: min(430px, calc(100% - 2rem));
+    max-height: calc(100vh - 2rem);
+    margin: auto;
+    padding: 1.5rem;
+    overflow-y: auto;
+    border: 1px solid #e3e5e8;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 24px 70px rgba(15, 18, 23, 0.28);
+    color: #25282d;
+    text-align: center;
+  }
+  .imu-workshop-wechat-dialog::backdrop { background: rgba(15, 18, 23, 0.72); }
+  .imu-workshop-wechat-close {
+    position: absolute;
+    top: 0.65rem;
+    right: 0.65rem;
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 0;
+    background: transparent;
+    color: #666b72;
+    cursor: pointer;
+  }
+  .imu-workshop-wechat-close:hover,
+  .imu-workshop-wechat-close:focus-visible { color: #8f3d00; }
+  body.imuchallenge-home .content .imu-workshop-wechat-dialog h2 {
+    margin: 0 2rem 0.45rem;
+    color: #25282d;
+    font-size: 1.35rem;
+    letter-spacing: 0;
+  }
+  body.imuchallenge-home .content .imu-workshop-wechat-dialog > p {
+    margin: 0 auto 1rem;
+    color: #656a72;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  #imu-wechat-qr[hidden], #imu-wechat-expired[hidden] { display: none; }
+  body.imuchallenge-home .content #imu-wechat-qr img {
+    display: block;
+    width: min(100%, 360px);
+    height: auto;
+    margin: 0 auto;
+  }
+  .imu-workshop-wechat-validity {
+    display: flex;
+    gap: 0.55rem;
+    margin: 0.85rem auto;
+    padding: 0.7rem 0.8rem;
+    border-left: 3px solid #c45a0e;
+    background: #fff7f1;
+    color: #6b3a18;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    text-align: left;
+  }
+  .imu-workshop-wechat-validity i { margin-top: 0.15rem; color: #c45a0e; }
+  body.imuchallenge-home .content a.imu-workshop-wechat-full {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid #c45a0e;
+    border-radius: 6px;
+    color: #8f3d00;
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  body.imuchallenge-home .content a.imu-workshop-wechat-full:hover,
+  body.imuchallenge-home .content a.imu-workshop-wechat-full:focus-visible {
+    background: #c45a0e;
+    color: #ffffff;
+  }
+  .imu-workshop-wechat-expired {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e3e5e8;
+    border-radius: 6px;
+    background: #f6f7f8;
+    text-align: left;
+  }
+  .imu-workshop-wechat-expired i { color: #c45a0e; }
+  body.imuchallenge-home .content .imu-workshop-wechat-expired p {
+    margin: 0.45rem 0 0;
+    color: #555a62;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+  @media (max-width: 480px) {
+    .imu-workshop-wechat-dialog { padding: 1.25rem 1rem; }
+    body.imuchallenge-home .content .imu-workshop-wechat-dialog h2 { font-size: 1.15rem; }
+  }
+</style>
+
 <header class="imu-workshop-hero" aria-labelledby="imu-challenge-title">
   <video class="imu-workshop-hero-video" autoplay loop muted playsinline preload="metadata" poster="/img/imuchallenge/hero_poster.jpg" aria-hidden="true">
     <source src="/img/imuchallenge/hero_preview.mp4" type="video/mp4">
@@ -211,9 +312,34 @@ permalink: /imuchallenge/
     <div class="imu-workshop-inline-links">
       <a class="imu-workshop-text-link" href="/imuchallenge/about/">Meet the organizers <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
       <a class="imu-workshop-text-link" href="/interoception/">Visit the IROS 2026 workshop <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      <a class="imu-workshop-text-link" id="imu-wechat-open" href="/img/imuchallenge/wechat_2026_imu_challenge.png" aria-haspopup="dialog" aria-controls="imu-wechat-dialog">
+        <i class="fab fa-weixin" aria-hidden="true"></i> Join WeChat <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
     </div>
   </div>
 </section>
+
+<dialog class="imu-workshop-wechat-dialog" id="imu-wechat-dialog" aria-labelledby="imu-wechat-title" aria-describedby="imu-wechat-description">
+  <button class="imu-workshop-wechat-close" type="button" id="imu-wechat-close" aria-label="Close WeChat dialog" title="Close">
+    <i class="fas fa-times" aria-hidden="true"></i>
+  </button>
+  <h2 id="imu-wechat-title">2026 IMU Challenge on WeChat</h2>
+  <p id="imu-wechat-description">Community discussions and organizer updates for challenge participants.</p>
+  <div id="imu-wechat-qr">
+    <img src="/img/imuchallenge/wechat_2026_imu_challenge.png" alt="WeChat QR code for the 2026 IMU Challenge group" width="1285" height="1448">
+    <div class="imu-workshop-wechat-validity">
+      <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+      <span>This invite QR is valid until August 12, 2026.</span>
+    </div>
+    <a class="imu-workshop-wechat-full" href="/img/imuchallenge/wechat_2026_imu_challenge.png" target="_blank" rel="noopener">
+      <i class="fas fa-expand" aria-hidden="true"></i><span>Open full-size QR</span>
+    </a>
+  </div>
+  <div class="imu-workshop-wechat-expired" id="imu-wechat-expired" hidden>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>This WeChat invite expired on August 12, 2026. Please request an updated code from the organizers through <a href="https://discord.com/invite/Huf2GJx32y" target="_blank" rel="noopener">Discord</a>.</p>
+  </div>
+</dialog>
 
 <section class="imu-workshop-section" id="updates">
   <div class="imu-workshop-section-inner">
@@ -258,16 +384,17 @@ permalink: /imuchallenge/
     <div class="imu-workshop-citation-grid">
       <article class="imu-workshop-citation-block">
         <h3>TartanIMU (CVPR 2025)</h3>
-        <pre><code>@inproceedings{zhao2025tartanimu,
-  title={Tartan IMU: A Light Foundation Model for Inertial
-         Positioning in Robotics},
-  author={Zhao, Shibo and Yagnyatinskiy, Maxim and others},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer
-             Vision and Pattern Recognition (CVPR)},
-  year={2025},
-  url={https://openaccess.thecvf.com/content/CVPR2025/papers/
-       Zhao_Tartan_IMU_A_Light_Foundation_Model_for_Inertial_
-       Positioning_in_CVPR_2025_paper.pdf}
+        <pre><code>@InProceedings{Zhao_2025_CVPR,
+  author    = {Zhao, Shibo and Zhou, Sifan and Blanchard,
+               Raphael and Qiu, Yuheng and Wang, Wenshan and
+               Scherer, Sebastian},
+  title     = {Tartan IMU: A Light Foundation Model for
+               Inertial Positioning in Robotics},
+  booktitle = {Proceedings of the IEEE/CVF Conference on
+               Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2025},
+  pages     = {22520-22529}
 }</code></pre>
       </article>
       <article class="imu-workshop-citation-block">
@@ -317,6 +444,28 @@ permalink: /imuchallenge/
       }
     }, { passive: true });
     updateActiveSection();
+
+    const wechatTrigger = document.getElementById("imu-wechat-open");
+    const wechatDialog = document.getElementById("imu-wechat-dialog");
+    const wechatClose = document.getElementById("imu-wechat-close");
+    const wechatQr = document.getElementById("imu-wechat-qr");
+    const wechatExpired = document.getElementById("imu-wechat-expired");
+
+    if (wechatTrigger && wechatDialog && wechatClose && wechatQr && wechatExpired && typeof wechatDialog.showModal === "function") {
+      wechatTrigger.addEventListener("click", function(event) {
+        event.preventDefault();
+        const inviteExpired = Date.now() >= Date.parse("2026-08-13T00:00:00+08:00");
+        wechatQr.hidden = inviteExpired;
+        wechatExpired.hidden = !inviteExpired;
+        wechatDialog.showModal();
+      });
+      wechatClose.addEventListener("click", function() { wechatDialog.close(); });
+      wechatDialog.addEventListener("click", function(event) {
+        const bounds = wechatDialog.getBoundingClientRect();
+        const inside = event.clientX >= bounds.left && event.clientX <= bounds.right && event.clientY >= bounds.top && event.clientY <= bounds.bottom;
+        if (!inside) wechatDialog.close();
+      });
+    }
 
     const video = document.querySelector('.imu-workshop-hero-video');
     if (!video) return;

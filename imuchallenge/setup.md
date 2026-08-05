@@ -18,7 +18,7 @@ permalink: /imuchallenge/setup/
 </div>
 
 <div class="imu-step" markdown="1">
-**Download the train/val splits.** Get the data from the [IROS Tartan IMU Challenge dataset](https://huggingface.co/datasets/Tartan-IMU/IROS-Tartan-IMU-Challenge){:target="_blank" rel="noopener"} on Hugging Face, or from the [Kaggle competition Data tab](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/data){:target="_blank" rel="noopener"} (which also has `index/test_windows.csv` and `sample_submission.csv`).
+**Download the train/val splits.** Review the format and split details on the [challenge Data page](/imuchallenge/data/), then download the competition files from the [Kaggle Data tab](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/data){:target="_blank" rel="noopener"}. Kaggle also provides `index/test_windows.csv` and `sample_submission.csv`.
 </div>
 
 <div class="imu-step" markdown="1">

@@ -16,6 +16,10 @@ hero_buttons:
     link: https://discord.com/invite/Huf2GJx32y
     icon: fab fa-discord
     color: "#5865F2"
+  - text: Join WeChat
+    link: /img/social/wechat_communities_2026.png
+    icon: fab fa-weixin
+    color: "#07C160"
   - text: Follow on X
     link: https://x.com/ShiboZhaoSLAM
     icon: fab fa-twitter
@@ -29,6 +33,178 @@ hero_buttons:
 <!-- Additional fonts and styles (loaded after theme's default styles) -->
 <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<style>
+  .home-wechat-dialog {
+    width: min(720px, calc(100% - 2rem));
+    max-height: calc(100vh - 2rem);
+    margin: auto;
+    padding: 1.5rem;
+    overflow-y: auto;
+    border: 1px solid #e3e5e8;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 24px 70px rgba(15, 18, 23, 0.28);
+    color: #25282d;
+    text-align: center;
+  }
+  .home-wechat-dialog::backdrop {
+    background: rgba(15, 18, 23, 0.72);
+  }
+  .home-wechat-close {
+    position: absolute;
+    top: 0.65rem;
+    right: 0.65rem;
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 0;
+    background: transparent;
+    color: #666b72;
+    cursor: pointer;
+  }
+  .home-wechat-close:hover,
+  .home-wechat-close:focus-visible {
+    color: #8f3d00;
+  }
+  .home-wechat-dialog h2 {
+    margin: 0 2rem 0.35rem;
+    color: #25282d;
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+  .home-wechat-dialog > p {
+    margin: 0 auto 1rem;
+    color: #656a72;
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  #home-wechat-qr[hidden],
+  #home-wechat-expired[hidden] {
+    display: none;
+  }
+  #home-wechat-qr img {
+    display: block;
+    width: min(100%, 660px);
+    height: auto;
+    margin: 0 auto;
+  }
+  .home-wechat-validity {
+    display: flex;
+    gap: 0.55rem;
+    margin: 0.85rem auto;
+    padding: 0.7rem 0.8rem;
+    border-left: 3px solid #c45a0e;
+    background: #fff7f1;
+    color: #6b3a18;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    text-align: left;
+  }
+  .home-wechat-validity i {
+    margin-top: 0.15rem;
+    color: #c45a0e;
+  }
+  .home-wechat-full {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid #c45a0e;
+    border-radius: 6px;
+    color: #8f3d00;
+    font-size: 0.84rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .home-wechat-full:hover,
+  .home-wechat-full:focus-visible {
+    background: #c45a0e;
+    color: #ffffff;
+  }
+  .home-wechat-expired {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e3e5e8;
+    border-radius: 6px;
+    background: #f6f7f8;
+    text-align: left;
+  }
+  .home-wechat-expired i {
+    color: #c45a0e;
+  }
+  .home-wechat-expired p {
+    margin: 0.45rem 0 0;
+    color: #555a62;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+  @media (max-width: 480px) {
+    .home-wechat-dialog {
+      padding: 1.25rem 1rem;
+    }
+    .home-wechat-dialog h2 {
+      font-size: 1.15rem;
+    }
+  }
+</style>
+
+<dialog class="home-wechat-dialog" id="home-wechat-dialog" aria-labelledby="home-wechat-title" aria-describedby="home-wechat-description">
+  <button class="home-wechat-close" type="button" id="home-wechat-close" aria-label="Close WeChat dialog" title="Close">
+    <i class="fas fa-times" aria-hidden="true"></i>
+  </button>
+  <h2 id="home-wechat-title">Join Our WeChat Communities</h2>
+  <p id="home-wechat-description">Scan to join the 2026 IMU Challenge or Proprioception community.</p>
+  <div id="home-wechat-qr">
+    <img src="/img/social/wechat_communities_2026.png" alt="WeChat QR codes for the 2026 IMU Challenge and Proprioception communities" width="1320" height="1399">
+    <div class="home-wechat-validity">
+      <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+      <span>These invitation QR codes are valid until August 12, 2026.</span>
+    </div>
+    <a class="home-wechat-full" href="/img/social/wechat_communities_2026.png" target="_blank" rel="noopener">
+      <i class="fas fa-expand" aria-hidden="true"></i><span>Open full-size QR codes</span>
+    </a>
+  </div>
+  <div class="home-wechat-expired" id="home-wechat-expired" hidden>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>These WeChat invitations expired on August 12, 2026. Please request updated codes through <a href="https://discord.com/invite/Huf2GJx32y" target="_blank" rel="noopener">Discord</a>.</p>
+  </div>
+</dialog>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const trigger = document.querySelector('a.hero-social-btn[href="/img/social/wechat_communities_2026.png"]');
+    const dialog = document.getElementById("home-wechat-dialog");
+    const closeButton = document.getElementById("home-wechat-close");
+    const qrCodes = document.getElementById("home-wechat-qr");
+    const expiredMessage = document.getElementById("home-wechat-expired");
+
+    if (!trigger || !dialog || !closeButton || !qrCodes || !expiredMessage || typeof dialog.showModal !== "function") return;
+
+    trigger.removeAttribute("target");
+    trigger.removeAttribute("rel");
+    trigger.setAttribute("aria-haspopup", "dialog");
+    trigger.setAttribute("aria-controls", "home-wechat-dialog");
+    trigger.addEventListener("click", function(event) {
+      event.preventDefault();
+      const inviteExpired = Date.now() >= Date.parse("2026-08-13T00:00:00+08:00");
+      qrCodes.hidden = inviteExpired;
+      expiredMessage.hidden = !inviteExpired;
+      dialog.showModal();
+    });
+    closeButton.addEventListener("click", function() {
+      dialog.close();
+    });
+    dialog.addEventListener("click", function(event) {
+      const bounds = dialog.getBoundingClientRect();
+      const inside = event.clientX >= bounds.left && event.clientX <= bounds.right &&
+        event.clientY >= bounds.top && event.clientY <= bounds.bottom;
+      if (!inside) dialog.close();
+    });
+  });
+</script>
 
 <!-- CSS for VIRAL-style layout -->
 <style>
