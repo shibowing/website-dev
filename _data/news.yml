@@ -2,6 +2,16 @@
 # Add new items at the top.
 # Fields: date, tag (optional), text (full content, can be multi-sentence),
 #         image (optional, shown below text), link (optional), link_text (optional).
+- date: "Aug 2026"
+  tag: "IROS 2026"
+  text: >-
+    Robots can see the world. But can they sense themselves? We are launching
+    the Learning IMU Odometry Challenge and releasing TartanIMU to advance
+    internal perception and proprioception foundation models across UGVs,
+    drones, quadrupeds, and handheld systems.
+  image: /img/news/internal_perception_iros_2026.jpg
+  link: https://x.com/ShiboZhaoSLAM/status/2084679462009151666
+  link_text: "View the announcement on X"
 - date: "Jul 2026"
   tag: "RSS 2026"
   text: >-
