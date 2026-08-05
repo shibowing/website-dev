@@ -901,14 +901,14 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/yuheng2024.jpg" alt="Yuheng Qiu"/>
             <p class="speaker-name"><a href="http://yuhengqiu.com/">Yuheng Qiu</a></p>
-            <p class="speaker-role">Ph.D. Student, Mechanical Engineering</p>
-            <p class="speaker-affiliation">Carnegie Mellon University</p>
+            <p class="speaker-role">Postdoctoral Scientist</p>
+            <p class="speaker-affiliation">Amazon FAR (Frontier AI &amp; Robotics)</p>
             <p class="speaker-topic">Talk title to be announced</p>
           </div>
           <div class="speaker-card">
             <img src="/img/team/shibozNew.png" alt="Shibo Zhao"/>
             <p class="speaker-name"><a href="https://shibowing.github.io/">Shibo Zhao</a></p>
-            <p class="speaker-role">Ph.D. Candidate, Robotics Institute</p>
+            <p class="speaker-role">Ph.D.</p>
             <p class="speaker-affiliation">Carnegie Mellon University</p>
             <p class="speaker-topic">Opening Address &amp; Challenge Introduction</p>
           </div>
@@ -980,7 +980,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           </tr>
           <tr>
             <td>2:00 - 2:30 PM</td>
-            <td><strong>Yuheng Qiu</strong><br><span style="color:#999; font-size:0.85rem;">Carnegie Mellon University</span></td>
+            <td><strong>Yuheng Qiu</strong><br><span style="color:#999; font-size:0.85rem;">Amazon FAR (Frontier AI &amp; Robotics)</span></td>
             <td>Title to be announced</td>
           </tr>
           <tr>
@@ -1045,7 +1045,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <div class="speaker-card">
             <img src="/img/team/shibozNew.png" alt="Shibo Zhao"/>
             <p class="speaker-name"><a href="https://shibowing.github.io/">Shibo Zhao</a></p>
-            <p class="speaker-role">Ph.D. Candidate, Robotics Institute</p>
+            <p class="speaker-role">Ph.D.</p>
             <p class="speaker-affiliation">Carnegie Mellon University</p>
           </div>
         </div>
@@ -1079,8 +1079,8 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/yuheng2024.jpg" alt="Yuheng Qiu"/>
             <p class="speaker-name"><a href="http://yuhengqiu.com/">Yuheng Qiu</a></p>
-            <p class="speaker-role">Ph.D. Student, Mechanical Engineering</p>
-            <p class="speaker-affiliation">Carnegie Mellon University</p>
+            <p class="speaker-role">Postdoctoral Scientist</p>
+            <p class="speaker-affiliation">Amazon FAR (Frontier AI &amp; Robotics)</p>
           </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Sifan Zhou.jpg" alt="Sifan Zhou"/>
