@@ -1094,6 +1094,12 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-role">Ph.D. Student</p>
             <p class="speaker-affiliation">Carnegie Mellon University</p>
           </div>
+          <div class="speaker-card">
+            <img src="/img/IROS_2026_tab/haomin_wen.jpeg" alt="Haomin Wen"/>
+            <p class="speaker-name"><a href="https://wenhaomin.github.io/">Haomin Wen</a></p>
+            <p class="speaker-role">Assistant Professor (Research)</p>
+            <p class="speaker-affiliation">Shanghai Innovation Institute (SII)</p>
+          </div>
         </div>
       </div>
     </div>
