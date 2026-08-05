@@ -1088,6 +1088,12 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-role">Ph.D. Student</p>
             <p class="speaker-affiliation">Carnegie Mellon University</p>
           </div>
+          <div class="speaker-card">
+            <img src="/img/team/junbin.jpg" alt="Junbin Yuan"/>
+            <p class="speaker-name"><a href="https://theairlab.org/team/junbiny/">Junbin Yuan</a></p>
+            <p class="speaker-role">Ph.D. Student</p>
+            <p class="speaker-affiliation">Carnegie Mellon University</p>
+          </div>
         </div>
       </div>
     </div>
