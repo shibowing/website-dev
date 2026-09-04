@@ -237,6 +237,16 @@ Competition dates, team and submission limits, and any external-data policy can 
 - **Final Kaggle submission and model weights:** September 20, 2026, 23:55 UTC
 - **Technical report:** September 23, 2026, 23:59 US Eastern Time (EDT, UTC&minus;4) &mdash; three days after the leaderboard closes
 
+### Final ranking eligibility
+
+The Kaggle leaderboard is **provisional**. Official final standings are decided only after the organizers re-execute the top teams' submitted models. To be eligible for the final ranking you must, in addition to submitting predictions:
+
+1. Complete the [Submission Form](https://forms.gle/7rUg7ENctuBU9kTN8){:target="_blank" rel="noopener"} for each submission you want considered, attaching the prediction CSV you uploaded.
+2. Submit a technical report (PDF) &mdash; see [Technical report](#technical-report) below. All numbers in Tables III&ndash;V must come from the [official scoring service](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring){:target="_blank" rel="noopener"}, not a local re-implementation.
+3. Publish your single unified model's weights and inference code as a public Hugging Face model repository, within the same 7 days.
+
+Teams missing any of the three, or whose model cannot be re-executed, are removed from the final ranking regardless of leaderboard position.
+
 ### Technical report
 
 - **Template.** [Download the report template](https://drive.google.com/drive/folders/1EEnFNbogpRSbqGglppdNh0EQp0zxHzjZ){:target="_blank" rel="noopener"} &mdash; a zip containing `main.tex` and `ieeeconf.cls`, plus a PDF preview. On Overleaf: *New Project &rarr; Upload Project &rarr; select the zip*, then recompile. The folder always holds the current version.
