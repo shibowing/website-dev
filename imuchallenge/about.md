@@ -39,7 +39,7 @@ The benchmark is intended to surface concrete modeling, adaptation, and evaluati
 
 ## Organizing Team
 
-Challenge organization is coordinated by **CMU AirLab**, with benchmark, dataset, and baseline development led by **TartanIMU** and **Super Odometry** contributors. The effort brings together researchers from **Carnegie Mellon University** and **Amazon FAR**.
+Challenge organization is coordinated by **CMU AirLab**, with benchmark, dataset, and baseline development led by **TartanIMU** and **Super Odometry** contributors. The effort brings together researchers from **Carnegie Mellon University**, **Amazon FAR**, and **SII**.
 
 ## Contact
 
