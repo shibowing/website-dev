@@ -80,10 +80,6 @@ hero_buttons:
     font-size: 0.92rem;
     line-height: 1.5;
   }
-  #home-wechat-qr[hidden],
-  #home-wechat-expired[hidden] {
-    display: none;
-  }
   #home-wechat-qr img {
     display: block;
     width: min(100%, 660px);
@@ -156,20 +152,20 @@ hero_buttons:
     <i class="fas fa-times" aria-hidden="true"></i>
   </button>
   <h2 id="home-wechat-title">Join Our WeChat Communities</h2>
-  <p id="home-wechat-description">Scan to join the 2026 IMU Challenge or Proprioception community.</p>
+  <p id="home-wechat-description">Scan to join the Proprioception community.</p>
   <div id="home-wechat-qr">
-    <img src="/img/social/wechat_communities_2026.png" alt="WeChat QR codes for the 2026 IMU Challenge and Proprioception communities" width="1320" height="1399">
+    <img src="/img/social/wechat_communities_2026.png" alt="WeChat QR code for the Proprioception community" width="1080" height="1659">
     <div class="home-wechat-validity">
       <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-      <span>These invitation QR codes are valid until August 12, 2026.</span>
+      <span>This invitation QR code is valid until <strong>September 12, 2026</strong>.</span>
     </div>
     <a class="home-wechat-full" href="/img/social/wechat_communities_2026.png" target="_blank" rel="noopener">
-      <i class="fas fa-expand" aria-hidden="true"></i><span>Open full-size QR codes</span>
+      <i class="fas fa-expand" aria-hidden="true"></i><span>Open full-size QR code</span>
     </a>
   </div>
-  <div class="home-wechat-expired" id="home-wechat-expired" hidden>
+  <div class="home-wechat-expired">
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>These WeChat invitations expired on August 12, 2026. Please request updated codes through <a href="https://discord.com/invite/Huf2GJx32y" target="_blank" rel="noopener">Discord</a>.</p>
+    <p>If this code has expired, message us in <a href="https://discord.com/invite/Huf2GJx32y" target="_blank" rel="noopener">Discord</a> and we'll send you a current one.</p>
   </div>
 </dialog>
 
@@ -178,10 +174,8 @@ hero_buttons:
     const trigger = document.querySelector('a.hero-social-btn[href="/img/social/wechat_communities_2026.png"]');
     const dialog = document.getElementById("home-wechat-dialog");
     const closeButton = document.getElementById("home-wechat-close");
-    const qrCodes = document.getElementById("home-wechat-qr");
-    const expiredMessage = document.getElementById("home-wechat-expired");
 
-    if (!trigger || !dialog || !closeButton || !qrCodes || !expiredMessage || typeof dialog.showModal !== "function") return;
+    if (!trigger || !dialog || !closeButton || typeof dialog.showModal !== "function") return;
 
     trigger.removeAttribute("target");
     trigger.removeAttribute("rel");
@@ -189,9 +183,6 @@ hero_buttons:
     trigger.setAttribute("aria-controls", "home-wechat-dialog");
     trigger.addEventListener("click", function(event) {
       event.preventDefault();
-      const inviteExpired = Date.now() >= Date.parse("2026-08-13T00:00:00+08:00");
-      qrCodes.hidden = inviteExpired;
-      expiredMessage.hidden = !inviteExpired;
       dialog.showModal();
     });
     closeButton.addEventListener("click", function() {

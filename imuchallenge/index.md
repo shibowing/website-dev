@@ -182,9 +182,6 @@ permalink: /imuchallenge/
       <a class="imu-workshop-action is-secondary" href="https://github.com/superxslam/TartanIMU" target="_blank" rel="noopener">
         <i class="fab fa-github" aria-hidden="true"></i><span>TartanIMU Code</span>
       </a>
-      <a class="imu-workshop-action is-secondary" href="https://forms.gle/7rUg7ENctuBU9kTN8" target="_blank" rel="noopener">
-        <i class="fas fa-user-plus" aria-hidden="true"></i><span>Register Team</span>
-      </a>
       <a class="imu-workshop-action is-secondary" href="/imuchallenge/setup/">
         <i class="fas fa-rocket" aria-hidden="true"></i><span>Setup Guide</span>
       </a>
@@ -200,8 +197,8 @@ permalink: /imuchallenge/
     <h2 id="imu-alert-title"><i class="fas fa-triangle-exclamation" aria-hidden="true"></i>Important reminder: eligibility for the final ranking</h2>
     <p>This applies to every team, including those who have already submitted to Kaggle. The Kaggle leaderboard is provisional: official final standings are decided only after the organizers re-execute the top teams' submitted models. To be eligible for the final ranking you must, in addition to submitting predictions:</p>
     <ol>
-      <li>Complete the <a href="https://forms.gle/7rUg7ENctuBU9kTN8" target="_blank" rel="noopener">Submission Form</a> for each submission you want considered, attaching the prediction CSV you uploaded.</li>
-      <li>Submit a technical report (PDF). <a href="https://drive.google.com/drive/folders/1EEnFNbogpRSbqGglppdNh0EQp0zxHzjZ" target="_blank" rel="noopener">Download it here</a> &mdash; the zip contains <code>main.tex</code> and <code>ieeeconf.cls</code>. On Overleaf: <em>New Project &rarr; Upload Project</em> &rarr; select the zip. Maximum 6 pages excluding references, 7 in total; the appendix does not count. The report is due <strong>23:59 US Eastern Time, 23 September 2026</strong> &mdash; three days after the leaderboard closes &mdash; and is submitted by attaching it at the end of the <a href="https://forms.gle/7rUg7ENctuBU9kTN8" target="_blank" rel="noopener">challenge Form</a>. All numbers in Tables III&ndash;V must come from the <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring" target="_blank" rel="noopener">official scoring service</a>, not a local re-implementation.</li>
+      <li>Complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_3Pq2Bs4ytd0lfHHLsU_qoO5z0BP6Psnsqo7e5nOyBTlCjQ/viewform" target="_blank" rel="noopener">Submission Form</a> for each submission you want considered, attaching the prediction CSV you uploaded.</li>
+      <li>Submit a technical report (PDF). <a href="https://drive.google.com/drive/folders/1EEnFNbogpRSbqGglppdNh0EQp0zxHzjZ" target="_blank" rel="noopener">Download it here</a> &mdash; the zip contains <code>main.tex</code> and <code>ieeeconf.cls</code>. On Overleaf: <em>New Project &rarr; Upload Project</em> &rarr; select the zip. Maximum 6 pages excluding references, 7 in total; the appendix does not count. The report is due <strong>23:59 US Eastern Time, 23 September 2026</strong> &mdash; three days after the leaderboard closes &mdash; and is submitted by attaching it at the end of the <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_3Pq2Bs4ytd0lfHHLsU_qoO5z0BP6Psnsqo7e5nOyBTlCjQ/viewform" target="_blank" rel="noopener">challenge Form</a>. All numbers in Tables III&ndash;V must come from the <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring" target="_blank" rel="noopener">official scoring service</a>, not a local re-implementation.</li>
       <li>Publish your single unified model's weights and inference code as a public Hugging Face model repository, within the same 7 days.</li>
     </ol>
     <p>Teams missing any of the three, or whose model cannot be re-executed, are removed from the final ranking regardless of leaderboard position. Full details on the <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/rules" target="_blank" rel="noopener">Rules and Evaluation tabs</a>.</p>
@@ -358,18 +355,21 @@ permalink: /imuchallenge/
     <div class="imu-workshop-section-heading">
       <p class="imu-workshop-eyebrow">Organizers and partners</p>
       <h2>Built by teams working on robust robot perception.</h2>
-      <p>The challenge is organized by CMU AirLab and Amazon FAR in conjunction with the IROS 2026 workshop on interoceptive perception.</p>
+      <p>The challenge is organized by CMU AirLab and Amazon FAR in conjunction with the IROS 2026 workshop on interoceptive perception, with support from the Shanghai Innovation Institute.</p>
     </div>
 
     <div class="imu-workshop-partners">
       <a href="https://theairlab.org/" target="_blank" rel="noopener" aria-label="CMU AirLab">
         <img src="/img/logos/Horizontal@2x.png" alt="CMU AirLab" width="600" height="147" loading="lazy" decoding="async">
       </a>
-      <div class="imu-workshop-amazon" aria-label="Amazon FAR">
-        <span>amazon</span><i aria-hidden="true"></i><strong>FAR</strong>
-      </div>
+      <a href="https://github.com/amazon-far" target="_blank" rel="noopener" aria-label="Amazon FAR">
+        <img src="/img/logos/amazon-far.png" alt="Amazon FAR" loading="lazy" decoding="async">
+      </a>
       <a href="https://www.ri.cmu.edu/" target="_blank" rel="noopener" aria-label="Carnegie Mellon University Robotics Institute">
         <img src="/img/riLogo2019.svg" alt="Carnegie Mellon University Robotics Institute" loading="lazy" decoding="async">
+      </a>
+      <a href="https://www.sii.edu.cn/" target="_blank" rel="noopener" aria-label="Shanghai Innovation Institute">
+        <img src="/img/logos/sii-logo.png" alt="Shanghai Innovation Institute" loading="lazy" decoding="async">
       </a>
     </div>
 

@@ -14,7 +14,7 @@ permalink: /imuchallenge/setup/
 <div class="imu-steps" markdown="1">
 
 <div class="imu-step" markdown="1">
-**Register your team.** [Fill out the registration form.](https://forms.gle/7rUg7ENctuBU9kTN8){:target="_blank" rel="noopener"} Then join the competition on Kaggle: [TartanIMU Challenge: Multi-Platform Inertial Odometry](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026){:target="_blank" rel="noopener"}.
+**Register your team.** Join the competition on Kaggle and create your team there: [TartanIMU Challenge: Multi-Platform Inertial Odometry](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026){:target="_blank" rel="noopener"}. There's no separate signup — your Kaggle team *is* your registration.
 </div>
 
 <div class="imu-step" markdown="1">
@@ -225,6 +225,10 @@ finetune:
 **Improve and [submit](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/submissions){:target="_blank" rel="noopener"}.** Experiment with your own methods to push performance on the leaderboard.
 </div>
 
+<div class="imu-step" markdown="1">
+**Log your submission and report.** The Kaggle leaderboard alone doesn't make you eligible for the final ranking or workshop presentation. Complete the [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSc_3Pq2Bs4ytd0lfHHLsU_qoO5z0BP6Psnsqo7e5nOyBTlCjQ/viewform){:target="_blank" rel="noopener"} for each submission you want considered, and again to attach your technical report before the deadline. See [Final ranking eligibility](#schedule-rules-and-leaderboard) for the full requirements.
+</div>
+
 </div>
 
 ## Schedule, Rules, and Leaderboard
@@ -241,7 +245,7 @@ Competition dates, team and submission limits, and any external-data policy can 
 
 The Kaggle leaderboard is **provisional**. Official final standings are decided only after the organizers re-execute the top teams' submitted models. To be eligible for the final ranking you must, in addition to submitting predictions:
 
-1. Complete the [Submission Form](https://forms.gle/7rUg7ENctuBU9kTN8){:target="_blank" rel="noopener"} for each submission you want considered, attaching the prediction CSV you uploaded.
+1. Complete the [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSc_3Pq2Bs4ytd0lfHHLsU_qoO5z0BP6Psnsqo7e5nOyBTlCjQ/viewform){:target="_blank" rel="noopener"} for each submission you want considered, attaching the prediction CSV you uploaded.
 2. Submit a technical report (PDF) &mdash; see [Technical report](#technical-report) below. All numbers in Tables III&ndash;V must come from the [official scoring service](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring){:target="_blank" rel="noopener"}, not a local re-implementation.
 3. Publish your single unified model's weights and inference code as a public Hugging Face model repository, within the same 7 days.
 
