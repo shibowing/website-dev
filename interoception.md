@@ -117,6 +117,35 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     color: #ffd8bc;
   }
 
+  .content .workshop-hero a.challenge-stats {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: 1.1rem;
+    padding: 0.45rem 1rem;
+    border: 1px solid rgba(255, 216, 188, 0.55);
+    border-radius: 999px;
+    background: rgba(255, 216, 188, 0.14);
+    color: #ffe9d9;
+    font-size: 0.92rem;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .content .workshop-hero a.challenge-stats:hover {
+    background: rgba(255, 216, 188, 0.26);
+    border-color: #ffd8bc;
+    color: #fff;
+  }
+
+  .challenge-stats i {
+    color: #ffd8bc;
+  }
+
+  .challenge-stats strong {
+    color: #fff;
+  }
+
   .workshop-hero .cta-row {
     display: flex;
     flex-wrap: wrap;
@@ -723,6 +752,10 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Pittsburgh, PA</span>
       <span><i class="fas fa-users" aria-hidden="true"></i> Full-day workshop</span>
     </div>
+    <a class="challenge-stats" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard?tab=public" target="_blank" rel="noopener">
+      <i class="fas fa-fire" aria-hidden="true"></i>
+      <span><strong>131 teams</strong> &middot; <strong>2,800+ submissions</strong> in the Learning IMU Odometry Challenge</span>
+    </a>
     <div class="cta-row" aria-label="Workshop actions">
       <a class="challenge-cta" href="/imuchallenge/">
         <span class="icon" aria-hidden="true"><i class="fas fa-trophy"></i></span>
