@@ -395,7 +395,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
   }
 
   .speaker-grid--invited {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .speaker-card {
@@ -843,20 +843,6 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       <div class="column is-full">
         <div class="speaker-grid speaker-grid--invited">
           <div class="speaker-card">
-            <img src="/img/invited_speakers/marco_hutter.jpeg" alt="Marco Hutter"/>
-            <p class="speaker-name"><a href="https://rsl.ethz.ch/the-lab/people/person-detail.hutter.html">Marco Hutter</a></p>
-            <p class="speaker-role">Professor of Robotic Systems</p>
-            <p class="speaker-affiliation">ETH Zurich</p>
-            <p class="speaker-topic">Learning-based Locomotion and Control for Legged Robots</p>
-          </div>
-          <div class="speaker-card">
-            <img src="/img/slam_series/davides.jpg" alt="Davide Scaramuzza"/>
-            <p class="speaker-name"><a href="https://rpg.ifi.uzh.ch/people_scaramuzza.html">Davide Scaramuzza</a></p>
-            <p class="speaker-role">Professor of Robotics and Perception</p>
-            <p class="speaker-affiliation">University of Zurich</p>
-            <p class="speaker-topic">Talk title to be announced</p>
-          </div>
-          <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Maani_Ghaffari.jpg" alt="Maani Ghaffari"/>
             <p class="speaker-name"><a href="https://robotics.umich.edu/people/faculty/maani-ghaffari/">Maani Ghaffari</a></p>
             <p class="speaker-role">Associate Professor, Naval Architecture and Marine Engineering and Robotics</p>
@@ -868,13 +854,6 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-name"><a href="https://engineering.nyu.edu/faculty/chen-feng">Chen Feng</a></p>
             <p class="speaker-role">Institute Associate Professor</p>
             <p class="speaker-affiliation">NYU Tandon School of Engineering</p>
-            <p class="speaker-topic">Talk title to be announced</p>
-          </div>
-          <div class="speaker-card">
-            <img src="/img/IROS_2026_tab/Koushil_Sreenath.jpg" alt="Koushil Sreenath"/>
-            <p class="speaker-name"><a href="https://vcresearch.berkeley.edu/faculty/koushil-sreenath">Koushil Sreenath</a></p>
-            <p class="speaker-role">Professor, Mechanical Engineering</p>
-            <p class="speaker-affiliation">University of California, Berkeley</p>
             <p class="speaker-topic">Talk title to be announced</p>
           </div>
           <div class="speaker-card">
@@ -906,6 +885,13 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-topic">Talk title to be announced</p>
           </div>
           <div class="speaker-card">
+            <img src="/img/team/wenshan.jpg" alt="Wenshan Wang"/>
+            <p class="speaker-name"><a href="http://www.wangwenshan.com/">Wenshan Wang</a></p>
+            <p class="speaker-role">Systems Scientist</p>
+            <p class="speaker-affiliation">Carnegie Mellon University</p>
+            <p class="speaker-topic">Talk title to be announced</p>
+          </div>
+          <div class="speaker-card">
             <img src="/img/team/shibozNew.png" alt="Shibo Zhao"/>
             <p class="speaker-name"><a href="https://shibowing.github.io/">Shibo Zhao</a></p>
             <p class="speaker-role">Ph.D.</p>
@@ -931,18 +917,13 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <th style="width:60%;">Topic</th>
           </tr>
           <tr>
-            <td>8:30 - 8:40 AM</td>
-            <td><strong>Shibo Zhao</strong></td>
+            <td>8:40 - 9:10 AM</td>
+            <td><strong>Shibo Zhao</strong><br><span style="color:#999; font-size:0.85rem;">Carnegie Mellon University</span></td>
             <td>Opening Address & Challenge Introduction</td>
           </tr>
           <tr>
-            <td>8:40 - 9:10 AM</td>
-            <td><strong>Marco Hutter</strong><br><span style="color:#999; font-size:0.85rem;">ETH Zurich</span></td>
-            <td>Learning-based Locomotion and Control for Legged Robots</td>
-          </tr>
-          <tr>
             <td>9:10 - 9:40 AM</td>
-            <td><strong>Davide Scaramuzza</strong><br><span style="color:#999; font-size:0.85rem;">University of Zurich</span></td>
+            <td><strong>Chen Feng</strong><br><span style="color:#999; font-size:0.85rem;">NYU Tandon School of Engineering</span></td>
             <td>Title to be announced</td>
           </tr>
           <tr>
@@ -951,32 +932,18 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <td>Title to be announced</td>
           </tr>
           <tr>
-            <td>10:10 - 10:30 AM</td>
-            <td><strong>Challenge Spotlight</strong></td>
-            <td>Top 3 team spotlight talks (5 min presentation + 2 min Q&A each)</td>
-          </tr>
-          <tr class="break-row">
-            <td>10:30 - 11:00 AM</td>
-            <td colspan="2"><strong>Coffee Break</strong> — Poster session from challenge teams and contributed papers</td>
-          </tr>
-          <tr>
-            <td>11:00 - 11:30 AM</td>
-            <td><strong>Maani Ghaffari</strong><br><span style="color:#999; font-size:0.85rem;">University of Michigan</span></td>
+            <td>10:10 - 10:40 AM</td>
+            <td><strong>Maani Ghaffari</strong><br><span style="color:#999; font-size:0.85rem;">University of Michigan (remote)</span></td>
             <td>Equivariant Proprioceptive Estimation and Learning for Robotics</td>
           </tr>
           <tr>
-            <td>11:30 - 12:00 PM</td>
-            <td><strong>Chen Feng</strong><br><span style="color:#999; font-size:0.85rem;">NYU Tandon School of Engineering</span></td>
-            <td>Title to be announced</td>
+            <td>10:40 - 11:30 AM</td>
+            <td><strong>Challenge Team Presentations</strong></td>
+            <td>Five 10-minute talks from top challenge teams (teams to be announced)</td>
           </tr>
           <tr class="break-row">
-            <td>12:00 - 1:30 PM</td>
+            <td>11:30 - 2:00 PM</td>
             <td colspan="2"><strong>Lunch Break</strong> — Lunch and networking</td>
-          </tr>
-          <tr>
-            <td>1:30 - 2:00 PM</td>
-            <td><strong>Koushil Sreenath</strong><br><span style="color:#999; font-size:0.85rem;">University of California, Berkeley</span></td>
-            <td>Title to be announced</td>
           </tr>
           <tr>
             <td>2:00 - 2:30 PM</td>
@@ -1004,19 +971,11 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           </tr>
           <tr>
             <td>4:30 - 5:00 PM</td>
-            <td><strong>Panel Discussion</strong></td>
-            <td>Future of Internal Perception</td>
-          </tr>
-          <tr>
-            <td>5:00 - 5:15 PM</td>
-            <td><strong>Shibo Zhao</strong></td>
-            <td>Closing Remarks</td>
-          </tr>
-          <tr class="break-row">
-            <td>5:15 - 5:45 PM</td>
-            <td colspan="2"><strong>Open Networking</strong> — Networking among attendees</td>
+            <td><strong>Panel Discussion</strong><br><span style="color:#999; font-size:0.85rem;">Invited speakers</span></td>
+            <td><strong>Explicit or Implicit? The Future of IMU Learning in Robot Perception</strong><br><span style="color:#999; font-size:0.9rem;">Should robots model inertial sensing explicitly, through dedicated and interpretable estimation modules, or implicitly, inside end-to-end learned policies? Panelists debate what each path means for accuracy, generalization, and resilience when exteroceptive sensing degrades or fails.</span></td>
           </tr>
         </table>
+        <p style="margin-top: 1rem; color:#999; font-size:0.9rem;">All times are Pittsburgh local time (EDT, UTC−4). The schedule may be adjusted as remaining talks and team presentations are confirmed.</p>
       </div>
     </div>
   </div>
