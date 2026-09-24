@@ -424,7 +424,13 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
   }
 
   .speaker-grid--invited {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .speaker-grid--invited .speaker-card {
+    flex: 0 0 calc((100% - 4rem) / 5);
   }
 
   .speaker-card {
@@ -564,8 +570,8 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .speaker-grid--invited {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+    .speaker-grid--invited .speaker-card {
+      flex-basis: calc((100% - 1rem) / 2);
     }
   }
 
@@ -696,8 +702,8 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       gap: 0.75rem;
     }
 
-    .speaker-grid--invited {
-      grid-template-columns: 1fr;
+    .speaker-grid--invited .speaker-card {
+      flex-basis: 100%;
     }
 
     .speaker-card {
@@ -876,6 +882,13 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       <div class="column is-full">
         <div class="speaker-grid speaker-grid--invited">
           <div class="speaker-card">
+            <img src="/img/slam_series/davides.jpg" alt="Davide Scaramuzza"/>
+            <p class="speaker-name"><a href="https://rpg.ifi.uzh.ch/people_scaramuzza.html">Davide Scaramuzza</a></p>
+            <p class="speaker-role">Professor of Robotics and Perception</p>
+            <p class="speaker-affiliation">University of Zurich</p>
+            <p class="speaker-topic">Learning Agile Flight from Vision to Commands: From State Estimation to Stateless Navigation</p>
+          </div>
+          <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Maani_Ghaffari.jpg" alt="Maani Ghaffari"/>
             <p class="speaker-name"><a href="https://robotics.umich.edu/people/faculty/maani-ghaffari/">Maani Ghaffari</a></p>
             <p class="speaker-role">Associate Professor, Naval Architecture and Marine Engineering and Robotics</p>
@@ -887,7 +900,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-name"><a href="https://engineering.nyu.edu/faculty/chen-feng">Chen Feng</a></p>
             <p class="speaker-role">Institute Associate Professor</p>
             <p class="speaker-affiliation">NYU Tandon School of Engineering</p>
-            <p class="speaker-topic">Talk title to be announced</p>
+            <p class="speaker-topic">Egocentric Experience and Memory for Embodied Spatial Intelligence</p>
           </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Carmelo_Sferrazza.jpg" alt="Carmelo Sferrazza"/>
@@ -908,7 +921,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-name"><a href="https://danielgehrig18.github.io/">Daniel Gehrig</a></p>
             <p class="speaker-role">Postdoctoral Researcher</p>
             <p class="speaker-affiliation">GRASP Lab, University of Pennsylvania</p>
-            <p class="speaker-topic">Talk title to be announced</p>
+            <p class="speaker-topic">Estimating Motion from Canonical, Proprioceptive Representations</p>
           </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/yuheng2024.jpg" alt="Yuheng Qiu"/>
@@ -957,7 +970,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <tr>
             <td>9:10 - 9:40 AM</td>
             <td><strong>Chen Feng</strong><br><span style="color:#999; font-size:0.85rem;">NYU Tandon School of Engineering</span></td>
-            <td>Title to be announced</td>
+            <td><strong>Egocentric Experience and Memory for Embodied Spatial Intelligence</strong><br><span style="color:#999; font-size:0.9rem;">Embodied agents must learn not only to perceive the world, but also to organize their egocentric experience into persistent spatial knowledge that supports reasoning and action over time. In this talk, I will present our recent work on learning navigation from large-scale visual experience, building and updating spatial memories in changing environments, and using egocentric representations for downstream interaction. Together, these efforts explore how experience and memory can serve as foundations for robust embodied spatial intelligence.</span></td>
           </tr>
           <tr>
             <td>9:40 - 10:10 AM</td>
@@ -970,12 +983,17 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <td>Equivariant Proprioceptive Estimation and Learning for Robotics</td>
           </tr>
           <tr>
-            <td>10:40 - 11:30 AM</td>
+            <td>10:40 - 11:10 AM</td>
+            <td><strong>Davide Scaramuzza</strong><br><span style="color:#999; font-size:0.85rem;">University of Zurich</span></td>
+            <td>Learning Agile Flight from Vision to Commands: From State Estimation to Stateless Navigation</td>
+          </tr>
+          <tr>
+            <td>11:10 - 11:50 AM</td>
             <td><strong>Challenge Team Presentations</strong></td>
-            <td>Five 10-minute talks from top challenge teams (teams to be announced)</td>
+            <td>Reports from top challenge teams (teams to be announced)</td>
           </tr>
           <tr class="break-row">
-            <td>11:30 - 2:00 PM</td>
+            <td>11:50 - 2:00 PM</td>
             <td colspan="2"><strong>Lunch Break</strong> — Lunch and networking</td>
           </tr>
           <tr>
@@ -986,7 +1004,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <tr>
             <td>2:30 - 3:00 PM</td>
             <td><strong>Daniel Gehrig</strong><br><span style="color:#999; font-size:0.85rem;">GRASP Lab, University of Pennsylvania</span></td>
-            <td>Title to be announced</td>
+            <td><strong>Estimating Motion from Canonical, Proprioceptive Representations</strong><br><span style="color:#999; font-size:0.9rem;">This talk explores how to leverage the spatial and temporal symmetries of motion to derive canonical representations from inertial sensors. These representations are invariant to changes in orientation and motion speed, simplifying the learning of neural displacement priors and improving their generalization. Drawing on EqNIO and Lie Events, I will show how to design equivariant neural networks and event-driven sampling schemes that not only improve the accuracy and robustness of neural inertial odometry but also reduce the data volume of inertial measurements.</span></td>
           </tr>
           <tr class="break-row">
             <td>3:00 - 3:30 PM</td>
