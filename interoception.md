@@ -987,8 +987,13 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <td><strong>Davide Scaramuzza</strong><br><span style="color:#999; font-size:0.85rem;">University of Zurich</span></td>
             <td>Learning Agile Flight from Vision to Commands: From State Estimation to Stateless Navigation</td>
           </tr>
+          <tr>
+            <td>11:10 - 12:00 PM</td>
+            <td><strong>Social Time &amp; Panel Discussion</strong><br><span style="color:#999; font-size:0.85rem;">Invited speakers and attendees</span></td>
+            <td>Open-floor discussion and networking with invited speakers and challenge teams<br><span style="color:#999; font-size:0.9rem;">Panel questions to be announced</span></td>
+          </tr>
           <tr class="break-row">
-            <td>11:10 - 2:00 PM</td>
+            <td>12:00 - 2:00 PM</td>
             <td colspan="2"><strong>Lunch Break</strong> — Lunch and networking</td>
           </tr>
           <tr>
