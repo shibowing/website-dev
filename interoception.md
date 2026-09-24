@@ -990,7 +990,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <tr>
             <td>11:10 - 12:00 PM</td>
             <td><strong>Social Time &amp; Panel Discussion</strong><br><span style="color:#999; font-size:0.85rem;">Invited speakers and attendees</span></td>
-            <td>Open-floor discussion and networking with invited speakers and challenge teams<br><span style="color:#999; font-size:0.9rem;">Panel questions to be announced</span></td>
+            <td><strong>Before a Robot Can Model the World, Must It Model Itself?</strong><br><span style="color:#999; font-size:0.9rem;">World models and vision-language-action policies condition on a body state they cannot produce themselves. Panelists debate whether a robot's self-model, learned from inertial, proprioceptive, and tactile signals, is a prerequisite for modeling the world, or whether it emerges on its own from end-to-end training at scale.</span></td>
           </tr>
           <tr class="break-row">
             <td>12:00 - 2:00 PM</td>
