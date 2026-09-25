@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel Discussions — IROS 2026 Workshop on Interoceptive Robot Perception</title>
+<style>
+  :root {
+    --accent: #c45a0e;
+    --accent-dark: #8f3d00;
+    --ink: #17191d;
+    --muted: #62666d;
+    --line: #e2e4e8;
+    --surface: #f6f7f8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: #2a2c30;
+  }
+  .slide {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    padding: 6vh 8vw;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .slide.active { display: flex; }
+  .kicker {
+    color: var(--accent);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+  }
+  h1 { font-size: 3.2rem; line-height: 1.15; margin-bottom: 1.5rem; }
+  h2 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 1.5rem; }
+  .lede { font-size: 1.45rem; line-height: 1.65; color: var(--muted); max-width: 62rem; }
+  .vs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .vs-col {
+    border: 1px solid var(--line);
+    border-top: 5px solid var(--accent);
+    border-radius: 10px;
+    background: var(--surface);
+    padding: 1.8rem;
+  }
+  .vs-col.alt { border-top-color: var(--ink); }
+  .vs-col h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .vs-col li {
+    font-size: 1.25rem;
+    line-height: 1.55;
+    margin: 0 0 0.9rem 1.4rem;
+  }
+  .qlist { counter-reset: q; list-style: none; margin-top: 0.5rem; }
+  .qlist li {
+    counter-increment: q;
+    padding-left: 3.2rem;
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1.4rem;
+  }
+  .qlist li::before {
+    content: "Q" counter(q);
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
+  .bridge { font-size: 2rem; line-height: 1.6; max-width: 60rem; }
+  .bridge strong { color: var(--accent-dark); }
+  .meta { margin-top: 2.2rem; color: var(--muted); font-size: 1.15rem; line-height: 1.7; }
+  .footer {
+    position: fixed;
+    bottom: 2.2vh;
+    left: 8vw;
+    right: 8vw;
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .cover { text-align: center; align-items: center; }
+  .cover h1 { font-size: 3.6rem; }
+  .cover .rule {
+    width: 5rem; height: 5px;
+    background: var(--accent);
+    border-radius: 3px;
+    margin: 1.8rem auto;
+  }
+  .hint { color: var(--muted); font-size: 1rem; margin-top: 3rem; }
+  @media print {
+    body { background: #fff; }
+    .slide { display: flex !important; page-break-after: always; height: 100vh; }
+    .footer, .hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: cover -->
+<section class="slide cover active">
+  <p class="kicker">IROS 2026 Workshop &middot; Interoceptive Perception for Resilient Robotics</p>
+  <h1>Panel Discussions</h1>
+  <div class="rule"></div>
+  <p class="lede" style="margin: 0 auto;">Two debates, one thread: what role should the body&rsquo;s own signals play in robot intelligence?</p>
+  <p class="meta">11:10 AM &nbsp;&middot;&nbsp; Before a Robot Can Model the World, Must It Model Itself?<br>
+     4:30 PM &nbsp;&middot;&nbsp; Explicit or Implicit? The Future of IMU Learning in Robot Perception</p>
+  <p class="hint">Use &larr; &rarr; arrow keys, space, or click to navigate &middot; Ctrl/Cmd+P to export PDF</p>
+</section>
+
+<!-- Slide 2: panel 1 title -->
+<section class="slide">
+  <p class="kicker">Morning Panel &middot; 11:10 AM &ndash; 12:00 PM</p>
+  <h1>Before a Robot Can Model the World, Must It Model Itself?</h1>
+  <p class="lede">World models and vision-language-action policies condition on a body state they cannot produce themselves. Is a robot&rsquo;s self-model, learned from inertial, proprioceptive, and tactile signals, a prerequisite for modeling the world &mdash; or does it emerge on its own from end-to-end training at scale?</p>
+</section>
+
+<!-- Slide 3: panel 1 positions -->
+<section class="slide">
+  <p class="kicker">Morning Panel &middot; The Two Positions</p>
+  <h2>Prerequisite, or emergent?</h2>
+  <div class="vs-grid">
+    <div class="vs-col">
+      <h3>The self-model is a prerequisite</h3>
+      <ul>
+        <li>Every observation comes from a moving body; the world only appears once the self is subtracted.</li>
+        <li>A world model predicts the consequences of action &mdash; and the actor <em>is</em> the body.</li>
+        <li>Biology agrees: the brain predicts the sensory consequences of its own motion and perceives the world as deviations.</li>
+        <li>Safety demands it: the forces a robot exerts cannot be seen, only felt.</li>
+      </ul>
+    </div>
+    <div class="vs-col alt">
+      <h3>It emerges from scale</h3>
+      <ul>
+        <li>The bitter lesson: end-to-end learning at scale beats hand-designed structure.</li>
+        <li>Body state can live as an implicit latent inside the policy &mdash; no dedicated model needed.</li>
+        <li>Stateless navigation already shows competence without explicit state estimation.</li>
+        <li>A separate self-model is one more module to calibrate, maintain, and get wrong.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 4: panel 1 questions -->
+<section class="slide">
+  <p class="kicker">Morning Panel &middot; Questions for Discussion</p>
+  <h2>Where the debate gets decided</h2>
+  <ol class="qlist">
+    <li>What failure would only a self-model prevent &mdash; and has anyone observed it?</li>
+    <li>If self-knowledge emerges at scale, where does the training data for the body&rsquo;s signals come from?</li>
+    <li>Can a self-model transfer across embodiments, or must every robot learn its body from scratch?</li>
+    <li>What does each answer imply for the foundation-model roadmap: one giant policy, or a perception substrate beneath it?</li>
+  </ol>
+</section>
+
+<!-- Slide 5: bridge -->
+<section class="slide">
+  <p class="kicker">From Morning to Afternoon</p>
+  <p class="bridge">The morning panel asks <strong>whether</strong> a robot needs a model of itself.<br><br>
+  The closing panel asks <strong>how</strong> to build one:<br>as a dedicated, interpretable module &mdash; or dissolved inside an end-to-end policy.</p>
+</section>
+
+<!-- Slide 6: panel 2 title -->
+<section class="slide">
+  <p class="kicker">Closing Panel &middot; 4:30 &ndash; 5:00 PM</p>
+  <h1>Explicit or Implicit? The Future of IMU Learning in Robot Perception</h1>
+  <p class="lede">Should robots model inertial sensing explicitly, through dedicated and interpretable estimation modules, or implicitly, inside end-to-end learned policies? What does each path mean for accuracy, generalization, and resilience when exteroceptive sensing degrades or fails?</p>
+</section>
+
+<!-- Slide 7: panel 2 positions -->
+<section class="slide">
+  <p class="kicker">Closing Panel &middot; The Two Positions</p>
+  <h2>Explicit module, or implicit latent?</h2>
+  <div class="vs-grid">
+    <div class="vs-col">
+      <h3>Explicit estimation</h3>
+      <ul>
+        <li>Interpretable and certifiable &mdash; you can inspect, bound, and debug the state estimate.</li>
+        <li>Sensor physics and calibration priors are known; throwing them away is wasteful.</li>
+        <li>Modular: one estimator serves many downstream tasks and platforms.</li>
+        <li>Degrades diagnosably &mdash; you know <em>when</em> and <em>why</em> the estimate is failing.</li>
+      </ul>
+    </div>
+    <div class="vs-col alt">
+      <h3>Implicit, end-to-end</h3>
+      <ul>
+        <li>Optimizes the true task objective instead of a proxy &mdash; trajectory error is not the same as staying upright.</li>
+        <li>No interface bottleneck: the policy keeps correlations a hand-designed state would discard.</li>
+        <li>Less per-platform engineering; the representation adapts with the data.</li>
+        <li>Learned features can exploit regularities no filter designer anticipated.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 8: panel 2 questions -->
+<section class="slide">
+  <p class="kicker">Closing Panel &middot; Questions for Discussion</p>
+  <h2>Where the debate gets decided</h2>
+  <ol class="qlist">
+    <li>When vision dies mid-task, which fails more gracefully &mdash; a filter or a policy?</li>
+    <li>Do explicit modules cap performance, or anchor generalization to new environments?</li>
+    <li>Is the hybrid middle ground &mdash; differentiable filters, learned priors inside estimators &mdash; the best or the worst of both worlds?</li>
+    <li>What benchmark result would convince you the other side is right?</li>
+  </ol>
+</section>
+
+<!-- Slide 9: closing -->
+<section class="slide cover">
+  <p class="kicker">One Thread Through the Day</p>
+  <h1>Before a robot can model the world,<br>it must model itself.</h1>
+  <div class="rule"></div>
+  <p class="lede" style="margin: 0 auto;">Robots that feel in order to move &mdash; and stay safe when they cannot see.</p>
+  <p class="meta">superodometry.com/interoception</p>
+</section>
+
+<div class="footer">
+  <span>Interoceptive Perception for Resilient Robotics &middot; IROS 2026</span>
+  <span class="counter" id="counter"></span>
+</div>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  let i = 0;
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    document.getElementById('counter').textContent = (i + 1) + ' / ' + slides.length;
+    location.hash = i + 1;
+  }
+  document.addEventListener('keydown', e => {
+    if (['ArrowRight', 'PageDown', ' '].includes(e.key)) { show(i + 1); e.preventDefault(); }
+    if (['ArrowLeft', 'PageUp'].includes(e.key)) { show(i - 1); e.preventDefault(); }
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+  });
+  document.addEventListener('click', e => {
+    if (e.target.closest('a')) return;
+    show(e.clientX > window.innerWidth / 3 ? i + 1 : i - 1);
+  });
+  show((parseInt(location.hash.slice(1), 10) || 1) - 1);
+</script>
+</body>
+</html>
