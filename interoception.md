@@ -988,12 +988,12 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <td>Learning Agile Flight from Vision to Commands: From State Estimation to Stateless Navigation</td>
           </tr>
           <tr>
-            <td>11:10 - 12:00 PM</td>
+            <td>11:10 - 11:40 AM</td>
             <td><strong>Social Time &amp; Panel Discussion</strong><br><span style="color:#999; font-size:0.85rem;">Invited speakers and attendees</span></td>
             <td><strong>Before a Robot Can Model the World, Must It Model Itself?</strong><br><span style="color:#999; font-size:0.9rem;">World models and vision-language-action policies condition on a body state they cannot produce themselves. Panelists debate whether a robot's self-model, learned from inertial, proprioceptive, and tactile signals, is a prerequisite for modeling the world, or whether it emerges on its own from end-to-end training at scale.</span><br><span style="font-size:0.9rem;"><a href="/interoception-panels.html"><strong>View panel slides &rarr;</strong></a></span></td>
           </tr>
           <tr class="break-row">
-            <td>12:00 - 2:00 PM</td>
+            <td>11:40 - 2:00 PM</td>
             <td colspan="2"><strong>Lunch Break</strong> — Lunch and networking</td>
           </tr>
           <tr>
