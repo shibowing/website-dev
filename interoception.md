@@ -905,8 +905,8 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Carmelo_Sferrazza.jpg" alt="Carmelo Sferrazza"/>
             <p class="speaker-name"><a href="https://sferrazza.cc/">Carmelo (Carlo) Sferrazza</a></p>
-            <p class="speaker-role">Incoming Assistant Professor, Mechanical Engineering</p>
-            <p class="speaker-affiliation">The University of Texas at Austin</p>
+            <p class="speaker-role">Incoming Assistant Professor of Robotics and Artificial Intelligence; Member of Technical Staff</p>
+            <p class="speaker-affiliation">ETH Zurich / Amazon FAR</p>
             <p class="speaker-topic">Talk title to be announced</p>
           </div>
           <div class="speaker-card">
@@ -974,7 +974,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           </tr>
           <tr>
             <td>9:40 - 10:10 AM</td>
-            <td><strong>Carmelo Sferrazza</strong><br><span style="color:#999; font-size:0.85rem;">The University of Texas at Austin</span></td>
+            <td><strong>Carmelo Sferrazza</strong><br><span style="color:#999; font-size:0.85rem;">ETH Zurich / Amazon FAR</span></td>
             <td>Title to be announced</td>
           </tr>
           <tr>
