@@ -990,7 +990,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <tr>
             <td>11:10 - 12:00 PM</td>
             <td><strong>Social Time &amp; Panel Discussion</strong><br><span style="color:#999; font-size:0.85rem;">Invited speakers and attendees</span></td>
-            <td><strong>Before a Robot Can Model the World, Must It Model Itself?</strong><br><span style="color:#999; font-size:0.9rem;">World models and vision-language-action policies condition on a body state they cannot produce themselves. Panelists debate whether a robot's self-model, learned from inertial, proprioceptive, and tactile signals, is a prerequisite for modeling the world, or whether it emerges on its own from end-to-end training at scale.</span></td>
+            <td><strong>Before a Robot Can Model the World, Must It Model Itself?</strong><br><span style="color:#999; font-size:0.9rem;">World models and vision-language-action policies condition on a body state they cannot produce themselves. Panelists debate whether a robot's self-model, learned from inertial, proprioceptive, and tactile signals, is a prerequisite for modeling the world, or whether it emerges on its own from end-to-end training at scale.</span><br><span style="font-size:0.9rem;"><a href="/interoception-panels.html"><strong>View panel slides &rarr;</strong></a></span></td>
           </tr>
           <tr class="break-row">
             <td>12:00 - 2:00 PM</td>
@@ -1023,7 +1023,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <tr>
             <td>4:30 - 5:00 PM</td>
             <td><strong>Panel Discussion</strong><br><span style="color:#999; font-size:0.85rem;">Invited speakers</span></td>
-            <td><strong>Explicit or Implicit? The Future of IMU Learning in Robot Perception</strong><br><span style="color:#999; font-size:0.9rem;">Should robots model inertial sensing explicitly, through dedicated and interpretable estimation modules, or implicitly, inside end-to-end learned policies? Panelists debate what each path means for accuracy, generalization, and resilience when exteroceptive sensing degrades or fails.</span></td>
+            <td><strong>Explicit or Implicit? The Future of IMU Learning in Robot Perception</strong><br><span style="color:#999; font-size:0.9rem;">Should robots model inertial sensing explicitly, through dedicated and interpretable estimation modules, or implicitly, inside end-to-end learned policies? Panelists debate what each path means for accuracy, generalization, and resilience when exteroceptive sensing degrades or fails.</span><br><span style="font-size:0.9rem;"><a href="/interoception-panels.html"><strong>View panel slides &rarr;</strong></a></span></td>
           </tr>
         </table>
         <p style="margin-top: 1rem; color:#999; font-size:0.9rem;">All times are Pittsburgh local time (EDT, UTC−4). The schedule may be adjusted as remaining talks and team presentations are confirmed.</p>
