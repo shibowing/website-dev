@@ -117,6 +117,14 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     color: #ffd8bc;
   }
 
+  .workshop-hero .hero-badges {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+    margin-top: 1.1rem;
+  }
+
   .content .workshop-hero a.challenge-stats {
     display: inline-flex;
     align-items: center;
@@ -130,6 +138,10 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     font-size: 0.92rem;
     text-decoration: none;
     transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .content .workshop-hero .hero-badges a.challenge-stats {
+    margin-top: 0;
   }
 
   .content .workshop-hero a.challenge-stats:hover {
@@ -758,10 +770,16 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Pittsburgh, PA</span>
       <span><i class="fas fa-users" aria-hidden="true"></i> Full-day workshop</span>
     </div>
-    <a class="challenge-stats" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard?tab=public" target="_blank" rel="noopener">
-      <i class="fas fa-fire" aria-hidden="true"></i>
-      <span><strong>131 teams</strong> &middot; <strong>2,800+ submissions</strong> in the Learning IMU Odometry Challenge</span>
-    </a>
+    <div class="hero-badges">
+      <a class="challenge-stats" href="https://cmu.zoom.us/j/7802647225?omn=96963726510" target="_blank" rel="noopener">
+        <i class="fas fa-video" aria-hidden="true"></i>
+        <span>Follow along remotely &middot; <strong>Join on Zoom</strong></span>
+      </a>
+      <a class="challenge-stats" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard?tab=public" target="_blank" rel="noopener">
+        <i class="fas fa-fire" aria-hidden="true"></i>
+        <span><strong>131 teams</strong> &middot; <strong>2,800+ submissions</strong> in the Learning IMU Odometry Challenge</span>
+      </a>
+    </div>
     <div class="cta-row" aria-label="Workshop actions">
       <a class="challenge-cta" href="/imuchallenge/">
         <span class="icon" aria-hidden="true"><i class="fas fa-trophy"></i></span>
