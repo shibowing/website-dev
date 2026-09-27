@@ -179,6 +179,9 @@ permalink: /imuchallenge/
       <a class="imu-workshop-action" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">
         <i class="fab fa-kaggle" aria-hidden="true"></i><span>Compete on Kaggle</span>
       </a>
+      <a class="imu-workshop-action is-secondary" href="/interoception/#highlight-papers">
+        <i class="fas fa-star" aria-hidden="true"></i><span>Workshop Highlight Papers</span>
+      </a>
       <a class="imu-workshop-action is-secondary" href="https://github.com/superxslam/TartanIMU" target="_blank" rel="noopener">
         <i class="fab fa-github" aria-hidden="true"></i><span>TartanIMU Code</span>
       </a>
@@ -414,8 +417,12 @@ permalink: /imuchallenge/
 
     <div class="imu-workshop-updates">
       <article class="imu-workshop-update is-latest">
+        <time datetime="2026-09-27">Sep 27, 2026</time>
+        <div><span>Latest</span><p><strong>Workshop Highlight Papers are online.</strong> Seven technical reports selected by the organizers are presented at the IROS 2026 workshop <em>Beyond Exteroception</em>. <a href="/interoception/#highlight-papers">Read the papers</a>, each with its model and code.</p></div>
+      </article>
+      <article class="imu-workshop-update">
         <time datetime="2026-09-04">Sep 04, 2026</time>
-        <div><span>Latest</span><p><strong>Per-sequence scoring is now open.</strong> Upload your submission to get ATE20, AVE and RTE for <strong>all 89 test sequences</strong> &mdash; the numbers required by the technical report &mdash; using the same scoring logic as the Kaggle leaderboard. <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring" target="_blank" rel="noopener">Open the scoring tool</a>. Five submissions per team per day; your team name must match Kaggle exactly, and teams with no Kaggle submission are not scored.</p></div>
+        <div><p><strong>Per-sequence scoring is now open.</strong> Upload your submission to get ATE20, AVE and RTE for <strong>all 89 test sequences</strong> &mdash; the numbers required by the technical report &mdash; using the same scoring logic as the Kaggle leaderboard. <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring" target="_blank" rel="noopener">Open the scoring tool</a>. Five submissions per team per day; your team name must match Kaggle exactly, and teams with no Kaggle submission are not scored.</p></div>
       </article>
       <article class="imu-workshop-update">
         <time datetime="2026-09-04">Sep 04, 2026</time>
