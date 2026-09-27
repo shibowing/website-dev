@@ -210,6 +210,17 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     text-align: left;
   }
 
+  .content .cta-status a {
+    color: #ffd8bc;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .content .cta-status a:hover {
+    color: #fff;
+  }
+
   .workshop-section-nav {
     position: sticky;
     z-index: 30;
@@ -955,11 +966,11 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
         <span class="icon" aria-hidden="true"><i class="fas fa-trophy"></i></span>
         <span>Explore Challenge</span>
       </a>
-      <a class="challenge-cta is-secondary" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/submissions" target="_blank" rel="noopener">
-        <span class="icon" aria-hidden="true"><i class="fas fa-upload"></i></span>
-        <span>Submit on Kaggle</span>
+      <a class="challenge-cta is-secondary" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true"><i class="fas fa-list-ol"></i></span>
+        <span>Kaggle Leaderboard</span>
       </a>
-      <p class="cta-status"><span class="icon" aria-hidden="true"><i class="fas fa-clock"></i></span> Workshop registration and poster submission details are coming soon.</p>
+      <p class="cta-status"><span class="icon" aria-hidden="true"><i class="fas fa-clock"></i></span> Workshop day: September 27, 2026, 8:40 AM &ndash; 5:00 PM EDT. Remote attendees can follow along on <a href="https://cmu.zoom.us/j/7802647225?omn=96963726510" target="_blank" rel="noopener">Zoom</a>.</p>
     </div>
   </div>
 </header>
