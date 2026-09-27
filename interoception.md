@@ -210,6 +210,17 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     text-align: left;
   }
 
+  .content .cta-status a {
+    color: #ffd8bc;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .content .cta-status a:hover {
+    color: #fff;
+  }
+
   .workshop-section-nav {
     position: sticky;
     z-index: 30;
@@ -750,6 +761,172 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     }
   }
 
+  .paper-list {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .paper-card {
+    display: grid;
+    grid-template-columns: 168px minmax(0, 1fr);
+    gap: 1.6rem;
+    align-items: start;
+    padding: 1.4rem;
+    border: 1px solid var(--workshop-line);
+    border-left: 4px solid var(--workshop-accent);
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 28px rgba(19, 24, 31, 0.06);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .paper-card:hover {
+    box-shadow: 0 16px 36px rgba(19, 24, 31, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .content .paper-thumb {
+    display: block;
+    overflow: hidden;
+    border: 1px solid var(--workshop-line);
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(19, 24, 31, 0.08);
+  }
+
+  .content .paper-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .content .content-section .paper-card p {
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  .content .content-section .paper-card .paper-team {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.55rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    background: #fbeee4;
+    color: var(--workshop-accent-dark);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .content .paper-card .paper-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.18rem;
+    font-weight: 800;
+    line-height: 1.35;
+  }
+
+  .content .paper-card .paper-title a {
+    color: var(--workshop-ink);
+    text-decoration: none;
+  }
+
+  .content .paper-card .paper-title a:hover {
+    color: var(--workshop-accent-dark);
+  }
+
+  .content .content-section .paper-card .paper-authors {
+    color: #373a40;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .content .content-section .paper-card .paper-affiliation {
+    color: var(--workshop-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  .content .content-section .paper-card .paper-summary {
+    margin-top: 0.75rem;
+    color: #3d4046;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .content .paper-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.85rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .content .paper-tags li {
+    margin: 0;
+    padding: 0.18rem 0.6rem;
+    border: 1px solid var(--workshop-line);
+    border-radius: 4px;
+    background: var(--workshop-surface);
+    color: #4d5158;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .paper-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 1rem;
+  }
+
+  .content .paper-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--workshop-accent);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--workshop-accent-dark);
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .content .paper-link.is-primary {
+    background: var(--workshop-accent);
+    color: #fff;
+  }
+
+  .content .paper-link:hover {
+    background: var(--workshop-accent-dark);
+    border-color: var(--workshop-accent-dark);
+    color: #fff;
+  }
+
+  @media (max-width: 640px) {
+    .paper-card {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 1.1rem;
+    }
+
+    .content .paper-thumb {
+      width: 132px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .paper-card,
+    .paper-link { transition: none; }
+    .paper-card:hover { transform: none; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     .speaker-card,
@@ -781,15 +958,19 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       </a>
     </div>
     <div class="cta-row" aria-label="Workshop actions">
+      <a class="challenge-cta" href="#highlight-papers">
+        <span class="icon" aria-hidden="true"><i class="fas fa-star"></i></span>
+        <span>Workshop Highlight Papers</span>
+      </a>
       <a class="challenge-cta" href="/imuchallenge/">
         <span class="icon" aria-hidden="true"><i class="fas fa-trophy"></i></span>
         <span>Explore Challenge</span>
       </a>
-      <a class="challenge-cta is-secondary" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/submissions" target="_blank" rel="noopener">
-        <span class="icon" aria-hidden="true"><i class="fas fa-upload"></i></span>
-        <span>Submit on Kaggle</span>
+      <a class="challenge-cta is-secondary" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true"><i class="fas fa-list-ol"></i></span>
+        <span>Kaggle Leaderboard</span>
       </a>
-      <p class="cta-status"><span class="icon" aria-hidden="true"><i class="fas fa-clock"></i></span> Workshop registration and poster submission details are coming soon.</p>
+      <p class="cta-status"><span class="icon" aria-hidden="true"><i class="fas fa-clock"></i></span> Workshop day: September 27, 2026, 8:40 AM &ndash; 5:00 PM EDT. Remote attendees can follow along on <a href="https://cmu.zoom.us/j/7802647225?omn=96963726510" target="_blank" rel="noopener">Zoom</a>.</p>
     </div>
   </div>
 </header>
@@ -801,6 +982,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     <a href="#scope">Scope</a>
     <a href="#speakers">Speakers</a>
     <a href="#program">Program</a>
+    <a href="#highlight-papers">Highlight Papers</a>
     <a href="#organizers">Organizers</a>
   </div>
 </nav>
@@ -1026,7 +1208,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           </tr>
           <tr class="break-row">
             <td>3:00 - 3:30 PM</td>
-            <td colspan="2"><strong>Coffee Break &amp; Challenge Team Presentations</strong> — Top challenge teams present posters and demos, alongside contributed posters and networking</td>
+            <td colspan="2"><strong>Coffee Break &amp; Challenge Team Presentations</strong> — Top challenge teams present posters and demos, alongside contributed posters and networking<br><span style="font-size:0.9rem;"><a href="#highlight-papers"><strong>View workshop highlight papers &rarr;</strong></a></span></td>
           </tr>
           <tr>
             <td>3:30 - 4:00 PM</td>
@@ -1045,6 +1227,138 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           </tr>
         </table>
         <p style="margin-top: 1rem; color:#999; font-size:0.9rem;">All times are Pittsburgh local time (EDT, UTC−4). The schedule may be adjusted as remaining talks and team presentations are confirmed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workshop Highlight Papers Section -->
+<section class="section content-section" id="highlight-papers" style="padding-top: 1rem !important;">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: left; margin-bottom: 0.75rem;">Workshop Highlight Papers</h2>
+    <p class="section-intro">Selected by the organizers from the technical reports of the <a href="/imuchallenge/">Learning IMU Odometry Challenge</a>. Each paper describes one unified model, with a single set of weights, that estimates velocity from raw IMU alone across cars, quadrupeds, drones, and handheld devices. Papers are listed alphabetically by team name.</p>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+      <div class="paper-list">
+        <article class="paper-card">
+          <a class="paper-thumb" href="/img/IROS_2026_tab/highlight_papers/axistilted2.pdf" target="_blank" rel="noopener" aria-label="Open the paper by team AxisTilted2 (PDF)">
+            <img src="/img/IROS_2026_tab/highlight_papers/axistilted2.jpg" alt="First page of the paper by team AxisTilted2" width="440" height="569" loading="lazy"/>
+          </a>
+          <div class="paper-body">
+            <p class="paper-team"><i class="fas fa-users" aria-hidden="true"></i> AxisTilted2</p>
+            <h3 class="paper-title"><a href="/img/IROS_2026_tab/highlight_papers/axistilted2.pdf" target="_blank" rel="noopener">Learning Velocity from IMU Signals: AxisTilted2 at the IROS 2026 IMU Odometry Challenge</a></h3>
+            <p class="paper-authors">Sanjayan Sreekala, Chinmayan Pradeep</p>
+            <p class="paper-affiliation">Independent Researchers</p>
+            <p class="paper-summary">A convolutional encoder with frequency features and a bidirectional recurrent network predicts velocity, and learned sensor corrections feed an inertial smoother that reconciles the predictions with the motion equations. Supervising complete scored paths mainly reduces trajectory drift, and a diagnostic shows why better sensor estimates need not improve motion estimates.</p>
+            <ul class="paper-tags"><li>Conv + BiRNN</li><li>Inertial smoother</li><li>Path supervision</li></ul>
+            <div class="paper-links">
+              <a class="paper-link is-primary" href="/img/IROS_2026_tab/highlight_papers/axistilted2.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>Paper (PDF)</span></a>
+              <a class="paper-link" href="https://huggingface.co/AxisTilted2/tartanimu-iros2026" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i><span>Model &amp; Code</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="paper-card">
+          <a class="paper-thumb" href="/img/IROS_2026_tab/highlight_papers/cocel-postech.pdf" target="_blank" rel="noopener" aria-label="Open the paper by team CoCEL @POSTECH (PDF)">
+            <img src="/img/IROS_2026_tab/highlight_papers/cocel-postech.jpg" alt="First page of the paper by team CoCEL @POSTECH" width="440" height="569" loading="lazy"/>
+          </a>
+          <div class="paper-body">
+            <p class="paper-team"><i class="fas fa-users" aria-hidden="true"></i> CoCEL @POSTECH</p>
+            <h3 class="paper-title"><a href="/img/IROS_2026_tab/highlight_papers/cocel-postech.pdf" target="_blank" rel="noopener">What Actually Generalizes: Data Coverage for Multi-Platform Inertial Velocity Estimation</a></h3>
+            <p class="paper-authors">Sanghyun Park, Seongjun Kim, Soohee Han</p>
+            <p class="paper-affiliation">Pohang University of Science and Technology (POSTECH)</p>
+            <p class="paper-summary">Argues that data coverage, not architecture, is the main bottleneck: drone sequences span far higher speeds than the other platforms and dominate the error. The model is a two-branch ConvNeXt-V2 encoder in which a low-frequency gravity-proxy branch modulates the raw-input branch through FiLM, followed by a bi-GRU (8.03 M parameters, trained from scratch).</p>
+            <ul class="paper-tags"><li>ConvNeXt-V2 + FiLM</li><li>Gravity proxy</li><li>Data coverage</li></ul>
+            <div class="paper-links">
+              <a class="paper-link is-primary" href="/img/IROS_2026_tab/highlight_papers/cocel-postech.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>Paper (PDF)</span></a>
+              <a class="paper-link" href="https://huggingface.co/pash03023/TartanIMU-CoCEL_POSTECH" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i><span>Model &amp; Code</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="paper-card">
+          <a class="paper-thumb" href="/img/IROS_2026_tab/highlight_papers/hack2publish.pdf" target="_blank" rel="noopener" aria-label="Open the paper by team Hack2Publish (PDF)">
+            <img src="/img/IROS_2026_tab/highlight_papers/hack2publish.jpg" alt="First page of the paper by team Hack2Publish" width="440" height="569" loading="lazy"/>
+          </a>
+          <div class="paper-body">
+            <p class="paper-team"><i class="fas fa-users" aria-hidden="true"></i> Hack2Publish</p>
+            <h3 class="paper-title"><a href="/img/IROS_2026_tab/highlight_papers/hack2publish.pdf" target="_blank" rel="noopener">Trajectory-Context Inertial Velocity Estimation with Metric-Shaped Training</a></h3>
+            <p class="paper-authors">Md. Hamid Hosen, Esfer Sami, Kahakashan Ashraf, Foysal Emon Shanto</p>
+            <p class="paper-summary">Lets the network see 16 s of context instead of a single window: a strided convolutional stem, dilated temporal-convolution blocks and a small transformer (3.9 M parameters) predict dense velocity. Training samples trajectories the way the metric averages them, adds a loss on integrated velocity, and uses only physically exact augmentation.</p>
+            <ul class="paper-tags"><li>16 s context</li><li>TCN + Transformer</li><li>Metric-shaped training</li></ul>
+            <div class="paper-links">
+              <a class="paper-link is-primary" href="/img/IROS_2026_tab/highlight_papers/hack2publish.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>Paper (PDF)</span></a>
+              <a class="paper-link" href="https://huggingface.co/mdhamidhosen/tartanimu-unified-hosen42" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i><span>Model &amp; Code</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="paper-card">
+          <a class="paper-thumb" href="/img/IROS_2026_tab/highlight_papers/haozhe-zhou.pdf" target="_blank" rel="noopener" aria-label="Open the paper by team Haozhe Zhou (PDF)">
+            <img src="/img/IROS_2026_tab/highlight_papers/haozhe-zhou.jpg" alt="First page of the paper by team Haozhe Zhou" width="440" height="569" loading="lazy"/>
+          </a>
+          <div class="paper-body">
+            <p class="paper-team"><i class="fas fa-users" aria-hidden="true"></i> Haozhe Zhou</p>
+            <h3 class="paper-title"><a href="/img/IROS_2026_tab/highlight_papers/haozhe-zhou.pdf" target="_blank" rel="noopener">Cross-Platform Neural Inertial Odometry with Kinematically Consistent Re-Timing Augmentation</a></h3>
+            <p class="paper-authors">Haozhe Zhou</p>
+            <p class="paper-affiliation">Carnegie Mellon University</p>
+            <p class="paper-summary">An encoder&ndash;decoder transformer reads 64 s of raw IMU, infers a continuous embodiment state that modulates its normalization layers, and predicts per-window velocity. Re-timing and re-scaling trajectories while keeping gravity and sensor bias consistent addresses the scarcity of data per platform; this augmentation alone improves the score by 22%.</p>
+            <ul class="paper-tags"><li>Encoder&ndash;decoder Transformer</li><li>Embodiment state</li><li>Re-timing augmentation</li></ul>
+            <div class="paper-links">
+              <a class="paper-link is-primary" href="/img/IROS_2026_tab/highlight_papers/haozhe-zhou.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>Paper (PDF)</span></a>
+              <a class="paper-link" href="https://huggingface.co/haozheee/imu_odometry_challenge_iros26" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i><span>Model &amp; Code</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="paper-card">
+          <a class="paper-thumb" href="/img/IROS_2026_tab/highlight_papers/marco.pdf" target="_blank" rel="noopener" aria-label="Open the paper by team Marco (PDF)">
+            <img src="/img/IROS_2026_tab/highlight_papers/marco.jpg" alt="First page of the paper by team Marco" width="440" height="569" loading="lazy"/>
+          </a>
+          <div class="paper-body">
+            <p class="paper-team"><i class="fas fa-users" aria-hidden="true"></i> Marco</p>
+            <h3 class="paper-title"><a href="/img/IROS_2026_tab/highlight_papers/marco.pdf" target="_blank" rel="noopener">One Network, Per-Recording Physics: Shared-Weight Inertial Velocity Estimation for Cars, Quadrupeds, Humans and Drones</a></h3>
+            <p class="paper-authors">Rana Alkhoury Maroun, Korab Berisha</p>
+            <p class="paper-affiliation">Marco Intelligence Ltd, London, UK</p>
+            <p class="paper-summary">A 12-block Conformer with learnable registers and soft expert mixtures predicts velocity, per-axis uncertainty and a platform posterior from one set of weights. A parameter-free second stage then solves, per recording, for the velocity, gravity and biases that best agree with the IMU kinematics, lowering the validation score by 24.1%.</p>
+            <ul class="paper-tags"><li>Conformer</li><li>Learned uncertainty</li><li>Per-recording physics</li></ul>
+            <div class="paper-links">
+              <a class="paper-link is-primary" href="/img/IROS_2026_tab/highlight_papers/marco.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>Paper (PDF)</span></a>
+              <a class="paper-link" href="https://huggingface.co/Marco-intelligence/tartanimu-marco" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i><span>Model &amp; Code</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="paper-card">
+          <a class="paper-thumb" href="/img/IROS_2026_tab/highlight_papers/team-sparo.pdf" target="_blank" rel="noopener" aria-label="Open the paper by team Team SPARO (PDF)">
+            <img src="/img/IROS_2026_tab/highlight_papers/team-sparo.jpg" alt="First page of the paper by team Team SPARO" width="440" height="569" loading="lazy"/>
+          </a>
+          <div class="paper-body">
+            <p class="paper-team"><i class="fas fa-users" aria-hidden="true"></i> Team SPARO</p>
+            <h3 class="paper-title"><a href="/img/IROS_2026_tab/highlight_papers/team-sparo.pdf" target="_blank" rel="noopener">Single-Head IMU Velocity Estimation Across Platforms via a Multi-Scale, Embodiment-Aware Encoder</a></h3>
+            <p class="paper-authors">Jiwon Choi, Hogyun Kim, Jungwoo Lee, Geonmo Yang, Seunghee Yun; advisor: Younggun Cho</p>
+            <p class="paper-affiliation">Inha University</p>
+            <p class="paper-summary">A multi-scale encoder (residual stem, S4D state-space layers and a bidirectional GRU) reads the IMU from tens of milliseconds to the whole trajectory, while an embodiment head infers the platform from the IMU alone and conditions a single velocity head. A model trained without one platform fails on it with 3.8&ndash;27&times; its in-distribution error, showing why embodiment conditioning is needed.</p>
+            <ul class="paper-tags"><li>S4D state space</li><li>Embodiment-aware</li><li>Self-distillation</li></ul>
+            <div class="paper-links">
+              <a class="paper-link is-primary" href="/img/IROS_2026_tab/highlight_papers/team-sparo.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>Paper (PDF)</span></a>
+              <a class="paper-link" href="https://huggingface.co/jivvon2/tartanimu-sparo" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i><span>Model &amp; Code</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="paper-card">
+          <a class="paper-thumb" href="/img/IROS_2026_tab/highlight_papers/thisray.pdf" target="_blank" rel="noopener" aria-label="Open the paper by team thisray (PDF)">
+            <img src="/img/IROS_2026_tab/highlight_papers/thisray.jpg" alt="First page of the paper by team thisray" width="440" height="569" loading="lazy"/>
+          </a>
+          <div class="paper-body">
+            <p class="paper-team"><i class="fas fa-users" aria-hidden="true"></i> thisray</p>
+            <h3 class="paper-title"><a href="/img/IROS_2026_tab/highlight_papers/thisray.pdf" target="_blank" rel="noopener">A Shared Neural Prior with Signal-Routed Physics Operators for Cross-Platform Inertial Velocity Estimation</a></h3>
+            <p class="paper-authors">Ssu-Rui Lee</p>
+            <p class="paper-affiliation">RaydioTek, Taiwan</p>
+            <p class="paper-summary">A shared 43.7 M-parameter network supplies a velocity prior, and a 267-parameter shared readout combines it with two strapdown-integration proposals using physical residuals. Fixed rules computed from each trajectory&rsquo;s raw IMU switch on rotor-drag or segmented strapdown refinements; the paper also documents the experiments that did not work.</p>
+            <ul class="paper-tags"><li>Neural prior + physics</li><li>Strapdown proposals</li><li>Negative results</li></ul>
+            <div class="paper-links">
+              <a class="paper-link is-primary" href="/img/IROS_2026_tab/highlight_papers/thisray.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>Paper (PDF)</span></a>
+              <a class="paper-link" href="https://huggingface.co/gn01697933/tartanimu-iros2026-unified-model" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i><span>Model &amp; Code</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
       </div>
     </div>
   </div>
