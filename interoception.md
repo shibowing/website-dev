@@ -1016,7 +1016,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           </tr>
           <tr>
             <td>2:00 - 2:30 PM</td>
-            <td><strong>Yuheng Qiu</strong><br><span style="color:#999; font-size:0.85rem;">Amazon FAR (Frontier AI &amp; Robotics)</span></td>
+            <td><strong>Wenshan Wang</strong><br><span style="color:#999; font-size:0.85rem;">Carnegie Mellon University</span></td>
             <td>Title to be announced</td>
           </tr>
           <tr>
@@ -1035,7 +1035,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           </tr>
           <tr>
             <td>4:00 - 4:30 PM</td>
-            <td><strong>Wenshan Wang</strong><br><span style="color:#999; font-size:0.85rem;">Carnegie Mellon University</span></td>
+            <td><strong>Yuheng Qiu</strong><br><span style="color:#999; font-size:0.85rem;">Amazon FAR (Frontier AI &amp; Robotics)</span></td>
             <td>Title to be announced</td>
           </tr>
           <tr>
