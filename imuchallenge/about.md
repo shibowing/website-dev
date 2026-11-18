@@ -11,9 +11,9 @@ permalink: /imuchallenge/about/
 
 The IMU Odometry Challenge — run on Kaggle as the [**TartanIMU Challenge: Multi-Platform Inertial Odometry**](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026){:target="_blank" rel="noopener"} — is hosted by **CMU AirLab**, with organization led by the TartanIMU and Super Odometry contributors.
 
-The challenge is the official benchmark of the [IROS 2026 Workshop: "Beyond Exteroception: Interoceptive Perception for Resilient Robotics"](/interoception/) (Sept 27 – Oct 1, 2026, Pittsburgh). Top entries will be invited to present their methods at the workshop. The competition does not award a cash prize — it's scored on Kudos rather than points or medals.
+The challenge is the official benchmark of the [IROS 2026 Workshop: "Beyond Exteroception: Interoceptive Perception for Resilient Robotics"](/interoception/) (Sept 27 – Oct 1, 2026, Pittsburgh). Top teams presented their methods in a remote session held after the workshop. The competition did not award a cash prize — it was scored on Kudos rather than points or medals.
 
-Final Kaggle submissions, the technical report, and model weights are due **September 20, 2026, at 23:55 UTC**.
+**The challenge has concluded.** The leaderboard closed on September 20, 2026; see the [final results and top-team materials](/imuchallenge/#results).
 
 ## Motivation
 
@@ -43,4 +43,4 @@ Challenge organization is coordinated by **CMU AirLab**, with benchmark, dataset
 
 ## Contact
 
-For challenge questions, post in the [Kaggle discussion forum](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/discussion){:target="_blank" rel="noopener"} so answers remain visible to every team. To register, join the competition on Kaggle and create your team there — see the [setup guide](/imuchallenge/setup/#quick-start) for the full walkthrough.
+For questions about the benchmark or dataset, post in the [Kaggle discussion forum](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/discussion){:target="_blank" rel="noopener"} so answers remain visible to everyone.

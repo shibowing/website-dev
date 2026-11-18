@@ -11,150 +11,93 @@ permalink: /imuchallenge/
 <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
 <style>
-  .imu-workshop-wechat-dialog {
-    width: min(430px, calc(100% - 2rem));
-    max-height: calc(100vh - 2rem);
-    margin: auto;
-    padding: 1.5rem;
-    overflow-y: auto;
-    border: 1px solid #e3e5e8;
-    border-radius: 8px;
-    background: #ffffff;
-    box-shadow: 0 24px 70px rgba(15, 18, 23, 0.28);
-    color: #25282d;
-    text-align: center;
+  .imu-results-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--imu-home-line);
   }
-  .imu-workshop-wechat-dialog::backdrop { background: rgba(15, 18, 23, 0.72); }
-  .imu-workshop-wechat-close {
-    position: absolute;
-    top: 0.65rem;
-    right: 0.65rem;
+  .imu-result {
     display: grid;
-    width: 36px;
-    height: 36px;
-    place-items: center;
-    border: 0;
-    background: transparent;
-    color: #666b72;
-    cursor: pointer;
-  }
-  .imu-workshop-wechat-close:hover,
-  .imu-workshop-wechat-close:focus-visible { color: #8f3d00; }
-  body.imuchallenge-home .content .imu-workshop-wechat-dialog h2 {
-    margin: 0 2rem 0.45rem;
-    color: #25282d;
-    font-size: 1.35rem;
-    letter-spacing: 0;
-  }
-  body.imuchallenge-home .content .imu-workshop-wechat-dialog > p {
-    margin: 0 auto 1rem;
-    color: #656a72;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-  #imu-wechat-qr[hidden], #imu-wechat-expired[hidden] { display: none; }
-  body.imuchallenge-home .content #imu-wechat-qr img {
-    display: block;
-    width: min(100%, 360px);
-    height: auto;
-    margin: 0 auto;
-  }
-  .imu-workshop-wechat-validity {
-    display: flex;
-    gap: 0.55rem;
-    margin: 0.85rem auto;
-    padding: 0.7rem 0.8rem;
-    border-left: 3px solid #c45a0e;
-    background: #fff7f1;
-    color: #6b3a18;
-    font-size: 0.8rem;
-    line-height: 1.45;
-    text-align: left;
-  }
-  .imu-workshop-wechat-validity i { margin-top: 0.15rem; color: #c45a0e; }
-  body.imuchallenge-home .content a.imu-workshop-wechat-full {
-    display: inline-flex;
-    min-height: 40px;
+    grid-template-columns: 52px minmax(0, 1fr) auto;
+    gap: 1.25rem;
     align-items: center;
-    gap: 0.45rem;
-    padding: 0.55rem 0.85rem;
-    border: 1px solid #c45a0e;
-    border-radius: 6px;
-    color: #8f3d00;
-    font-size: 0.84rem;
-    font-weight: 700;
-    text-decoration: none;
+    padding: 1.15rem 0;
+    border-bottom: 1px solid var(--imu-home-line);
   }
-  body.imuchallenge-home .content a.imu-workshop-wechat-full:hover,
-  body.imuchallenge-home .content a.imu-workshop-wechat-full:focus-visible {
-    background: #c45a0e;
+  .imu-result-rank {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--imu-home-line);
+    border-radius: 6px;
+    background: #ffffff;
+    color: var(--imu-home-ink);
+    font-size: 1.05rem;
+    font-weight: 800;
+  }
+  .imu-result.is-podium .imu-result-rank {
+    border-color: var(--imu-home-accent);
+    background: var(--imu-home-accent);
     color: #ffffff;
   }
-  .imu-workshop-wechat-expired {
-    margin-top: 1rem;
-    padding: 1rem;
-    border: 1px solid #e3e5e8;
-    border-radius: 6px;
-    background: #f6f7f8;
-    text-align: left;
+  body.imuchallenge-home .content .imu-result h3 {
+    margin: 0;
+    color: var(--imu-home-ink);
+    font-size: 1.05rem;
+    font-weight: 800;
+    -webkit-text-stroke: 0;
   }
-  .imu-workshop-wechat-expired i { color: #c45a0e; }
-  body.imuchallenge-home .content .imu-workshop-wechat-expired p {
-    margin: 0.45rem 0 0;
-    color: #555a62;
-    font-size: 0.88rem;
+  body.imuchallenge-home .content .imu-result p {
+    margin: 0.2rem 0 0;
+    color: var(--imu-home-muted);
+    font-size: 0.86rem;
     line-height: 1.5;
   }
-  @media (max-width: 480px) {
-    .imu-workshop-wechat-dialog { padding: 1.25rem 1rem; }
-    body.imuchallenge-home .content .imu-workshop-wechat-dialog h2 { font-size: 1.15rem; }
-  }
-
-  .imu-workshop-alert {
-    width: 100%;
-    border-top: 1px solid #f0c496;
-    border-bottom: 1px solid #f0c496;
-    background: #fff7f1;
-  }
-  .imu-workshop-alert-inner {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 1.75rem 1.5rem;
-  }
-  body.imuchallenge-home .content .imu-workshop-alert-inner h2 {
+  .imu-result-links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.45rem;
+  }
+  body.imuchallenge-home .content .imu-result-links a {
+    display: inline-flex;
+    min-height: 36px;
     align-items: center;
-    gap: 0.55rem;
-    margin: 0 0 0.6rem;
-    color: #8f3d00;
-    font-size: 1.15rem;
-    letter-spacing: 0;
+    gap: 0.4rem;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid var(--imu-home-line);
+    border-radius: 6px;
+    background: #ffffff;
+    color: var(--imu-home-ink);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
   }
-  body.imuchallenge-home .content .imu-workshop-alert-inner h2 i { color: #c45a0e; }
-  body.imuchallenge-home .content .imu-workshop-alert-inner > p {
-    margin: 0 0 0.9rem;
-    color: #6b3a18;
-    font-size: 0.95rem;
-    line-height: 1.55;
+  body.imuchallenge-home .content .imu-result-links a:hover,
+  body.imuchallenge-home .content .imu-result-links a:focus-visible {
+    border-color: #d5b49c;
+    background: #fff8f3;
+    color: var(--imu-home-accent-dark);
   }
-  body.imuchallenge-home .content .imu-workshop-alert-inner ol {
-    margin: 0 0 0.9rem;
-    padding-left: 1.35rem;
-    color: #6b3a18;
-    font-size: 0.95rem;
-    line-height: 1.6;
+  .imu-result-links i { color: var(--imu-home-accent); }
+  .imu-result-pending {
+    color: var(--imu-home-muted);
+    font-size: 0.82rem;
+    font-style: italic;
   }
-  body.imuchallenge-home .content .imu-workshop-alert-inner ol li { margin-bottom: 0.55rem; }
-  body.imuchallenge-home .content .imu-workshop-alert-inner ol li:last-child { margin-bottom: 0; }
-  body.imuchallenge-home .content .imu-workshop-alert-inner a { color: #8f3d00; font-weight: 700; }
-  body.imuchallenge-home .content .imu-workshop-alert-inner code {
-    padding: 0.05rem 0.3rem;
-    border-radius: 3px;
-    background: #f6e4d3;
-    color: #6b3a18;
-  }
-  @media (max-width: 480px) {
-    .imu-workshop-alert-inner { padding: 1.35rem 1rem; }
+  @media (max-width: 700px) {
+    .imu-result {
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 0.6rem 1rem;
+    }
+    .imu-result-links {
+      grid-column: 2;
+      justify-content: flex-start;
+    }
   }
 </style>
 
@@ -169,44 +112,32 @@ permalink: /imuchallenge/
       IMU Odometry Challenge
       <span>One model. Four embodiments. Raw IMU only.</span>
     </h1>
-    <p class="imu-workshop-lead">Estimate 3D body-frame velocity from raw 6-axis IMU with one unified model across car, drone, quadruped, and handheld motion.</p>
+    <p class="imu-workshop-lead">The challenge has concluded. Teams estimated 3D body-frame velocity from raw 6-axis IMU with one unified model across car, drone, quadruped, and handheld motion. Final results, slides, and model weights from the top teams are below.</p>
     <div class="imu-workshop-meta" aria-label="Challenge status">
-      <span><i class="fas fa-trophy" aria-hidden="true"></i> Live on Kaggle</span>
-      <span><i class="fas fa-robot" aria-hidden="true"></i> Four platforms</span>
-      <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> Final submission: Sep 20, 23:55 UTC</span>
+      <span><i class="fas fa-flag-checkered" aria-hidden="true"></i> Competition concluded</span>
+      <span><i class="fas fa-trophy" aria-hidden="true"></i> Top 10 announced</span>
+      <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> Leaderboard closed Sep 20, 2026</span>
     </div>
     <div class="imu-workshop-actions" aria-label="Challenge actions">
-      <a class="imu-workshop-action" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">
-        <i class="fab fa-kaggle" aria-hidden="true"></i><span>Compete on Kaggle</span>
+      <a class="imu-workshop-action" href="#results">
+        <i class="fas fa-trophy" aria-hidden="true"></i><span>View Results</span>
+      </a>
+      <a class="imu-workshop-action is-secondary" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard" target="_blank" rel="noopener">
+        <i class="fab fa-kaggle" aria-hidden="true"></i><span>Kaggle Leaderboard</span>
+      </a>
+      <a class="imu-workshop-action is-secondary" href="https://drive.google.com/drive/folders/1H4ZwVZdMNtb1O3xwV2_jTyKLPf3FhfHU?usp=sharing" target="_blank" rel="noopener">
+        <i class="fas fa-video" aria-hidden="true"></i><span>Workshop Talks</span>
       </a>
       <a class="imu-workshop-action is-secondary" href="https://github.com/superxslam/TartanIMU" target="_blank" rel="noopener">
         <i class="fab fa-github" aria-hidden="true"></i><span>TartanIMU Code</span>
-      </a>
-      <a class="imu-workshop-action is-secondary" href="/imuchallenge/setup/">
-        <i class="fas fa-rocket" aria-hidden="true"></i><span>Setup Guide</span>
-      </a>
-      <a class="imu-workshop-action is-secondary" href="https://drive.google.com/drive/folders/1EEnFNbogpRSbqGglppdNh0EQp0zxHzjZ" target="_blank" rel="noopener">
-        <i class="fas fa-file-alt" aria-hidden="true"></i><span>Report Template</span>
       </a>
     </div>
   </div>
 </header>
 
-<div class="imu-workshop-alert" role="note" aria-labelledby="imu-alert-title">
-  <div class="imu-workshop-alert-inner">
-    <h2 id="imu-alert-title"><i class="fas fa-triangle-exclamation" aria-hidden="true"></i>Important reminder: eligibility for the final ranking</h2>
-    <p>This applies to every team, including those who have already submitted to Kaggle. The Kaggle leaderboard is provisional: official final standings are decided only after the organizers re-execute the top teams' submitted models. To be eligible for the final ranking you must, in addition to submitting predictions:</p>
-    <ol>
-      <li>Complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_3Pq2Bs4ytd0lfHHLsU_qoO5z0BP6Psnsqo7e5nOyBTlCjQ/viewform" target="_blank" rel="noopener">Submission Form</a> for each submission you want considered, attaching the prediction CSV you uploaded.</li>
-      <li>Submit a technical report (PDF). <a href="https://drive.google.com/drive/folders/1EEnFNbogpRSbqGglppdNh0EQp0zxHzjZ" target="_blank" rel="noopener">Download it here</a> &mdash; the zip contains <code>main.tex</code> and <code>ieeeconf.cls</code>. On Overleaf: <em>New Project &rarr; Upload Project</em> &rarr; select the zip. Maximum 6 pages excluding references, 7 in total; the appendix does not count. The report is due <strong>23:59 US Eastern Time, 23 September 2026</strong> &mdash; three days after the leaderboard closes &mdash; and is submitted by attaching it at the end of the <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_3Pq2Bs4ytd0lfHHLsU_qoO5z0BP6Psnsqo7e5nOyBTlCjQ/viewform" target="_blank" rel="noopener">challenge Form</a>. All numbers in Tables III&ndash;V must come from the <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring" target="_blank" rel="noopener">official scoring service</a>, not a local re-implementation.</li>
-      <li>Publish your single unified model's weights and inference code as a public Hugging Face model repository, within the same 7 days.</li>
-    </ol>
-    <p>Teams missing any of the three, or whose model cannot be re-executed, are removed from the final ranking regardless of leaderboard position. Full details on the <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/rules" target="_blank" rel="noopener">Rules and Evaluation tabs</a>.</p>
-  </div>
-</div>
-
 <nav class="imu-workshop-section-nav" aria-label="Challenge sections">
   <div class="imu-workshop-nav-inner">
+    <a href="#results">Results</a>
     <a href="#overview">Overview</a>
     <a href="#platforms">Platforms</a>
     <a href="#protocol">Protocol</a>
@@ -216,12 +147,116 @@ permalink: /imuchallenge/
   </div>
 </nav>
 
+<section class="imu-workshop-section is-muted" id="results">
+  <div class="imu-workshop-section-inner">
+    <div class="imu-workshop-section-heading">
+      <p class="imu-workshop-eyebrow">Final results</p>
+      <h2>Top 10 teams.</h2>
+      <p>Each team shares its presentation slides, inference code, and a single unified model.</p>
+    </div>
+
+    <ol class="imu-results-list">
+      <li class="imu-result is-podium">
+        <span class="imu-result-rank" aria-label="Rank 1">1</span>
+        <div><h3>Marco</h3><p>Slides, code, weights, and summary, pinned to exact commits</p></div>
+        <div class="imu-result-links">
+          <a href="https://drive.google.com/file/d/1fq8Jj3nYPb0eQ-QblSnSQCmauNQu14C_/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i>Talk</a>
+          <a href="https://drive.google.com/drive/folders/1qbXadwk29wcOSYOYnum6SvOMxdFVS9Dr?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-folder-open" aria-hidden="true"></i>Slides &amp; Model</a>
+        </div>
+      </li>
+      <li class="imu-result is-podium">
+        <span class="imu-result-rank" aria-label="Rank 2">2</span>
+        <div><h3>Team SPARO</h3><p>Inha University &middot; Single model &middot; Code MIT, weights CC BY-NC 4.0</p></div>
+        <div class="imu-result-links">
+          <a href="https://drive.google.com/file/d/1QXYYytBEVGEOf__n8dScrQmZEqKfStGu/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i>Talk</a>
+          <a href="https://drive.google.com/drive/folders/1poS6MMS40mzFJ6g7g0kEOhWf-r4zkUhi" target="_blank" rel="noopener"><i class="fas fa-file-powerpoint" aria-hidden="true"></i>Slides</a>
+          <a href="https://huggingface.co/jivvon2/tartanimu-sparo" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>
+        </div>
+      </li>
+      <li class="imu-result is-podium">
+        <span class="imu-result-rank" aria-label="Rank 3">3</span>
+        <div><h3>Haozhe Zhou</h3><p>Carnegie Mellon University</p></div>
+        <div class="imu-result-links">
+          <a href="https://drive.google.com/file/d/1ObGymxR9504VE6QjJrGDu4QeOScszJwH/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i>Talk</a>
+          <a href="https://drive.google.com/drive/folders/1HgZgyBYo_EyavN8YRFIb6s5IK8s6mE7s?usp=drive_link" target="_blank" rel="noopener"><i class="fas fa-folder-open" aria-hidden="true"></i>Slides &amp; Model</a>
+        </div>
+      </li>
+      <li class="imu-result">
+        <span class="imu-result-rank" aria-label="Rank 4">4</span>
+        <div><h3>AxisTilted2</h3><p>Single CalibratedIMU checkpoint &middot; Apache-2.0</p></div>
+        <div class="imu-result-links">
+          <a href="https://drive.google.com/file/d/1dQF0ec79sOx9dLJWU4vUMGOshTa0qEX_/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i>Talk</a>
+          <a href="https://drive.google.com/drive/folders/1MBNj7mzGrYht4PLdlqyHCMD3qxyHBV7b" target="_blank" rel="noopener"><i class="fas fa-file-powerpoint" aria-hidden="true"></i>Slides</a>
+          <a href="https://huggingface.co/AxisTilted2/tartanimu-iros2026" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>
+        </div>
+      </li>
+      <li class="imu-result">
+        <span class="imu-result-rank" aria-label="Rank 5">5</span>
+        <div><h3>CoCEL</h3><p>POSTECH</p></div>
+        <div class="imu-result-links">
+          <a href="https://drive.google.com/file/d/1QN9FCkQ8L3uLhscuDBh4J41WLJ9aBe_Y/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i>Talk</a>
+          <span class="imu-result-pending">Slides and model coming soon</span>
+        </div>
+      </li>
+      <li class="imu-result">
+        <span class="imu-result-rank" aria-label="Rank 6">6</span>
+        <div><h3>Hack2Publish</h3><p>Single model &middot; Apache-2.0</p></div>
+        <div class="imu-result-links">
+          <a href="https://drive.google.com/file/d/1SVMYSSn6RLBpoptgk1c85PmH3wfdTR66/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i>Talk</a>
+          <a href="https://drive.google.com/drive/folders/13YKrFrzSwG2ta43SxGIMBs1cclRpXHfp?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-file-powerpoint" aria-hidden="true"></i>Slides</a>
+          <a href="https://huggingface.co/mdhamidhosen/tartanimu-unified-hosen42" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>
+          <a href="https://github.com/hamidhosen42/TartanIMU-Challenge-Multi-Platform-Inertial-Odometry" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </li>
+      <li class="imu-result">
+        <span class="imu-result-rank" aria-label="Rank 7">7</span>
+        <div><h3>thisray</h3></div>
+        <div class="imu-result-links"><span class="imu-result-pending">Materials coming soon</span></div>
+      </li>
+      <li class="imu-result">
+        <span class="imu-result-rank" aria-label="Rank 8">8</span>
+        <div><h3>ENIO</h3><p>University of Michigan &middot; Single model, raw 6-axis IMU only</p></div>
+        <div class="imu-result-links">
+          <a href="https://drive.google.com/file/d/1aT_vH-GsvEQ_1ZBmvQDFQPgErCxKt5BH/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i>Talk</a>
+          <a href="https://drive.google.com/drive/folders/1LovJ_kgHop8wKWWLiCQabUnsrkzNUhO7?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-file-powerpoint" aria-hidden="true"></i>Slides</a>
+          <a href="https://huggingface.co/arattan7272/tartanimu-lnresnet" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>
+        </div>
+      </li>
+      <li class="imu-result">
+        <span class="imu-result-rank" aria-label="Rank 9">9</span>
+        <div><h3>Lexxxxx</h3><p>Tunghai University &middot; Single model &middot; MIT</p></div>
+        <div class="imu-result-links">
+          <a href="https://drive.google.com/drive/folders/134HdxPPWaK0gf14gXOdUEgBwgPQqaB6L?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-file-powerpoint" aria-hidden="true"></i>Slides</a>
+          <a href="https://huggingface.co/LexHo/tartanimu-a3v20" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i>Model</a>
+          <a href="https://github.com/Jadiouo/tartanimu-unified-io" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </li>
+      <li class="imu-result">
+        <span class="imu-result-rank" aria-label="Rank 10">10</span>
+        <div><h3>ilytix</h3></div>
+        <div class="imu-result-links">
+          <a href="https://drive.google.com/file/d/1QXvvA2y-GTCBrJggExUhfl2B-SWpy0_M/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i>Talk</a>
+          <a href="https://drive.google.com/drive/folders/1OJcIHm6sj7A-8V9Ya2Q_nofQ3YzidTOA?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-folder-open" aria-hidden="true"></i>Materials</a>
+          <a href="https://github.com/mohosin9602/inertialOdometrytartanimuC" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>Code</a>
+        </div>
+      </li>
+    </ol>
+
+    <div class="imu-workshop-resource-row" aria-label="Results resources">
+      <a href="https://drive.google.com/drive/folders/1H4ZwVZdMNtb1O3xwV2_jTyKLPf3FhfHU?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-video" aria-hidden="true"></i><span>Workshop Invited Talks</span></a>
+      <a href="https://drive.google.com/drive/folders/1g2e7CVwySSRISgyvQdIrc0eamdTiXukz?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-users" aria-hidden="true"></i><span>Team Presentations (Remote)</span></a>
+      <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard" target="_blank" rel="noopener"><i class="fab fa-kaggle" aria-hidden="true"></i><span>Kaggle Leaderboard</span></a>
+      <a href="/interoception/"><i class="fas fa-microphone" aria-hidden="true"></i><span>IROS 2026 Workshop</span></a>
+    </div>
+  </div>
+</section>
+
 <section class="imu-workshop-section" id="overview">
   <div class="imu-workshop-section-inner">
     <div class="imu-workshop-section-heading">
       <p class="imu-workshop-eyebrow">Challenge design</p>
       <h2>One benchmark across four motion domains.</h2>
-      <p>Training and validation data include platform labels. The anonymized test set does not, requiring a single model to generalize across radically different dynamics without switching between platform-specific experts.</p>
+      <p>Training and validation data include platform labels. The anonymized test set does not, so a single model had to generalize across radically different dynamics without switching between platform-specific experts.</p>
     </div>
 
     <dl class="imu-workshop-stats" aria-label="Dataset statistics">
@@ -236,14 +271,14 @@ permalink: /imuchallenge/
         <span class="imu-workshop-feature-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span>
         <div>
           <h3>One Unified Model</h3>
-          <p>One submission must handle car, drone, quadruped, and handheld trajectories at once.</p>
+          <p>One submission had to handle car, drone, quadruped, and handheld trajectories at once.</p>
         </div>
       </article>
       <article class="imu-workshop-feature">
         <span class="imu-workshop-feature-icon"><i class="fas fa-eye-slash" aria-hidden="true"></i></span>
         <div>
           <h3>Platform-Blind Testing</h3>
-          <p>Test labels and platform-revealing trajectory identifiers remain hidden from participants.</p>
+          <p>Test labels and platform-revealing trajectory identifiers were hidden from participants.</p>
         </div>
       </article>
       <article class="imu-workshop-feature">
@@ -376,74 +411,41 @@ permalink: /imuchallenge/
     <div class="imu-workshop-inline-links">
       <a class="imu-workshop-text-link" href="/imuchallenge/about/">Meet the organizers <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
       <a class="imu-workshop-text-link" href="/interoception/">Visit the IROS 2026 workshop <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-      <a class="imu-workshop-text-link" id="imu-wechat-open" href="/img/imuchallenge/wechat_2026_imu_challenge.png" aria-haspopup="dialog" aria-controls="imu-wechat-dialog">
-        <i class="fab fa-weixin" aria-hidden="true"></i> Join WeChat <i class="fas fa-arrow-right" aria-hidden="true"></i>
-      </a>
     </div>
   </div>
 </section>
-
-<dialog class="imu-workshop-wechat-dialog" id="imu-wechat-dialog" aria-labelledby="imu-wechat-title" aria-describedby="imu-wechat-description">
-  <button class="imu-workshop-wechat-close" type="button" id="imu-wechat-close" aria-label="Close WeChat dialog" title="Close">
-    <i class="fas fa-times" aria-hidden="true"></i>
-  </button>
-  <h2 id="imu-wechat-title">2026 IMU Challenge on WeChat</h2>
-  <p id="imu-wechat-description">Community discussions and organizer updates for challenge participants.</p>
-  <div id="imu-wechat-qr">
-    <img src="/img/imuchallenge/wechat_2026_imu_challenge.png" alt="WeChat QR code for the 2026 IMU Challenge group" width="1285" height="1448">
-    <div class="imu-workshop-wechat-validity">
-      <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-      <span>This invite QR is valid until August 12, 2026.</span>
-    </div>
-    <a class="imu-workshop-wechat-full" href="/img/imuchallenge/wechat_2026_imu_challenge.png" target="_blank" rel="noopener">
-      <i class="fas fa-expand" aria-hidden="true"></i><span>Open full-size QR</span>
-    </a>
-  </div>
-  <div class="imu-workshop-wechat-expired" id="imu-wechat-expired" hidden>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>This WeChat invite expired on August 12, 2026. Please request an updated code from the organizers through <a href="https://discord.com/invite/Huf2GJx32y" target="_blank" rel="noopener">Discord</a>.</p>
-  </div>
-</dialog>
 
 <section class="imu-workshop-section" id="updates">
   <div class="imu-workshop-section-inner">
     <div class="imu-workshop-section-heading">
       <p class="imu-workshop-eyebrow">Announcements</p>
-      <h2>Challenge updates.</h2>
+      <h2>Challenge timeline.</h2>
     </div>
 
     <div class="imu-workshop-updates">
       <article class="imu-workshop-update is-latest">
-        <time datetime="2026-09-04">Sep 04, 2026</time>
-        <div><span>Latest</span><p><strong>Per-sequence scoring is now open.</strong> Upload your submission to get ATE20, AVE and RTE for <strong>all 89 test sequences</strong> &mdash; the numbers required by the technical report &mdash; using the same scoring logic as the Kaggle leaderboard. <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring" target="_blank" rel="noopener">Open the scoring tool</a>. Five submissions per team per day; your team name must match Kaggle exactly, and teams with no Kaggle submission are not scored.</p></div>
+        <time datetime="2026-10-04">Oct 04, 2026</time>
+        <div><span>Latest</span><p>Top teams presented their methods in a remote session held after the workshop. <a href="https://drive.google.com/drive/folders/1g2e7CVwySSRISgyvQdIrc0eamdTiXukz?usp=sharing" target="_blank" rel="noopener">Watch the team presentations</a>.</p></div>
       </article>
       <article class="imu-workshop-update">
-        <time datetime="2026-09-04">Sep 04, 2026</time>
-        <div><p><strong>How the Top 10 teams are selected.</strong> The Kaggle leaderboard is <em>not</em> the only criterion &mdash; the committee also weighs the quality of the technical report. The <strong>Top 10 teams will be invited to contribute to the forthcoming <em>IMU Foundation Model</em> white paper</strong>.</p></div>
+        <time datetime="2026-09-27">Sep 27, 2026</time>
+        <div><p><strong>Final results are published.</strong> See the <a href="#results">Top 10 teams</a> with their slides, inference code, and model weights.</p></div>
       </article>
       <article class="imu-workshop-update">
-        <time datetime="2026-09-04">Sep 04, 2026</time>
-        <div><p><strong>Technical report: deadline, format and how to submit.</strong> The report is due <strong>23:59 US Eastern Time on 23 September 2026</strong> &mdash; three days after the leaderboard closes, which remains September 20, 2026, 23:55 UTC. Maximum <strong>6 pages excluding references</strong> and 7 pages in total; the appendix does not count towards either limit. <a href="https://drive.google.com/drive/folders/1EEnFNbogpRSbqGglppdNh0EQp0zxHzjZ" target="_blank" rel="noopener">Download the report template</a> (LaTeX source plus a PDF preview; on Overleaf use <em>New Project &rarr; Upload Project</em> and select the zip). The report is <em>not</em> uploaded on this website: fill in the challenge Form as usual and <strong>attach the report at the end of the Form</strong>. Every report must answer the five compliance questions listed in the <a href="/imuchallenge/setup/#schedule-rules-and-leaderboard">setup guide</a>.</p></div>
+        <time datetime="2026-09-27">Sep 27, 2026</time>
+        <div><p>The <a href="/interoception/">IROS 2026 interoceptive perception workshop</a> took place. <a href="https://drive.google.com/drive/folders/1H4ZwVZdMNtb1O3xwV2_jTyKLPf3FhfHU?usp=sharing" target="_blank" rel="noopener">Watch the invited talks and panels</a>.</p></div>
       </article>
       <article class="imu-workshop-update">
-        <time datetime="2026-08-01">Aug 01, 2026</time>
-        <div><p>Final Kaggle submissions and model weights are due <strong>September 20, 2026, at 23:55 UTC</strong>. See the <a href="/imuchallenge/setup/#schedule-rules-and-leaderboard">rules timeline</a>.</p></div>
+        <time datetime="2026-09-20">Sep 20, 2026</time>
+        <div><p>The Kaggle leaderboard closed.</p></div>
       </article>
       <article class="imu-workshop-update">
         <time datetime="2026-07-09">Jul 09, 2026</time>
-        <div><p>The competition is live on Kaggle: <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</p></div>
+        <div><p>The competition launched on Kaggle: <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</p></div>
       </article>
       <article class="imu-workshop-update">
         <time datetime="2026-05-30">May 30, 2026</time>
-        <div><p>The official dataset release hub is available from the <a href="/imuchallenge/data/">challenge data page</a>.</p></div>
-      </article>
-      <article class="imu-workshop-update">
-        <time datetime="2026-05-30">May 30, 2026</time>
-        <div><p>Platform pages for Car, Drone, Quadruped, and Handheld are published.</p></div>
-      </article>
-      <article class="imu-workshop-update">
-        <time datetime="2026-05-30">May 30, 2026</time>
-        <div><p>The initial IMU Odometry Challenge website and benchmark structure launched.</p></div>
+        <div><p>The dataset, platform pages, and challenge website launched. The data remains available from the <a href="/imuchallenge/data/">challenge data page</a>.</p></div>
       </article>
     </div>
   </div>
@@ -520,28 +522,6 @@ permalink: /imuchallenge/
       }
     }, { passive: true });
     updateActiveSection();
-
-    const wechatTrigger = document.getElementById("imu-wechat-open");
-    const wechatDialog = document.getElementById("imu-wechat-dialog");
-    const wechatClose = document.getElementById("imu-wechat-close");
-    const wechatQr = document.getElementById("imu-wechat-qr");
-    const wechatExpired = document.getElementById("imu-wechat-expired");
-
-    if (wechatTrigger && wechatDialog && wechatClose && wechatQr && wechatExpired && typeof wechatDialog.showModal === "function") {
-      wechatTrigger.addEventListener("click", function(event) {
-        event.preventDefault();
-        const inviteExpired = Date.now() >= Date.parse("2026-08-13T00:00:00+08:00");
-        wechatQr.hidden = inviteExpired;
-        wechatExpired.hidden = !inviteExpired;
-        wechatDialog.showModal();
-      });
-      wechatClose.addEventListener("click", function() { wechatDialog.close(); });
-      wechatDialog.addEventListener("click", function(event) {
-        const bounds = wechatDialog.getBoundingClientRect();
-        const inside = event.clientX >= bounds.left && event.clientX <= bounds.right && event.clientY >= bounds.top && event.clientY <= bounds.bottom;
-        if (!inside) wechatDialog.close();
-      });
-    }
 
     const video = document.querySelector('.imu-workshop-hero-video');
     if (!video) return;
