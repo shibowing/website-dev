@@ -519,6 +519,26 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
     font-weight: 700;
   }
 
+  .content .speaker-card a.speaker-talk {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.85rem;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid var(--workshop-line);
+    border-radius: 999px;
+    color: var(--workshop-accent-dark);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .content .speaker-card a.speaker-talk:hover,
+  .content .speaker-card a.speaker-talk:focus-visible {
+    border-color: #d5b49c;
+    background: #fff8f3;
+  }
+
   .content .schedule-table {
     width: 100%;
     overflow: hidden;
@@ -771,25 +791,24 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
       <span><i class="fas fa-users" aria-hidden="true"></i> Full-day workshop</span>
     </div>
     <div class="hero-badges">
-      <a class="challenge-stats" href="https://cmu.zoom.us/j/7802647225?omn=96963726510" target="_blank" rel="noopener">
+      <a class="challenge-stats" href="#speakers">
         <i class="fas fa-video" aria-hidden="true"></i>
-        <span>Follow along remotely &middot; <strong>Join on Zoom</strong></span>
+        <span>The workshop has concluded &middot; <strong>Talk recordings are available</strong></span>
       </a>
-      <a class="challenge-stats" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard?tab=public" target="_blank" rel="noopener">
+      <a class="challenge-stats" href="/imuchallenge/#results">
         <i class="fas fa-fire" aria-hidden="true"></i>
         <span><strong>131 teams</strong> &middot; <strong>2,800+ submissions</strong> in the Learning IMU Odometry Challenge</span>
       </a>
     </div>
     <div class="cta-row" aria-label="Workshop actions">
-      <a class="challenge-cta" href="/imuchallenge/">
+      <a class="challenge-cta" href="https://drive.google.com/drive/folders/1H4ZwVZdMNtb1O3xwV2_jTyKLPf3FhfHU?usp=sharing" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true"><i class="fas fa-play-circle"></i></span>
+        <span>Watch the Talks</span>
+      </a>
+      <a class="challenge-cta is-secondary" href="/imuchallenge/#results">
         <span class="icon" aria-hidden="true"><i class="fas fa-trophy"></i></span>
-        <span>Explore Challenge</span>
+        <span>Challenge Results</span>
       </a>
-      <a class="challenge-cta is-secondary" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/submissions" target="_blank" rel="noopener">
-        <span class="icon" aria-hidden="true"><i class="fas fa-upload"></i></span>
-        <span>Submit on Kaggle</span>
-      </a>
-      <p class="cta-status"><span class="icon" aria-hidden="true"><i class="fas fa-clock"></i></span> Workshop registration and poster submission details are coming soon.</p>
     </div>
   </div>
 </header>
@@ -834,23 +853,18 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p>Training data, baseline code, and evaluation toolkit released.</p>
           </div>
           <div class="date-row">
-            <time datetime="2026-09-20T23:55:00Z">September 20, 2026, 23:55 UTC</time>
-            <p>Final challenge submission and model weights deadline.</p>
-          </div>
-          <div class="date-row">
-            <time datetime="2026-09-23T23:59:00-04:00">September 23, 2026, 23:59 US Eastern (EDT)</time>
-            <p>Technical report deadline.</p>
-          </div>
-          <div class="date-row">
-            <time datetime="2026-09-24">September 24, 2026</time>
-            <p>Top teams notified and workshop spotlight invitations issued.</p>
+            <time datetime="2026-09-20">September 20, 2026</time>
+            <p>Challenge leaderboard closed.</p>
           </div>
           <div class="date-row">
             <time datetime="2026-09-27">September 27, 2026</time>
-            <p>Workshop, challenge spotlight talks, and award announcements.</p>
+            <p>Workshop held in Pittsburgh; <a href="/imuchallenge/#results">final challenge results</a> published.</p>
+          </div>
+          <div class="date-row">
+            <time datetime="2026-10-04">October 4, 2026</time>
+            <p>Top challenge teams presented their methods in a remote session. <a href="https://drive.google.com/drive/folders/1g2e7CVwySSRISgyvQdIrc0eamdTiXukz?usp=sharing" target="_blank" rel="noopener">Watch the team presentations</a>.</p>
           </div>
         </div>
-        <p class="timeline-note">The final submission deadline is listed in UTC. Live competition rules on Kaggle remain the source of truth.</p>
       </div>
     </div>
   </div>
@@ -866,7 +880,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           Robots need to understand both the world around them and the state of their own bodies. This workshop examines inertial measurement units, joint encoders, force/torque sensing, and other proprioceptive signals as primary sources of perceptual intelligence—not merely auxiliary inputs to vision and LiDAR pipelines.
         </p>
         <p style="font-size: 1.0rem; color: #222; line-height: 1.8; margin-top: 1rem;">
-          The program connects state estimation, legged locomotion, inertial navigation, humanoid robotics, and learning-based perception. Invited talks, challenge spotlights, contributed posters, a panel discussion, and open networking will focus on systems that remain reliable when external sensing is degraded or unavailable.
+          The program connects state estimation, legged locomotion, inertial navigation, humanoid robotics, and learning-based perception. Invited talks, panel discussions, and open networking focused on systems that remain reliable when external sensing is degraded or unavailable.
         </p>
         <h3 class="title is-4" style="text-align: left; margin-top: 2rem; margin-bottom: 1rem;">Topics</h3>
         <ul class="topic-list">
@@ -895,23 +909,17 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
 <section class="section content-section" id="speakers" style="padding-top: 1rem !important;">
   <div class="container">
     <h2 class="title is-2" style="text-align: left; margin-bottom: 0.75rem;">Invited Speakers</h2>
-    <p class="section-intro">The current invited lineup spans locomotion, state estimation, learning, and resilient perception. Additional program updates will be posted as they are finalized.</p>
+    <p class="section-intro">The invited lineup spanned locomotion, state estimation, learning, and resilient perception. Recordings of each talk are linked below.</p>
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="speaker-grid speaker-grid--invited">
-          <div class="speaker-card">
-            <img src="/img/slam_series/davides.jpg" alt="Davide Scaramuzza"/>
-            <p class="speaker-name"><a href="https://rpg.ifi.uzh.ch/people_scaramuzza.html">Davide Scaramuzza</a></p>
-            <p class="speaker-role">Professor of Robotics and Perception</p>
-            <p class="speaker-affiliation">University of Zurich</p>
-            <p class="speaker-topic">Learning Agile Flight from Vision to Commands: From State Estimation to Stateless Navigation</p>
-          </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Maani_Ghaffari.jpg" alt="Maani Ghaffari"/>
             <p class="speaker-name"><a href="https://robotics.umich.edu/people/faculty/maani-ghaffari/">Maani Ghaffari</a></p>
             <p class="speaker-role">Associate Professor, Naval Architecture and Marine Engineering and Robotics</p>
             <p class="speaker-affiliation">University of Michigan</p>
             <p class="speaker-topic">Equivariant Proprioceptive Estimation and Learning for Robotics</p>
+            <a class="speaker-talk" href="https://drive.google.com/file/d/1ptTtFmomQZWgLcjVSRavYKr0s6pz98YZ/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch talk</a>
           </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Chen_Feng.jpg" alt="Chen Feng"/>
@@ -919,20 +927,21 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-role">Institute Associate Professor</p>
             <p class="speaker-affiliation">NYU Tandon School of Engineering</p>
             <p class="speaker-topic">Egocentric Experience and Memory for Embodied Spatial Intelligence</p>
+            <a class="speaker-talk" href="https://drive.google.com/file/d/102qZfygPpj47n5ZPqRbMCJgpV-UfGRcF/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch talk</a>
           </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Carmelo_Sferrazza.jpg" alt="Carmelo Sferrazza"/>
             <p class="speaker-name"><a href="https://sferrazza.cc/">Carmelo (Carlo) Sferrazza</a></p>
             <p class="speaker-role">Incoming Assistant Professor of Robotics and Artificial Intelligence; Member of Technical Staff</p>
             <p class="speaker-affiliation">ETH Zurich / Amazon FAR</p>
-            <p class="speaker-topic">Talk title to be announced</p>
+            <a class="speaker-talk" href="https://drive.google.com/file/d/1Fu0PYJg83OkxjZfP2gaoIr-4kyADJTrz/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch talk</a>
           </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Haozhi_Qi.jpg" alt="Haozhi Qi"/>
             <p class="speaker-name"><a href="https://haozhi.io/">Haozhi Qi</a></p>
             <p class="speaker-role">Member of Technical Staff; Incoming Assistant Professor, Computer Science</p>
             <p class="speaker-affiliation">Amazon FAR / University of Chicago</p>
-            <p class="speaker-topic">Talk title to be announced</p>
+            <a class="speaker-talk" href="https://drive.google.com/file/d/14IUJCtZf2YJuFhLr3r898-Jc-ljeKDAl/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch talk</a>
           </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/Daniel_Gehrig.jpg" alt="Daniel Gehrig"/>
@@ -940,20 +949,29 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-role">Postdoctoral Researcher</p>
             <p class="speaker-affiliation">GRASP Lab, University of Pennsylvania</p>
             <p class="speaker-topic">Estimating Motion from Canonical, Proprioceptive Representations</p>
+            <a class="speaker-talk" href="https://drive.google.com/file/d/1crTkAZEzsv98tljsRP6xOB_nNsvaSBE2/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch talk</a>
           </div>
           <div class="speaker-card">
             <img src="/img/IROS_2026_tab/yuheng2024.jpg" alt="Yuheng Qiu"/>
             <p class="speaker-name"><a href="http://yuhengqiu.com/">Yuheng Qiu</a></p>
             <p class="speaker-role">Postdoctoral Scientist</p>
             <p class="speaker-affiliation">Amazon FAR (Frontier AI &amp; Robotics)</p>
-            <p class="speaker-topic">Talk title to be announced</p>
+            <a class="speaker-talk" href="https://drive.google.com/file/d/1ilTbrC4-KYKaLHYiDDFAaHW4NI-d7dG3/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch talk</a>
+          </div>
+          <div class="speaker-card">
+            <img src="/img/team/placeholder.png" alt="Rong Zou"/>
+            <p class="speaker-name">Rong Zou</p>
+            <p class="speaker-role">Ph.D. Student</p>
+            <p class="speaker-affiliation">Robotics and Perception Group, University of Zurich</p>
+            <p class="speaker-topic">Learning Agile Flight from Vision to Commands: From State Estimation to Stateless Navigation</p>
+            <a class="speaker-talk" href="https://drive.google.com/file/d/1QcRzBGjt1ip-dQvBC-X580ARnnPCO84A/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch talk</a>
           </div>
           <div class="speaker-card">
             <img src="/img/team/wenshan.jpg" alt="Wenshan Wang"/>
             <p class="speaker-name"><a href="http://www.wangwenshan.com/">Wenshan Wang</a></p>
             <p class="speaker-role">Systems Scientist</p>
             <p class="speaker-affiliation">Carnegie Mellon University</p>
-            <p class="speaker-topic">Talk title to be announced</p>
+            <a class="speaker-talk" href="https://drive.google.com/file/d/1j28ddXXEwYSmzalziZ0BGXijVPQOAdCl/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch talk</a>
           </div>
           <div class="speaker-card">
             <img src="/img/team/shibozNew.png" alt="Shibo Zhao"/>
@@ -961,6 +979,7 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
             <p class="speaker-role">Ph.D.</p>
             <p class="speaker-affiliation">Carnegie Mellon University</p>
             <p class="speaker-topic">Opening Address &amp; Challenge Introduction</p>
+            <a class="speaker-talk" href="https://drive.google.com/file/d/1ORPvaov_7teGCgbs0jd3SpVjL7QyQKFw/view" target="_blank" rel="noopener"><i class="fas fa-play-circle" aria-hidden="true"></i> Watch talk</a>
           </div>
         </div>
       </div>
@@ -983,32 +1002,32 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <tr>
             <td>8:40 - 9:10 AM</td>
             <td><strong>Shibo Zhao</strong><br><span style="color:#999; font-size:0.85rem;">Carnegie Mellon University</span></td>
-            <td>Opening Address & Challenge Introduction</td>
+            <td>Opening Address & Challenge Introduction<br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/1ORPvaov_7teGCgbs0jd3SpVjL7QyQKFw/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a></span></td>
           </tr>
           <tr>
             <td>9:10 - 9:40 AM</td>
             <td><strong>Chen Feng</strong><br><span style="color:#999; font-size:0.85rem;">NYU Tandon School of Engineering</span></td>
-            <td><strong>Egocentric Experience and Memory for Embodied Spatial Intelligence</strong><br><span style="color:#999; font-size:0.9rem;">Embodied agents must learn not only to perceive the world, but also to organize their egocentric experience into persistent spatial knowledge that supports reasoning and action over time. In this talk, I will present our recent work on learning navigation from large-scale visual experience, building and updating spatial memories in changing environments, and using egocentric representations for downstream interaction. Together, these efforts explore how experience and memory can serve as foundations for robust embodied spatial intelligence.</span></td>
+            <td><strong>Egocentric Experience and Memory for Embodied Spatial Intelligence</strong><br><span style="color:#999; font-size:0.9rem;">Embodied agents must learn not only to perceive the world, but also to organize their egocentric experience into persistent spatial knowledge that supports reasoning and action over time. In this talk, I will present our recent work on learning navigation from large-scale visual experience, building and updating spatial memories in changing environments, and using egocentric representations for downstream interaction. Together, these efforts explore how experience and memory can serve as foundations for robust embodied spatial intelligence.</span><br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/102qZfygPpj47n5ZPqRbMCJgpV-UfGRcF/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a></span></td>
           </tr>
           <tr>
             <td>9:40 - 10:10 AM</td>
             <td><strong>Carmelo Sferrazza</strong><br><span style="color:#999; font-size:0.85rem;">ETH Zurich / Amazon FAR</span></td>
-            <td>Title to be announced</td>
+            <td>Invited talk<br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/1Fu0PYJg83OkxjZfP2gaoIr-4kyADJTrz/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a></span></td>
           </tr>
           <tr>
             <td>10:10 - 10:40 AM</td>
             <td><strong>Maani Ghaffari</strong><br><span style="color:#999; font-size:0.85rem;">University of Michigan (remote)</span></td>
-            <td>Equivariant Proprioceptive Estimation and Learning for Robotics</td>
+            <td>Equivariant Proprioceptive Estimation and Learning for Robotics<br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/1ptTtFmomQZWgLcjVSRavYKr0s6pz98YZ/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a></span></td>
           </tr>
           <tr>
             <td>10:40 - 11:10 AM</td>
-            <td><strong>Davide Scaramuzza</strong><br><span style="color:#999; font-size:0.85rem;">University of Zurich</span></td>
-            <td>Learning Agile Flight from Vision to Commands: From State Estimation to Stateless Navigation</td>
+            <td><strong>Rong Zou</strong><br><span style="color:#999; font-size:0.85rem;">University of Zurich</span></td>
+            <td>Learning Agile Flight from Vision to Commands: From State Estimation to Stateless Navigation<br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/1QcRzBGjt1ip-dQvBC-X580ARnnPCO84A/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a></span></td>
           </tr>
           <tr>
             <td>11:10 - 11:40 AM</td>
             <td><strong>Social Time &amp; Panel Discussion</strong><br><span style="color:#999; font-size:0.85rem;">Invited speakers and attendees</span></td>
-            <td><strong>Before a Robot Can Model the World, Must It Model Itself?</strong><br><span style="color:#999; font-size:0.9rem;">World models and vision-language-action policies condition on a body state they cannot produce themselves. Panelists discuss whether a robot's self-model, learned from inertial, proprioceptive, and tactile signals, is a prerequisite for modeling the world, or whether it emerges on its own from end-to-end training at scale.</span><br><span style="font-size:0.9rem;"><a href="/interoception-panels.html"><strong>View panel slides &rarr;</strong></a></span></td>
+            <td><strong>Before a Robot Can Model the World, Must It Model Itself?</strong><br><span style="color:#999; font-size:0.9rem;">World models and vision-language-action policies condition on a body state they cannot produce themselves. Panelists discuss whether a robot's self-model, learned from inertial, proprioceptive, and tactile signals, is a prerequisite for modeling the world, or whether it emerges on its own from end-to-end training at scale.</span><br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/1Mg2pbzFHOEipx5kQW6otpn761VWrZ-jL/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a> &middot; <a href="/interoception-panels.html"><strong>View panel slides &rarr;</strong></a></span></td>
           </tr>
           <tr class="break-row">
             <td>11:40 - 2:00 PM</td>
@@ -1017,34 +1036,34 @@ hero_image: /img/IROS_2026_tab/pittsburgh_from_pdf.jpg
           <tr>
             <td>2:00 - 2:30 PM</td>
             <td><strong>Wenshan Wang</strong><br><span style="color:#999; font-size:0.85rem;">Carnegie Mellon University</span></td>
-            <td>Title to be announced</td>
+            <td>Invited talk<br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/1j28ddXXEwYSmzalziZ0BGXijVPQOAdCl/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a></span></td>
           </tr>
           <tr>
             <td>2:30 - 3:00 PM</td>
             <td><strong>Daniel Gehrig</strong><br><span style="color:#999; font-size:0.85rem;">GRASP Lab, University of Pennsylvania</span></td>
-            <td><strong>Estimating Motion from Canonical, Proprioceptive Representations</strong><br><span style="color:#999; font-size:0.9rem;">This talk explores how to leverage the spatial and temporal symmetries of motion to derive canonical representations from inertial sensors. These representations are invariant to changes in orientation and motion speed, simplifying the learning of neural displacement priors and improving their generalization. Drawing on EqNIO and Lie Events, I will show how to design equivariant neural networks and event-driven sampling schemes that not only improve the accuracy and robustness of neural inertial odometry but also reduce the data volume of inertial measurements.</span></td>
+            <td><strong>Estimating Motion from Canonical, Proprioceptive Representations</strong><br><span style="color:#999; font-size:0.9rem;">This talk explores how to leverage the spatial and temporal symmetries of motion to derive canonical representations from inertial sensors. These representations are invariant to changes in orientation and motion speed, simplifying the learning of neural displacement priors and improving their generalization. Drawing on EqNIO and Lie Events, I will show how to design equivariant neural networks and event-driven sampling schemes that not only improve the accuracy and robustness of neural inertial odometry but also reduce the data volume of inertial measurements.</span><br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/1crTkAZEzsv98tljsRP6xOB_nNsvaSBE2/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a></span></td>
           </tr>
           <tr class="break-row">
             <td>3:00 - 3:30 PM</td>
-            <td colspan="2"><strong>Coffee Break &amp; Challenge Team Presentations</strong> — Top challenge teams present posters and demos, alongside contributed posters and networking</td>
+            <td colspan="2"><strong>Coffee Break</strong> — Coffee and networking</td>
           </tr>
           <tr>
             <td>3:30 - 4:00 PM</td>
             <td><strong>Haozhi Qi</strong><br><span style="color:#999; font-size:0.85rem;">Amazon FAR / University of Chicago</span></td>
-            <td>Title to be announced</td>
+            <td>Invited talk<br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/14IUJCtZf2YJuFhLr3r898-Jc-ljeKDAl/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a></span></td>
           </tr>
           <tr>
             <td>4:00 - 4:30 PM</td>
             <td><strong>Yuheng Qiu</strong><br><span style="color:#999; font-size:0.85rem;">Amazon FAR (Frontier AI &amp; Robotics)</span></td>
-            <td>Title to be announced</td>
+            <td>Invited talk<br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/1ilTbrC4-KYKaLHYiDDFAaHW4NI-d7dG3/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a></span></td>
           </tr>
           <tr>
             <td>4:30 - 5:00 PM</td>
             <td><strong>Panel Discussion</strong><br><span style="color:#999; font-size:0.85rem;">Invited speakers</span></td>
-            <td><strong>Explicit or Implicit? The Future of IMU Learning in Robot Perception</strong><br><span style="color:#999; font-size:0.9rem;">Should robots model inertial sensing explicitly, through dedicated and interpretable estimation modules, or implicitly, inside end-to-end learned policies? Panelists discuss what each path means for accuracy, generalization, and resilience when exteroceptive sensing degrades or fails.</span><br><span style="font-size:0.9rem;"><a href="/interoception-panels.html"><strong>View panel slides &rarr;</strong></a></span></td>
+            <td><strong>Explicit or Implicit? The Future of IMU Learning in Robot Perception</strong><br><span style="color:#999; font-size:0.9rem;">Should robots model inertial sensing explicitly, through dedicated and interpretable estimation modules, or implicitly, inside end-to-end learned policies? Panelists discuss what each path means for accuracy, generalization, and resilience when exteroceptive sensing degrades or fails.</span><br><span style="font-size:0.9rem;"><a href="https://drive.google.com/file/d/1piywsZaoH8-8naGeSxZYgPmOfVEGmi6a/view" target="_blank" rel="noopener"><strong>Watch recording &rarr;</strong></a> &middot; <a href="/interoception-panels.html"><strong>View panel slides &rarr;</strong></a></span></td>
           </tr>
         </table>
-        <p style="margin-top: 1rem; color:#999; font-size:0.9rem;">All times are Pittsburgh local time (EDT, UTC−4). The schedule may be adjusted as remaining talks and team presentations are confirmed.</p>
+        <p style="margin-top: 1rem; color:#999; font-size:0.9rem;">All times are Pittsburgh local time (EDT, UTC−4). Challenge teams presented separately in a <a href="https://drive.google.com/drive/folders/1g2e7CVwySSRISgyvQdIrc0eamdTiXukz?usp=sharing" target="_blank" rel="noopener">remote session on October 4</a>.</p>
       </div>
     </div>
   </div>
