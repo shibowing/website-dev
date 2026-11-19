@@ -13,7 +13,9 @@ The IMU Odometry Challenge — run on Kaggle as the [**TartanIMU Challenge: Mult
 
 The challenge is the official benchmark of the [IROS 2026 Workshop: "Beyond Exteroception: Interoceptive Perception for Resilient Robotics"](/interoception/) (Sept 27 – Oct 1, 2026, Pittsburgh). Top teams presented their methods in a remote session held after the workshop. The competition did not award a cash prize — it was scored on Kudos rather than points or medals.
 
-**The challenge has concluded.** The leaderboard closed on September 20, 2026; see the [final results and top-team materials](/imuchallenge/#results).
+**The first round of the challenge has concluded.** The round 1 leaderboard closed on September 20, 2026; see the [final results and top-team materials](/imuchallenge/#results).
+
+**The benchmark remains open.** We are keeping the Kaggle competition, dataset, baseline, and scoring tools online so that the community can keep using them: to report results in papers, to compare against and reproduce the competition methods, and to develop new approaches to cross-platform inertial odometry.
 
 ## Motivation
 

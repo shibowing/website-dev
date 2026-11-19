@@ -112,15 +112,16 @@ permalink: /imuchallenge/
       IMU Odometry Challenge
       <span>One model. Four embodiments. Raw IMU only.</span>
     </h1>
-    <p class="imu-workshop-lead">The challenge has concluded. Teams estimated 3D body-frame velocity from raw 6-axis IMU with one unified model across car, drone, quadruped, and handheld motion. Final results, slides, and model weights from the top teams are below.</p>
+    <p class="imu-workshop-lead">The first round of the challenge has concluded, but the benchmark stays open: the Kaggle competition, dataset, baseline, and scoring tools remain available for paper comparisons, method development, and reproducing competition entries. Teams estimated 3D body-frame velocity from raw 6-axis IMU with one unified model across car, drone, quadruped, and handheld motion. Final results, slides, and model weights from the top teams are below.</p>
     <div class="imu-workshop-meta" aria-label="Challenge status">
-      <span><i class="fas fa-flag-checkered" aria-hidden="true"></i> Competition concluded</span>
+      <span><i class="fas fa-flag-checkered" aria-hidden="true"></i> Round 1 concluded</span>
+      <span><i class="fas fa-chart-line" aria-hidden="true"></i> Benchmark open</span>
       <span><i class="fas fa-trophy" aria-hidden="true"></i> Top 10 announced</span>
       <span><i class="fas fa-calendar-alt" aria-hidden="true"></i> Leaderboard closed Sep 20, 2026</span>
     </div>
     <div class="imu-workshop-actions" aria-label="Challenge actions">
       <a class="imu-workshop-action" href="#results">
-        <i class="fas fa-trophy" aria-hidden="true"></i><span>View Results</span>
+        <i class="fas fa-trophy" aria-hidden="true"></i><span>See First Round Results</span>
       </a>
       <a class="imu-workshop-action is-secondary" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard" target="_blank" rel="noopener">
         <i class="fab fa-kaggle" aria-hidden="true"></i><span>Kaggle Leaderboard</span>

@@ -13,6 +13,10 @@ permalink: /imuchallenge/announcements/
 
 <div class="imu-updates">
   <div class="imu-update">
+    <div class="imu-update-date">Nov 18, 2026</div>
+    <div class="imu-update-body">The first round of the challenge has concluded, but the benchmark stays open. The Kaggle competition, dataset, baseline, and scoring tools remain available for paper comparisons, method development, and reproducing competition entries. See the <a href="/imuchallenge/setup/">Setup page</a> to get started.</div>
+  </div>
+  <div class="imu-update">
     <div class="imu-update-date">Oct 4, 2026</div>
     <div class="imu-update-body">Top teams presented their methods in a remote session held after the workshop. <a href="https://drive.google.com/drive/folders/1g2e7CVwySSRISgyvQdIrc0eamdTiXukz?usp=sharing" target="_blank" rel="noopener">Watch the team presentations</a>.</div>
   </div>

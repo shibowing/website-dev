@@ -10,7 +10,9 @@ permalink: /imuchallenge/setup/
 <h1 class="imu-page-title">{% include imu-bot.html %}Setup</h1>
 
 <div class="imu-note" markdown="1">
-**The challenge has concluded.** The leaderboard closed on September 20, 2026. See the [final results](/imuchallenge/#results) for the Top 10 teams' slides, code, and model weights. The dataset, baseline, and scoring protocol below remain available as a benchmark.
+**The first round of the challenge has concluded.** The round 1 leaderboard closed on September 20, 2026. See the [final results](/imuchallenge/#results) for the Top 10 teams' slides, code, and model weights.
+
+**You can still use this setup as a benchmark.** The Kaggle competition, dataset, baseline, and scoring protocol below remain available, so you can evaluate new methods, report results in your papers, and compare against or reproduce the competition entries.
 </div>
 
 ## Quick Start
