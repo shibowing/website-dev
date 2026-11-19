@@ -13,12 +13,28 @@ permalink: /imuchallenge/announcements/
 
 <div class="imu-updates">
   <div class="imu-update">
-    <div class="imu-update-date">Aug 1, 2026</div>
-    <div class="imu-update-body">Final Kaggle submissions, the technical report, and model weights are due <strong>September 20, 2026, at 23:55 UTC</strong>. See the <a href="/imuchallenge/setup/#schedule-rules-and-leaderboard">rules timeline</a>.</div>
+    <div class="imu-update-date">Nov 18, 2026</div>
+    <div class="imu-update-body">The first round of the challenge has concluded, but the benchmark stays open. The Kaggle competition, dataset, baseline, and scoring tools remain available for paper comparisons, method development, and reproducing competition entries. See the <a href="/imuchallenge/setup/">Setup page</a> to get started.</div>
+  </div>
+  <div class="imu-update">
+    <div class="imu-update-date">Oct 4, 2026</div>
+    <div class="imu-update-body">Top teams presented their methods in a remote session held after the workshop. <a href="https://drive.google.com/drive/folders/1g2e7CVwySSRISgyvQdIrc0eamdTiXukz?usp=sharing" target="_blank" rel="noopener">Watch the team presentations</a>.</div>
+  </div>
+  <div class="imu-update">
+    <div class="imu-update-date">Sep 27, 2026</div>
+    <div class="imu-update-body"><strong>Final results are published.</strong> See the <a href="/imuchallenge/#results">Top 10 teams</a> with their slides, inference code, and model weights.</div>
+  </div>
+  <div class="imu-update">
+    <div class="imu-update-date">Sep 27, 2026</div>
+    <div class="imu-update-body">The <a href="/interoception/">IROS 2026 workshop</a> took place. <a href="https://drive.google.com/drive/folders/1H4ZwVZdMNtb1O3xwV2_jTyKLPf3FhfHU?usp=sharing" target="_blank" rel="noopener">Watch the invited talks and panels</a>.</div>
+  </div>
+  <div class="imu-update">
+    <div class="imu-update-date">Sep 20, 2026</div>
+    <div class="imu-update-body">The Kaggle leaderboard closed.</div>
   </div>
   <div class="imu-update">
     <div class="imu-update-date">Jul 9, 2026</div>
-    <div class="imu-update-body">The competition is live on Kaggle: <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</div>
+    <div class="imu-update-body">The competition launched on Kaggle: <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026" target="_blank" rel="noopener">TartanIMU Challenge: Multi-Platform Inertial Odometry</a>.</div>
   </div>
   <div class="imu-update">
     <div class="imu-update-date">May 30, 2026</div>
