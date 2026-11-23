@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Toward IMU Foundation Models: A White Paper on Cross-Embodiment Inertial Odometry</title>
+<meta name="description" content="Can one model estimate motion from inertial data on any robot? Evidence from a public benchmark of 132 teams, ten awarded solutions and controlled experiments, and a roadmap toward IMU foundation models.">
+<meta name="theme-color" content="#FBFAF7">
+<!-- First draft, before the arXiv release: kept out of search engines and out of the site navigation until then. -->
+<meta name="robots" content="noindex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Toward IMU Foundation Models">
+<meta property="og:description" content="One set of weights, four platforms, no platform label: what works, what does not, and the road to an inertial foundation model.">
+<meta property="og:image" content="https://superodometry.com/imu-whitepaper/assets/img/og.jpg">
+<meta property="og:url" content="https://superodometry.com/imu-whitepaper/">
+<link rel="canonical" href="https://superodometry.com/imu-whitepaper/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Toward IMU Foundation Models: four robot platforms that carry the same inertial sensor">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!-- SCHOLAR:BEGIN -->
+<meta name="citation_title" content="Toward IMU Foundation Models: A White Paper on Cross-Embodiment Inertial Odometry">
+<meta name="citation_author" content="Zhao, Yi">
+<meta name="citation_author" content="Yagnyatinskiy, Maxim">
+<meta name="citation_author" content="Wen, Haomin">
+<meta name="citation_author" content="Fei, Xiang">
+<meta name="citation_author" content="Manda, Mahati">
+<meta name="citation_author" content="Alkhoury Maroun, Rana">
+<meta name="citation_author" content="Berisha, Korab">
+<meta name="citation_author" content="Choi, Jiwon">
+<meta name="citation_author" content="Kim, Hogyun">
+<meta name="citation_author" content="Lee, Jungwoo">
+<meta name="citation_author" content="Yang, Geonmo">
+<meta name="citation_author" content="Yun, Seunghee">
+<meta name="citation_author" content="Zhou, Haozhe">
+<meta name="citation_author" content="Pradeep Kumar Sreekala, Sanjayan">
+<meta name="citation_author" content="Pradeep Kumar Sreekala, Chinmayan">
+<meta name="citation_author" content="Lee, Ssu-Rui">
+<meta name="citation_author" content="Hosen, Md. Hamid">
+<meta name="citation_author" content="Sami, Md Esfer Abdus">
+<meta name="citation_author" content="Shanto, Md. Foysal Emon">
+<meta name="citation_author" content="Ashraf, Kahakashan">
+<meta name="citation_author" content="Park, Sanghyun">
+<meta name="citation_author" content="Kim, Seongjun">
+<meta name="citation_author" content="Rattan, Avantika">
+<meta name="citation_author" content="Kim, Chankyo">
+<meta name="citation_author" content="Ho, Hao-Ting">
+<meta name="citation_author" content="Mahmud, Mohosin">
+<meta name="citation_author" content="Chen, Yutian">
+<meta name="citation_author" content="Shi, Chris">
+<meta name="citation_author" content="Cao, Muqing">
+<meta name="citation_author" content="Qiu, Yuheng">
+<meta name="citation_author" content="Zhou, Sifan">
+<meta name="citation_author" content="Yuan, Junbin">
+<meta name="citation_author" content="Cho, Younggun">
+<meta name="citation_author" content="Han, Soohee">
+<meta name="citation_author" content="Bhuiyan, Mohammed Imamul Hassan">
+<meta name="citation_author" content="Geng, Junyi">
+<meta name="citation_author" content="Wang, Wenshan">
+<meta name="citation_author" content="Wang, Chen">
+<meta name="citation_author" content="Shi, Guanya">
+<meta name="citation_author" content="Ghaffari, Maani">
+<meta name="citation_author" content="Scherer, Sebastian">
+<meta name="citation_author" content="Zhao, Shibo">
+<meta name="citation_publication_date" content="2026">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Toward IMU Foundation Models: A White Paper on Cross-Embodiment Inertial Odometry", "datePublished": "2026", "author": [{"@type": "Person", "name": "Yi Zhao"}, {"@type": "Person", "name": "Maxim Yagnyatinskiy"}, {"@type": "Person", "name": "Haomin Wen"}, {"@type": "Person", "name": "Xiang Fei"}, {"@type": "Person", "name": "Mahati Manda"}, {"@type": "Person", "name": "Rana Alkhoury Maroun"}, {"@type": "Person", "name": "Korab Berisha"}, {"@type": "Person", "name": "Jiwon Choi"}, {"@type": "Person", "name": "Hogyun Kim"}, {"@type": "Person", "name": "Jungwoo Lee"}, {"@type": "Person", "name": "Geonmo Yang"}, {"@type": "Person", "name": "Seunghee Yun"}, {"@type": "Person", "name": "Haozhe Zhou"}, {"@type": "Person", "name": "Sanjayan Pradeep Kumar Sreekala"}, {"@type": "Person", "name": "Chinmayan Pradeep Kumar Sreekala"}, {"@type": "Person", "name": "Ssu-Rui Lee"}, {"@type": "Person", "name": "Md. Hamid Hosen"}, {"@type": "Person", "name": "Md Esfer Abdus Sami"}, {"@type": "Person", "name": "Md. Foysal Emon Shanto"}, {"@type": "Person", "name": "Kahakashan Ashraf"}, {"@type": "Person", "name": "Sanghyun Park"}, {"@type": "Person", "name": "Seongjun Kim"}, {"@type": "Person", "name": "Avantika Rattan"}, {"@type": "Person", "name": "Chankyo Kim"}, {"@type": "Person", "name": "Hao-Ting Ho"}, {"@type": "Person", "name": "Mohosin Mahmud"}, {"@type": "Person", "name": "Yutian Chen"}, {"@type": "Person", "name": "Chris Shi"}, {"@type": "Person", "name": "Muqing Cao"}, {"@type": "Person", "name": "Yuheng Qiu"}, {"@type": "Person", "name": "Sifan Zhou"}, {"@type": "Person", "name": "Junbin Yuan"}, {"@type": "Person", "name": "Younggun Cho"}, {"@type": "Person", "name": "Soohee Han"}, {"@type": "Person", "name": "Mohammed Imamul Hassan Bhuiyan"}, {"@type": "Person", "name": "Junyi Geng"}, {"@type": "Person", "name": "Wenshan Wang"}, {"@type": "Person", "name": "Chen Wang"}, {"@type": "Person", "name": "Guanya Shi"}, {"@type": "Person", "name": "Maani Ghaffari"}, {"@type": "Person", "name": "Sebastian Scherer"}, {"@type": "Person", "name": "Shibo Zhao"}], "about": ["inertial odometry", "IMU", "foundation models", "cross-embodiment learning", "robotics"]}</script>
+<!-- SCHOLAR:END -->
+<link rel="stylesheet" href="assets/css/site.css?v=48">
+</head>
+<body>
+<a class="skip" href="#map">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top">IMU Foundation Models</a>
+  <nav aria-label="Sections">
+    <a href="#map">One second</a>
+    <a href="#demo">Footage</a>
+    <a href="#levels">Levels</a>
+    <a href="#paths">Paths</a>
+    <a href="#results">Results</a>
+    <a href="#ideas">What works</a>
+    <a href="#fast">Fast flight</a>
+    <a href="#controlled">Experiments</a>
+    <a href="#solutions">Teams</a>
+    <a href="#cite">Cite</a>
+  </nav>
+  <a class="btn" href="#" data-link="paper">Paper</a>
+</header>
+
+<!-- ======================= HERO: the four platforms in the four corners of the screen, the title in the middle ======================= -->
+<section class="hero" id="top" aria-labelledby="title">
+  <div class="hero-bg" aria-hidden="true">
+    <video class="hero-video" id="hero-video" data-v="5" muted loop playsinline autoplay preload="auto" poster="assets/video/hero.jpg?v=5" tabindex="-1"></video>
+    <span class="hq hq1" style="--c: var(--car)"><b><i></i>Car</b><em>wheeled robot</em></span>
+    <span class="hq hq2" style="--c: var(--hand)"><b><i></i>Handheld</b><em>hand-carried sensor rig</em></span>
+    <span class="hq hq3" style="--c: var(--quad)"><b><i></i>Quadruped</b><em>legged robot</em></span>
+    <span class="hq hq4" style="--c: var(--air)"><b><i></i>Aerial</b><em>quadrotor</em></span>
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <h1 class="title" id="title">Toward IMU Foundation Models</h1>
+    <span class="title-rule" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <p class="subtitle">A White Paper on Cross-Embodiment Inertial Odometry</p>
+    <div class="links">
+      <a class="btn" href="#" data-link="paper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></svg>Paper <span class="soon" data-soon="paper">arXiv soon</span></a>
+      <a class="btn ghost" href="#solutions"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Code &amp; results</a>
+      <a class="btn ghost" href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 6h3v2a3 3 0 0 1-3 3M7 6H4v2a3 3 0 0 0 3 3"/></svg>Benchmark</a>
+      <a class="btn ghost" href="#cite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h4v4H7zM13 7h4v4h-4zM7 11c0 3-1 5-3 6M13 11c0 3-1 5-3 6"/></svg>BibTeX</a>
+    </div>
+  </div>
+  <div class="hero-note">
+    <button class="hero-pause" id="hero-pause" type="button" aria-label="Pause the background video" title="Pause the background video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+    <span title="Three training recordings of the benchmark per platform, replayed in 3-D in real time from their reference position and orientation. The recordings of a platform are set side by side on one ground, and the models are drawn larger than life.">Twelve training recordings, three per platform, replayed in real time</span>
+  </div>
+</section>
+
+<main>
+<!-- ======================= OVERVIEW ======================= -->
+<section class="block overview" id="overview">
+  <div class="wrap">
+    <p class="authors" id="authors"></p>
+    <p class="affils" id="affils"></p>
+    <p class="abstract">Almost every robot carries an inertial measurement unit, yet learned inertial odometry is still trained one platform at a time. This white paper asks how far the field is from an IMU foundation model: <b class="hl">one set of weights, any robot, no platform label</b>. It draws on a public benchmark, the ten awarded solutions and controlled experiments.</p>
+    <div class="stats" id="stats">
+      <div class="stat s-car"><div class="v"><span class="num" data-count="132">132</span></div><div class="k">teams took part in the benchmark</div></div>
+      <div class="stat s-hand"><div class="v"><span class="num" data-count="10">10</span></div><div class="k">awarded solutions with public weights and code</div></div>
+      <div class="stat s-quad"><div class="v"><span class="num" data-count="70">70</span><small>%</small></div><div class="k">lower error score than a baseline that is told the platform</div></div>
+      <div class="stat s-air"><div class="v"><span class="num" data-count="95">95</span><small>%</small></div><div class="k">of held-out seconds: the platform is named from one second of signal</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= MAP ======================= -->
+<section class="block alt" id="map">
+  <div class="wrap">
+    <p class="eyebrow reveal">One second of signal</p>
+    <h2 class="reveal">Four bodies leave <span class="hl">four fingerprints</span></h2>
+    <p class="lede reveal">Each point is one second of raw IMU signal from the training data, placed by t-SNE. The platforms <b class="hl">separate without being told apart</b>.</p>
+    <div class="figure mapfig reveal">
+      <div class="controls">
+        <span class="fgroup"><span class="ctl-label">Show</span>
+        <div class="seg" id="map-plat" role="group" aria-label="Platform shown"><button class="on" data-v="all">All platforms</button><button data-v="car">Car</button><button data-v="human">Handheld</button><button data-v="quadruped">Quadruped</button><button data-v="drone">Aerial</button></div></span>
+        <span class="fgroup"><span class="ctl-label">Colour</span>
+        <div class="seg" id="map-color"><button class="on" data-v="plat">Platform</button><button data-v="speed">Speed</button><button data-v="turn">Turn rate</button></div></span>
+      </div>
+      <div class="mapfig-stage" id="map-stage">
+        <canvas id="map-canvas" role="img" aria-label="t-SNE map of 6,055 one-second IMU windows of four platforms, with photographs of the platforms around it"></canvas>
+        <svg id="map-svg" viewBox="0 0 470 414" aria-hidden="true"></svg>
+      </div>
+      <p class="caption">The map of Fig. 1 of the paper, drawn wider: 6,055 seconds of 142 training recordings, placed by t-SNE of features that do not depend on how the sensor is mounted. The shaded region of a platform holds 95% of its points, and each photograph points to where its kind of motion is densest. <span id="map-knn"></span> Click a platform, a photograph or a name to show it alone, and again to bring all four back. Hover a point for its speed, climb and turn rate.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DEMO ======================= -->
+<section class="block demo" id="demo">
+  <div class="wrap">
+    <p class="eyebrow reveal">Real platforms</p>
+    <h2 class="reveal">Four bodies, <span class="hl">one sense of motion</span></h2>
+    <p class="lede reveal">A wheeled robot, a hand-carried rig, a legged robot and a racing drone each carry <b class="hl">the same small sensor</b>. One model has to read the motion of all of them.</p>
+    <div class="reel reveal" id="reel">
+      <figure class="clip" data-p="car" data-rates="0:2" style="--c: var(--car)">
+        <video muted loop playsinline autoplay preload="none" poster="assets/video/car.jpg" aria-label="A wheeled robot drives along a corridor, shown at twice the real speed"><source src="assets/video/car_fx.mp4" type="video/mp4"></video>
+        <svg class="corners" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10V0h6M94 0h6v10M100 90v10h-6M6 100H0V90"/></svg>
+        <span class="clip-tag"><i></i>Car</span>
+        <span class="clip-rate" aria-hidden="true"></span>
+        <button class="vctl" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+        <figcaption class="clip-foot">
+          <span class="clip-row"><span class="clip-kind">Wheeled robot</span></span>
+        </figcaption>
+      </figure>
+      <figure class="clip" data-p="human" data-rates="0:2,6.2:1" style="--c: var(--hand)">
+        <video muted loop playsinline autoplay preload="none" poster="assets/video/handheld.jpg" aria-label="A person carries a sensor rig through a cave"><source src="assets/video/handheld_fx.mp4" type="video/mp4"></video>
+        <svg class="corners" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10V0h6M94 0h6v10M100 90v10h-6M6 100H0V90"/></svg>
+        <span class="clip-tag"><i></i>Handheld</span>
+        <span class="clip-rate" aria-hidden="true"></span>
+        <button class="vctl" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+        <figcaption class="clip-foot">
+          <span class="clip-row"><span class="clip-kind">Hand-carried sensor rig</span></span>
+        </figcaption>
+      </figure>
+      <figure class="clip" data-p="quadruped" data-rates="0:2,4.38:1" style="--c: var(--quad)">
+        <video muted loop playsinline autoplay preload="none" poster="assets/video/quadruped.jpg" aria-label="A legged robot walks on a landing and then climbs and descends stairs"><source src="assets/video/quadruped_fx.mp4" type="video/mp4"></video>
+        <svg class="corners" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10V0h6M94 0h6v10M100 90v10h-6M6 100H0V90"/></svg>
+        <span class="clip-tag"><i></i>Quadruped</span>
+        <span class="clip-rate" aria-hidden="true"></span>
+        <button class="vctl" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+        <figcaption class="clip-foot">
+          <span class="clip-row"><span class="clip-kind">Legged robot</span></span>
+        </figcaption>
+      </figure>
+      <figure class="clip" data-p="drone" data-rates="0:1" style="--c: var(--air)">
+        <video muted loop playsinline autoplay preload="none" poster="assets/video/aerial.jpg" aria-label="Onboard view of a racing quadrotor flying through gates in a hangar"><source src="assets/video/aerial_fx.mp4" type="video/mp4"></video>
+        <svg class="corners" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10V0h6M94 0h6v10M100 90v10h-6M6 100H0V90"/></svg>
+        <span class="clip-tag"><i></i>Aerial</span>
+        <span class="clip-rate" aria-hidden="true"></span>
+        <button class="vctl" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+        <figcaption class="clip-foot">
+          <span class="clip-row"><span class="clip-kind">Racing quadrotor, onboard camera</span></span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="caption reveal">Footage of the Tartan IMU platforms and of the UZH-FPV dataset (aerial). The strip under each clip is real IMU signal of the same platform, not synchronized with the footage; the badge shows the playback rate.</p>
+  </div>
+</section>
+
+<!-- ======================= LEVELS ======================= -->
+<section class="block alt" id="levels">
+  <div class="wrap">
+    <p class="eyebrow reveal">Where the field stands</p>
+    <h2 class="reveal">Six levels of generality, <span class="hl">a test for each</span></h2>
+    <p class="lede reveal">A working definition of <b class="hl">an inertial foundation model</b>. Each level includes the ones below it; open a level for its test and the evidence.</p>
+    <div class="ladder reveal" id="ladder"></div>
+  </div>
+</section>
+
+<!-- ======================= PATHS (Fig. 1 of the paper, in motion) ======================= -->
+<section class="block" id="paths">
+  <div class="wrap">
+    <p class="eyebrow reveal">On four test recordings</p>
+    <h2 class="reveal">True paths and <span class="hl">the teams' estimates</span></h2>
+    <p class="lede reveal">One test recording per platform: the <b>true path in black</b>, and <b class="hl">the path each solution obtains</b> from its predicted velocities. Choose the teams to compare.</p>
+    <div class="figure pathsfig reveal">
+      <div class="pp-bar">
+        <button class="pp-play" id="pp-play" type="button" aria-label="Pause"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+        <input type="range" id="pp-time" min="0" max="1000" value="0" aria-label="Position in the replay">
+        <div class="seg" id="pp-set" role="group" aria-label="Teams shown"><button class="on" data-v="top">Top five</button><button data-v="all">All nine</button><button data-v="none">Truth only</button></div>
+      </div>
+      <div class="pp-teams" id="pp-teams" role="group" aria-label="Teams"></div>
+      <div class="pp-grid" id="paths-grid"></div>
+      <p class="caption">The data of Fig. 1 of the paper: one point per second, estimates integrated with the reference orientation. The nine solutions are those whose predictions are public (the winning solution's are not); "top five" follows the internal ranking. Hover a team to bring its path forward; its velocity error on each of the four segments is in the tooltip.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= RESULTS ======================= -->
+<section class="block alt" id="results">
+  <div class="wrap">
+    <p class="eyebrow reveal">State of practice</p>
+    <h2 class="reveal">Where <span class="hl">the error</span> is</h2>
+    <p class="lede reveal">The ten solutions score <b class="hl">49 to 70% lower</b> than a platform-aware baseline. What remains comes <b class="t-air">mostly from the air</b>.</p>
+    <div class="figure reveal scroll-hint">
+      <div class="controls">
+        <span class="ctl-label">Show</span>
+        <div class="seg" id="res-mode"><button class="on" data-v="score">Score by platform</button><button data-v="ave">Velocity error</button><button data-v="ate">Trajectory error</button></div>
+      </div>
+      <svg id="res-chart" viewBox="0 0 1000 520" role="img" aria-label="Contribution of each platform to each team's score"></svg>
+      <div class="legend" id="res-legend"></div>
+      <p class="caption"><b>Official results on all 89 test recordings</b>, in the order of the internal ranking. Bars show what each platform adds to the TartanIMU Score (lower is better; predicting zero velocity everywhere scores 1); whiskers are 95% bootstrap intervals over test sequences. The baseline is the Tartan IMU model, given the platform label.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= IDEAS ======================= -->
+<section class="block" id="ideas">
+  <div class="wrap">
+    <p class="eyebrow reveal">What works</p>
+    <h2 class="reveal">Four ideas that <span class="hl">hold across teams</span></h2>
+    <p class="lede reveal">An idea counts as supported only when <b class="hl">several teams measured it independently</b>; the dissenting results are kept beside it.</p>
+
+    <div class="idea reveal">
+      <div>
+        <div class="no t-car">Idea 1</div>
+        <h3>Read tens of seconds, not one window</h3>
+        <p>Bias, mounting tilt and the platform itself are properties of a recording, not of a window.</p>
+        <div class="evid" id="ev-context"></div>
+      </div>
+      <div class="figure">
+        <div class="controls"><span class="ctl-label">Context</span><input type="range" id="ctx-range" min="0" max="100" value="62" aria-label="Context length"><span class="readout" id="ctx-read">64 s</span></div>
+        <svg id="ctx-chart" viewBox="0 0 640 230" aria-label="Context read by each solution over a real handheld recording"></svg>
+        <p class="caption">240 s of a real handheld recording (accelerometer magnitude). Drag to set a context length; the solutions that read at least that much light up.</p>
+      </div>
+    </div>
+
+    <div class="idea reveal">
+      <div>
+        <div class="no t-hand">Idea 2</div>
+        <h3>Replay motion at other speeds, consistently</h3>
+        <p>A replay at rate <i>r</i> multiplies velocity and angular rate by <i>r</i> and the motion part of the specific force by <i>r</i>², and leaves gravity and bias unchanged.</p>
+        <div class="evid" id="ev-retiming"></div>
+      </div>
+      <div class="figure">
+        <div class="controls"><span class="ctl-label">Rate r</span><input type="range" id="rt-range" min="0.67" max="1.8" step="0.01" value="1.5" aria-label="Replay rate"><span class="readout" id="rt-read">1.50×</span></div>
+        <svg id="rt-chart" viewBox="0 0 640 250" aria-label="A real flight recorded and replayed"></svg>
+        <div class="legend"><span><i style="--c:#2B3A55"></i>recorded</span><span><i style="--c:var(--air)"></i>replayed</span></div>
+        <p class="readout" id="rt-speed" style="margin:10px 0 0;font-size:13.5px;line-height:1.5"></p>
+        <p class="caption" style="margin-top:8px">A real aerial training recording (drone_train_0024) and the same path flown faster at the rate on the slider.</p>
+      </div>
+    </div>
+
+    <div class="idea reveal">
+      <div>
+        <div class="no t-quad">Idea 3</div>
+        <h3>Fit the physics of a recording</h3>
+        <p>What stays constant over a recording, such as accelerometer bias, mounting tilt and rotor drag, is estimated with the equations of motion.</p>
+        <div class="evid" id="ev-physics"></div>
+      </div>
+      <div class="figure">
+        <div class="controls"><span class="ctl-label">Axis</span><div class="seg" id="drag-axis"><button class="on" data-v="x">Forward x</button><button data-v="y">Lateral y</button></div></div>
+        <svg id="drag-chart" viewBox="0 0 640 260" aria-label="Rotor drag on two real fast flights"></svg>
+        <p class="caption">One-second means of body-frame specific force against velocity on two fast training flights, with the least-squares fit <i>f</i> = −<i>c v</i>.</p>
+      </div>
+    </div>
+
+    <div class="idea reveal">
+      <div>
+        <div class="no t-air">Idea 4</div>
+        <h3>Draw more windows from the same labels</h3>
+        <p>The labels exist at the full sensor rate, so shifting the window grid by a random offset gives many more training examples at no cost.</p>
+        <div class="evid" id="ev-windows"></div>
+      </div>
+      <div class="figure">
+        <svg id="win-chart" viewBox="0 0 640 200" aria-label="Shifting the window grid"></svg>
+        <p class="caption">The same signal cut on the official grid (grey) and on grids shifted by a random offset (colour).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAST FLIGHT ======================= -->
+<section class="block alt" id="fast">
+  <div class="wrap">
+    <p class="eyebrow reveal">The hardest seventeen seconds</p>
+    <h2 class="reveal">A fast flight <span class="hl">beyond the labelled speeds</span></h2>
+    <p class="lede reveal">No labelled aerial window is faster than <b>about 11 m/s</b>; one test flight reaches <b class="hl">15.7 m/s</b>. Networks that regress speed flatten out; solutions that take the speed from <b class="t-plum">a physical model follow the truth</b>.</p>
+    <div class="fast-layout reveal">
+      <div class="figure">
+        <div class="controls"><button class="play" id="fast-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg><span>Replay the flight</span></button><span class="readout" id="fast-t">t = 17 s</span></div>
+        <svg id="fast-chart" viewBox="0 0 700 330" aria-label="True and predicted speed on the fastest test flight"></svg>
+        <div class="legend"><span><i style="--c:#1A1A1A"></i>true speed</span><span><i style="--c:var(--plum)"></i>thisray</span><span><i style="--c:var(--lilac)"></i>SPARO</span><span><i style="--c:var(--hand)"></i>CoCEL</span><span><i style="--c:#7F9CC5"></i>six other networks</span></div>
+        <div class="speedo" id="speedo"></div>
+      </div>
+      <div>
+        <div class="figure">
+          <svg id="bins-chart" viewBox="0 0 420 330" aria-label="Mean predicted against true speed over all aerial test windows"></svg>
+          <p class="caption">All 2,099 aerial test windows grouped by true speed. On the dotted line a team predicts the right speed on average. The two fastest groups contain only 6 and 8 windows, all from the two fast flights.</p>
+        </div>
+        <p class="caption">The winning solution's predictions are not public and are not shown.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTROLLED ======================= -->
+<section class="block" id="controlled">
+  <div class="wrap">
+    <p class="eyebrow reveal">Controlled experiments</p>
+    <h2 class="reveal">Testing the conclusions with <span class="hl">one reference model</span></h2>
+    <p class="lede reveal">One small reference model (0.86 M parameters, no physical stage), trained in many ways with <b class="hl">three seeds each</b> and scored with the official scorer.</p>
+    <div class="figure cx reveal">
+      <div class="cx-grid">
+        <div class="cx-panel"><h4><i>a</i>How much of the recording</h4><p class="sub">Reading 16 s lowers the score by 8% against 64 s; reading one second raises it by 16%.</p><svg id="cx-context" viewBox="0 0 360 286" role="img" aria-label="Score against the context read by the reference model"></svg></div>
+        <div class="cx-panel"><h4><i>b</i>Data or capacity</h4><p class="sub">Halving the training recordings raises the score by 15%. A model ten times larger is no better.</p><svg id="cx-data" viewBox="0 0 360 286" role="img" aria-label="Score against the share of training data, for two model sizes"></svg></div>
+        <div class="cx-panel"><h4><i>c</i>A turned sensor</h4><p class="sub" id="cx-rot-sub"></p><svg id="cx-rot" viewBox="0 0 360 286" role="img" aria-label="Score against the rotation of the sensor at test"></svg></div>
+        <div class="cx-panel"><h4><i>d</i>A platform never seen</h4><p class="sub">Left out of training, a platform is estimated no better than by predicting zero velocity.</p><svg id="cx-lopo" viewBox="0 0 360 286" role="img" aria-label="Velocity error relative to zero velocity, per platform"></svg></div>
+        <div class="cx-panel wide"><h4><i>e</i>Shared model or specialists</h4><p class="sub">Telling the model its platform adds nothing. Four separately trained specialists are better in every seed.</p><svg id="cx-spec" viewBox="0 0 740 286" role="img" aria-label="Shared model against specialists, two training recipes"></svg></div>
+      </div>
+      <p class="caption">Symbols: the mean of three seeds. Bands, bars and small marks: the three seeds. Score: the official scorer, lower is better; predicting zero velocity everywhere scores 1. Hover a symbol for its values.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TEAMS ======================= -->
+<section class="block alt" id="solutions">
+  <div class="wrap">
+    <p class="eyebrow reveal">The ten awarded solutions</p>
+    <h2 class="reveal">The <span class="hl">teams</span></h2>
+    <div class="team-grid" id="teams"></div>
+    <p class="caption">Rank: the organizers' internal ranking of the ten awarded solutions, by the official scorer on all 89 test recordings (lower is better). The bar is the share of the score that comes from each platform: car, handheld, quadruped, aerial.</p>
+  </div>
+</section>
+
+<!-- ======================= CITE ======================= -->
+<section class="block" id="cite">
+  <div class="wrap">
+    <p class="eyebrow">Citation</p>
+    <h2>Cite this white paper</h2>
+    <div class="cite-card">
+      <div class="cite-ref" id="cite-ref"></div>
+      <div class="cite-bar">
+        <div class="seg" id="cite-fmt" role="group" aria-label="Citation format"><button class="on" data-v="bibtex">BibTeX</button><button data-v="text">Plain text</button></div>
+        <button class="cite-copy" id="copy-bib" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button>
+      </div>
+      <pre class="cite-code" id="bibtex"></pre>
+    </div>
+    <div class="cite-links">
+      <a href="#" data-link="paper"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>Paper <span class="soon-inline" data-soon="paper">arXiv soon</span></a>
+      <a href="https://huggingface.co/datasets/Tartan-IMU/whitepaper-reproducibility" data-link="package"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Reproducibility package <span class="soon-inline" data-soon="package">public with the arXiv version</span></a>
+      <a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/></svg>Benchmark on Kaggle</a>
+      <a href="https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16M7 16V9M12 16V5M17 16v-4"/></svg>Scoring service</a>
+    </div>
+    <p class="caption" style="margin-top:16px">All data of the challenge, including the withheld test ground truth, will be released.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Acknowledgment</h4>
+      <p>The organizers thank all participants of the challenge, and the teams of this paper for their reports, their released models and their candid feedback. The controlled experiments were run on the GPU cluster of the AirLab at Carnegie Mellon University, managed with OSMO. We also gratefully acknowledge NVIDIA for providing GPUs through academic hardware grants. This work used Bridges-2 at the Pittsburgh Supercomputing Center through allocation cis220039p from the Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS) program, which is supported by U.S. National Science Foundation grants #2138259, #2138286, #2138307, #2137603 and #2138296.</p>
+    </div>
+    <div>
+      <h4>Images</h4>
+      <p>Photographs and footage of the car, handheld rig and quadruped: recordings of the Tartan IMU platforms (Zhao et al., CVPR 2025). Gate view and onboard flight footage: UZH-FPV dataset (Delmerico et al., ICRA 2019). Every number and plot on this page is generated from the paper's own data files; the 3-D replays of training recordings are read from the challenge's training data.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="tooltip" id="tooltip" role="status"></div>
+<script src="assets/js/data.js?v=48"></script>
+<script src="assets/js/mapfig.js?v=48"></script>
+<script src="assets/js/charts.js?v=48"></script>
+<script src="assets/js/main.js?v=48"></script>
+<script src="assets/js/reel.js?v=48"></script>
+</body>
+</html>
