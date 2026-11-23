@@ -9,13 +9,15 @@ permalink: /imuchallenge/setup/
 
 <h1 class="imu-page-title">{% include imu-bot.html %}Setup</h1>
 
+<div class="imu-note" markdown="1">
+**The first round of the challenge has concluded.** The round 1 leaderboard closed on September 20, 2026. See the [final results](/imuchallenge/#results) for the Top 10 teams' slides, code, and model weights.
+
+**You can still use this setup as a benchmark.** The Kaggle competition, dataset, baseline, and scoring protocol below remain available, so you can evaluate new methods, report results in your papers, and compare against or reproduce the competition entries.
+</div>
+
 ## Quick Start
 
 <div class="imu-steps" markdown="1">
-
-<div class="imu-step" markdown="1">
-**Register your team.** Join the competition on Kaggle and create your team there: [TartanIMU Challenge: Multi-Platform Inertial Odometry](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026){:target="_blank" rel="noopener"}. There's no separate signup — your Kaggle team *is* your registration.
-</div>
 
 <div class="imu-step" markdown="1">
 **Download the train/val splits.** Review the format and split details on the [challenge Data page](/imuchallenge/data/), then download the competition files from the [Kaggle Data tab](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/data){:target="_blank" rel="noopener"}. Kaggle also provides `index/test_windows.csv` and `sample_submission.csv`.
@@ -222,55 +224,29 @@ finetune:
 </div>
 
 <div class="imu-step" markdown="1">
-**Improve and [submit](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/submissions){:target="_blank" rel="noopener"}.** Experiment with your own methods to push performance on the leaderboard.
-</div>
-
-<div class="imu-step" markdown="1">
-**Log your submission and report.** The Kaggle leaderboard alone doesn't make you eligible for the final ranking or workshop presentation. Complete the [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSc_3Pq2Bs4ytd0lfHHLsU_qoO5z0BP6Psnsqo7e5nOyBTlCjQ/viewform){:target="_blank" rel="noopener"} for each submission you want considered, and again to attach your technical report before the deadline. See [Final ranking eligibility](#schedule-rules-and-leaderboard) for the full requirements.
+**Improve and compare.** Experiment with your own methods and compare against the [Kaggle leaderboard](https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard){:target="_blank" rel="noopener"} and the [top teams' released models](/imuchallenge/#results).
 </div>
 
 </div>
 
-## Schedule, Rules, and Leaderboard
-
-Competition dates, team and submission limits, and any external-data policy can change during the event. Use the live Kaggle pages as the source of truth:
+## Rules and Leaderboard
 
 <div class="imu-note" markdown="1">
-### Timeline
+### How the final ranking was decided
 
-- **Final Kaggle submission and model weights:** September 20, 2026, 23:55 UTC
-- **Technical report:** September 23, 2026, 23:59 US Eastern Time (EDT, UTC&minus;4) &mdash; three days after the leaderboard closes
+Each team's submission had to come from a single unified model with one shared set of weights, published with inference code on Hugging Face. Teams also submitted a technical report, and report quality was weighed alongside the leaderboard when selecting the [Top 10](/imuchallenge/#results).
 
-### Final ranking eligibility
+### Per-sequence scoring
 
-The Kaggle leaderboard is **provisional**. Official final standings are decided only after the organizers re-execute the top teams' submitted models. To be eligible for the final ranking you must, in addition to submitting predictions:
-
-1. Complete the [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSc_3Pq2Bs4ytd0lfHHLsU_qoO5z0BP6Psnsqo7e5nOyBTlCjQ/viewform){:target="_blank" rel="noopener"} for each submission you want considered, attaching the prediction CSV you uploaded.
-2. Submit a technical report (PDF) &mdash; see [Technical report](#technical-report) below. All numbers in Tables III&ndash;V must come from the [official scoring service](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring){:target="_blank" rel="noopener"}, not a local re-implementation.
-3. Publish your single unified model's weights and inference code as a public Hugging Face model repository, within the same 7 days.
-
-Teams missing any of the three, or whose model cannot be re-executed, are removed from the final ranking regardless of leaderboard position.
-
-### Technical report
-
-- **Template.** [Download the report template](https://drive.google.com/drive/folders/1EEnFNbogpRSbqGglppdNh0EQp0zxHzjZ){:target="_blank" rel="noopener"} &mdash; a zip containing `main.tex` and `ieeeconf.cls`, plus a PDF preview. On Overleaf: *New Project &rarr; Upload Project &rarr; select the zip*, then recompile. The folder always holds the current version.
-- **Format.** Maximum **6 pages excluding references**, and 7 pages in total including references, using the official template. **The appendix does not count** towards either limit.
-- **How to submit.** The report is *not* uploaded on this website. Fill in the challenge Form as usual and **attach your report at the end of the Form** &mdash; that single submission is what we collect.
-- **Selection.** The Kaggle leaderboard is **not** the only criterion for the Top 10: the quality of the report is also taken into account, and the Top 10 teams will be invited to contribute to the forthcoming *IMU Foundation Model* white paper.
-- **Compliance declaration (required).** Every report must explicitly answer: (1) do the predictions come from a **single model with one shared set of weights**? (2) is any platform classification, routing or specialization used at inference? (3) is any ensembling, checkpoint averaging or test-time augmentation used? (4) how was test-set leakage avoided, including for model and checkpoint selection? (5) what differs between the development-time and the submitted system? Reports that leave these unanswered cannot be considered for the Top 10.
-
-### Scoring your submission per sequence
-
-The [per-sequence scoring tool](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring){:target="_blank" rel="noopener"} returns ATE20, AVE and RTE for **all 89 test sequences**, plus the per-platform and overall tables, using the same scoring logic as the Kaggle leaderboard. Five submissions per team per day; your team name must match your Kaggle team name exactly, and teams with no Kaggle submission are not scored.
+The [per-sequence scoring tool](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_scoring){:target="_blank" rel="noopener"} returns ATE20, AVE and RTE for **all 89 test sequences**, plus the per-platform and overall tables, using the same scoring logic as the Kaggle leaderboard.
 
 **RTE** (Relative Trajectory Error, m) follows Sturm *et al.* (IROS 2012) and is the metric used in AirIO: over sliding windows of **&Delta;t = 5 s**, it is the RMSE of the difference between the predicted and the ground-truth relative displacement. It measures *local* drift and, unlike ATE20, is insensitive to accumulated global offset. **RTE does not enter the leaderboard ranking**; it is reported for analysis only.
 </div>
 
 <ul class="imu-link-list">
-  <li><a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/overview" target="_blank" rel="noopener">Competition overview and schedule</a></li>
+  <li><a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/overview" target="_blank" rel="noopener">Competition overview</a></li>
   <li><a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/rules" target="_blank" rel="noopener">Official competition rules</a></li>
-  <li><a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard" target="_blank" rel="noopener">Public leaderboard</a></li>
-  <li><a href="https://drive.google.com/drive/folders/1EEnFNbogpRSbqGglppdNh0EQp0zxHzjZ" target="_blank" rel="noopener">Technical report template (LaTeX + PDF)</a></li>
+  <li><a href="https://www.kaggle.com/competitions/tartan-imu-challenge-iros2026/leaderboard" target="_blank" rel="noopener">Kaggle leaderboard</a></li>
 </ul>
 
 <div class="imu-note" markdown="1">
@@ -290,7 +266,7 @@ window_id,vx,vy,vz
 We provide per-platform "specialist" checkpoints trained internally as a benchmarking reference, so you can gauge what good performance looks like before submitting. You can also try them interactively in the [live demo](https://huggingface.co/spaces/Tartan-IMU/imu_odometry_challenge_demo){:target="_blank" rel="noopener"}.
 
 <div class="imu-note" markdown="1">
-**These specialists are a reference, not a submission strategy.** Predictions must come from **a single model with one shared set of weights**. Inferring the embodiment inside your network is allowed and is precisely the point of the benchmark; recovering the platform in order to dispatch to separately trained per-platform experts is not. The test set is also anonymized with no platform label. **Final rankings are subject to inspection of the submitted model and inference script.** Use these checkpoints to sanity-check per-platform performance during development, not as your final submission.
+**These specialists are a reference, not a submission strategy.** Predictions must come from **a single model with one shared set of weights**. Inferring the embodiment inside your network is allowed and is precisely the point of the benchmark; recovering the platform in order to dispatch to separately trained per-platform experts is not. The test set is also anonymized with no platform label. Use these checkpoints to sanity-check per-platform performance during development, not as your final submission.
 </div>
 
 - [Car specialist](https://huggingface.co/Tartan-IMU/IROS_workshop_car_specialist){:target="_blank" rel="noopener"}
